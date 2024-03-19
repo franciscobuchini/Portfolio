@@ -62,6 +62,7 @@ body {min-height: 100dvh;}
 /* BENTO MODELS --------------------------------------------------*/
 
 /* BENTO SIZES --------------------------------------------------*/
+.B1x6 {grid-row: span 1; grid-column: span 6;  aspect-ratio: 6/1;}
 .B3x3 {grid-row: span 3; grid-column: span 3;  aspect-ratio: 3/3;}
 .B3x6 {grid-row: span 3; grid-column: span 6;  aspect-ratio: 6/3;}
 .B4x6 {grid-row: span 4; grid-column: span 6;  aspect-ratio: 6/4;}
@@ -69,3 +70,6 @@ body {min-height: 100dvh;}
 .B5x6 {grid-row: span 5; grid-column: span 6;  aspect-ratio: 6/5;}
 .B6x3 {grid-row: span 6; grid-column: span 3;  aspect-ratio: 3/6;}
 /* BENTO SIZES --------------------------------------------------*/
+
+/* TEXT POSITION --------------------------------------------------*/
+/* TEXT POSITION --------------------------------------------------*/
