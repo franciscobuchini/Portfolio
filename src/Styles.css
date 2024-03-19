@@ -12,16 +12,9 @@
 body {min-height: 100dvh;}
 /* NORMALIZE --------------------------------------------------*/
 
-/* ROOT -------------------------------------------------------*/
-:root {
-  --main: #E6B1A9;
-  --dark: #30222F;
-  background-color: var(--main);
-}
-/* ROOT -------------------------------------------------------*/
-
 /* BENTO --------------------------------------------------*/
 .BentoGrid {
+  max-width: 1250px;
   margin: 110px 110px;
   padding: 30px;
   display: grid;
@@ -39,11 +32,21 @@ body {min-height: 100dvh;}
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-color: var(--main);
+}
 
-  > .Text {grid-area: Text; padding: 10px;}
-  > .Image {grid-area: Image; background-color: #BEE3BA; flex: 1; object-fit: cover; width: 100%; height: 100%;}
+.Text {
+  grid-area: Text;
+  padding: 10px;
+  z-index: 200;
+}
 
+.Image {
+  grid-area: Image;
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 /* BENTO --------------------------------------------------*/
 
@@ -66,8 +69,3 @@ body {min-height: 100dvh;}
 .B5x6 {grid-row: span 5; grid-column: span 6;  aspect-ratio: 6/5;}
 .B6x3 {grid-row: span 6; grid-column: span 3;  aspect-ratio: 3/6;}
 /* BENTO SIZES --------------------------------------------------*/
-
-/* TESTING --------------------------------------------------*/
-.BentoGrid {background-color: var(--dark)}
-.Bento div {background-color: var(--main)} 
-/* TESTING --------------------------------------------------*/

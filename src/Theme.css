@@ -1,0 +1,12 @@
+/* ROOT -------------------------------------------------------*/
+:root {
+  --main: #E6B1A9;
+  --dark: #30222F;
+  background-color: var(--main);
+}
+/* ROOT -------------------------------------------------------*/
+
+.Bento {background-color: var(--main);}
+.BentoGrid {background-color: var(--dark)}
+
+.Image {background-color: #BEE3BA;}

@@ -6,7 +6,6 @@ export default function Bento({ size, model, h2, p, bg, img }) {
         <h2>{h2}</h2>
         <p>{p}</p>
       </div>
-      
     </div>
     )
   }
