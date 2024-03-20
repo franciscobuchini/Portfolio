@@ -8,7 +8,7 @@ import CafeCafe08 from './Assets/CafeCafe08.svg'
 import CafeCafe09 from './Assets/CafeCafe09.svg'
 import CafeCafe10 from './Assets/CafeCafe10.svg'
 import CafeGrain from './Assets/CafeGrain.png'
-import Creator from './Assets/Creator.png'
+import Behance from './Assets/Behance.svg'
 
 export default function BentoGrid() {
 
@@ -24,9 +24,10 @@ export default function BentoGrid() {
       size='B5x6'
       model='BImg'
       h2='Café Café Coffeeshop'
-      p='Web Design by Francisco Buchini'
+      p='Web designed and created by Francisco Buchini'
+      pcol='gold'
       img={CafeCafe01}
-      tpos='TextTop'/>
+      txpos='TxTop'/>
 
       <Bento
       size='B6x3'
@@ -42,6 +43,7 @@ export default function BentoGrid() {
       size='B3x6'
       model='BImg'
       h2='Fast Food'
+      h2col='gold'
       img={CafeCafe06}/>
 
       <Bento
@@ -50,37 +52,38 @@ export default function BentoGrid() {
       h2='Coffee Magic!'
       p='Join us for an unforgettable coffee journey today!'
       img={CafeGrain}
-      tpos='TextCen'
-      bg='#F2C491'/>
+      txpos='TxCen'
+      bg='gold'/>
 
       <Bento
       size='B3x6'
       model='BImg' 
       h2='Cold Drinks'
-      img={CafeCafe05}
-      tpos='TextTop'/>
+      img={CafeCafe05}/>
 
       <Bento
       size='B3x6'
       model='BImg' 
       h2='Hot Drinks'
-      img={CafeCafe08}
-      tpos='TextTop'/>
+      h2col='gold'
+      img={CafeCafe08}/>
 
       <Bento
       size='B1x6'
-      model='HT2I1'
+      model='HI1T3'
       h2='Café Café Coffeeshop'
       p='Branding Design by Pedro Miguel Xarepe'
-      img={Creator}
-      tpos='TextCen'
-      bg='#F2C491'/>
+      img={Behance}
+      txpos='TxCen'
+      bg='transparent'
+      h2col='white'
+      pcol='christine'
+      link='https://www.behance.net/gallery/108077185/Caf-Caf-Coffeeshop'/>
 
       <Bento
       size='B3x12'
       model='BImg'
       img={CafeCafe10}/>
-
     </div>
     )
   }

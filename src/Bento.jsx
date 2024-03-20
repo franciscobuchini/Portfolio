@@ -1,11 +1,11 @@
-export default function Bento({ size, model, h2, p, bg, img, tpos }) {
+export default function Bento({ size, model, h2, p, bg, img, txpos, link, pcol, h2col }) {
   return (
-    <div className={`Bento ${tpos} ${size} ${model}`} style={{ backgroundColor: bg }}>
+    <a href={link} target="_blank" className={`Bento ${txpos} ${size} ${model}`} style={{ backgroundColor: `var(--${bg})` }}>
       <img className="Image" src={img}/>
       <div className="Text">
-        <h2>{h2}</h2>
-        <p>{p}</p>
+        <h2 style={{ color: `var(--${h2col})` }}>{h2}</h2>
+        <p style={{ color: `var(--${pcol})` }}>{p}</p>
       </div>
-    </div>
+    </a>
     )
   }
