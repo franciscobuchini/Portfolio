@@ -50,14 +50,8 @@ export default function BentoGrid() {
       h2='Coffee Magic!'
       p='Join us for an unforgettable coffee journey today!'
       img={CafeGrain}
-      tpos='TextCen'/>
-
-      <Bento
-      size='B3x6'
-      model='BImg' 
-      h2='Hot Drinks'
-      img={CafeCafe08}
-      tpos='TextTop'/>
+      tpos='TextCen'
+      bg='#F2C491'/>
 
       <Bento
       size='B3x6'
@@ -67,12 +61,20 @@ export default function BentoGrid() {
       tpos='TextTop'/>
 
       <Bento
+      size='B3x6'
+      model='BImg' 
+      h2='Hot Drinks'
+      img={CafeCafe08}
+      tpos='TextTop'/>
+
+      <Bento
       size='B1x6'
       model='HT2I1'
       h2='Café Café Coffeeshop'
       p='Branding Design by Pedro Miguel Xarepe'
       img={Creator}
-      tpos='TextCen'/>
+      tpos='TextCen'
+      bg='#F2C491'/>
 
       <Bento
       size='B3x12'

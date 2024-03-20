@@ -10,7 +10,6 @@
 /* ROOT -------------------------------------------------------*/
 
 .Bento {
-  background-color: var(--light);
   &:hover {outline: 4px solid var(--second);}
 }
 .BentoGrid {background-color: var(--dark)}

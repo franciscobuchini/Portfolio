@@ -34,7 +34,7 @@ body {min-height: 100dvh;}
   cursor: pointer;
   transition: 0.2s;
 
-  &:hover {>.Image {transform: scale(1.02); transition: 2s;}}
+  &:hover {>.Image {transform: scale(1.04); transition: 2s;}}
 }
 
 .Text {
