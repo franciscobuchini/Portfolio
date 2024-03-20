@@ -9,12 +9,12 @@
   text-wrap: pretty;
   &:focus {appearance: none; border: none;}
 }
-body {min-height: 100dvh;}
+body {min-height: 100dvh; display: flex; justify-content: center;}
 a {cursor: pointer; color: inherit;}
 /* NORMALIZE -----------------------------------*/
 
 /* HEADER -----------------------------------*/
-.Header {
+header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@ a {cursor: pointer; color: inherit;}
 
 /* BENTO -----------------------------------*/
 .BentoGrid {
-  max-width: 1250px;
+  max-width: 1450px;
   margin: 0 110px 110px;
   padding: 30px;
   display: grid;
@@ -57,7 +57,7 @@ a {cursor: pointer; color: inherit;}
 
 .Text {
   grid-area: Text;
-  margin: 10px 20px;
+  padding: 10px 20px;
   z-index: 200;
 }
 
@@ -73,25 +73,26 @@ a {cursor: pointer; color: inherit;}
 /* BENTO -----------------------------------*/
 
 /* BENTO MODELS -----------------------------------*/
-.VT1I1 {grid-template-rows: 1fr 1fr; grid-template-areas: "Text" "Image";}
-.VI1T1 {grid-template-rows: 1fr 1fr; grid-template-areas: "Image" "Text";}
-.VT1I2 {grid-template-rows: 1fr 2fr; grid-template-areas: "Text" "Image";}
-.HT1I1 {grid-template-columns: 1fr 1fr; grid-template-areas: "Text Image";}
-.HI1T1 {grid-template-columns: 1fr 1fr; grid-template-areas: "Image Text";}
-.HT3I1 {grid-template-columns: 3fr 1fr; grid-template-areas: "Text Image";}
-.HI1T3 {grid-template-columns: 1fr 3fr; grid-template-areas: "Image Text";}
+.VT1I1 {grid-template-rows: 50% 50%; grid-template-areas: "Text" "Image";}
+.VI1T1 {grid-template-rows: 50% 50%; grid-template-areas: "Image" "Text";}
+.VT1I2 {grid-template-rows: 34% 66%; grid-template-areas: "Text" "Image";}
+.HT1I1 {grid-template-columns: 50% 50%; grid-template-areas: "Text Image";}
+.HI1T1 {grid-template-columns: 50% 50%; grid-template-areas: "Image Text";}
+.HT3I1 {grid-template-columns: 75% 25%; grid-template-areas: "Text Image";}
+.HI1T3 {grid-template-columns: 25% 75%; grid-template-areas: "Image Text";}
 .BImg {display: flex; position: relative; >.Image {position: absolute;}}
 /* BENTO MODELS -----------------------------------*/
 
 /* BENTO SIZES -----------------------------------*/
 .B1x6 {grid-row: span 1; grid-column: span 6;  aspect-ratio: 6/1;}
-.B3x3 {grid-row: span 3; grid-column: span 3;  aspect-ratio: 3/3;}
-.B3x6 {grid-row: span 3; grid-column: span 6;  aspect-ratio: 6/3;}
-.B3x12 {grid-row: span 3; grid-column: span 12;  aspect-ratio: 12/3;}
-.B4x6 {grid-row: span 4; grid-column: span 6;  aspect-ratio: 6/4;}
+.B2x3 {grid-row: span 2; grid-column: span 3;  aspect-ratio: 3/2;}
+.B3x3 {grid-row: span 3; grid-column: span 3;  aspect-ratio: 1/1;}
+.B3x6 {grid-row: span 3; grid-column: span 6;  aspect-ratio: 2/1;}
+.B3x12 {grid-row: span 3; grid-column: span 12;  aspect-ratio: 4/1;}
+.B4x6 {grid-row: span 4; grid-column: span 6;  aspect-ratio: 3/2;}
 .B5x3 {grid-row: span 5; grid-column: span 3;  aspect-ratio: 3/5;}
 .B5x6 {grid-row: span 5; grid-column: span 6;  aspect-ratio: 6/5;}
-.B6x3 {grid-row: span 6; grid-column: span 3;  aspect-ratio: 3/6;}
+.B6x3 {grid-row: span 6; grid-column: span 3;  aspect-ratio: 1/2;}
 /* BENTO SIZES -----------------------------------*/
 
 /* TEXT POSITION -----------------------------------*/
@@ -100,14 +101,15 @@ a {cursor: pointer; color: inherit;}
 /* TEXT POSITION -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/
-@media (width <= 1000px) {
-  .BentoGrid {padding: 20px; margin: 20px; gap: 20px; border-radius: 35px;}
-  .Text {padding: 2px 10px;}
+@media (width < 1100px) {
+  .BentoGrid {padding: 20px; margin: 0 20px 80px; gap: 20px; border-radius: 35px;}
+  .Text {padding: 5px 10px; line-height: 1;}
 }
-@media (width <= 800px) {
-  .BentoGrid {margin: 20px 100px; grid-template-columns: repeat(6, 1fr);}
+@media (width < 1100px) {
+  .BentoGrid {grid-template-columns: repeat(6, 1fr);}
+
 }
-@media (width <= 600px) {
+@media (width < 600px) {
   .BentoGrid {margin: 20px;}
 }
 /* RESPONSIVE -----------------------------------*/

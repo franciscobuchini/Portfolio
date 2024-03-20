@@ -9,6 +9,7 @@ import CafeCafe09 from './Assets/CafeCafe09.svg'
 import CafeCafe10 from './Assets/CafeCafe10.svg'
 import CafeGrain from './Assets/CafeGrain.png'
 import Behance from './Assets/Behance.svg'
+import Github from './Assets/Github.svg'
 
 export default function BentoGrid() {
 
@@ -27,15 +28,16 @@ export default function BentoGrid() {
       p='Web designed and created by Francisco Buchini'
       pcol='gold'
       img={CafeCafe01}
-      txpos='TxTop'/>
+      txpos='TxTop'
+      link='https://franciscobuchini.vercel.app/'/>
 
       <Bento
-      size='B6x3'
+      size='B5x3'
       model='BImg'
       img={CafeCafe09}/>
 
       <Bento
-      size='B3x3'
+      size='B2x3'
       model='BImg' 
       img={CafeCafe02}/>
 
@@ -48,11 +50,10 @@ export default function BentoGrid() {
 
       <Bento
       size='B3x3'
-      model='VT1I2'
-      h2='Coffee Magic!'
-      p='Join us for an unforgettable coffee journey today!'
+      model='BImg'
+      h2='Roasted!'
+      p='Join us for an unforgettable coffee journey today.'
       img={CafeGrain}
-      txpos='TxCen'
       bg='gold'/>
 
       <Bento
@@ -71,14 +72,26 @@ export default function BentoGrid() {
       <Bento
       size='B1x6'
       model='HI1T3'
-      h2='Café Café Coffeeshop'
-      p='Branding Design by Pedro Miguel Xarepe'
+      h2='Behance'
+      p='Branding designed by Pedro Miguel Xarepe'
       img={Behance}
       txpos='TxCen'
       bg='transparent'
       h2col='white'
       pcol='christine'
       link='https://www.behance.net/gallery/108077185/Caf-Caf-Coffeeshop'/>
+
+<Bento
+      size='B1x6'
+      model='HI1T3'
+      h2='Github'
+      p='Web developed by Francisco Buchini'
+      img={Github}
+      txpos='TxCen'
+      bg='transparent'
+      h2col='white'
+      pcol='christine'
+      link='https://github.com/franciscobuchini/cafe-cafe'/>
 
       <Bento
       size='B3x12'
