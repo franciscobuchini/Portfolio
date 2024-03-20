@@ -1,10 +1,16 @@
 /* ROOT -------------------------------------------------------*/
 :root {
-  --main: #F2C491;
+  --light: #F2C491;
+  --main: #D6661A;
+  --second: #2C8396;
   --dark: #37230F;
-  background-color: var(--main);
+  background-color: var(--light);
+  color: var(--dark);
 }
 /* ROOT -------------------------------------------------------*/
 
-.Bento {background-color: var(--main);}
+.Bento {
+  background-color: var(--light);
+  &:hover {outline: 4px solid var(--second);}
+}
 .BentoGrid {background-color: var(--dark)}
