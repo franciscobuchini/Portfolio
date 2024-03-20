@@ -9,12 +9,26 @@
   appearance: none;
 }
 body {min-height: 100dvh;}
+a {cursor: pointer;}
 /* NORMALIZE --------------------------------------------------*/
+
+/* HEADER --------------------------------------------------*/
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  z-index: 1000;
+  place-items: center;
+
+  > img {max-height: 100px;}
+}
+/* HEADER --------------------------------------------------*/
 
 /* BENTO --------------------------------------------------*/
 .BentoGrid {
   max-width: 1250px;
-  margin: 110px 110px;
+  margin: 0 110px 100px;
   padding: 30px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
