@@ -1,11 +1,11 @@
-export default function Bento({ st, sv, sh, h, p, bg, img, al, url, pcl, hcl }) {
+export default function Bento({ st, sv, sh, h, p, bg, img, tp, url, pcl, hcl }) {
 
   const link = () => {window.open(url, "_blank")}
 
   return (
     <section
       onClick={link}
-      className={`Bento ${al} ${st}`}
+      className={`Bento ${tp} ${st}`}
       style={{
         backgroundColor: `var(--${bg})`,
         gridRow: `span ${sv}`,

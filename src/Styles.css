@@ -55,7 +55,12 @@ header {
 
 .Text {
   z-index: 200;
+  width: 100%;
+  height: 100%;
   grid-area: T;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
 .Image {
@@ -76,10 +81,12 @@ header {
 .HTI {grid-template-columns: 50% 50%; grid-template-areas: "T I";}
 .HIT {grid-template-columns: 50% 50%; grid-template-areas: "I T";}
 .HITTT {grid-template-columns: 25% 75%; grid-template-areas: "I T"}
-.CIMG {display: flex; position: relative; >.Image {position: absolute;}}
+.TOTAL {display: flex; position: relative; >.Image {position: absolute;}}
 /* BENTO MODELS -----------------------------------*/
 
 /* TEXT POSITION -----------------------------------*/
+.Mid {>.Text {justify-content: center;}}
+.End {>.Text {justify-content: end;}}
 /* TEXT POSITION -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/
