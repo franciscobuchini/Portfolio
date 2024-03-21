@@ -18,5 +18,5 @@
 .BentoGrid {background-color: var(--mikado)}
 #Me {color: var(--white);}
 
-.Image {background-color: transparent;}
-.Text {background-color: transparent;}
+.Image {background-color: var(--hippieblue);}
+.Text {background-color: var(--white);}

@@ -1,4 +1,4 @@
-export default function Bento({ st, h, p, bg, img, al, url, pcl, hcl, sv, sh }) {
+export default function Bento({ st, sv, sh, h, p, bg, img, al, url, pcl, hcl }) {
 
   const link = () => {window.open(url, "_blank")}
 

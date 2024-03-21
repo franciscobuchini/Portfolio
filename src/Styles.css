@@ -21,7 +21,7 @@ header {
   justify-content:space-between;
   z-index: 1000;
   > img {max-height: 80px;}
-  > p {text-align: right; width: 150px; #Me{font-weight: 700;}}
+  > div {text-align: right; #Me{font-weight: 700;}}
 }
 /* HEADER -----------------------------------*/
 
@@ -32,7 +32,6 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   grid-auto-flow: row dense;
-  grid-auto-rows: 1fr;
   /*Design*/
   border-radius: 20px;
   margin: 0 5px 40px;

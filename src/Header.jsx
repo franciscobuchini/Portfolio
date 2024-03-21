@@ -3,7 +3,10 @@ export default function Header () {
   return (
     <header>
       <img src={Logo}/>
-      <p>Created by <a id='Me' href='https://franciscobuchini.vercel.app/' target="_blank">Francisco Buchini</a></p> 
+      <div>
+        <p>Created by </p>
+        <a id='Me' href='https://franciscobuchini.vercel.app/' target="_blank">Francisco Buchini</a>
+      </div>
     </header>
   )
 }
