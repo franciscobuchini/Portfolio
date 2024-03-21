@@ -7,6 +7,7 @@
   --taxbreak: #426B6A;
   --mikado: #37230F;
   --white: #FFFFFF;
+
   background-color: var(--gold);
   color: var(--mikado);
   font-family: -apple-system, Segoe UI, Roboto;
@@ -16,3 +17,6 @@
 .Bento {&:hover {outline: 4px solid var(--hippieblue);}}
 .BentoGrid {background-color: var(--mikado)}
 #Me {color: var(--white);}
+
+.Image {background-color: transparent;}
+.Text {background-color: transparent;}

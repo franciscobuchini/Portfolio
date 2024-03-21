@@ -1,14 +1,23 @@
-export default function Bento({ size, model, h2, p, bg, img, txpos, link, pcol, h2col }) {
+export default function Bento({ st, h, p, bg, img, al, url, pcl, hcl, sv, sh }) {
 
-  const href = () => {window.open(link, "_blank")}
+  const link = () => {window.open(url, "_blank")}
 
   return (
-    <article onClick={href} className={`Bento ${txpos} ${size} ${model}`} style={{ backgroundColor: `var(--${bg})` }}>
+    <section
+      onClick={link}
+      className={`Bento ${al} ${st}`}
+      style={{
+        backgroundColor: `var(--${bg})`,
+        gridRow: `span ${sv}`,
+        gridColumn: `span ${sh}`,
+        aspectRatio: `${sh}/${sv}`,
+      }}>
+
       <img className="Image" src={img}/>
       <div className="Text">
-        <h2 style={{ color: `var(--${h2col})` }}>{h2}</h2>
-        <p style={{ color: `var(--${pcol})` }}>{p}</p>
+        <h2 style={{ color: `var(--${hcl})` }}>{h}</h2>
+        <p style={{ color: `var(--${pcl})` }}>{p}</p>
       </div>
-    </article>
+    </section>
     )
   }
