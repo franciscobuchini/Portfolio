@@ -13,5 +13,3 @@ function App() {
 }
 
 export default App
-
-{/* Revisar "alt", ".EMPTY" y Navbar */}

@@ -15,6 +15,7 @@ a {cursor: pointer; color: inherit;}
 
 /* HEADER -----------------------------------*/
 header {
+  position: relative;
   width: 100svw;
   display: flex;
   padding: 20px;
@@ -24,7 +25,11 @@ header {
   > img {max-height: 80px;}
   > div {text-align: right; #Me{font-weight: 700;}}
   > nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: 500;
+    top: -150px;
     padding: 20px 40px;
     border-radius: 100px;
     >li {display: flex; gap: 40px;}
@@ -89,7 +94,7 @@ header {
 .HIT {grid-template-columns: 50% 50%; grid-template-areas: "I T";}
 .HITTT {grid-template-columns: 25% 75%; grid-template-areas: "I T"}
 .TOTAL {display: flex; position: relative; >.Image {position: absolute;}}
-.EMPTY:hover {outline: none;}
+.EMPTY { >.Image, .Text {display: none;} &:hover {outline: none;}}
 /* BENTO MODELS -----------------------------------*/
 
 /* TEXT POSITION -----------------------------------*/
@@ -100,6 +105,7 @@ header {
 /* RESPONSIVE -----------------------------------*/
 @media (width > 768px) {
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
+  .Nav {top: auto;}
 }
 /* RESPONSIVE -----------------------------------*/
 

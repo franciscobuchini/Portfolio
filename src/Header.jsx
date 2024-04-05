@@ -3,7 +3,7 @@ export default function Header () {
   return (
     <header>
       <img src={Logo}/>
-      <nav>
+      <nav className='Nav'>
         <li>
           <ul><a>Home</a></ul>
           <ul><a>About Me</a></ul>

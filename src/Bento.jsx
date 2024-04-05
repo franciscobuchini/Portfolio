@@ -4,7 +4,7 @@ export default function Bento({ st, sv, sh, h, p, bg, img, tp, url, pcl, hcl, al
 
   return (
     <section
-      onClick={link}
+      onClick={st !== 'EMPTY' ? link : null}
       className={`Bento ${tp} ${st}`}
       style={{
         backgroundColor: `var(--${bg})`,

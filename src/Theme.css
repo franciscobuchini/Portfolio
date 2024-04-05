@@ -14,10 +14,11 @@
 }
 /* ROOT -------------------------------------------------------*/
 
-.Bento {&:hover {outline: 4px solid var(--hippieblue);}}
 .BentoGrid {background-color: var(--mikado)}
+.Bento {&:hover {outline: 4px solid var(--hippieblue);}}
+
 #Me {color: var(--white);}
 nav {background-color: var(--mikado); color: var(--white);}
 
-.Image {background-color: var(--roseofsharon);}
-.Text {background-color: var(--white);}
+.Image {background-color: var(--taxbreak);}
+.Text {background-color: var(--gold);}
