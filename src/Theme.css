@@ -8,7 +8,7 @@
   --mikado: #37230F;
   --white: #FFFFFF;
 
-  background-color: var(--gold);
+  background-color: var(--roseofsharon);
   color: var(--mikado);
   font-family: -apple-system, Segoe UI, Roboto;
 }
@@ -20,5 +20,5 @@
 #Me {color: var(--white);}
 nav {background-color: var(--mikado); color: var(--white);}
 
-.Image {background-color: var(--taxbreak);}
-.Text {background-color: var(--gold);}
+.Image {background-color: var(--roseofsharon);}
+.Text {background-color: var(--white);}
