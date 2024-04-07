@@ -35,4 +35,4 @@ url: Link.
 pcl: Paragraph Color.
 hcl: Title (H2) Color.
 alt: Image Reference.
-*/}  
+*/}
