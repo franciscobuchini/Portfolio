@@ -1,10 +1,16 @@
 import Bento from './Bento'
-import img1 from './Assets/CafeCafe02.svg'
 
 export default function BentoGrid() {
   return (
     <main className='BentoGrid'>
-
+      <Bento st='IMG' sv='3' sh='2' />
+      <Bento st='IMG' sv='2' sh='4' />
+      <Bento st='IMG' sv='4' sh='2' />
+      <Bento st='IMG' sv='3' sh='4' />
+      <Bento st='IMG' sv='2' sh='2' />
+      <Bento st='IMG' sv='3' sh='2' />
+      <Bento st='IMG' sv='2' sh='4' />
+      <Bento st='IMG' sv='2' sh='2' />
     </main>
     )
   }

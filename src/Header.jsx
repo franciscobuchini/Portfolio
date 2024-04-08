@@ -5,9 +5,7 @@ export default function Header () {
       <img src={Logo}/>
       <nav className='Nav'>
         <li>
-          <ul><a>Home</a></ul>
-          <ul><a>About Me</a></ul>
-          <ul><a>Projects</a></ul>
+          <ul><a>-</a></ul>
         </li>
       </nav>
       <div>
