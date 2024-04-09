@@ -1,4 +1,5 @@
-export default function Bento({ st, sv, sh, h, p, bg, img, tp, url, pcl, hcl, alt }) {
+import React from 'react';
+export default function Bento({ st, sv, sh, h, p, bg, img, tp, url, pcl, hcl, alt, com }) {
 
   const link = () => {window.open(url, "_blank")}
 
@@ -17,6 +18,7 @@ export default function Bento({ st, sv, sh, h, p, bg, img, tp, url, pcl, hcl, al
       <div className="Text">
         <h2 style={{ color: `var(--${hcl})` }}>{h}</h2>
         <p style={{ color: `var(--${pcl})` }}>{p}</p>
+        {com && React.createElement(com)}
       </div>
     </section>
     )

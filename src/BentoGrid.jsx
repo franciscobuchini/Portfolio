@@ -1,5 +1,5 @@
 import Bento from './Bento'
-
+import Switch from './Components/Switch'
 export default function BentoGrid() {
   return (
     <main className='BentoGrid'>
@@ -7,7 +7,7 @@ export default function BentoGrid() {
       <Bento st='IMG' sv='2' sh='4' />
       <Bento st='IMG' sv='4' sh='2' />
       <Bento st='IMG' sv='3' sh='4' />
-      <Bento st='IMG' sv='2' sh='2' />
+      <Bento st='IMG' sv='2' sh='2' com={Switch} />
       <Bento st='IMG' sv='3' sh='2' />
       <Bento st='IMG' sv='2' sh='4' />
       <Bento st='IMG' sv='2' sh='2' />
@@ -28,4 +28,5 @@ url: Link.
 pcl: Paragraph Color.
 hcl: Title (H2) Color.
 alt: Image Reference.
+com: Component.
 */}  
