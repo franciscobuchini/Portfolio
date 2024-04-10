@@ -1,25 +1,30 @@
 import React from 'react';
-export default function Bento({ st, sv, sh, h, p, bg, img, tp, url, pcl, hcl, alt, com }) {
+export default function Bento({ st, sv, sh, h, p, bg, img, tp, ta, url, pcl, hcl, alt, com }) {
 
   const link = () => {window.open(url, "_blank")}
 
   return (
     <section
       onClick={st == 'EMPTY' ? link : null}
-      className={`Bento ${tp} ${st}`}
+      className={`Bento ${st}`}
       style={{
-        backgroundColor: `var(--${bg})`,
+        ...(bg && { backgroundColor: `var(--${bg})` }),
         gridRow: `span ${sv}`,
         gridColumn: `span ${sh}`,
         aspectRatio: `${sh}/${sv}`,
       }}>
 
-      <img className="Image" src={img} alt={alt}/>
-      <div className="Text">
+      {img && <img className="Image" src={img} alt={alt}/>}
+      {(h || p) && (<div className="Text" style={{
+        justifyContent: `${tp}`,
+        textAlign: `${ta}` }}>
         <h2 style={{ color: `var(--${hcl})` }}>{h}</h2>
         <p style={{ color: `var(--${pcl})` }}>{p}</p>
-        {com && React.createElement(com)}
-      </div>
+      </div> )}
+
+      {com && <div className='Component'>
+        {React.createElement(com)}
+      </div> }
     </section>
     )
   }
@@ -33,8 +38,10 @@ p: Paragraph.
 bg: Background Color.
 img: Image.
 tp: Text Position.
+ta: Text Align.
 url: Link.
 pcl: Paragraph Color.
 hcl: Title (H2) Color.
 alt: Image Reference.
+com: Component.
 */}

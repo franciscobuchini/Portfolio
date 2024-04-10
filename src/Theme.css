@@ -15,10 +15,19 @@
 /* ROOT -------------------------------------------------------*/
 
 .BentoGrid {background-color: var(--mikado)}
-.Bento {&:hover {outline: 4px solid var(--hippieblue);}}
+.Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
 
 #Me {color: var(--white);}
 nav {background-color: var(--mikado); color: var(--white);}
 
-.Image {background-color: var(--roseofsharon);}
-.Text {background-color: var(--white);}
+.Switch input {
+  background-color: var(--white);
+  &:checked {background-color: var(--hippieblue);}
+  &:checked::before {background-color: var(--white);}
+  &::before {background-color: var(--hippieblue);}
+}
+
+.Button {
+  background-color: var(--white); color: var(--hippieblue);
+  &:hover {background-color: var(--hippieblue); color: var(--white);}
+}
