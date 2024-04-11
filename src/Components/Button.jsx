@@ -1,6 +1,9 @@
-export default function Button() {
+export default function Button({ url }) {
+
+  const link = () => { if (url) {window.open(url, "_blank")} }
+
   return (
-    <button className="Button">
+    <button className="Button" onClick={link}>
     </button>
     )
   }

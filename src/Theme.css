@@ -7,6 +7,7 @@
   --taxbreak: #426B6A;
   --mikado: #37230F;
   --white: #FFFFFF;
+  --transparent: #00000000;
 
   background-color: var(--gold);
   color: var(--mikado);
@@ -16,6 +17,7 @@
 
 .BentoGrid {background-color: var(--mikado)}
 .Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
+.Transparent:hover {outline: none;}
 
 #Me {color: var(--roseofsharon);}
 nav {background-color: var(--mikado); color: var(--white);}

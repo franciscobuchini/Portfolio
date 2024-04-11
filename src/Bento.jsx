@@ -1,12 +1,11 @@
 import React from 'react';
-export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, Burl, Th, Tp, Tjc, Tta, Thc, Tpc, Iimg, Ialt, Com, Cjc, }) {
+export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, Thc, Tpc, Iimg, Ialt, Com, Cjc, }) {
 
-  const link = () => {window.open(Burl, "_blank")}
+  const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""}`
 
   return (
     <section
-      onClick={Burl == 'EMPTY' ? link : null}
-      className="Bento"
+      className={classNameBento}
       style={{
         ...(Bbg && { backgroundColor: `var(--${Bbg})` }),
         gridRow: `span ${Bsv}`,
@@ -27,7 +26,7 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, Burl, Th, Tp, Tjc, Tta,
       </div> )}
 
       {Com && <div className='Component' style={{ justifyContent: `${Cjc}` }}>
-        {React.createElement(Com)}
+      {React.createElement(Com, { url })}
       </div> }
     </section>
     )
