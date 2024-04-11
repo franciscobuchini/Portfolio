@@ -17,7 +17,7 @@
 .BentoGrid {background-color: var(--mikado)}
 .Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
 
-#Me {color: var(--white);}
+#Me {color: var(--roseofsharon);}
 nav {background-color: var(--mikado); color: var(--white);}
 
 .Switch input {
