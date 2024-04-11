@@ -1,48 +1,56 @@
 import React from 'react';
-export default function Bento({ st, sv, sh, h, p, bgc, img, tp, ta, fd, url, pcl, hcl, alt, com }) {
+export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, Burl, Th, Tp, Tjc, Tta, Thc, Tpc, Iimg, Ialt, Com, Cjc, }) {
 
-  const link = () => {window.open(url, "_blank")}
+  const link = () => {window.open(Burl, "_blank")}
 
   return (
     <section
-      onClick={st == 'EMPTY' ? link : null}
-      className={`Bento ${st}`}
+      onClick={Burl == 'EMPTY' ? link : null}
+      className="Bento"
       style={{
-        ...(bgc && { backgroundColor: `var(--${bgc})` }),
-        gridRow: `span ${sv}`,
-        gridColumn: `span ${sh}`,
-        aspectRatio: `${sh}/${sv}`,
-        flexDirection: `${fd}`
+        ...(Bbg && { backgroundColor: `var(--${Bbg})` }),
+        gridRow: `span ${Bsv}`,
+        gridColumn: `span ${Bsh}`,
+        aspectRatio: `${Bsh}/${Bsv}`,
+        flexDirection: `${Bfd}`,
+        justifyContent: `${Bjc}`,
       }}>
 
-      {img && <img className="Image" src={img} alt={alt}/>}
-      {(h || p) && (<div className="Text" style={{
-        justifyContent: `${tp}`,
-        textAlign: `${ta}` }}>
-        <h2 style={{ color: `var(--${hcl})` }}>{h}</h2>
-        <p style={{ color: `var(--${pcl})` }}>{p}</p>
+      {Iimg && <img className="Image" src={Iimg} alt={Ialt}/>}
+      {(Th || Tp) && (<div className="Text" style={{
+        height: Com ? 'auto' : '100%',
+        width: Com ? 'auto' : '100%',
+        justifyContent: `${Tjc}`,
+        textAlign: `${Tta}` }}>
+        <h2 style={{ color: `var(--${Thc})` }}>{Th}</h2>
+        <p style={{ color: `var(--${Tpc})` }}>{Tp}</p>
       </div> )}
 
-      {com && <div className='Component'>
-        {React.createElement(com)}
+      {Com && <div className='Component' style={{ justifyContent: `${Cjc}` }}>
+        {React.createElement(Com)}
       </div> }
     </section>
     )
   }
 
 {/*
-st: Style / Organization
-sv: Size Vertical.
-sh: Size Horizontal.
-h: Title (H2).
-p: Paragraph.
-bg: Background Color.
-img: Image.
-tp: Text Position.
-ta: Text Align.
-url: Link.
-pcl: Paragraph Color.
-hcl: Title (H2) Color.
-alt: Image Reference.
-com: Component.
+Bsv: Bento - Size Vertical
+Bsh: Bento - Size Horizontal
+Bfd: Bento - Flex Direction
+Bjc: Bento - Justify Content
+Bbg: Bento - Background Color
+Burl: Bento - Link
+
+Th: Text - <H2>
+Tp: Text - <P>
+Tjc: Text - Justify Content
+Tta: Text - Text Align
+Thc: Text - <H2> Color
+Tpc: Text - <P> Color
+
+Iimg: Image - Image
+Ialt: Image - Alt
+
+Com: Component
+Cjc: Component - Justify Content
 */}

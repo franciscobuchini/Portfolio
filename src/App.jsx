@@ -1,5 +1,6 @@
 import BentoGrid from "./BentoGrid"
 import Header from "./Header"
+import Footer from "./Footer"
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
     <>
       <Header/>
       <BentoGrid/>
-      <p className="Bottom">Created by <a id='Me' href='https://franciscobuchini.vercel.app/' target="_blank">Francisco Buchini</a> </p>
+      <Footer/>
     </>
   )
 }
