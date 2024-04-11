@@ -10,10 +10,7 @@
 
 ## Modify:
 
+- npm run build
 - git add .
 - git commit -m "info commit"
 - git push
-
-## Compile:
-
-- npm run build
