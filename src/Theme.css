@@ -8,7 +8,7 @@
   --mikado: #37230F;
   --white: #FFFFFF;
 
-  background-color: var(--roseofsharon);
+  background-color: var(--gold);
   color: var(--mikado);
   font-family: -apple-system, Segoe UI, Roboto;
 }
@@ -22,12 +22,12 @@ nav {background-color: var(--mikado); color: var(--white);}
 
 .Switch input {
   background-color: var(--white);
-  &:checked {background-color: var(--hippieblue);}
+  &:checked {background-color: var(--mikado);}
   &:checked::before {background-color: var(--white);}
-  &::before {background-color: var(--hippieblue);}
+  &::before {background-color: var(--mikado);}
 }
 
 .Button {
-  background-color: var(--white); color: var(--hippieblue);
-  &:hover {background-color: var(--hippieblue); color: var(--white);}
+  background-color: var(--white); color: var(--mikado);
+  &:hover {background-color: var(--mikado); color: var(--white);}
 }

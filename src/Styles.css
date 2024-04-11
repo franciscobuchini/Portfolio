@@ -70,7 +70,8 @@ header {
 .Bento {
   /*Grid*/
   overflow: hidden;
-  display: grid;
+  display: flex;
+  position: relative;
   width: 100%;
   height: 100%;
   /*Design*/
@@ -94,7 +95,6 @@ header {
   z-index: 200;
   width: 100%;
   height: 100%;
-  grid-area: T;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -104,7 +104,7 @@ header {
 }
 
 .Image {
-  grid-area: I;
+  position: absolute;
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -115,13 +115,6 @@ header {
 /* BENTO -----------------------------------*/
 
 /* BENTO MODELS -----------------------------------*/
-.VTI {grid-template-rows: 50% 50%; grid-template-areas: "T""I";}
-.VIT {grid-template-rows: 50% 50%; grid-template-areas: "I""T";}
-.VTIII {grid-template-rows: 25% 75%; grid-template-areas: "T""I";}
-.HTI {grid-template-columns: 50% 50%; grid-template-areas: "T I";}
-.HIT {grid-template-columns: 50% 50%; grid-template-areas: "I T";}
-.HITTT {grid-template-columns: 25% 75%; grid-template-areas: "I T"}
-.IMG {display: flex; position: relative; >.Image {position: absolute;}}
 .EMPTY { >.Image, .Text {display: none;} &:hover {outline: none;}}
 /* BENTO MODELS -----------------------------------*/
 
@@ -138,7 +131,6 @@ header {
 /* RESPONSIVE -----------------------------------*/
 
 /* COMPONENTS -----------------------------------*/
-
 .Button, .Switch input {
   width: var(--size);
   height: calc(var(--size) / 2);

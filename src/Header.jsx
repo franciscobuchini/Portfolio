@@ -1,4 +1,4 @@
-import Logo from './Assets/Logo.svg'
+import Logo from './Assets/Logo.webp'
 export default function Header () {
   return (
     <header>

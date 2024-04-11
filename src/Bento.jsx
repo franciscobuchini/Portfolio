@@ -1,5 +1,5 @@
 import React from 'react';
-export default function Bento({ st, sv, sh, h, p, bg, img, tp, ta, url, pcl, hcl, alt, com }) {
+export default function Bento({ st, sv, sh, h, p, bgc, img, tp, ta, fd, url, pcl, hcl, alt, com }) {
 
   const link = () => {window.open(url, "_blank")}
 
@@ -8,10 +8,11 @@ export default function Bento({ st, sv, sh, h, p, bg, img, tp, ta, url, pcl, hcl
       onClick={st == 'EMPTY' ? link : null}
       className={`Bento ${st}`}
       style={{
-        ...(bg && { backgroundColor: `var(--${bg})` }),
+        ...(bgc && { backgroundColor: `var(--${bgc})` }),
         gridRow: `span ${sv}`,
         gridColumn: `span ${sh}`,
         aspectRatio: `${sh}/${sv}`,
+        flexDirection: `${fd}`
       }}>
 
       {img && <img className="Image" src={img} alt={alt}/>}
