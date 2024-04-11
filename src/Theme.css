@@ -23,13 +23,13 @@
 nav {background-color: var(--mikado); color: var(--white);}
 
 .Switch input {
-  background-color: var(--white);
+  background-color: var(--white); outline: 1px solid var(--christine);
   &:checked {background-color: var(--mikado);}
   &:checked::before {background-color: var(--white);}
   &::before {background-color: var(--mikado);}
 }
 
 .Button {
-  background-color: var(--white); color: var(--mikado);
+  background-color: var(--white); color: var(--mikado); outline: 1px solid var(--christine);
   &:hover {background-color: var(--mikado); color: var(--white);}
 }
