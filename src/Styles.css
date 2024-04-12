@@ -39,7 +39,7 @@ header {
     transform: translateX(-50%);
     font-weight: 500;
     top: -150px;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-radius: 100px;
     >li {
       display: flex;

@@ -5,7 +5,8 @@
 - git init
 - git add .
 - git commit -m "first commit"
-- git remote add origin https://...
+- git branch -M main
+- git remote add origin https://... .git
 - git push -u origin main
 
 ## Modify:
