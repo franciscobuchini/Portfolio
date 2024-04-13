@@ -8,6 +8,7 @@
   --mikado: #37230F;
   --white: #FFFFFF;
   --transparent: #00000000;
+  --darktransparent: #14292d50;
 
   background-color: var(--gold);
   color: var(--mikado);
@@ -23,15 +24,15 @@
 nav {background-color: var(--mikado); color: var(--white);}
 
 .Button, .Switch input {
-  background-color: var(--white); color: var(--mikado); outline: 2px solid var(--christine);
+  background-color: var(--transparent); color: var(--white); outline: 2px solid var(--white);
 }
 
 .Switch input {
-  &:checked {background-color: var(--mikado);}
+  &:checked {background-color: var(--darktransparent);}
   &:checked::before {background-color: var(--white);}
-  &::before {background-color: var(--mikado);}
+  &::before {background-color: var(--white);}
 }
 
 .Button {
-  &:hover {background-color: var(--mikado); color: var(--white);}
+  &:hover {background-color: var(--darktransparent); color: var(--white);}
 }

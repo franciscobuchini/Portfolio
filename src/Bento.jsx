@@ -2,10 +2,12 @@ import React from 'react';
 export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, Thc, Tpc, Iimg, Ialt, Com, Cjc, }) {
 
   const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""}`
+  const link = Com !== "Button" && url ? () => window.open(url, "_blank") : undefined
 
   return (
     <section
       className={classNameBento}
+      onClick={link}
       style={{
         ...(Bbg && { backgroundColor: `var(--${Bbg})` }),
         gridRow: `span ${Bsv}`,
@@ -13,6 +15,7 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
         aspectRatio: `${Bsh}/${Bsv}`,
         flexDirection: `${Bfd}`,
         justifyContent: `${Bjc}`,
+        cursor: link ? 'pointer' : 'auto',
       }}>
 
       {Iimg && <img className="Image" src={Iimg} alt={Ialt}/>}
@@ -31,7 +34,7 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
     </section>
     )
   }
-
+  
 {/*
 Bsv: Bento - Size Vertical
 Bsh: Bento - Size Horizontal

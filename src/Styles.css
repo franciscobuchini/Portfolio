@@ -80,6 +80,7 @@ footer {text-align: center; padding: 60px 0 20px;}
   border-radius: 10px;
   transition: 0.2s;
   &:hover {
+    transform: scale(1.01);
     >.Image {transform: scale(1.04);}
     >.Component .Button::before{content: "See more";}
   }
@@ -112,11 +113,6 @@ footer {text-align: center; padding: 60px 0 20px;}
   transition: transform 2s ease;
 }
 /* BENTO -----------------------------------*/
-
-/* BENTO MODELS -----------------------------------*/
-.EMPTY { >.Image, .Text {display: none;} &:hover {outline: none;}}
-/* BENTO MODELS -----------------------------------*/
-
 
 /* RESPONSIVE -----------------------------------*/
 @media (width > 770px) {
