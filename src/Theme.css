@@ -16,23 +16,57 @@
 }
 /* ROOT -------------------------------------------------------*/
 
-.BentoGrid {background-color: var(--mikado)}
-.Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
-.Transparent:hover {outline: none;}
+/* THEME LIGHT -------------------------------------------------------*/
 
-#Me {color: var(--roseofsharon);}
-nav {background-color: var(--mikado); color: var(--white);}
+/* THEME LIGHT -------------------------------------------------------*/
 
-.Button, .Switch input {
-  background-color: var(--transparent); color: var(--white); outline: 2px solid var(--white);
+/* THEME DARK -------------------------------------------------------*/
+
+/* THEME DARK -------------------------------------------------------*/
+
+
+[data-theme="light"] {
+  .BentoGrid {background-color: var(--mikado)}
+  .Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
+  .Transparent:hover {outline: none;}
+
+  #Me {color: var(--roseofsharon);}
+  nav {background-color: var(--mikado); color: var(--white);}
+
+  .Button, .Switch input {
+    background-color: var(--transparent); color: var(--white); outline: 2px solid var(--white);
+  }
+
+  .Switch input {
+    &:checked {background-color: var(--darktransparent);}
+    &:checked::before {background-color: var(--white);}
+    &::before {background-color: var(--white);}
+  }
+
+  .Button {
+    &:hover {background-color: var(--darktransparent); color: var(--white);}
+  }
 }
 
-.Switch input {
-  &:checked {background-color: var(--darktransparent);}
-  &:checked::before {background-color: var(--white);}
-  &::before {background-color: var(--white);}
-}
+[data-theme="dark"] {
+  .BentoGrid {background-color: var(--mikado)}
+  .Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
+  .Transparent:hover {outline: none;}
 
-.Button {
-  &:hover {background-color: var(--darktransparent); color: var(--white);}
+  #Me {color: var(--roseofsharon);}
+  nav {background-color: var(--mikado); color: var(--white);}
+
+  .Button, .Switch input {
+    background-color: var(--transparent); color: var(--white); outline: 2px solid var(--white);
+  }
+
+  .Switch input {
+    &:checked {background-color: var(--darktransparent);}
+    &:checked::before {background-color: var(--white);}
+    &::before {background-color: var(--white);}
+  }
+
+  .Button {
+    &:hover {background-color: var(--darktransparent); color: var(--white);}
+  }
 }
