@@ -3,7 +3,7 @@ export default function Footer () {
     <footer>
       <div>
         <p>Created by </p>
-        <a id='Me' href='https://franciscobuchini.vercel.app/' target="_blank">Francisco Buchini</a>
+        <a className='Me' href='https://franciscobuchini.vercel.app/' target="_blank">Francisco Buchini</a>
       </div>
     </footer>
   )

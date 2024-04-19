@@ -5,19 +5,18 @@ export default function ThemeSwitch() {
 
   const ThemeSwitch = () => {
     setIsChecked(!isChecked)
-    // Aquí puedes agregar lógica para cambiar el tema del sitio web
     if (!isChecked) {
-      // Cambiar al tema oscuro
+      // Change to dark theme
       document.documentElement.setAttribute('data-theme', 'dark')
     } else {
-      // Cambiar al tema claro
+      // Change to light theme
       document.documentElement.setAttribute('data-theme', 'light')
     }
-  };
+  }
 
   return (
     <label className="Switch">
       <input type="checkbox" checked={isChecked} onChange={ThemeSwitch} />
     </label>
-  );
+  )
 }

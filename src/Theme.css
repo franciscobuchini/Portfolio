@@ -17,19 +17,17 @@
   --darkmikado: #150c04;
   --black: #000000;
 
-  color: var(--mikado);
   font-family: -apple-system, Segoe UI, Roboto;
 }
 /* ROOT -------------------------------------------------------*/
 
 /* THEME LIGHT -------------------------------------------------------*/
-[data-theme="light"] {
-  body {background-color: var(--gold);}
+  body {background-color: var(--gold); color: var(--mikado);}
   .BentoGrid {background-color: var(--mikado)}
   .Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
   .Transparent:hover {outline: none;}
 
-  #Me {color: var(--roseofsharon);}
+  .Me {color: var(--roseofsharon);}
   nav {background-color: var(--mikado); color: var(--white);}
 
   .Button, .Switch input {
@@ -45,17 +43,16 @@
   .Button {
     &:hover {background-color: var(--darktransparent); color: var(--white);}
   }
-}
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
 [data-theme="dark"] {
-  body {background-color: var(--darkchristine);}
-  .BentoGrid {background-color: var(--darkmikado)}
+  body {background-color: var(--darkmikado); color: var(--white);}
+  .BentoGrid {background-color: var(--black)}
   .Bento {background-color: var(--darkroseofsharon); &:hover {outline: 4px solid var(--darkhippieblue);}}
   .Transparent:hover {outline: none;}
 
-  #Me {color: var(--gold);}
+  .Me {color: var(--gold);}
   nav {background-color: var(--darkmikado); color: var(--white);}
 
   .Button, .Switch input {
