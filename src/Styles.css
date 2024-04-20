@@ -145,7 +145,12 @@ footer {text-align: center; padding: 60px 0 20px;}
   position: relative;
 }
 
-.Button {&::before {content: "➜";}}
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {content: "➜";}
+}
 
 .Switch {
   height: calc(var(--size) / 2);
