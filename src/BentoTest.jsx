@@ -66,6 +66,8 @@ Tpc: Text - <P> Color
 
 IBimg: Image Back - Image
 IBalt: Image Back - Alt
+IDimg: Image Dispel - Image
+IDalt: Image Dispel - Alt
 IFimg: Image Front - Image
 IFalt: Image Front - Alt
 
