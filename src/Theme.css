@@ -53,7 +53,7 @@
   .Transparent:hover {outline: none;}
 
   .Me {color: var(--gold);}
-  nav {background-color: var(--darkmikado); color: var(--white);}
+  nav {background-color: var(--mikado); color: var(--white);}
 
   .Button, .Switch input {
     background-color: var(--transparent); color: var(--white); outline: 2px solid var(--darkgold);

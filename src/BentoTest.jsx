@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, Thc, Tpc, Iimg, Ialt, Com, Cjc }) {
+export default function BentoTest({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, Cjc }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
   const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""}`
@@ -22,8 +22,11 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
         cursor: link ? 'pointer' : 'auto',
       }}>
 
-      {Iimg && <img className="Image" src={Iimg} alt={Ialt}/>}
-      
+      {IBimg && <img className="Image ImageBack" src={IBimg} alt={IBalt}/>}
+      {IDimg && <img className="Image ImageDispel" src={IDimg} alt={IDalt}/>}
+      {IFimg && <img className="Image ImageFront" src={IFimg} alt={IFalt}/>}
+
+
       {(Th || Tp) && (
         <div className="Text" style={{
           height: Com ? 'auto' : '100%',
@@ -61,8 +64,10 @@ Tta: Text - Text Align
 Thc: Text - <H2> Color
 Tpc: Text - <P> Color
 
-Iimg: Image - Image
-Ialt: Image - Alt
+IBimg: Image Back - Image
+IBalt: Image Back - Alt
+IFimg: Image Front - Image
+IFalt: Image Front - Alt
 
 Com: Component
 Cjc: Component - Justify Content
