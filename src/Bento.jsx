@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, Cjc }) {
+export default function Bento({ Bsv, Bsh, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
   const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""}`
 
   // Open link in new tab if URL exists and component is not a button
-  const link = Com !== "Button" && url ? () => window.open(url, "_blank") : undefined
+  const link = Com !== "Button" && Url ? () => window.open(Url, "_blank") : undefined
 
   return (
     <section
@@ -17,8 +17,6 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
         gridRow: `span ${Bsv}`,
         gridColumn: `span ${Bsh}`,
         aspectRatio: `${Bsh}/${Bsv}`,
-        flexDirection: `${Bfd}`,
-        justifyContent: `${Bjc}`,
         cursor: link ? 'pointer' : 'auto',
       }}>
 
@@ -31,8 +29,6 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
         <div className="Text" style={{
           height: Com ? 'auto' : '100%',
           width: Com ? 'auto' : '100%',
-          justifyContent: `${Tjc}`,
-          textAlign: `${Tta}`
         }}>
           <h2 style={{ color: `var(--${Thc})` }}>{Th}</h2>
           <p style={{ color: `var(--${Tpc})` }}>{Tp}</p>
@@ -41,8 +37,8 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
 
       
       {Com && ( // Add a custom component
-        <div className='Component' style={{ justifyContent: `${Cjc}` }}>
-          {React.createElement(Com, { url })}
+        <div className='Component'>
+          {React.createElement(Com, { Url })}
         </div>
       )}
     </section>
@@ -50,10 +46,10 @@ export default function Bento({ Bsv, Bsh, Bfd, Bjc, Bbg, url, Th, Tp, Tjc, Tta, 
 }
 
 /* 
-Bsv: Bento - Size Vertical
-Bsh: Bento - Size Horizontal
-Bfd: Bento - Flex Direction
-Bjc: Bento - Justify Content
+Bsv: Bento - Size Vertical [1 to N]
+Bsh: Bento - Size Horizontal [1 to 4]
+Bfd: Bento - Flex Direction [row, row-reverse, column, column-reverse]
+Bjc: Bento - Justify Content [center, space-between]
 Bbg: Bento - Background Color
 Burl: Bento - Link
 
@@ -61,6 +57,7 @@ Th: Text - <H2>
 Tp: Text - <P>
 Tjc: Text - Justify Content
 Tta: Text - Text Align
+Tas: Text - Align Self
 Thc: Text - <H2> Color
 Tpc: Text - <P> Color
 
@@ -73,4 +70,5 @@ IFalt: Image Front - Alt
 
 Com: Component
 Cjc: Component - Justify Content
+Cas: Component - Align Self
 */
