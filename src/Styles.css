@@ -127,6 +127,7 @@ footer {text-align: center; padding: 60px 0 20px;}
 .B6 {>.Text{text-align: center;} >.Component{align-self: center;}}
 .B7 {justify-content: center; >.Text{text-align: center;} >.Component{align-self: center;}}
 .B8 {justify-content: center;}
+.B9 {>.Text, .Component {justify-content: center; text-align: center;}}
 /* BENTO STYLES -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/

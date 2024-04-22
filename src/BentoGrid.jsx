@@ -5,7 +5,7 @@ export default function BentoGrid() {
 
   return (
     <main className='BentoGrid'>
-      <Bento Bsv='2' Bsh='4' Bbg='taxbreak' Th='Proximas tareas:' Tp='1) Animación y mods para botones. 2) Investigar patrones y probar backgrounds parallax. 3) Logo Bento UI.' Tpc='white' Tta='center' Tjc='center' />
+      <Bento Bsv='2' Bsh='4' Bbg='taxbreak' Th='Proximas tareas:' Tp='1) Animación y mods para botones. 2) Investigar patrones y probar backgrounds parallax. 3) Logo Bento UI. 4) justify content para un solo elemento y no dos.' Tpc='white' Tta='center' Tjc='center' />
       <Bento Bsv='2' Bsh='8' Bst='B1' Th='Proximas tareas:' Tp='1) Animación y mods para botones. 2) Investigar patrones y probar backgrounds parallax. 3) Logo Bento UI.' Com={Button} />
       <Bento Bsv='2' Bsh='4' Bst='B2' Th='Proximas tareas:' Tp='1) Animación y mods para botones. 2) Investigar patrones y probar backgrounds parallax. 3) Logo Bento UI.' Com={Button} />
       <Bento Bsv='2' Bsh='4' Bst='B3' Th='Proximas tareas:' Tp='1) Animación y mods para botones. 2) Investigar patrones y probar backgrounds parallax. 3) Logo Bento UI.' Com={Button} />
