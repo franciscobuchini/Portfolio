@@ -62,7 +62,6 @@
   .Switch input {
     &:checked {background-color: var(--darktransparent);}
     &:checked::before {background-color: var(--darkgold);}
-    &::before {background-color: var(--darkgold);}
   }
 
   .Button {
