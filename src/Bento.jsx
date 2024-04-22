@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
+export default function Bento({ Bsv, Bsh, Bst, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
-  const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""}`
+  const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst}`
 
   // Open link in new tab if URL exists and component is not a button
   const link = Com !== "Button" && Url ? () => window.open(Url, "_blank") : undefined
@@ -36,7 +36,7 @@ export default function Bento({ Bsv, Bsh, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBa
       )}
 
       
-      {Com && ( // Add a custom component
+      {Com && ( // Add the custom component
         <div className='Component'>
           {React.createElement(Com, { Url })}
         </div>
@@ -48,16 +48,11 @@ export default function Bento({ Bsv, Bsh, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBa
 /* 
 Bsv: Bento - Size Vertical [1 to N]
 Bsh: Bento - Size Horizontal [1 to 4]
-Bfd: Bento - Flex Direction [row, row-reverse, column, column-reverse]
-Bjc: Bento - Justify Content [center, space-between]
+Bst: Bento - Style [B1, B2, B3, B4, B5, B6, B7, B8]
 Bbg: Bento - Background Color
-Burl: Bento - Link
 
 Th: Text - <H2>
 Tp: Text - <P>
-Tjc: Text - Justify Content
-Tta: Text - Text Align
-Tas: Text - Align Self
 Thc: Text - <H2> Color
 Tpc: Text - <P> Color
 
@@ -68,7 +63,7 @@ IDalt: Image Dispel - Alt
 IFimg: Image Front - Image
 IFalt: Image Front - Alt
 
-Com: Component
-Cjc: Component - Justify Content
-Cas: Component - Align Self
+Url: Bento or Com - Link
+
+Com: Component [{Button}, {ThemeSwitch}]
 */

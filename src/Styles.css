@@ -70,9 +70,11 @@ footer {text-align: center; padding: 60px 0 20px;}
 }
 
 .Bento {
-  /*Grid*/
+  /*Flex*/
   overflow: hidden;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   height: 100%;
@@ -82,7 +84,6 @@ footer {text-align: center; padding: 60px 0 20px;}
   border-radius: 10px;
   transition: 0.2s;
   &:hover {
-    transform: scale(1.01);
     >.ImageBack {transform: scale(1.04);}
     >.ImageDispel {  transition: opacity 1s; opacity: 0;}
     >.Component .Button::before{content: "See more";}
@@ -116,6 +117,17 @@ footer {text-align: center; padding: 60px 0 20px;}
   transition: transform 2s ease;
 }
 /* BENTO -----------------------------------*/
+
+/* BENTO STYLES -----------------------------------*/
+.B1 {justify-content: flex-start;}
+.B2 {justify-content: center;}
+.B3 {>.Component{align-self: flex-start;}}
+.B4 {>.Component{align-self: flex-end;}}
+.B5 {>.Text{text-align: right;} >.Component{align-self: flex-start;}}
+.B6 {>.Text{text-align: right;} >.Component{align-self: flex-end;}}
+.B7 {>.Text{text-align: center;} >.Component{align-self: center;}}
+.B8 {justify-content: center; >.Text{text-align: center;} >.Component{align-self: center;}}
+/* BENTO STYLES -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/
 @media (width > 770px) {
