@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 export default function ThemeSwitch() {
-  const [isChecked, setIsChecked] = useState(false)
+  let [isChecked, setIsChecked] = useState(false)
 
-  const ThemeSwitch = () => {
+  let ThemeSwitch = () => {
     setIsChecked(!isChecked)
     if (!isChecked) {
       // Change to dark theme

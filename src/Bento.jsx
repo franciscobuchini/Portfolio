@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Bento({ Bsv, Bsh, Bst, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
 
-  // If background is transparent this means: no interaction if hover the Bento.
-  const classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst}`
+  // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
+  let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst} ${Bsh > 4 ? " Large" : ""}`
 
   // Open link in new tab if URL exists and component is not a button
-  const link = Com !== "Button" && Url ? () => window.open(Url, "_blank") : undefined
+  let link = Com !== "Button" && Url ? () => window.open(Url, "_blank") : undefined
 
   return (
     <section
@@ -47,7 +47,7 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, Url, Th, Tp, Thc, Tpc, IBimg
 
 /* 
 Bsv: Bento - Size Vertical [1 to N]
-Bsh: Bento - Size Horizontal [1 to 4]
+Bsh: Bento - Size Horizontal [1 to 8]
 Bst: Bento - Style [B1, B2, B3, B4, B5, B6, B7, B8]
 Bbg: Bento - Background Color
 
