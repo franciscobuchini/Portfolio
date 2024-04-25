@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bst, Bbg, Url, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
+export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
 
   // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
   let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst} ${Bsh > 4 ? " Large" : ""}`
 
-  // Open link in new tab if URL exists and component is not a button
-  let link = Com !== "Button" && Url ? () => window.open(Url, "_blank") : undefined
+  // Open link in new tab if Lurl exists and component is not a button
+  let link = Com !== "Button" && Lurl ? () => window.open(Lurl, "_blank") : undefined
 
   return (
     <section
@@ -38,7 +38,7 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, Url, Th, Tp, Thc, Tpc, IBimg
       
       {Com && ( // Add the custom component
         <div className='Component'>
-          {React.createElement(Com, { Url })}
+          {React.createElement(Com, { Lurl })}
         </div>
       )}
     </section>
@@ -63,7 +63,7 @@ IDalt: Image Dispel - Alt
 IFimg: Image Front - Image
 IFalt: Image Front - Alt
 
-Url: Bento or Com - Link
+Lurl: Bento or Com - Link
 
 Com: Component [{Button}, {ThemeSwitch}]
 */

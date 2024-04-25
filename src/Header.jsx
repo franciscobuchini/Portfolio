@@ -4,9 +4,9 @@ export default function Header () {
     <header>
       <img src={Logo} alt="BentoBox UI Logo"/>
       <nav className='Nav'>
-        <li>
-          <ul><a>-</a></ul>
-        </li>
+        <ul>
+          <li><a>-</a></li>
+        </ul>
       </nav>
       <div>
         <p>Created by </p>
