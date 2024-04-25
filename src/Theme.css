@@ -19,7 +19,7 @@
 /* THEME LIGHT -------------------------------------------------------*/
   body {background-color: var(--light); color: var(--light);}
   .BentoGrid {background-color: var(--darktransparent)}
-  .Bento {background-color: var(--primarylight); &:hover {outline: 4px solid var(--primarylight);}}
+  .Bento {background-color: var(--primarylight); &:hover {outline: 4px solid var(--primarydark);}}
   .Transparent:hover {outline: none;}
 
   .CreatedBy {color: var(--dark);}
@@ -33,10 +33,10 @@
   }
 
   .Switch input {
-    &:checked {background-color: var(--primarylight);}
+    &:checked {background-color: var(--primarydark);}
     &:checked::before {background-color: var(--primarydark);}
     &::before {background-color: var(--light);}
-    &:hover::before {background-color: var(--primarylight);}
+    &:hover::before {background-color: var(--primarydark);}
     
   }
 /* THEME LIGHT -------------------------------------------------------*/
@@ -45,7 +45,7 @@
 [data-theme="dark"] {
   body {background-color: var(--black); color: var(--white);}
   .BentoGrid {background-color: var(--darktransparent)}
-  .Bento {background-color: var(--primarydark); &:hover {outline: 4px solid var(--secondarydark);}}
+  .Bento {background-color: var(--primarylight); &:hover {outline: 4px solid var(--secondarydark);}}
   .Transparent:hover {outline: none;}
 
   .CreatedBy {color: var(--light);}
