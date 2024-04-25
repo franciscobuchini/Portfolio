@@ -8,13 +8,15 @@
   text-wrap: pretty;
   list-style-type: none;
   border: none;
+  overflow: hidden;
   &:focus {appearance: none; border: none; outline: none;}
 }
 #root {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: min-content;
+  width: 100%;
   --size: 100px;
 }
 a {cursor: pointer; color: inherit;}
@@ -49,7 +51,12 @@ header {
   }
 }
 
-footer {text-align: center; padding: 60px 0 20px;}
+footer {
+  text-align: center;
+  padding: 60px 0 20px;
+  height: fit-content;
+  width: 100%;
+}
 .Me{font-weight: 600;}
 /* OUTSIDE -----------------------------------*/
 
@@ -61,11 +68,10 @@ footer {text-align: center; padding: 60px 0 20px;}
   height: max-content;
   flex-direction: row;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto 1fr;
+  grid-auto-rows: auto;
   grid-auto-flow: row dense;
   /*Design*/
   border-radius: 20px;
-  margin: 0 5px;
   padding: 12px;
   gap: 12px;
 }
@@ -78,9 +84,7 @@ footer {text-align: center; padding: 60px 0 20px;}
   justify-content: space-between;
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: calc(var(--size) * 2);
-  max-height: fit-content;
+  min-height: max-content;
   /*Design*/
   border-radius: 10px;
   transition: 0.2s;
@@ -133,11 +137,12 @@ footer {text-align: center; padding: 60px 0 20px;}
 
 /* RESPONSIVE -----------------------------------*/
 @media (width <= 770px) {
-  .Large {grid-column: span 4 !important;}
+  .Large {grid-column: span 4 !important;} 
+  
 }
 
 @media (width > 770px) {
-  .BentoGrid {grid-template-columns: repeat(8, 1fr); margin: 0 40px; padding: 20px; gap: 20px;} 
+  .BentoGrid {grid-template-columns: repeat(8, 1fr); padding: 20px; gap: 20px;} 
   .Nav {top: auto;}
   .Text, .Component {padding: 10px;}
   h2 {font-size: 1.1rem;}
