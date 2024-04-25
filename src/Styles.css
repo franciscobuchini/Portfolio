@@ -56,9 +56,10 @@ footer {text-align: center; padding: 60px 0 20px;}
 /* BENTO -----------------------------------*/
 .BentoGrid {
   /*Grid*/
-  width: 98%;
-  height: max-content;
   display: grid;
+  width: 100%;
+  height: max-content;
+  flex-direction: row;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto, 1fr;
   grid-auto-flow: row dense;
