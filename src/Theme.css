@@ -1,71 +1,61 @@
 /* ROOT -------------------------------------------------------*/
 :root {
-  --gold: #F2C491;
-  --christine: #D6661A;
-  --roseofsharon: #BA441A;
-  --hippieblue: #2C8396;
-  --taxbreak: #426B6A;
-  --mikado: #37230F;
-  --white: #FFFFFF;
-  --transparent: #00000000;
-  --darktransparent: #14292d50;
-  --darkgold: #916e47;
-  --darkchristine: #934613;
-  --darkroseofsharon: #843112;
-  --darkhippieblue: #1b5e6d;
-  --darktaxbreak: #274847;
-  --darkmikado: #150c04;
-  --black: #000000;
+  --primarylight: #669bbc;
+  --primarydark: #003049;
+  --secondarylight: #c11272;
+  --secondarydark: #78003a;
+  --light: #fdf0d5;
 
+  --white: #FAFAFA;
+  --black: #1E1E1E;
+  --darktransparent: #0000002c;
+  --transparent: #00000000;
+ 
   font-family: -apple-system, Segoe UI, Roboto;
 }
 /* ROOT -------------------------------------------------------*/
 
 /* THEME LIGHT -------------------------------------------------------*/
-  body {background-color: var(--gold); color: var(--mikado);}
-  .BentoGrid {background-color: var(--mikado)}
-  .Bento {background-color: var(--roseofsharon); &:hover {outline: 4px solid var(--hippieblue);}}
+  body {background-color: var(--light); color: var(--black);}
+  .BentoGrid {background-color: var(--darktransparent)}
+  .Bento {background-color: var(--primarylight); &:hover {outline: 4px solid var(--secondarydark);}}
   .Transparent:hover {outline: none;}
 
-  .Me {color: var(--roseofsharon);}
-  nav {background-color: var(--mikado); color: var(--white);}
+  .Me {color: var(--secondarylight);}
+  nav {background-color: var(--darktransparent); color: var(--primarydark);}
+
 
   .Button, .Switch input {
-    background-color: var(--transparent); color: var(--white); outline: 2px solid var(--white);
+    background-color: var(--primarylight); color: var(--primarydark); outline: 2px solid var(--primarydark);
+    &:hover {background-color: var(--darktransparent); color: var(--white); outline: 4px solid var(--white)}
   }
 
   .Switch input {
-    &:checked {background-color: var(--darktransparent);}
-    &:checked::before {background-color: var(--white);}
-    &::before {background-color: var(--white);}
-  }
-
-  .Button {
-    &:hover {background-color: var(--darktransparent); color: var(--white);}
+    &:checked {background-color: var(--primarylight);}
+    &:checked::before {background-color: var(--primarydark);}
+    &::before {background-color: var(--primarydark);}
+    &:hover::before {background-color: var(--white);}
+    
   }
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
 [data-theme="dark"] {
-  body {background-color: var(--darkmikado); color: var(--white);}
-  .BentoGrid {background-color: var(--black)}
-  .Bento {background-color: var(--darkroseofsharon); &:hover {outline: 4px solid var(--darkhippieblue);}}
+  body {background-color: var(--black); color: var(--white);}
+  .BentoGrid {background-color: var(--darktransparent)}
+  .Bento {background-color: var(--primarydark); &:hover {outline: 4px solid var(--secondarydark);}}
   .Transparent:hover {outline: none;}
 
-  .Me {color: var(--gold);}
-  nav {background-color: var(--mikado); color: var(--white);}
+  .Me {color: var(--secondarylight);}
+  nav {background-color: var(--darktransparent); color: var(--primarylight);}
+  h2 {color: var(--secondarylight);}
 
   .Button, .Switch input {
-    background-color: var(--transparent); color: var(--white); outline: 2px solid var(--darkgold);
-  }
-
-  .Switch input {
+    background-color: var(--transparent); color: var(--white); outline: 2px solid var(--white);
+    &:hover {background-color: var(--darktransparent); color: var(--secondarylight); outline: 4px solid var(--secondarylight)}
     &:checked {background-color: var(--darktransparent);}
-    &:checked::before {background-color: var(--darkgold);}
-  }
-
-  .Button {
-    &:hover {background-color: var(--darktransparent); color: var(--white);}
+    &:checked::before {background-color: var(--white);}
+    &:hover:checked::before {background-color: var(--secondarylight);}
   }
 }
 /* THEME DARK -------------------------------------------------------*/

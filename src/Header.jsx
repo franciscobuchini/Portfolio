@@ -2,7 +2,7 @@ import Logo from './Assets/Logo.webp'
 export default function Header () {
   return (
     <header>
-      <img src={Logo}/>
+      <img src={Logo} alt="BentoBox UI Logo"/>
       <nav className='Nav'>
         <li>
           <ul><a>-</a></ul>

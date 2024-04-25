@@ -31,7 +31,7 @@ header {
   place-items: center;
   justify-content:space-between;
   z-index: 1000;
-  > img {max-height: 80px;}
+  > img {max-height: 80px; cursor: pointer;}
   > div {text-align: right;}
   > nav {
     position: absolute;
