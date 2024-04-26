@@ -198,11 +198,16 @@ footer {
   overflow: hidden;
   /*Design*/
   border-radius: 10px;
+
   div {
+    height: 100%;
+    width: 100%;
     transition: 0.5s;
     overflow: hidden;
     .H_imprint {display: none;}
-    div { div { a {display: none;} } }
+    div { div {
+      div {display: none;}
+      a {display: none;} } }
   }
   &:hover {div {transform: scale(1.04);}}
 }
