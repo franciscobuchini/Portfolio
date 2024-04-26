@@ -20,7 +20,7 @@
 /* THEME LIGHT -------------------------------------------------------*/
 body {background-color: var(--light); color: var(--light);}
 .BentoGrid {background-color: var(--darktransparent)}
-.Bento {background-color: var(--primarylight);}
+.Bento {background-color: var(--primarylight); &:hover {outline: 4px solid var(--primarydark);}}
 .Transparent:hover {outline: none;}
 
 .CreatedBy {color: var(--dark);}
