@@ -193,4 +193,17 @@ footer {
     &:checked::before {left: 50%;}
   }
 }
+
+.Map {
+  overflow: hidden;
+  /*Design*/
+  border-radius: 10px;
+  div {
+    transition: 0.5s;
+    overflow: hidden;
+    .H_imprint {display: none;}
+    div { div { a {display: none;} } }
+  }
+  &:hover {div {transform: scale(1.04);}}
+}
 /* COMPONENTS -----------------------------------*/
