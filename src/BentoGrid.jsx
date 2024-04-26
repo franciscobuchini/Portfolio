@@ -2,7 +2,6 @@ import Bento from './Bento'
 import Map from './Components/Map'
 import ProgressBar from './Components/ProgressBar'
 import ThemeSwitch from './Components/ThemeSwitch'
-import Button from './Components/Button'
 
 export default function BentoGrid() {
   return (

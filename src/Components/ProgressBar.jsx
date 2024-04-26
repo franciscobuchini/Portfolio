@@ -9,8 +9,7 @@ const ProgressBar = ({ PBn, PBd, PBh }) => {
         <div className="ProgressBarX" style={{ width: `${percentage}%`}}></div>
       </div>
     </div>
-
-  );
-};
+  )
+}
 
 export default ProgressBar;

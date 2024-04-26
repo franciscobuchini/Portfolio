@@ -21,7 +21,7 @@ export default function Map({ Bsv, Bsh }) {
   return (
     <section
       id="mapContainer"
-      className="Map Bento"
+      className="Map"
       style={{
         gridRow: `span ${Bsv}`,
         gridColumn: `span ${Bsh}`,

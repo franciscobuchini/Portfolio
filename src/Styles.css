@@ -196,18 +196,21 @@ footer {
 
 .Map {
   overflow: hidden;
+  position: relative;
   /*Design*/
   border-radius: 10px;
-
   div {
+    position: absolute;
     height: 100%;
     width: 100%;
-    transition: 0.5s;
     overflow: hidden;
     .H_imprint {display: none;}
-    div { div {
+    div {
+      div {
+      canvas {height: 100% !important; width: 100% !important;}
       div {display: none;}
-      a {display: none;} } }
+      a {display: none;} }
+    }
   }
 }
 
