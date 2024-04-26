@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, }) {
+export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd }) {
 
   // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
   let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst} ${Bsh > 4 ? " Large" : ""}`
@@ -38,7 +38,7 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBim
       
       {Com && ( // Add the custom component
         <div className='Component'>
-          {React.createElement(Com, { Lurl })}
+          {React.createElement(Com, { Lurl, PBn, PBd })}
         </div>
       )}
     </section>
@@ -64,6 +64,8 @@ IFimg: Image Front - Image
 IFalt: Image Front - Alt
 
 Lurl: Bento or Com - Link
+PBn
+PBd
 
-Com: Component [{Button}, {ThemeSwitch}]
+Com: Component [{Button}, {ThemeSwitch}, {ProgressBar}]
 */
