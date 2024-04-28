@@ -8,7 +8,7 @@
   text-wrap: pretty;
   list-style-type: none;
   border: none;
-  overflow-x: hidden;
+  overflow: hidden;
   &:focus {appearance: none; border: none; outline: none;}
 }
 #root {
@@ -76,12 +76,11 @@ footer {
 
 .Bento {
   /*Flex*/
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 100%;
+  min-width: 100%;
   min-height: max-content;
   /*Design*/
   border-radius: 10px;
@@ -106,9 +105,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  overflow: hidden;
   height: 100%;
-  >p {overflow: hidden;}
 }
 
 .Image {
@@ -175,7 +172,6 @@ footer {
 }
 
 .Switch {
-  overflow: hidden;
   height: calc(var(--size) / 2);
   >input{
     &::before {
@@ -194,7 +190,6 @@ footer {
 }
 
 .Map {
-  overflow: hidden;
   position: relative;
   /*Design*/
   border-radius: 10px;
@@ -202,7 +197,6 @@ footer {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
     .H_imprint {display: none;}
     div {
       div {
@@ -217,16 +211,15 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  h3 {padding: 10px 0; text-align: left;}
   .ProgressBar100 {
     width: 100%;
     height: 20px;
     border-radius: 5px;
-    overflow: hidden;
     .ProgressBarX {
       height: 100%;
       text-align: center;
       line-height: 20px;
-      overflow: hidden;
     }
   }
 }

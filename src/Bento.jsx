@@ -16,7 +16,7 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBim
         ...(Bbg && { backgroundColor: `var(--${Bbg})` }),
         gridRow: `span ${Bsv}`,
         gridColumn: `span ${Bsh}`,
-        aspectRatio: `${Bsh}/${Bsv}`,
+        
         cursor: link ? 'pointer' : 'auto',
       }}>
 
