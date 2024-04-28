@@ -39,6 +39,10 @@ nav {background-color: var(--darktransparent); color: var(--primarydark);}
   &::before {background-color: var(--light);}
   &:hover::before {background-color: var(--primarylight);}
 }
+
+.ProgressBar {h3 {color: var(--light);}}
+.ProgressBar100 {background-color: var(--darktransparent);}
+.ProgressBarX {background-color: var(--light);}
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
@@ -60,5 +64,9 @@ nav {background-color: var(--darktransparent); color: var(--primarydark);}
     &:checked::before {background-color: var(--white);}
     &:hover:checked::before {background-color: var(--secondarylight);}
   }
+
+  .ProgressBar {h3 {color: white;}}
+  .ProgressBar100 {border: 1px solid #ccc;}
+  .ProgressBarX {background-color: #007bff;}
 }
 /* THEME DARK -------------------------------------------------------*/

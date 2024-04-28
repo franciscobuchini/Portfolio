@@ -98,6 +98,7 @@ footer {
   align-items: center;
   z-index: 300;
   padding: 10px;
+  width: 100%;
 }
 
 .Text {
@@ -123,14 +124,13 @@ footer {
 
 /* BENTO STYLES -----------------------------------*/
 .B1 {justify-content: flex-start;}
-.B2 {>.Component{align-self: flex-start;}}
-.B3 {>.Component{align-self: flex-end;}}
-.B4 {>.Text{text-align: right;} >.Component{align-self: flex-start;}}
-.B5 {>.Text{text-align: right;} >.Component{align-self: flex-end;}}
-.B6 {>.Text{text-align: center;} >.Component{align-self: center;}}
-.B7 {justify-content: center; >.Text{text-align: center;} >.Component{align-self: center;}}
+.B2 {>.Component{justify-content: left;}}
+.B3 {>.Component{justify-content: right;}}
+.B4 {>.Text{text-align: right;} >.Component{justify-content: left;}}
+.B5 {>.Text{text-align: right;} >.Component{justify-content: right;}}
+.B6 {>.Text{text-align: center;} >.Component{justify-content: center;}}
+.B7 {justify-content: center; >.Text, .Component {justify-content: center; text-align: center;}}
 .B8 {justify-content: center;}
-.B9 {>.Text, .Component {justify-content: center; text-align: center;}}
 /* BENTO STYLES -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/
@@ -152,7 +152,6 @@ footer {
 
 @media (width > 1000px) {
   .BentoGrid { max-width:1000px;} 
-
 }
 /* RESPONSIVE -----------------------------------*/
 
@@ -218,17 +217,13 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  h3 {padding-right: 10px;}
   .ProgressBar100 {
     width: 100%;
     height: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
     .ProgressBarX {
       height: 100%;
-      background-color: #007bff;
-      color: white;
       text-align: center;
       line-height: 20px;
       overflow: hidden;
