@@ -4,7 +4,7 @@ const ProgressBar = ({ PBn, PBd, PBh }) => {
 
   return (
     <div className="ProgressBar">
-      <h3>{PBh}</h3>
+      <div className="Text"> <h3>{PBh}</h3> </div>
       <div className="ProgressBar100">
         <div className="ProgressBarX" style={{ width: `${percentage}%`}}></div>
       </div>

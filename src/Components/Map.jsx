@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-export default function Map({ Bsv, Bsh }) {
+export default function Map({ Bsv, Bsh, Th }) {
   useEffect(() => {
     // Aquí puedes ejecutar código específico para inicializar el mapa después de que el DOM esté completamente cargado
     var platform = new H.service.Platform({ 'apikey': 'd7uc0gBf8RxxYH4FpQQ8nzNhvxqcTAJYrt77_2RS6OQ' })
@@ -8,7 +8,7 @@ export default function Map({ Bsv, Bsh }) {
     var defaultLayers = platform.createDefaultLayers()
 
     var map = new H.Map(
-      document.getElementById('mapContainer'),
+      document.getElementById('MapContainer'),
       defaultLayers.vector.normal.map,
       {
         zoom: 10,
@@ -19,14 +19,13 @@ export default function Map({ Bsv, Bsh }) {
   }, []) // Utilizamos un array vacío de dependencias para asegurar que el efecto se ejecute solo una vez
 
   return (
-    <section
-      id="mapContainer"
-      className="Map"
-      style={{
-        gridRow: `span ${Bsv}`,
-        gridColumn: `span ${Bsh}`,
-        aspectRatio: `${Bsh}/${Bsv}`,
-      }}>
+    <section className="MapSection" style={{
+      gridRow: `span ${Bsv}`,
+      gridColumn: `span ${Bsh}`,
+      aspectRatio: `${Bsh}/${Bsv}`,
+    }}>
+      <div id="MapContainer" className="Map"> </div>
+      <div className="Text"> <h2>{Th}</h2> </div>
     </section>
   )
 }

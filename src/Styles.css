@@ -192,29 +192,33 @@ footer {
   }
 }
 
-.Map {
-  position: relative;
+.MapSection {
   /*Design*/
   border-radius: 10px;
-  div {
+  position: relative;
+  .Map {
     position: absolute;
     height: 100%;
     width: 100%;
-    .H_imprint {display: none;}
     div {
+      .H_imprint {display: none;}
       div {
-      canvas {height: 100% !important; width: 100% !important;}
-      div {display: none;}
-      a {display: none;} }
+        div {
+        canvas {height: 100% !important; width: 100% !important;}
+        div {display: none;}
+        a {display: none;} }
+      }
     }
   }
+  .Text {position: absolute;}
 }
+
 
 .ProgressBar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  h3 {padding: 10px 0; text-align: left;}
+  .Text {padding: 0 0 10px 0;}
   .ProgressBar100 {
     width: 100%;
     height: 20px;

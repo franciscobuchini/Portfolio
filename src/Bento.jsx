@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBh }) {
+export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBh }) {
 
   // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
   let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst} ${Bsh > 4 ? " Large" : ""}`
@@ -30,8 +30,8 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, Lurl, Th, Tp, Thc, Tpc, IBim
           height: Com ? 'auto' : '100%',
           width: Com ? 'auto' : '100%',
         }}>
-          <h2 style={{ color: `var(--${Thc})` }}>{Th}</h2>
-          <p style={{ color: `var(--${Tpc})` }}>{Tp}</p>
+          <h2>{Th}</h2>
+          <p>{Tp}</p>
         </div>
       )}
 
@@ -53,8 +53,6 @@ Bbg: Bento - Background Color
 
 Th: Text - <H2>
 Tp: Text - <P>
-Thc: Text - <H2> Color
-Tpc: Text - <P> Color
 
 IBimg: Image Back - Image
 IBalt: Image Back - Alt
