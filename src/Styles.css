@@ -107,7 +107,6 @@ footer {
   z-index: 200;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   height: 100%;
 }
 
@@ -210,7 +209,13 @@ footer {
       }
     }
   }
-  .Text {position: absolute;}
+  .Text {
+    position: absolute;
+    height: min-content;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
 }
 
 
