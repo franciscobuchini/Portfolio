@@ -4,9 +4,14 @@ const ProgressBar = ({ PBn, PBd, PBh }) => {
 
   return (
     <div className="ProgressBar">
-      <div className="Text"> <h3>{PBh}</h3> </div>
-      <div className="ProgressBar100">
-        <div className="ProgressBarX" style={{ width: `${percentage}%`}}></div>
+      <div className="PBImg">
+        <img/>
+      </div>
+      <div className="PB">
+        <div className="Text"> <h3>{PBh}</h3> </div>
+        <div className="PB100">
+        <div className="PBX" style={{ width: `${percentage}%`}}></div>
+      </div>
       </div>
     </div>
   )

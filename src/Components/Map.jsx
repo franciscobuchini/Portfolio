@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-export default function Map({ Bsv, Bsh, Th }) {
+export default function Map({ Bsv, Bsh, ARc, Th }) {
   useEffect(() => {
     // Aquí puedes ejecutar código específico para inicializar el mapa después de que el DOM esté completamente cargado
     let platform = new H.service.Platform({ 'apikey': 'd7uc0gBf8RxxYH4FpQQ8nzNhvxqcTAJYrt77_2RS6OQ' })

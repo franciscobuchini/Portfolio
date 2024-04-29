@@ -100,14 +100,12 @@ footer {
   align-items: center;
   z-index: 300;
   padding: 10px;
-  width: 100%;
 }
 
 .Text {
   z-index: 200;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .Image {
@@ -219,21 +217,20 @@ footer {
   }
 }
 
-
 .ProgressBar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  .Text {padding: 0 0 10px 0;}
-  .ProgressBar100 {
+  gap: 10px;
+  .PBImg {
+    background-color: yellow;
+    height: 50px;
+    min-width: 50px;}
+  .PB {
     width: 100%;
-    height: 20px;
-    border-radius: 5px;
-    .ProgressBarX {
-      height: 100%;
-      text-align: center;
-      line-height: 20px;
-    }
+    .Text {padding: 0 0 5px 0; text-align: left;}
+    .PB100 {width: 100%; height: 20px; border-radius: 5px;}
+    .PBX { height: 100%; text-align: center;}
   }
 }
 /* COMPONENTS -----------------------------------*/

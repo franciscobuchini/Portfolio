@@ -17,7 +17,6 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IB
         gridRow: `span ${Bsv}`,
         gridColumn: `span ${Bsh}`,
         ...(ARc && { aspectRatio: `${Bsh}/${Bsv}`}),
-        
         cursor: link ? 'pointer' : 'auto',
       }}>
 
