@@ -22,7 +22,7 @@ export default function Map({ Bsv, Bsh, Th }) {
     <section className="Map" style={{
       gridRow: `span ${Bsv}`,
       gridColumn: `span ${Bsh}`,
-      aspectRatio: `${Bsh}/${Bsv}`,
+      ...(ARc && { aspectRatio: `${Bsh}/${Bsv}`}),
     }}>
       <div id="MapContainer" className="MapDiv"> </div>
       <div className="Text"> <h2>{Th}</h2> </div>
