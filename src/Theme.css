@@ -21,7 +21,7 @@ body {background-color: var(--light); color: var(--black);}
 .BentoGrid {background-color: var(--transparent15dark)}
 .Bento, .Map {background-color: var(--transparent15dark); &:hover {outline: 4px solid var(--primary);}}
 .Text {>h2{color: var(--dark);} >h3{color: var(--dark);} >p{color: var(--transparent30dark);}}
-.MapSection .Text {background-color: var(--transparent);}
+.Map .Text {background-color: var(--transparent);}
 .Transparent:hover {outline: none;}
 
 .CreatedBy {color: var(--transparent30dark);}
@@ -50,7 +50,7 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
   .BentoGrid {background-color: var(--transparent15dark)}
   .Bento, .Map {background-color: var(--transparent); &:hover {outline: 4px solid var(--secondary);}}
   .Text {>h2{color: var(--white);} >h3{color: var(--transparent30light);} >p{color: var(--transparent30light);}}
-  .MapSection .Text {background-color: var(--transparent30dark);}
+  .Map .Text {background-color: var(--transparent30dark);}
   .Transparent:hover {outline: none;}
 
   .CreatedBy {color: var(--transparent30light);}

@@ -191,11 +191,11 @@ footer {
   }
 }
 
-.MapSection {
+.Map {
   /*Design*/
   border-radius: 10px;
   position: relative;
-  .Map {
+  .MapDiv {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -203,9 +203,10 @@ footer {
       .H_imprint {display: none;}
       div {
         div {
-        canvas {height: 100% !important; width: 100% !important;}
-        div {display: none;}
-        a {display: none;} }
+          canvas {height: 100% !important; width: 100% !important;}
+          div {display: none;}
+          a {display: none;}
+        }
       }
     }
   }
@@ -213,7 +214,7 @@ footer {
     position: absolute;
     height: min-content;
     border-radius: 5px;
-    padding: 5px;
+    padding: 0 5px 4px;
     margin: 5px;
   }
 }
