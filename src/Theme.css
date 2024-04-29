@@ -40,8 +40,9 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
   &:hover::before {background-color: var(--primary);}
 }
 
-.PB100 {background-color: var(--transparent15dark);}
-.PBX {background-color: var(--light);}
+.PBimg img {opacity: 1;}
+.PB100 {background-color: var(--transparent30light);}
+.PBX {background-color: var(--white);}
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
@@ -65,7 +66,8 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
     &:hover:checked::before {background-color: var(--secondary);}
   }
 
+  .PBimg img {opacity: 0.30;}
   .PB100 {background-color: var(--transparent15light);}
-  .PBX {background-color: var(--white);}
+  .PBX {background-color: var(--secondary);}
 }
 /* THEME DARK -------------------------------------------------------*/
