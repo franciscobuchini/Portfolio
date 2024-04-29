@@ -85,6 +85,7 @@ footer {
   position: relative;
   min-width: 100%;
   min-height: max-content;
+  padding: 15px;
   /*Design*/
   border-radius: 10px;
   transition: 0.2s;
