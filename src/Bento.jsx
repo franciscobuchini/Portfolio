@@ -64,7 +64,8 @@ IDalt: Image Dispel - Alt
 IFimg: Image Front - Image
 IFalt: Image Front - Alt
 
-Lurl: Bento or Com - Link
+Lurl: Bento or Component - Link
+
 PBn: ProgressBar - Numerator
 PBd: ProgressBar - Denominator
 PBh: ProgressBar - <H3>
