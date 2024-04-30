@@ -27,11 +27,12 @@ body {background-color: var(--light); color: var(--black);}
 .CreatedBy {color: var(--transparent30dark);}
 .Me {color: var(--primary);}
 nav {background-color: var(--transparent15dark); color: var(--black);}
+header svg { rect {stroke: var(--primary);} path {fill: var(--transparent30dark);}}
 
 
 .Button, .Switch input {
   background-color: var(--transparent15dark); color: var(--white);
-  &:hover {background-color: var(--transparent15dark); color: var(--white);}
+  &:hover {background-color: var(--transparent15dark); color: var(--primary);}
 }
 
 .Switch input {
@@ -42,7 +43,7 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
 
 .PBimg img {opacity: 1;}
 .PB100 {background-color: var(--transparent15dark);}
-.PBX {background-color: var(--transparent15dark);}
+.PBX {background-color: var(--primary);}
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
@@ -54,13 +55,15 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
   .Map .Text h2{color: var(--black);}
   .Transparent:hover {outline: none;}
 
+
   .CreatedBy {color: var(--transparent30light);}
   .Me {color: var(--secondary);}
   nav {background-color: var(--transparent15dark); color: var(--white);}
+  header svg { rect {stroke: var(--secondary);} path {fill: var(--transparent15light);}}
 
   .Button, .Switch input {
     background-color: var(--transparent30dark); color: var(--white);
-    &:hover {background-color: var(--transparent30dark); color: var(--white);}
+    &:hover {background-color: var(--transparent30dark); color: var(--secondary);}
     &:checked {background-color: var(--transparent30dark);}
     &:checked::before {background-color: var(--white);}
     &:hover:checked::before {background-color: var(--secondary);}
