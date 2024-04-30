@@ -91,7 +91,7 @@ footer {
   position: relative;
   min-width: 100%;
   min-height: max-content;
-  padding: 15px;
+
   /*Design*/
   border-radius: 10px;
   transition: 0.2s;
@@ -140,6 +140,7 @@ footer {
 
 /* RESPONSIVE -----------------------------------*/
 @media (width <= 770px) {
+  .Text {padding: 10px;}
   .Large {grid-column: span 4 !important;} 
   h2 {font-size: 1rem;}
   h3 {font-size: 0.8rem;}
@@ -150,13 +151,16 @@ footer {
   .BentoGrid {grid-template-columns: repeat(8, 1fr); padding: 16px; gap: 16px;} 
   .Nav {top: auto;}
   .Text {padding: 10px;}
-  h2 {font-size: 1.4rem;}
-  h3 {font-size: 1.1rem;}
+  h2 {font-size: 1.2rem;}
+  h3 {font-size: 1rem;}
   p {font-size: 1rem;}
 }
 
 @media (width > 1000px) {
   .BentoGrid { max-width:1170px;} 
+  h2 {font-size: 1.4rem;}
+  h3 {font-size: 1.1rem;}
+  p {font-size: 1.1rem;}
 }
 /* RESPONSIVE -----------------------------------*/
 
