@@ -19,8 +19,8 @@ export default function BentoGrid() {
       <Map Bsv='4' Bsh='2' Th='My location:' ARc='Y' theme={theme} />
       <Bento Bsv='1' Bsh='2' Bst='B7' PBn='4' PBd='10' PBt='React:' PBimg={ReactImg} Com={ProgressBar}/>
       <Bento Bsv='2' Bsh='2' Bst='B7' Th='Theme switcher:' Com={() => <ThemeSwitch onChange={handleSwitch} />} />
-      <Bento Bsv='2' Bsh='2' Bst='B7' Th='Theme switcher:' Com={Button} />
-      <Bento Bsv='2' Bsh='2' Bst='B7' Th='Theme switcher:' Com={Download} />
+      <Bento Bsv='2' Bsh='2' Bst='B7' Th='Button example:' Com={Button} />
+      <Bento Bsv='2' Bsh='2' Bst='B7' Th='Download example:' Com={Download} />
     </main>
   )
 }
