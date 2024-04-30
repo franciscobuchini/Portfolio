@@ -1,3 +1,4 @@
+//COMPONENTS/THEMESWITCH.JSX
 import React, { useState, useEffect } from 'react';
 
 export default function ThemeSwitch({ onChange }) {

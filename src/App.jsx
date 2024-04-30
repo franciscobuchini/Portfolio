@@ -1,3 +1,4 @@
+// APP.JSX
 import BentoGrid from "./BentoGrid"
 import Header from "./Header"
 import Footer from "./Footer"

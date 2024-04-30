@@ -1,3 +1,4 @@
+// COMPONENTS/MAP.JSX
 import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 

@@ -1,3 +1,4 @@
+// BENTO.JSX
 import React from 'react'
 
 export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg }) {
