@@ -2,7 +2,7 @@
 :root {
   --primary: #2C8396;
   --secondary: #BA441A;
-  --light: #fdf0d5;
+  --light: #F7F2F2;
   --dark: #322e25;
   --white: #FAFAFA;
   --black: #1E1E1E;
@@ -18,8 +18,8 @@
 
 /* THEME LIGHT -------------------------------------------------------*/
 body {background-color: var(--light); color: var(--black);}
-.BentoGrid {background-color: var(--transparent15dark)}
-.Bento, .Map {background-color: var(--transparent15dark); &:hover {outline: 4px solid var(--primary);}}
+.BentoGrid {background-color: var(--white)}
+.Bento, .MapComponent {background-color: var(--transparent); &:hover {outline: 4px solid var(--primary);}}
 .Text {>h2{color: var(--black);} >h3{color: var(--black);} >p{color: var(--transparent30dark);}}
 .Map .Text h2 {color: var(--black);}
 .Transparent:hover {outline: none;}
@@ -30,26 +30,26 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
 
 
 .Button, .Switch input {
-  background-color: var(--transparent15dark); color: var(--light);
-  &:hover {background-color: var(--transparent15dark); color: var(--light);}
+  background-color: var(--transparent15dark); color: var(--white);
+  &:hover {background-color: var(--transparent15dark); color: var(--white);}
 }
 
 .Switch input {
   &:checked {background-color: var(--primary);}
-  &::before {background-color: var(--light);}
+  &::before {background-color: var(--white);}
   &:hover::before {background-color: var(--primary);}
 }
 
 .PBimg img {opacity: 1;}
-.PB100 {background-color: var(--transparent30light);}
-.PBX {background-color: var(--white);}
+.PB100 {background-color: var(--transparent15dark);}
+.PBX {background-color: var(--transparent15dark);}
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
 [data-theme="dark"] {
   body {background-color: var(--black); color: var(--white);}
   .BentoGrid {background-color: var(--transparent15dark)}
-  .Bento, .Map {background-color: var(--transparent); &:hover {outline: 4px solid var(--secondary);}}
+  .Bento, .MapComponent {background-color: var(--transparent); &:hover {outline: 4px solid var(--secondary);}}
   .Text {>h2{color: var(--white);} >h3{color: var(--white);} >p{color: var(--transparent30light);}}
   .Map .Text h2{color: var(--black);}
   .Transparent:hover {outline: none;}

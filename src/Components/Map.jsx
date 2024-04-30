@@ -13,7 +13,7 @@ export default function Map({ Bsv, Bsh, ARc, Th, theme }) {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       center: [-119.950676, 39.244233],
-      zoom: 12,
+      zoom: 10,
       style: style,
     });
 

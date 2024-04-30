@@ -9,7 +9,9 @@
   list-style-type: none;
   border: none;
   overflow: hidden;
+  letter-spacing: 0.2px;
   &:focus {appearance: none; border: none; outline: none;}
+
 }
 
 html, body {overflow-y: auto;}
@@ -141,16 +143,16 @@ footer {
 }
 
 @media (width > 770px) {
-  .BentoGrid {grid-template-columns: repeat(8, 1fr); padding: 20px; gap: 20px;} 
+  .BentoGrid {grid-template-columns: repeat(8, 1fr); padding: 16px; gap: 16px;} 
   .Nav {top: auto;}
   .Text {padding: 10px;}
-  h2 {font-size: 1.2rem;}
-  h3 {font-size: 1rem;}
-  p {font-size: 0.9rem;}
+  h2 {font-size: 1.4rem;}
+  h3 {font-size: 1.1rem;}
+  p {font-size: 1rem;}
 }
 
 @media (width > 1000px) {
-  .BentoGrid { max-width:1000px;} 
+  .BentoGrid { max-width:1170px;} 
 }
 /* RESPONSIVE -----------------------------------*/
 
