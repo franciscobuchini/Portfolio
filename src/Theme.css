@@ -26,9 +26,11 @@ body {background-color: var(--light); color: var(--black);}
 
 .CreatedBy {color: var(--transparent30dark);}
 .Me {color: var(--primary);}
-nav {background-color: var(--transparent15dark); color: var(--black);}
-header svg { rect {stroke: var(--primary);} path {fill: var(--transparent30dark);}}
 
+header {
+  nav {background-color: var(--transparent15dark); color: var(--black);}
+  svg {rect {stroke: var(--primary);} path {fill: var(--transparent30dark);}}
+}
 
 .Button, .Switch input {
   background-color: var(--transparent15dark); color: var(--white);
@@ -58,8 +60,10 @@ header svg { rect {stroke: var(--primary);} path {fill: var(--transparent30dark)
 
   .CreatedBy {color: var(--transparent30light);}
   .Me {color: var(--secondary);}
-  nav {background-color: var(--transparent15dark); color: var(--white);}
-  header svg { rect {stroke: var(--secondary);} path {fill: var(--transparent15light);}}
+  header {
+    nav {background-color: var(--transparent15dark); color: var(--white);}
+    svg {rect {stroke: var(--secondary);} path {fill: var(--transparent15light);}}
+  }
 
   .Button, .Switch input {
     background-color: var(--transparent30dark); color: var(--white);

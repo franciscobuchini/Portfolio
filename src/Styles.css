@@ -40,7 +40,10 @@ header {
     height: 62px;
     width: 62px;
     cursor: pointer;
+    rect {stroke-width: 10px;}
+    &:hover { rect {stroke-width: 40px;}}
   }
+
   > div {text-align: right;}
   > nav {
     position: absolute;
@@ -107,7 +110,7 @@ footer {
   display: flex;
   align-items: center;
   z-index: 300;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .Text {
