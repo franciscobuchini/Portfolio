@@ -1,7 +1,7 @@
 /* ROOT -------------------------------------------------------*/
 :root {
-  --primary: #2C8396;
-  --secondary: #BA441A;
+  --primary: #118ab2;
+  --secondary: #A13D63;
   --light: #F7F2F2;
   --dark: #322e25;
   --white: #FAFAFA;
@@ -66,7 +66,7 @@ nav {background-color: var(--transparent15dark); color: var(--black);}
     &:hover:checked::before {background-color: var(--secondary);}
   }
 
-  .PBimg img {opacity: 0.30;}
+  .PBimg img {opacity: 0.7;}
   .PB100 {background-color: var(--transparent15light);}
   .PBX {background-color: var(--secondary);}
 }
