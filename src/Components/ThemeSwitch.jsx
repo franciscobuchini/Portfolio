@@ -1,16 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default function ThemeSwitch({ ThemeChange }) {
+export default function ThemeSwitch({ onChange }) {
   const [isChecked, setIsChecked] = useState(false);
 
-  let handleSwitch = () => {
-    setIsChecked(!isChecked);
+  useEffect(() => {
+    // Update the switch state to match the current theme
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+      setIsChecked(true);
+    } else {
+      setIsChecked(false);
+    }
+  }, []);
+
+  const handleSwitch = () => {
+    const newCheckedState = !isChecked;
+    setIsChecked(newCheckedState);
+    onChange(newCheckedState); // Toggle the theme state
 
     if (!isChecked) {
-      ThemeChange('dark'); // Cambiar a tema oscuro
+      // Change to dark theme
       document.documentElement.setAttribute('data-theme', 'dark');
     } else {
-      ThemeChange('light'); // Cambiar a tema claro
+      // Change to light theme
       document.documentElement.setAttribute('data-theme', 'light');
     }
   };
