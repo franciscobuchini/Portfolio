@@ -19,8 +19,10 @@
 /* THEME LIGHT -------------------------------------------------------*/
 body {background-color: var(--light); color: var(--black);}
 .BentoGrid {background-color: var(--transparent30light)}
-.Bento, .MapComponent {background-color: var(--white); &:hover {outline: 4px solid var(--primary);}}
-.Text {>h2{color: var(--black);} >h3{color: var(--black);} >p{color: var(--transparent30dark);}}
+.Bento, .MapComponent {
+  background-color: var(--white);
+  .Text {>h2{color: var(--black);} >h3{color: var(--black);} >p{color: var(--black);}}
+  &:hover {outline: 4px solid var(--primary);}}
 .Map .Text h2 {color: var(--black);}
 .Transparent:hover {outline: none;}
 

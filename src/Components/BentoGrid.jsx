@@ -5,7 +5,7 @@ export default function BentoGrid( props ) {
     <article>
       <Separator/>
       <div className='TitleBentoGrid'>
-        <div className="Text">
+        <div className="TextTitleBentoGrid">
             <h1>{props.Sh}</h1>
             <p>{props.Sp}</p>
           </div>
