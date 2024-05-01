@@ -126,7 +126,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-width: 100%;
+  min-width: 150px;
   min-height: max-content;
 
   /*Design*/
