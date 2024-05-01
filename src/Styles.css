@@ -91,11 +91,10 @@ article {
     width: 100%;
     height: 25rem;
   }
-  svg {width: 100%;}
 }
 
 .TitleBentoGrid {
-  margin-top: -400px;
+  margin-top: -500px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -182,6 +181,7 @@ article {
   .Large {grid-column: span 4 !important;} 
   h2 {font-size: 1rem;}
   a, h3, p {font-size: 0.8rem;}
+  .Separator svg {width: 200%;}
 }
 
 @media (width > 770px) {
@@ -190,6 +190,7 @@ article {
   .Text {padding: 10px;}
   h2 {font-size: 1.2rem;}
   a, h3, p {font-size: 1rem;}
+  .Separator svg {width: 150%;}
 }
 
 @media (width > 1000px) {
@@ -197,6 +198,7 @@ article {
   .BentoGrid { max-width:1170px;} 
   h2 {font-size: 1.3rem;}
   a, h3, p {font-size: 1rem;}
+  .Separator svg {width: 100%;}
 }
 /* RESPONSIVE -----------------------------------*/
 
