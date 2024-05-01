@@ -28,6 +28,8 @@ a {cursor: pointer; color: inherit;}
 /* NORMALIZE -----------------------------------*/
 
 /* OUTSIDE -----------------------------------*/
+.Me{font-weight: 600;}
+
 header {
   position: relative;
   width: 100%;
@@ -43,7 +45,6 @@ header {
     rect {stroke-width: 10px;}
     &:hover { rect {stroke-width: 40px;}}
   }
-
   > div {text-align: right;}
   > nav {
     position: absolute;
@@ -67,12 +68,45 @@ footer {
   height: fit-content;
   width: 100%;
 }
-.Me{font-weight: 600;}
+
+article {
+  margin-top: -50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
 /* OUTSIDE -----------------------------------*/
 
 /* BENTO -----------------------------------*/
+.Separator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+  }
+  svg {width: 100%;}
+}
+
+.TitleBentoGrid {
+  margin-top: -400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
 .BentoGrid {
   /*Grid*/
+  z-index: 500;
   display: grid;
   width: 100%;
   height: max-content;
@@ -143,11 +177,11 @@ footer {
 
 /* RESPONSIVE -----------------------------------*/
 @media (width <= 770px) {
+  .TitleBentoGrid .Text {padding: 0 12px;}
   .Text {padding: 10px;}
   .Large {grid-column: span 4 !important;} 
   h2 {font-size: 1rem;}
-  h3 {font-size: 0.8rem;}
-  p {font-size: 0.7rem;}
+  a, h3, p {font-size: 0.8rem;}
 }
 
 @media (width > 770px) {
@@ -155,15 +189,14 @@ footer {
   .Nav {top: auto;}
   .Text {padding: 10px;}
   h2 {font-size: 1.2rem;}
-  h3 {font-size: 1rem;}
-  p {font-size: 1rem;}
+  a, h3, p {font-size: 1rem;}
 }
 
 @media (width > 1000px) {
+  .TitleBentoGrid .Text {max-width:800px;}
   .BentoGrid { max-width:1170px;} 
-  h2 {font-size: 1.4rem;}
-  h3 {font-size: 1.1rem;}
-  p {font-size: 1.1rem;}
+  h2 {font-size: 1.3rem;}
+  a, h3, p {font-size: 1rem;}
 }
 /* RESPONSIVE -----------------------------------*/
 

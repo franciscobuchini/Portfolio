@@ -1,4 +1,3 @@
-import Logo from './Assets/Logo.svg'
 export default function Header () {
   return (
     <header>

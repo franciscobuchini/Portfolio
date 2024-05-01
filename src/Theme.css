@@ -18,8 +18,8 @@
 
 /* THEME LIGHT -------------------------------------------------------*/
 body {background-color: var(--light); color: var(--black);}
-.BentoGrid {background-color: var(--white)}
-.Bento, .MapComponent {background-color: var(--transparent); &:hover {outline: 4px solid var(--primary);}}
+.BentoGrid {background-color: var(--transparent30light)}
+.Bento, .MapComponent {background-color: var(--white); &:hover {outline: 4px solid var(--primary);}}
 .Text {>h2{color: var(--black);} >h3{color: var(--black);} >p{color: var(--transparent30dark);}}
 .Map .Text h2 {color: var(--black);}
 .Transparent:hover {outline: none;}
@@ -31,6 +31,12 @@ header {
   nav {background-color: var(--transparent15dark); color: var(--black);}
   svg {rect {stroke: var(--primary);} path {fill: var(--transparent30dark);}}
 }
+
+.Separator {
+  div {background-color: var(--primary);}
+  svg {fill: var(--primary);}
+}
+.TitleBentoGrid { h1 {color: var(--white);} p {color: var(--white);}}
 
 .Button, .Switch input {
   background-color: var(--transparent15dark); color: var(--white);
@@ -52,18 +58,24 @@ header {
 [data-theme="dark"] {
   body {background-color: var(--black); color: var(--white);}
   .BentoGrid {background-color: var(--transparent15dark)}
-  .Bento, .MapComponent {background-color: var(--transparent); &:hover {outline: 4px solid var(--secondary);}}
+  .Bento, .MapComponent {background-color: var(--black); &:hover {outline: 4px solid var(--secondary);}}
   .Text {>h2{color: var(--white);} >h3{color: var(--white);} >p{color: var(--transparent30light);}}
   .Map .Text h2{color: var(--black);}
   .Transparent:hover {outline: none;}
 
-
   .CreatedBy {color: var(--transparent30light);}
   .Me {color: var(--secondary);}
+
   header {
     nav {background-color: var(--transparent15dark); color: var(--white);}
     svg {rect {stroke: var(--secondary);} path {fill: var(--transparent15light);}}
   }
+
+  .Separator {
+    div {background-color: var(--secondary);}
+    svg {fill: var(--secondary);}
+  }
+  .TitleBentoGrid { h1 {color: var(--white);} p {color: var(--white);}}
 
   .Button, .Switch input {
     background-color: var(--transparent30dark); color: var(--white);
