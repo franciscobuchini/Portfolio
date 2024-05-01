@@ -182,7 +182,7 @@ article {
   .Large {grid-column: span 4 !important;} 
   h2 {font-size: 1rem;}
   a, h3, p {font-size: 0.8rem;}
-  .Separator svg {width: 200%;}
+  .Separator svg {width: 300%;}
 }
 
 @media (width > 770px) {
@@ -192,7 +192,7 @@ article {
   .Text {padding: 10px;}
   h2 {font-size: 1.2rem;}
   a, h3, p {font-size: 1rem;}
-  .Separator svg {width: 150%;}
+  .Separator svg {width: 200%;}
 }
 
 @media (width > 1000px) {
