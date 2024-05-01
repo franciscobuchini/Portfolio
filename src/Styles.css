@@ -135,8 +135,6 @@ article {
   &:hover {
     >.ImageBack {transform: scale(1.04);}
     >.ImageDispel {  transition: opacity 1s; opacity: 0;}
-    >.Component .Button::before{content: "See more";}
-    >.Component .Download::before{transform: rotate(-90deg); content: "Download";}
   }
 }
 
@@ -220,15 +218,17 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-  &::before {content: "➜";}
 }
 
-.Download::before {writing-mode: vertical-rl; content: "➜I";}
+.Download::before {writing-mode: vertical-rl;}
 
 .Switch {
   height: calc(var(--size) / 2);
   >input{
     &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       content: "";
       position: absolute;
       width: calc(var(--size) / 2);
@@ -243,12 +243,10 @@ article {
   }
 }
 
-.LanguageSwitch input::before {
-  content: "EN";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.ThemeSwitch input::before {font-size: 2rem; content: "";}
+.ThemeSwitch input:checked::before {content: "";}
+
+.LanguageSwitch input::before {content: "EN";}
 .LanguageSwitch input:checked::before {content: "ES";}
 
 .MapComponent {

@@ -1,4 +1,4 @@
-export default function Header () {
+export default function Header ({cb}) {
   return (
     <header>
       <svg  viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ export default function Header () {
         </ul>
       </nav>
       <div>
-        <p className='CreatedBy'>Created by </p>
+        <p className='CreatedBy'>{cb}</p>
         <a className='Me' href='https://franciscobuchini.vercel.app/' target="_blank">Francisco Buchini</a>
       </div>
     </header>

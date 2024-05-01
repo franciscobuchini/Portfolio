@@ -1,6 +1,8 @@
+import React, { useState } from 'react';
+
 export default function Download({ Lurl }) {
 
-  const Download = () => {
+  const handleDownload = () => {
     if (Lurl) {
       const link = document.createElement("a")
       link.href = Lurl
@@ -9,9 +11,11 @@ export default function Download({ Lurl }) {
       link.click();
       document.body.removeChild(link)
     }
-  }
+  };
 
   return (
-    <a className="Button Download" onClick={Download}></a>
+    <a className="Button Download" onClick={handleDownload}>
+      <span style={{ transform: 'rotate(90deg)'}}>➜I</span>
+    </a>
   )
 }

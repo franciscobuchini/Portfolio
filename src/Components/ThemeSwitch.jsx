@@ -13,7 +13,7 @@ export default function ThemeSwitch({ onChange }) {
     }
   }, []);
 
-  const handleSwitch = () => {
+  const handleThemeSwitch = () => {
     const newCheckedState = !isChecked;
     setIsChecked(newCheckedState);
     onChange(newCheckedState); // Toggle the theme state
@@ -28,8 +28,8 @@ export default function ThemeSwitch({ onChange }) {
   };
 
   return (
-    <label className="Switch">
-      <input type="checkbox" checked={isChecked} onChange={handleSwitch} />
+    <label className="Switch ThemeSwitch">
+      <input type="checkbox" checked={isChecked} onChange={handleThemeSwitch} />
     </label>
   );
 }

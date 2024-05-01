@@ -1,7 +1,7 @@
 // BENTO.JSX
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg }) {
+export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
   let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst} ${Bsh > 4 ? " Large" : ""}`
@@ -40,7 +40,7 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IB
       
       {Com && ( // Add the custom component
         <div className='Component'>
-          {React.createElement(Com, { Lurl, PBn, PBd, PBt, PBimg })}
+          {React.createElement(Com, { Lurl, PBn, PBd, PBt, PBimg, Bt })}
         </div>
       )}
     </section>

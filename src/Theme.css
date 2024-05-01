@@ -48,7 +48,6 @@ header {
   &:checked {background-color: var(--transparent15dark);}
   &::before {background-color: var(--white); color: var(--black);}
   &:hover::before {background-color: var(--primary); color: var(--white);}
-
   &:checked::before {background-color: var(--white); color: var(--black);}
   &:hover:checked::before {background-color: var(--primary); color: var(--white);}
 }
