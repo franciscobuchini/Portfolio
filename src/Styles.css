@@ -243,6 +243,14 @@ article {
   }
 }
 
+.LanguageSwitch input::before {
+  content: "EN";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LanguageSwitch input:checked::before {content: "ES";}
+
 .MapComponent {
   position: relative;
   border-radius: 10px;

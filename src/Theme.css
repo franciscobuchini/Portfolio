@@ -30,7 +30,7 @@ body {background-color: var(--light); color: var(--black);}
 .Me {color: var(--primary);}
 
 header {
-  nav {background-color: var(--transparent15dark); color: var(--black);}
+  nav {background-color: var(--transparent15light); color: var(--black);}
   svg {rect {stroke: var(--primary);} path {fill: var(--transparent30dark);}}
 }
 
@@ -44,11 +44,13 @@ header {
   background-color: var(--transparent15dark); color: var(--white);
   &:hover {background-color: var(--transparent15dark); color: var(--primary);}
 }
-
 .Switch input {
-  &:checked {background-color: var(--primary);}
-  &::before {background-color: var(--white);}
-  &:hover::before {background-color: var(--primary);}
+  &:checked {background-color: var(--transparent15dark);}
+  &::before {background-color: var(--white); color: var(--black);}
+  &:hover::before {background-color: var(--primary); color: var(--white);}
+
+  &:checked::before {background-color: var(--white); color: var(--black);}
+  &:hover:checked::before {background-color: var(--primary); color: var(--white);}
 }
 
 .PBimg img {opacity: 1;}
@@ -83,8 +85,12 @@ header {
     background-color: var(--transparent30dark); color: var(--white);
     &:hover {background-color: var(--transparent30dark); color: var(--secondary);}
     &:checked {background-color: var(--transparent30dark);}
-    &:checked::before {background-color: var(--white);}
-    &:hover:checked::before {background-color: var(--secondary);}
+    &:checked::before {background-color: var(--white); color: var(--black);}
+    &:hover:checked::before {background-color: var(--secondary); color: var(--white);}
+  }
+  .Switch input {
+    &::before {background-color: var(--white); color: var(--black);}
+    &:hover::before {background-color:var(--secondary); color:var(--white);}
   }
 
   .PBimg img {opacity: 0.7;}

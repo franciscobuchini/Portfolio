@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import Bento from './Components/Bento';
 import Map from './Components/Map';
 import ThemeSwitch from './Components/ThemeSwitch';
+import LanguageSwitch from './Components/LanguageSwitch';
 import ProgressBar from './Components/ProgressBar';
 import ReactImg from './Assets/ReactImg.webp';
 import Button from './Components/Button'
@@ -27,6 +28,7 @@ function App() {
         <Bento Bsv='2' Bsh='2' Bst='B7' Th='Theme switcher:' Com={() => <ThemeSwitch onChange={handleSwitch} />} />
         <Bento Bsv='2' Bsh='2' Bst='B7' Th='Button example:' Com={Button} />
         <Bento Bsv='2' Bsh='2' Bst='B7' Th='Download example:' Com={Download} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th='Language switcher:' Com={LanguageSwitch} />
       </BentoGrid>
       <Footer/>
     </>
