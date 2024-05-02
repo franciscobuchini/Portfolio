@@ -12,8 +12,8 @@ import Button from './Components/Button'
 import Download from './Components/Download'
 
 function App() {
-  // Objet with lan:
-  const lan = {
+  // Objet with lang:
+  const lang = {
     english: {
       cb: 'Created By:',
       pending_tasks: 'Pending tasks:',
@@ -54,17 +54,17 @@ function App() {
   
   return (
     <>
-      <Header cb={lan[language].cb}/>
-      <BentoGrid Sh={lan[language].pending_tasks} Sp={lan[language].start_creating}>
-        <Bento Bsv='2' Bsh='4' Bst='B1' Th={lan[language].next_tasks} Tp={lan[language].create_labels} />
-        <Map Bsv='4' Bsh='2' Th={lan[language].my_location} ARc='Y' theme={theme} />
-        <Bento Bsv='1' Bsh='2' Bst='B7' PBn='4' PBd='10' PBt={lan[language].react} PBimg={ReactImg} Com={ProgressBar}/>
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].theme_switcher} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].button_example} Com={Button} Bt={lan[language].button1} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].download_example} Com={Download} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].language_switcher} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />}/>
+      <Header cb={lang[language].cb}/>
+      <BentoGrid Sh={lang[language].pending_tasks} Sp={lang[language].start_creating}>
+        <Bento Bsv='2' Bsh='4' Bst='B1' Th={lang[language].next_tasks} Tp={lang[language].create_labels} />
+        <Map Bsv='4' Bsh='2' Th={lang[language].my_location} ARc='Y' theme={theme} />
+        <Bento Bsv='1' Bsh='2' Bst='B7' PBn='4' PBd='10' PBt={lang[language].react} PBimg={ReactImg} Com={ProgressBar}/>
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lang[language].theme_switcher} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lang[language].button_example} Com={Button} Bt={lang[language].button1} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lang[language].download_example} Com={Download} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lang[language].language_switcher} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />}/>
       </BentoGrid>
-      <Footer cb={lan[language].cb}/>
+      <Footer cb={lang[language].cb}/>
     </>
   )
 }
