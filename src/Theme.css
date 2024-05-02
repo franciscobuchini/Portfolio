@@ -3,7 +3,6 @@
   --primary: #118ab2;
   --secondary: #A13D63;
   --light: #F7F2F2;
-  --dark: #322e25;
   --white: #FAFAFA;
   --black: #1E1E1E;
   --transparent15dark: rgba(0, 0, 0, 0.15);
@@ -36,11 +35,9 @@ body {
 
 .Bento .Text h2,
 .Bento .Text h3,
-.Bento .Text p {
-  color: var(--black);
-}
-
-.MapComponent .Text h2 {
+.Bento .Text p,
+.Map .Text h2,
+.Map .Text p {
   color: var(--black);
 }
 
@@ -77,8 +74,8 @@ header svg path {
   fill: var(--primary);
 }
 
-.Article h1,
-.Article p {
+.Article .TextArticle h1,
+.Article .TextArticle p {
   color: var(--white);
 }
 
@@ -149,12 +146,10 @@ header svg path {
 
   .Bento .Text h2,
   .Bento .Text h3,
-  .Bento .Text p {
+  .Bento .Text p,
+  .Map .Text h2,
+  .Map .Text p {
     color: var(--white);
-  }
-
-  .MapComponent .Text h2 {
-    color: var(--black);
   }
 
   .Transparent:hover {
@@ -190,8 +185,8 @@ header svg path {
     fill: var(--secondary);
   }
 
-  .Article h1,
-  .Article p {
+  .Article .TextArticle h1,
+  .Article .TextArticle p {
     color: var(--white);
   }
 
