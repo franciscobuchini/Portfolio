@@ -77,8 +77,8 @@ header svg path {
   fill: var(--primary);
 }
 
-.TitleBentoGrid h1,
-.TitleBentoGrid p {
+.Article h1,
+.Article p {
   color: var(--white);
 }
 
@@ -127,7 +127,7 @@ header svg path {
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
-[data-theme="dark"] {
+[data-theme='dark'] {
   body {
     background-color: var(--black);
     color: var(--white);
@@ -190,8 +190,8 @@ header svg path {
     fill: var(--secondary);
   }
 
-  .TitleBentoGrid h1,
-  .TitleBentoGrid p {
+  .Article h1,
+  .Article p {
     color: var(--white);
   }
 

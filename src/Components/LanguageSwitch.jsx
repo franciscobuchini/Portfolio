@@ -6,8 +6,8 @@ export default function LanguageSwitch({ onChange, checked }) {
   };
 
   return (
-    <label className="LanguageSwitch Switch">
-      <input type="checkbox" checked={checked} onChange={handleLanguageSwitch} />
+    <label className='LanguageSwitch Switch'>
+      <input type='checkbox' checked={checked} onChange={handleLanguageSwitch} />
     </label>
   );
 }

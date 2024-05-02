@@ -8,7 +8,7 @@ export default function Map({ Bsv, Bsh, ARc, Th, theme }) {
   const light = 'mapbox://styles/franciscobuchini/clvldwnu1017x01q1buz0fg6v';
   const dark = 'mapbox://styles/franciscobuchini/clvlavqq900fj01obdjam2o77';
 
-  const style = theme === "dark" ? dark : light;
+  const style = theme === 'dark' ? dark : light;
 
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -22,13 +22,13 @@ export default function Map({ Bsv, Bsh, ARc, Th, theme }) {
   }, [theme]); // Agrega theme como dependencia para que se actualice cuando cambie
 
   return (
-    <section className="MapComponent" style={{
+    <section className='MapComponent' style={{
       gridRow: `span ${Bsv}`,
       gridColumn: `span ${Bsh}`,
       ...(ARc && { aspectRatio: `${Bsh}/${Bsv}`}),
     }}>
-      <div ref={mapContainer} className="Map"/>
-      <div className="Text"> <h2>{Th}</h2> </div>
+      <div ref={mapContainer} className='Map'/>
+      <div className='Text'> <h2>{Th}</h2> </div>
     </section>
   );
 }

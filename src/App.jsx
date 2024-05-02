@@ -45,12 +45,12 @@ function App() {
   };
 
   // Language switcher:
-  const [language, setLanguage] = useState("english")
-  const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
+  const [language, setLanguage] = useState('english')
+  const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? 'spanish' : 'english')}
 
   // Map Theme switcher:
-  const [theme, setTheme] = useState("light")
-  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "dark" : "light")}
+  const [theme, setTheme] = useState('light')
+  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? 'dark' : 'light')}
   
   return (
     <>
@@ -62,7 +62,7 @@ function App() {
         <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].theme_switcher} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
         <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].button_example} Com={Button} Bt={lan[language].button1} />
         <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].download_example} Com={Download} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].language_switcher} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === "spanish"} />}/>
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].language_switcher} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />}/>
       </BentoGrid>
       <Footer cb={lan[language].cb}/>
     </>

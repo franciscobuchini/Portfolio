@@ -120,7 +120,7 @@ article {
   height: 25rem;
 }
 
-.TitleBentoGrid {
+.Article {
   margin-top: -500px;
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ article {
   gap: 50px;
 }
 
-.TitleBentoGrid .TextTitleBentoGrid {
+.Article .TextArticle {
   text-align: center;
 }
 
@@ -242,7 +242,7 @@ article {
 
 /* RESPONSIVE -----------------------------------*/
 @media (width <= 770px) {
-  .TitleBentoGrid .TextTitleBentoGrid {
+  .Article .TextArticle {
     padding: 0 12px;
   }
 
@@ -270,7 +270,7 @@ article {
 }
 
 @media (width > 770px) {
-  .TitleBentoGrid .TextTitleBentoGrid {
+  .Article .TextArticle {
     padding: 0 20px;
   }
 
@@ -304,7 +304,7 @@ article {
 }
 
 @media (width > 1000px) {
-  .TitleBentoGrid .TextTitleBentoGrid {
+  .Article .TextArticle {
     max-width: 800px;
   }
 
@@ -356,7 +356,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  content: "";
+  content: '';
   position: absolute;
   width: calc(var(--size) / 2);
   height: calc(var(--size) / 2);
@@ -372,19 +372,19 @@ article {
 
 .ThemeSwitch input::before {
   font-size: 2rem;
-  content: "";
+  content: '';
 }
 
 .ThemeSwitch input:checked::before {
-  content: "";
+  content: '';
 }
 
 .LanguageSwitch input::before {
-  content: "EN";
+  content: 'EN';
 }
 
 .LanguageSwitch input:checked::before {
-  content: "ES";
+  content: 'ES';
 }
 
 .MapComponent {

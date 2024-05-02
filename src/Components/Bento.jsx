@@ -4,10 +4,10 @@ import React from 'react'
 export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
-  let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bst} ${Bsh > 4 ? " Large" : ""}`
+  let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bst} ${Bsh > 4 ? ' Large' : ''}`
 
   // Open link in new tab if Lurl exists and component is not a button
-  let link = Com !== "Button" && Lurl ? () => window.open(Lurl, "_blank") : undefined
+  let link = Com !== 'Button' && Lurl ? () => window.open(Lurl, '_blank') : undefined
 
   return (
     <section
@@ -21,13 +21,13 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IB
         cursor: link ? 'pointer' : 'auto',
       }}>
 
-      {IBimg && <img className="Image ImageBack" src={IBimg} alt={IBalt}/>}
-      {IDimg && <img className="Image ImageDispel" src={IDimg} alt={IDalt}/>}
-      {IFimg && <img className="Image ImageFront" src={IFimg} alt={IFalt}/>}
+      {IBimg && <img className='Image ImageBack' src={IBimg} alt={IBalt}/>}
+      {IDimg && <img className='Image ImageDispel' src={IDimg} alt={IDalt}/>}
+      {IFimg && <img className='Image ImageFront' src={IFimg} alt={IFalt}/>}
 
 
       {(Th || Tp) && (
-        <div className="Text" style={{
+        <div className='Text' style={{
           height: Com ? 'auto' : '100%',
           width: Com ? 'auto' : '100%',
           

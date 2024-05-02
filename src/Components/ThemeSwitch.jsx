@@ -28,8 +28,8 @@ export default function ThemeSwitch({ onChange }) {
   };
 
   return (
-    <label className="Switch ThemeSwitch">
-      <input type="checkbox" checked={isChecked} onChange={handleThemeSwitch} />
+    <label className='Switch ThemeSwitch'>
+      <input type='checkbox' checked={isChecked} onChange={handleThemeSwitch} />
     </label>
   );
 }
