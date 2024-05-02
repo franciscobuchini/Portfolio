@@ -1,4 +1,4 @@
-/* ROOT -------------------------------------------------------*/
+/* THEME LIGHT -------------------------------------------------------*/
 :root {
   --primary: #118ab2;
   --secondary: #A13D63;
@@ -14,86 +14,228 @@
  
   font-family: -apple-system, Segoe UI, Roboto;
 }
-/* ROOT -------------------------------------------------------*/
 
-/* THEME LIGHT -------------------------------------------------------*/
-body {background-color: var(--light); color: var(--black);}
-.BentoGrid {background-color: var(--transparent30light)}
-.Bento, .MapComponent {
+body {
+  background-color: var(--light);
+  color: var(--black);
+}
+
+.BentoGrid {
+  background-color: var(--transparent30light);
+}
+
+.Bento,
+.MapComponent {
   background-color: var(--white);
-  .Text {>h2{color: var(--black);} >h3{color: var(--black);} >p{color: var(--black);}}
-  &:hover {outline: 4px solid var(--primary);}}
-.Map .Text h2 {color: var(--black);}
-.Transparent:hover {outline: none;}
-
-.CreatedBy {color: var(--transparent30dark);}
-.Me {color: var(--primary);}
-
-header {
-  nav {background-color: var(--transparent15light); color: var(--black);}
-  svg {rect {stroke: var(--primary);} path {fill: var(--transparent30dark);}}
 }
 
-.Separator {
-  div {background-color: var(--primary);}
-  svg {fill: var(--primary);}
+.Bento:hover,
+.MapComponent:hover {
+  outline: 4px solid var(--primary);
 }
-.TitleBentoGrid { h1 {color: var(--white);} p {color: var(--white);}}
 
-.Button, .Switch input {
-  background-color: var(--transparent15dark); color: var(--white);
-  &:hover {background-color: var(--transparent15dark); color: var(--primary);}
+.Bento .Text h2,
+.Bento .Text h3,
+.Bento .Text p {
+  color: var(--black);
 }
+
+.MapComponent .Text h2 {
+  color: var(--black);
+}
+
+.Transparent:hover {
+  outline: none;
+}
+
+.CreatedBy {
+  color: var(--transparent30dark);
+}
+
+.Me {
+  color: var(--primary);
+}
+
+header nav {
+  background-color: var(--transparent15light);
+  color: var(--black);
+}
+
+header svg rect {
+  stroke: var(--primary);
+}
+
+header svg path {
+  fill: var(--transparent30dark);
+}
+
+.Separator div {
+  background-color: var(--primary);
+}
+
+.Separator svg {
+  fill: var(--primary);
+}
+
+.TitleBentoGrid h1,
+.TitleBentoGrid p {
+  color: var(--white);
+}
+
+.Button,
 .Switch input {
-  &:checked {background-color: var(--transparent15dark);}
-  &::before {background-color: var(--white); color: var(--black);}
-  &:hover::before {background-color: var(--primary); color: var(--white);}
-  &:checked::before {background-color: var(--white); color: var(--black);}
-  &:hover:checked::before {background-color: var(--primary); color: var(--white);}
+  background-color: var(--transparent15dark);
+  color: var(--white);
 }
 
-.PBimg img {opacity: 1;}
-.PB100 {background-color: var(--transparent15dark);}
-.PBX {background-color: var(--primary);}
+.Button:hover,
+.Switch input:hover {
+  background-color: var(--transparent15dark);
+  color: var(--primary);
+}
+
+.Switch input:checked {
+  background-color: var(--transparent15dark);
+}
+
+.Switch input::before {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.Switch input:hover::before {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.Switch input:checked::before {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.PBimg img {
+  opacity: 1;
+}
+
+.PB100 {
+  background-color: var(--transparent15dark);
+}
+
+.PBX {
+  background-color: var(--primary);
+}
 /* THEME LIGHT -------------------------------------------------------*/
 
 /* THEME DARK -------------------------------------------------------*/
 [data-theme="dark"] {
-  body {background-color: var(--black); color: var(--white);}
-  .BentoGrid {background-color: var(--transparent15dark)}
-  .Bento, .MapComponent {background-color: var(--black); &:hover {outline: 4px solid var(--secondary);}}
-  .Text {>h2{color: var(--white);} >h3{color: var(--white);} >p{color: var(--transparent30light);}}
-  .Map .Text h2{color: var(--black);}
-  .Transparent:hover {outline: none;}
-
-  .CreatedBy {color: var(--transparent30light);}
-  .Me {color: var(--secondary);}
-
-  header {
-    nav {background-color: var(--transparent15dark); color: var(--white);}
-    svg {rect {stroke: var(--secondary);} path {fill: var(--transparent15light);}}
+  body {
+    background-color: var(--black);
+    color: var(--white);
   }
 
-  .Separator {
-    div {background-color: var(--secondary);}
-    svg {fill: var(--secondary);}
+  .BentoGrid {
+    background-color: var(--transparent15dark);
   }
-  .TitleBentoGrid { h1 {color: var(--white);} p {color: var(--white);}}
 
-  .Button, .Switch input {
-    background-color: var(--transparent30dark); color: var(--white);
-    &:hover {background-color: var(--transparent30dark); color: var(--secondary);}
-    &:checked {background-color: var(--transparent30dark);}
-    &:checked::before {background-color: var(--white); color: var(--black);}
-    &:hover:checked::before {background-color: var(--secondary); color: var(--white);}
+  .Bento,
+  .MapComponent {
+    background-color: var(--black);
   }
+
+  .Bento:hover,
+  .MapComponent:hover {
+    outline: 4px solid var(--secondary);
+  }
+
+  .Bento .Text h2,
+  .Bento .Text h3,
+  .Bento .Text p {
+    color: var(--white);
+  }
+
+  .MapComponent .Text h2 {
+    color: var(--black);
+  }
+
+  .Transparent:hover {
+    outline: none;
+  }
+
+  .CreatedBy {
+    color: var(--transparent30light);
+  }
+
+  .Me {
+    color: var(--secondary);
+  }
+
+  header nav {
+    background-color: var(--transparent15dark);
+    color: var(--white);
+  }
+
+  header svg rect {
+    stroke: var(--secondary);
+  }
+
+  header svg path {
+    fill: var(--transparent15light);
+  }
+
+  .Separator div {
+    background-color: var(--secondary);
+  }
+
+  .Separator svg {
+    fill: var(--secondary);
+  }
+
+  .TitleBentoGrid h1,
+  .TitleBentoGrid p {
+    color: var(--white);
+  }
+
+  .Button,
   .Switch input {
-    &::before {background-color: var(--white); color: var(--black);}
-    &:hover::before {background-color:var(--secondary); color:var(--white);}
+    background-color: var(--transparent30dark);
+    color: var(--white);
   }
 
-  .PBimg img {opacity: 0.7;}
-  .PB100 {background-color: var(--transparent15light);}
-  .PBX {background-color: var(--secondary);}
+  .Button:hover,
+  .Switch input:hover {
+    background-color: var(--transparent30dark);
+    color: var(--secondary);
+  }
+
+  .Switch input:checked {
+    background-color: var(--transparent30dark);
+  }
+
+  .Switch input::before {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  .Switch input:hover::before {
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+
+  .Switch input:checked::before {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  .PBimg img {
+    opacity: 0.7;
+  }
+
+  .PB100 {
+    background-color: var(--transparent15light);
+  }
+
+  .PBX {
+    background-color: var(--secondary);
+  }
 }
 /* THEME DARK -------------------------------------------------------*/

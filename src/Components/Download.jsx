@@ -14,8 +14,8 @@ export default function Download({ Lurl }) {
   };
 
   return (
-    <a className="Button Download" onClick={handleDownload}>
+    <button className="Button Download" onClick={handleDownload}>
       <span style={{ transform: 'rotate(90deg)'}}>➜I</span>
-    </a>
+    </button>
   )
 }

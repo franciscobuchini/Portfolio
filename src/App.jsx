@@ -1,21 +1,21 @@
-import BentoGrid from "./Components/BentoGrid"
-import Header from "./Components/Header"
-import Footer from "./Components/Footer"
-import React, { useState } from 'react';
-import Bento from './Components/Bento';
-import Map from './Components/Map';
-import ThemeSwitch from './Components/ThemeSwitch';
-import LanguageSwitch from './Components/LanguageSwitch';
-import ProgressBar from './Components/ProgressBar';
-import ReactImg from './Assets/ReactImg.webp';
+import BentoGrid from './Components/BentoGrid'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import React, { useState } from 'react'
+import Bento from './Components/Bento'
+import Map from './Components/Map'
+import ThemeSwitch from './Components/ThemeSwitch'
+import LanguageSwitch from './Components/LanguageSwitch'
+import ProgressBar from './Components/ProgressBar'
+import ReactImg from './Assets/ReactImg.webp'
 import Button from './Components/Button'
-import Download from './Components/Download';
+import Download from './Components/Download'
 
 function App() {
-  // Objeto que contiene las traducciones
-  const translations = {
+  // Objet with lan:
+  const lan = {
     english: {
-      created_by: 'Created By:',
+      cb: 'Created By:',
       pending_tasks: 'Pending tasks:',
       start_creating: 'Start creating the BentoBoxUI web page.',
       next_tasks: 'Next tasks:',
@@ -24,12 +24,12 @@ function App() {
       react: 'React:',
       theme_switcher: 'Theme switcher:',
       button_example: 'Button example:',
-      see_more: 'See more',
+      button1: 'See more',
       download_example: 'Download example:',
       language_switcher: 'Language switcher:'
     },
     spanish: {
-      created_by: 'Creado por:',
+      cb: 'Creado por:',
       pending_tasks: 'Tareas pendientes:',
       start_creating: 'Comienza a crear la página web de BentoBoxUI.',
       next_tasks: 'Próximas tareas:',
@@ -37,36 +37,34 @@ function App() {
       my_location: 'Mi ubicación:',
       react: 'React:',
       theme_switcher: 'Selector de tema:',
-      button_example: 'Ejemplo de botón:',
-      see_more: 'Ver más',
-      download_example: 'Ejemplo de descarga:',
+      button_example: 'Ejemplo botón:',
+      button1: 'Ver mas',
+      download_example: 'Ejemplo descarga:',
       language_switcher: 'Selector de idioma:'
     }
   };
 
-  // Estado local para controlar el idioma
-  const [language, setLanguage] = useState("english");
-  const handleLanguageSwitch = (isChecked) => {
-    setLanguage(isChecked ? "spanish" : "english");
-  };
+  // Language switcher:
+  const [language, setLanguage] = useState("english")
+  const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
 
-  // Map Theme switcher
-  const [theme, setTheme] = useState("light");
-  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "dark" : "light");}
+  // Map Theme switcher:
+  const [theme, setTheme] = useState("light")
+  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "dark" : "light")}
   
   return (
     <>
-      <Header cb={translations[language].created_by}/>
-      <BentoGrid Sh={translations[language].pending_tasks} Sp={translations[language].start_creating}>
-        <Bento Bsv='2' Bsh='4' Bst='B1' Th={translations[language].next_tasks} Tp={translations[language].create_labels} />
-        <Map Bsv='4' Bsh='2' Th={translations[language].my_location} ARc='Y' theme={theme} />
-        <Bento Bsv='1' Bsh='2' Bst='B7' PBn='4' PBd='10' PBt={translations[language].react} PBimg={ReactImg} Com={ProgressBar}/>
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={translations[language].theme_switcher} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={translations[language].button_example} Com={Button} Bt={translations[language].see_more} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={translations[language].download_example} Com={Download} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' Th={translations[language].language_switcher} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === "spanish"} />}/>
+      <Header cb={lan[language].cb}/>
+      <BentoGrid Sh={lan[language].pending_tasks} Sp={lan[language].start_creating}>
+        <Bento Bsv='2' Bsh='4' Bst='B1' Th={lan[language].next_tasks} Tp={lan[language].create_labels} />
+        <Map Bsv='4' Bsh='2' Th={lan[language].my_location} ARc='Y' theme={theme} />
+        <Bento Bsv='1' Bsh='2' Bst='B7' PBn='4' PBd='10' PBt={lan[language].react} PBimg={ReactImg} Com={ProgressBar}/>
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].theme_switcher} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].button_example} Com={Button} Bt={lan[language].button1} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].download_example} Com={Download} />
+        <Bento Bsv='2' Bsh='2' Bst='B7' Th={lan[language].language_switcher} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === "spanish"} />}/>
       </BentoGrid>
-      <Footer cb={translations[language].created_by}/>
+      <Footer cb={lan[language].cb}/>
     </>
   )
 }

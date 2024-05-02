@@ -10,7 +10,10 @@ export default function Header ({cb}) {
       </svg>
       <nav className='Nav'>
         <ul>
-          <li><a>-</a></li>
+          <li><a>menu</a></li>
+          <li><a>menu</a></li>
+          <li><a>menu</a></li>
+          <li><a>menu</a></li>
         </ul>
       </nav>
       <div>
