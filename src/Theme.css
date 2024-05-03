@@ -25,7 +25,7 @@ body {
 
 .Bento,
 .MapComponent {
-  background-color: var(--white);
+  background-color: red;
 }
 
 .Bento:hover,

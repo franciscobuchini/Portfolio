@@ -19,3 +19,14 @@
 .Switch > input::before {
   transition: all 0.5s;
 }
+
+/* BENTO STYLES -----------------------------------*/
+.B1 {justify-content: flex-start;}
+.B2 {>.Component{justify-content: left;}}
+.B3 {>.Component{justify-content: right;}}
+.B4 {>.Text{text-align: right;} >.Component{justify-content: left;}}
+.B5 {>.Text{text-align: right;} >.Component{justify-content: right;}}
+.B6 {>.Text{text-align: center;} >.Component{justify-content: center;}}
+.B7 {justify-content: center; >.Text, .Component {justify-content: center; text-align: center;}}
+.B8 {justify-content: center;}
+/* BENTO STYLES -----------------------------------*/

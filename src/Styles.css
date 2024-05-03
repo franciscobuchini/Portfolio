@@ -121,7 +121,6 @@ article {
 }
 
 .Article {
-  margin-top: -540px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -150,6 +149,7 @@ article {
   border-radius: 20px;
   padding: 12px;
   gap: 12px;
+  grid-auto-flow: dense;
 }
 
 .Bento {
@@ -157,9 +157,9 @@ article {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-width: 150px;
   min-height: max-content;
   border-radius: 10px;
+  gap: 10px;
 }
 
 .Bento:hover > .ImageBack {
@@ -173,8 +173,8 @@ article {
 .Component {
   display: flex;
   align-items: center;
+  min-height: calc(var(--size) / 2);
   z-index: 300;
-  padding: 10px;
 }
 
 .Text {
@@ -230,10 +230,7 @@ article {
   justify-content: center;
 }
 
-.B7 {
-  justify-content: center;
-}
-
+.B7,
 .B7 > .Text,
 .B7 > .Component {
   justify-content: center;
@@ -256,8 +253,8 @@ article {
     padding: 0 12px;
   }
 
-  .Text {
-    padding: 10px;
+  .Article {
+    margin-top: -640px;
   }
 
   h2 {
@@ -276,6 +273,11 @@ article {
 }
 
 @media (width > 770px) {
+
+  .Article {
+    margin-top: -540px;
+  }
+
   .Article .TextArticle {
     padding: 0 20px;
   }
@@ -287,10 +289,6 @@ article {
 
   .Nav {
     top: auto;
-  }
-
-  .Text {
-    padding: 10px;
   }
 
   h2 {
@@ -308,7 +306,7 @@ article {
   }
 }
 
-@media (width > 1000px) {
+@media (width > 1190px) {
   .Article .TextArticle {
     max-width: 800px;
   }
@@ -341,7 +339,7 @@ article {
   justify-content: center;
   align-items: center;
   width: var(--size);
-  height: calc(var(--size) / 2);
+  min-height: calc(var(--size) / 2);
   cursor: pointer;
   border-radius: 100px;
   font-weight: 600;
@@ -395,6 +393,10 @@ article {
 .MapComponent {
   position: relative;
   border-radius: 10px;
+}
+
+.MapComponent .Text {
+  margin: 10px;
 }
 
 .MapComponent:hover > .Text {

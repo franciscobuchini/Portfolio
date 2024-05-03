@@ -72,21 +72,37 @@ function App() {
       <Header cb={lang[language].cb}/>
 
       <BentoGrid Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
-        <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h2_bento1} Tp={lang[language].p_bento1} />
-        <Bento Bsize='x2x4' Bstyle='B7' ARc='Y' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
-        <Bento Bsize='x2x4' Bstyle='B7' ARc='Y' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
-        <Bento Bsize='x1x8' Bbg='transparent' />
-        <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h2_bento2} Tp={lang[language].p_bento2} />
-        <Map Bsize='x4x8' Th={lang[language].h2_map} Tp={lang[language].p_map} theme={theme} />
+        <Bento Bsize='x1x8' Bstyle='B7' Bbg='transparent' Th={lang[language].h2_bento1} Tp={lang[language].p_bento1} />
+        <Bento Bsize='x1x4' Bstyle='B7' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
+        <Bento Bsize='x1x4' Bstyle='B7' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
+        <Bento Bsize='x1x8' Bstyle='B7' Bbg='transparent' Th={lang[language].h2_bento2} Tp={lang[language].p_bento2} />
+        <Map Bsize='x3x8' Th={lang[language].h2_map} Tp={lang[language].p_map} theme={theme} />
       </BentoGrid>
 
       <BentoGrid Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>
         <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h2_bento3} Tp={lang[language].p_bento3}/>
         <Bento Bsize='x2x2' Bstyle='B7' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
         <Bento Bsize='x2x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
+        <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1} Com={Download} />
         <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image2} />
         <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image3} />
+        <Bento Bsize='x1x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x1x4' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x1x8' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x2x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x2x3' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x2x8' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x3x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x3x4' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x3x8' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x4x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x4x3' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x4x4' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x4x8' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x5x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x8x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>
