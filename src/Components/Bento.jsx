@@ -1,10 +1,10 @@
 // BENTO.JSX
 import React from 'react'
 
-export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
+export default function Bento({ Bsize, Bstyle, Bbg, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
 
-  // If background is transparent this means: no interaction if hover the Bento and check Bsh value for Large class.
-  let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bst} ${Bsh > 4 ? ' Large' : ''}`
+  // If background is transparent this means: no interaction if hover the Bento.
+  let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bsize} ${Bstyle}`
 
   // Open link in new tab if Lurl exists and component is not a button
   let link = Com !== 'Button' && Lurl ? () => window.open(Lurl, '_blank') : undefined
@@ -15,9 +15,6 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IB
       onClick={link}
       style={{
         ...(Bbg && { backgroundColor: `var(--${Bbg})` }),
-        gridRow: `span ${Bsv}`,
-        gridColumn: `span ${Bsh}`,
-        ...(ARc && { aspectRatio: `${Bsh}/${Bsv}`}),
         cursor: link ? 'pointer' : 'auto',
       }}>
 
@@ -48,12 +45,9 @@ export default function Bento({ Bsv, Bsh, Bst, Bbg, ARc, Lurl, Th, Tp, IBimg, IB
 }
 
 /* 
-Bsv: Bento - Size Vertical [1 to N]
-Bsh: Bento - Size Horizontal [1 to 8]
-Bst: Bento - Style [B1, B2, B3, B4, B5, B6, B7, B8]
+Bsize: Bento - Size [look at Dimensions.css]
+Bstyle: Bento - Style [B1, B2, B3, B4, B5, B6, B7, B8]
 Bbg: Bento - Background Color
-
-ARc: Aspect Ratio Confirm [Y]
 
 Th: Text - <H2>
 Tp: Text - <P>
@@ -70,6 +64,8 @@ Lurl: Bento or Component - Link
 PBn: ProgressBar - Numerator
 PBd: ProgressBar - Denominator
 PBt: ProgressBar - <H3>
+
+Bt: Button - Text
 
 Com: Component [{Button}, {ThemeSwitch}, {ProgressBar}]
 */

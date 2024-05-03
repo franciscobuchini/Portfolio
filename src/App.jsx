@@ -30,7 +30,8 @@ function App() {
 
       h1_article2: 'All the components we have:',
       p_article2: 'Discover the variety of components available in our user interface: a complete guide to all the options at your disposal.',
-      h2_bento3: 'In addition to the components that you saw previously, you can use the following:',
+      h2_bento3: 'In addition',
+      p_bento3: 'to the components that you saw previously, you have access to the following:',
       button1: 'Button example',
       bt1: 'Example',
       download1: 'Download:',
@@ -50,7 +51,8 @@ function App() {
 
       h1_article2: 'Todos los componentes que tenemos:',
       p_article2: 'Descubre la variedad de componentes disponibles en nuestra interfaz de usuario: una guía completa para conocer todas las opciones a tu disposición.',
-      h2_bento3: 'Además de los componentes que viste anteriormente, puedes utilizar los siguientes:',
+      h2_bento3: 'Además',
+      p_bento3: 'de los componentes que viste anteriormente, tienes acceso a los siguientes:',
       button1: 'Ejemplo de botón',
       bt1: 'Ejemplo',
       download1: 'Descargar:',
@@ -70,21 +72,21 @@ function App() {
       <Header cb={lang[language].cb}/>
 
       <BentoGrid Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
-        <Bento Bsv='2' Bsh='8' Bst='B1' Bbg='transparent' Th={lang[language].h2_bento1} Tp={lang[language].p_bento1} />
-        <Bento Bsv='2' Bsh='4' Bst='B7' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
-        <Bento Bsv='2' Bsh='4' Bst='B7' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
-        <Bento Bsv='1' Bsh='8' Bbg='transparent' />
-        <Bento Bsv='2' Bsh='8' Bst='B1' Bbg='transparent' Th={lang[language].h2_bento2} Tp={lang[language].p_bento2} />
-        <Map Bsv='3' Bsh='8' Th={lang[language].h2_map} Tp={lang[language].p_map} ARc='Y' theme={theme} />
+        <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h2_bento1} Tp={lang[language].p_bento1} />
+        <Bento Bsize='x2x4' Bstyle='B7' ARc='Y' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
+        <Bento Bsize='x2x4' Bstyle='B7' ARc='Y' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
+        <Bento Bsize='x1x8' Bbg='transparent' />
+        <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h2_bento2} Tp={lang[language].p_bento2} />
+        <Map Bsize='x4x8' Th={lang[language].h2_map} Tp={lang[language].p_map} theme={theme} />
       </BentoGrid>
 
       <BentoGrid Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>
-        <Bento Bsv='2' Bsh='8' Bst='B1' Bbg='transparent' Th={lang[language].h2_bento3} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' ARc='Y' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
-        <Bento Bsv='2' Bsh='2' Bst='B7' ARc='Y' Th={lang[language].download1} Com={Download} />
-        <Bento Bsv='2' Bsh='4' Bst='B7' ARc='Y' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
-        <Bento Bsv='2' Bsh='4' Bst='B7' ARc='Y' Th={lang[language].image2} />
-        <Bento Bsv='2' Bsh='4' Bst='B7' ARc='Y' Th={lang[language].image3} />
+        <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h2_bento3} Tp={lang[language].p_bento3}/>
+        <Bento Bsize='x2x2' Bstyle='B7' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
+        <Bento Bsize='x2x2' Bstyle='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
+        <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image2} />
+        <Bento Bsize='x2x4' Bstyle='B7' Th={lang[language].image3} />
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>

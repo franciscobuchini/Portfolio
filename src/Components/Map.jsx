@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 
-export default function Map({ Bsv, Bsh, ARc, Th, Tp, theme }) {
+export default function Map({ Bsize, Th, Tp, theme }) {
   const mapContainer = useRef(null);
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJhbmNpc2NvYnVjaGluaSIsImEiOiJjbHZsNng5djUxdXVvMmtvb2NoZzcza3VnIn0.jTm58Ue65TyJ9ToHbiwMHg';
   const light = 'mapbox://styles/franciscobuchini/clvldwnu1017x01q1buz0fg6v';
@@ -21,12 +21,10 @@ export default function Map({ Bsv, Bsh, ARc, Th, Tp, theme }) {
     return () => map.remove();
   }, [theme]); // Agrega theme como dependencia para que se actualice cuando cambie
 
+  let classNameMap = `MapComponent ${Bsize}`
+
   return (
-    <section className='MapComponent' style={{
-      gridRow: `span ${Bsv}`,
-      gridColumn: `span ${Bsh}`,
-      ...(ARc && { aspectRatio: `${Bsh}/${Bsv}`}),
-    }}>
+    <section className={classNameMap}>
       <div ref={mapContainer} className='Map'/>
       <div className='Text'>
         <h2>{Th}</h2>

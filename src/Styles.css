@@ -118,7 +118,6 @@ article {
   align-items: center;
   width: 100%;
   min-height: 400px;
-
 }
 
 .Article {
@@ -143,14 +142,11 @@ article {
 }
 
 .BentoGrid {
+  grid-template-columns: repeat(8, 1fr);
   z-index: 500;
   display: grid;
   width: 100%;
-  height: max-content;
-  flex-direction: row;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-auto-flow: row dense;
+  height: auto;
   border-radius: 20px;
   padding: 12px;
   gap: 12px;
@@ -264,10 +260,6 @@ article {
     padding: 10px;
   }
 
-  .Large {
-    grid-column: span 4 !important;
-  }
-
   h2 {
     font-size: 1rem;
   }
@@ -289,7 +281,6 @@ article {
   }
 
   .BentoGrid {
-    grid-template-columns: repeat(8, 1fr);
     padding: 16px;
     gap: 16px;
   }
@@ -404,6 +395,10 @@ article {
 .MapComponent {
   position: relative;
   border-radius: 10px;
+}
+
+.MapComponent:hover > .Text {
+   display: none;
 }
 
 .MapComponent .Map {
