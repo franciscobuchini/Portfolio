@@ -148,7 +148,6 @@ article {
 
 .Component {
   display: flex;
-  align-items: center;
   min-height: calc(var(--size) / 2);
   z-index: 300;
   margin-bottom: 5px;
@@ -186,7 +185,6 @@ article {
 .Bento {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   position: relative;
   border-radius: 10px;
   gap: 10px;
@@ -204,26 +202,26 @@ article {
 .H7 {grid-column: span 7;}
 .H8 {grid-column: span 8;}
 
-.V1 {height: calc(var(--bentosize)); grid-row: span 1;}
-.V2 {height: calc(var(--bentosize) * 2 + var(--gap)); grid-row: span 2;}
-.V3 {height: calc(var(--bentosize) * 3 + var(--gap) * 2); grid-row: span 3;}
-.V4 {height: calc(var(--bentosize) * 4 + var(--gap) * 3); grid-row: span 4;}
-.V5 {height: calc(var(--bentosize) * 5 + var(--gap) * 4); grid-row: span 5;}
-.V6 {height: calc(var(--bentosize) * 6 + var(--gap) * 5); grid-row: span 6;}
-.V7 {height: calc(var(--bentosize) * 7 + var(--gap) * 6); grid-row: span 7;}
-.V8 {height: calc(var(--bentosize) * 8 + var(--gap) * 7); grid-row: span 8;}
+.V1 {min-height: calc(var(--bentosize)); grid-row: span 1;}
+.V2 {min-height: calc(var(--bentosize) * 2 + var(--gap)); grid-row: span 2;}
+.V3 {min-height: calc(var(--bentosize) * 3 + var(--gap) * 2); grid-row: span 3;}
+.V4 {min-height: calc(var(--bentosize) * 4 + var(--gap) * 3); grid-row: span 4;}
+.V5 {min-height: calc(var(--bentosize) * 5 + var(--gap) * 4); grid-row: span 5;}
+.V6 {min-height: calc(var(--bentosize) * 6 + var(--gap) * 5); grid-row: span 6;}
+.V7 {min-height: calc(var(--bentosize) * 7 + var(--gap) * 6); grid-row: span 7;}
+.V8 {min-height: calc(var(--bentosize) * 8 + var(--gap) * 7); grid-row: span 8;}
 
 /* BENTO SIZES -----------------------------------*/
 
 /* BENTO STYLES -----------------------------------*/
 
-.B1 {justify-content: flex-start;}
-.B2 {>.Component{align-self: flex-start;}}
-.B3 {>.Component{align-self: flex-end;}}
-.B4 {>.Text{text-align: right;} >.Component{align-self: flex-start;}}
-.B5 {>.Text{text-align: right;} >.Component{align-self: flex-end;}}
-.B6 {>.Text{text-align: center;} >.Component{align-self: center;}}
-.B7 {justify-content: center; >.Text{text-align: center;} >.Component{align-self: center;}}
+.B1 {justify-content: center; >.Text{text-align: center;} >.Component{align-self: center;}}
+.B2 {justify-content: flex-start;}
+.B3 {>.Component{align-self: flex-start;}}
+.B4 {>.Component{align-self: flex-end;}}
+.B5 {>.Text{text-align: right;} >.Component{align-self: flex-start;}}
+.B6 {>.Text{text-align: right;} >.Component{align-self: flex-end;}}
+.B7 {>.Text{text-align: center;} >.Component{align-self: center;}}
 .B8 {justify-content: center;}
 .B9 {>.Text, .Component {justify-content: center; text-align: center;}}
 
