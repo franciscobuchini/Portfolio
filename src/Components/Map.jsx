@@ -27,7 +27,7 @@ export default function Map({ Bsize, Th, Tp, theme }) {
     <section className={classNameMap}>
       <div ref={mapContainer} className='Map'/>
       <div className='Text'>
-        <h2>{Th}</h2>
+        <h4>{Th}</h4>
         <p>{Tp}</p>
       </div>
     </section>

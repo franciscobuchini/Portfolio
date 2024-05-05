@@ -1,10 +1,10 @@
 // BENTO.JSX
 import React from 'react'
 
-export default function Bento({ Bsize, Bstyle, Bbg, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
+export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
-  let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bsize} ${Bstyle}`
+  let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bs} V${Bv} H${Bh}`
 
   // Open link in new tab if Lurl exists and component is not a button
   let link = Com !== 'Button' && Lurl ? () => window.open(Lurl, '_blank') : undefined
@@ -29,7 +29,7 @@ export default function Bento({ Bsize, Bstyle, Bbg, Lurl, Th, Tp, IBimg, IBalt, 
           width: Com ? 'auto' : '100%',
           
         }}>
-          <h2>{Th}</h2>
+          <h4>{Th}</h4>
           <p>{Tp}</p>
         </div>
       )}
@@ -63,7 +63,7 @@ Lurl: Bento or Component - Link
 
 PBn: ProgressBar - Numerator
 PBd: ProgressBar - Denominator
-PBt: ProgressBar - <H3>
+PBt: ProgressBar - <h5>
 
 Bt: Button - Text
 

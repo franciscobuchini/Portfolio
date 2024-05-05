@@ -33,10 +33,10 @@ body {
   outline: 4px solid var(--primary);
 }
 
-.Bento .Text h2,
-.Bento .Text h3,
+.Bento .Text h4,
+.Bento .Text h5,
 .Bento .Text p,
-.Map .Text h2,
+.Map .Text h4,
 .Map .Text p {
   color: var(--black);
 }
@@ -144,10 +144,10 @@ header svg path {
     outline: 4px solid var(--secondary);
   }
 
-  .Bento .Text h2,
-  .Bento .Text h3,
+  .Bento .Text h4,
+  .Bento .Text h5,
   .Bento .Text p,
-  .Map .Text h2,
+  .Map .Text h4,
   .Map .Text p {
     color: var(--white);
   }

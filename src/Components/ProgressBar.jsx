@@ -8,7 +8,7 @@ const ProgressBar = ({ PBn, PBd, PBt, PBimg }) => {
         <img src={PBimg}/>
       </div>
       <div className='PB'>
-        <div className='PBt'> <h3>{PBt}</h3> </div>
+        <div className='PBt'> <h5>{PBt}</h5> </div>
         <div className='PB100'>
         <div className='PBX' style={{ width: `${percentage}%`}}></div>
       </div>

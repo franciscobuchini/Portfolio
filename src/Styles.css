@@ -28,7 +28,11 @@ html, body {
   align-items: center;
   height: min-content;
   width: 100%;
-  --size: 100px;
+  --size: 80px;
+  --size: 80px;
+  --gap: 12px;
+  --bentogridsize: calc(var(--bentosize) * 8 + var(--gap) * 9);
+  --bentosize: 130px;
 }
 
 a {
@@ -126,38 +130,31 @@ article {
   width: 100%;
   align-items: center;
   gap: 50px;
+  margin-top: -540px;
 }
 
 .Article .TextArticle {
   text-align: center;
 }
 
-.Article .TextArticle > h1 {
-  font-size: 3rem;
-}
-
-.Article .TextArticle > p {
-  font-size: 1.3rem;
-}
-
 .BentoGrid {
-  grid-template-columns: repeat(8, 1fr);
   z-index: 500;
-  display: grid;
   width: 100%;
   height: auto;
   border-radius: 20px;
-  padding: 12px;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--bentosize), 1fr));
   grid-auto-flow: dense;
+  grid-gap: var(--gap);
+  padding: var(--gap);
+  max-width: var(--bentogridsize);
 }
 
 .Bento {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
-  min-height: max-content;
   border-radius: 10px;
   gap: 10px;
 }
@@ -175,12 +172,14 @@ article {
   align-items: center;
   min-height: calc(var(--size) / 2);
   z-index: 300;
+  margin-bottom: 5px;
 }
 
 .Text {
   z-index: 200;
   display: flex;
   flex-direction: column;
+  margin: 5px 5px 0;
 }
 
 .Image {
@@ -193,143 +192,32 @@ article {
 }
 /* BENTO -----------------------------------*/
 
-/* BENTO STYLES -----------------------------------*/
-.B1 {
-  justify-content: flex-start;
-}
+/* BENTO SIZES -----------------------------------*/
 
-.B2 > .Component {
-  justify-content: left;
-}
+.V1 {min-width: calc(var(--bentosize)); grid-column: span 1;}
+.V2 {min-width: calc(var(--bentosize) * 2 + var(--gap)); grid-column: span 2;}
+.V3 {min-width: calc(var(--bentosize) * 3 + var(--gap) * 2); grid-column: span 3;}
+.V4 {min-width: calc(var(--bentosize) * 4 + var(--gap) * 3); grid-column: span 4;}
+.V5 {min-width: calc(var(--bentosize) * 5 + var(--gap) * 4); grid-column: span 5;}
+.V6 {min-width: calc(var(--bentosize) * 6 + var(--gap) * 5); grid-column: span 6;}
+.V7 {min-width: calc(var(--bentosize) * 7 + var(--gap) * 6); grid-column: span 7;}
+.V8 {min-width: calc(var(--bentosize) * 8 + var(--gap) * 7); grid-column: span 8;}
+.H1 {height: calc(var(--bentosize)); grid-row: span 1;}
+.H2 {height: calc(var(--bentosize) * 2 + var(--gap)); grid-row: span 2;}
+.H3 {height: calc(var(--bentosize) * 3 + var(--gap) * 2); grid-row: span 3;}
+.H4 {height: calc(var(--bentosize) * 4 + var(--gap) * 3); grid-row: span 4;}
+.H5 {height: calc(var(--bentosize) * 5 + var(--gap) * 4); grid-row: span 5;}
+.H6 {height: calc(var(--bentosize) * 6 + var(--gap) * 5); grid-row: span 6;}
+.H7 {height: calc(var(--bentosize) * 7 + var(--gap) * 6); grid-row: span 7;}
+.H8 {height: calc(var(--bentosize) * 8 + var(--gap) * 7); grid-row: span 8;}
 
-.B3 > .Component {
-  justify-content: right;
-}
+/* BENTO SIZES -----------------------------------*/
 
-.B4 > .Text {
-  text-align: right;
-}
-
-.B4 > .Component {
-  justify-content: left;
-}
-
-.B5 > .Text {
-  text-align: right;
-}
-
-.B5 > .Component {
-  justify-content: right;
-}
-
-.B6 > .Text {
-  text-align: center;
-}
-
-.B6 > .Component {
-  justify-content: center;
-}
-
-.B7,
-.B7 > .Text,
-.B7 > .Component {
-  justify-content: center;
-  text-align: center;
-}
-
-.B8 {
-  justify-content: center;
-}
 /* BENTO STYLES -----------------------------------*/
 
-/* RESPONSIVE -----------------------------------*/
-@media (width <= 770px) {
 
-  .Nav {
-    top: -150px;
-  }
 
-  .Article .TextArticle {
-    padding: 0 12px;
-  }
-
-  .Article {
-    margin-top: -640px;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  a,
-  h3,
-  p {
-    font-size: 0.8rem;
-  }
-
-  .Separator svg {
-    width: 300%;
-  }
-}
-
-@media (width > 770px) {
-
-  .Article {
-    margin-top: -540px;
-  }
-
-  .Article .TextArticle {
-    padding: 0 20px;
-  }
-
-  .BentoGrid {
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .Nav {
-    top: auto;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  a,
-  h3,
-  p {
-    font-size: 1rem;
-  }
-
-  .Separator svg {
-    width: 200%;
-  }
-}
-
-@media (width > 1190px) {
-  .Article .TextArticle {
-    max-width: 800px;
-  }
-
-  .BentoGrid {
-    max-width: 1170px;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  a,
-  h3,
-  p {
-    font-size: 1rem;
-  }
-
-  .Separator svg {
-    width: 100%;
-  }
-}
-/* RESPONSIVE -----------------------------------*/
+/* BENTO STYLES -----------------------------------*/
 
 /* COMPONENTS -----------------------------------*/
 .Button, 
@@ -457,3 +345,41 @@ article {
   text-align: center;
 }
 /* COMPONENTS -----------------------------------*/
+
+/* RESPONSIVE -----------------------------------*/
+
+@media (width > 0) and (width <= 570px) {
+
+  .Nav {top: -150px;} /*oculta el navbar*/
+
+  .Article .TextArticle {padding: 0 var(--gap);}
+
+  .Separator svg {width: 300%;}
+
+}
+
+@media (width > 570px) and (width <= 770px) {
+
+  .Nav {top: -150px;} /*oculta el navbar*/
+
+  .Article .TextArticle {padding: 0 calc(var(--gap)*2);}
+
+  .Separator svg {width: 250%;}
+
+}
+
+@media (width > 770px) and (width <= 1164px) {
+
+  .Separator svg {width: 200%;}
+
+}
+
+@media (width > 1164px) {
+
+  .Article .TextArticle {max-width: 800px;}
+
+  .Separator svg {width: 100%;}
+
+}
+
+/* RESPONSIVE -----------------------------------*/
