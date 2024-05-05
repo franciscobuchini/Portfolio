@@ -18,7 +18,7 @@ function App() {
     english: {
       cb: 'Created by:',
       h1_article1: 'BentoBox UI',
-      p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.0.0 version for React JS.',
+      p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.1.1 version for React JS.',
       h4_bento1: 'First of all...',
       p_bento1: 'Choose your preferencies:',
       theme: 'Theme switcher',
@@ -31,7 +31,7 @@ function App() {
       h1_article2: 'All the components we have:',
       p_article2: 'Discover the variety of components available in our user interface: a complete guide to all the options at your disposal.',
       h4_bento3: 'In addition',
-      p_bento3: 'to the components that you saw previously, you have access to the following: to the components that you saw previously, you have access to the following:',
+      p_bento3: 'to the components that you saw previously, you have access to the following:',
       button1: 'Button example',
       bt1: 'Example',
       download1: 'Download:',
@@ -39,7 +39,7 @@ function App() {
     spanish: {
       cb: 'Creado por:',
       h1_article1: 'BentoBox UI',
-      p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.0.0 para React JS. ',
+      p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.1.1 para React JS. ',
       h4_bento1: 'Antes que nada...',
       p_bento1: 'Elije tus preferencias:',
       theme: 'Selector de tema',
@@ -71,36 +71,22 @@ function App() {
     <>
       <Header cb={lang[language].cb}/>
 
-      {/* <BentoGrid Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
-        <Bento Bsize='x1x8' Bstyle='B7' Bbg='transparent' Th={lang[language].h4_bento1} Tp={lang[language].p_bento1} />
-        <Bento Bsize='x1x4' Bstyle='B7' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
-        <Bento Bsize='x1x4' Bstyle='B7' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
-        <Bento Bsize='x1x8' Bstyle='B7' Bbg='transparent' Th={lang[language].h4_bento2} Tp={lang[language].p_bento2} />
-        <Map Bsize='x3x8' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
-      </BentoGrid> */}
+      <BentoGrid Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
+        <Bento Bv='1' Bh='8' Bs='B7' Bbg='transparent' Th={lang[language].h4_bento1} Tp={lang[language].p_bento1} />
+        <Bento Bv='1' Bh='4' Bs='B7' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
+        <Bento Bv='1' Bh='4' Bs='B7' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
+        <Bento Bv='1' Bh='8' Bs='B7' Bbg='transparent'/>
+        <Bento Bv='1' Bh='8' Bs='B7' Bbg='transparent' Th={lang[language].h4_bento2} Tp={lang[language].p_bento2} />
+        <Map Bv='3' Bh='8' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
+      </BentoGrid>
 
       <BentoGrid Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>
-        {/* <Bento Bsize='x1x8' Bstyle='B1' Bbg='transparent' Th={lang[language].h4_bento3} Tp={lang[language].p_bento3}/>
-        <Bento Bv='1' Bh='2'Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
-        <Bento Bv='1' Bh='2'Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2'Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1} Com={Download} />
-        <Bento Bv='1' Bh='2'Th={lang[language].image2} />
-        <Bento Bv='1' Bh='2'Th={lang[language].image3} /> */}
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='1' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bv='1' Bh='8' Bs='B7' Bbg='transparent' Th={lang[language].h4_bento3} Tp={lang[language].p_bento3}/>
+        <Bento Bv='2' Bh='2' Bs='B7' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
+        <Bento Bv='2' Bh='2' Bs='B7' Th={lang[language].download1} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B7' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
+        <Bento Bv='2' Bh='4' Bs='B7' Th={lang[language].image2} />
+        <Bento Bv='2' Bh='4' Bs='B7' Th={lang[language].image3} />
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>

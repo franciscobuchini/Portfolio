@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 
-export default function Map({ Bsize, Th, Tp, theme }) {
+export default function Map({ Bs, Bv, Bh, Th, Tp, theme }) {
   const mapContainer = useRef(null);
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJhbmNpc2NvYnVjaGluaSIsImEiOiJjbHZsNng5djUxdXVvMmtvb2NoZzcza3VnIn0.jTm58Ue65TyJ9ToHbiwMHg';
   const light = 'mapbox://styles/franciscobuchini/clvldwnu1017x01q1buz0fg6v';
@@ -21,7 +21,7 @@ export default function Map({ Bsize, Th, Tp, theme }) {
     return () => map.remove();
   }, [theme]); // Agrega theme como dependencia para que se actualice cuando cambie
 
-  let classNameMap = `MapComponent ${Bsize}`
+  let classNameMap = `MapComponent ${Bs} V${Bv} H${Bh}`
 
   return (
     <section className={classNameMap}>

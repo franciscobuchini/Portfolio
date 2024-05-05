@@ -136,7 +136,7 @@ header svg path {
 
   .Bento,
   .MapComponent {
-    background-color: var(--black);
+    background-color:darkolivegreen;
   }
 
   .Bento:hover,
