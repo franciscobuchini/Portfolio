@@ -138,11 +138,16 @@ article {
   text-align: center;
 }
 
+.Bento, .Map {
+  transition: 0.2s;
+}
+
 .Bento:hover > .ImageBack {
   transform: scale(1.04);
 }
 
 .Bento:hover > .ImageDispel {
+  transition: opacity 1s;
   opacity: 0;
 }
 
@@ -167,6 +172,7 @@ article {
   width: 100%;
   height: 100%;
   z-index: 100;
+  transition: transform 2s ease;
 }
 
 .BentoGrid {
@@ -242,6 +248,11 @@ article {
   font-weight: 600;
   font-size: 1rem;
   position: relative;
+}
+
+.Button, 
+.Download {
+  transition: all 0.3s;
 }
 
 .Download::before {
