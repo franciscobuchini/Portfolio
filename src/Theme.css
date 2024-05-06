@@ -25,7 +25,7 @@ body {
 .Bento,
 .MapComponent {
   background-color: var(--white);
-  outline: none;
+  outline: 1px solid var(--transparent15dark);
 }
 
 .Bento:hover,
@@ -58,7 +58,7 @@ body {
 }
 
 header nav {
-  background-color: var(--transparent15light);
+  background-color: var(--transparent30light);
   color: var(--black);
 }
 

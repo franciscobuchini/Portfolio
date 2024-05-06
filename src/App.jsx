@@ -17,6 +17,8 @@ function App() {
       cb: 'Created by:',
       h1_article1: 'BentoBox UI',
       p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.1.1 version for React JS.',
+      h4_bento0: 'Next tasks:',
+      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Widht problem BentoGrid, Bento Styles content, Button animations.',
       h4_bento1: 'First of all...',
       p_bento1: 'Choose your preferencies:',
       theme: 'Theme switcher',
@@ -38,6 +40,8 @@ function App() {
       cb: 'Creado por:',
       h1_article1: 'BentoBox UI',
       p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.1.1 para React JS. ',
+      h4_bento0: 'Próximas tareas:',
+      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Widht problem BentoGrid, Bento Styles content, Button animations.',
       h4_bento1: 'Antes que nada...',
       p_bento1: 'Elije tus preferencias:',
       theme: 'Selector de tema',
@@ -70,12 +74,13 @@ function App() {
       <Header cb={lang[language].cb}/>
 
       <BentoGrid Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
+        <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento0} Tp={lang[language].p_bento0} />
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento1} Tp={lang[language].p_bento1} />
         <Bento Bv='1' Bh='4' Bs='B4' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
         <Bento Bv='1' Bh='4' Bs='B4' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent'/>
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento2} Tp={lang[language].p_bento2} />
-        <Map Bv='3' Bh='8' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
+        <Map Bv='3' Bh='8' Bs='B0' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
       </BentoGrid>
 
       <BentoGrid Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>

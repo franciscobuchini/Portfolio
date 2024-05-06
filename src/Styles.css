@@ -38,6 +38,7 @@
   border: none;
   overflow: hidden;
   letter-spacing: 0.6px;
+  line-height: 25px;
   color: inherit;
 }
 
@@ -59,7 +60,7 @@ html, body {
   width: 100%;
   --size: 80px;
   --size: 80px;
-  --gap: 12px;
+  --gap: 20px;
   --bentogridsize: calc(var(--bentosize) * 8 + var(--gap) * 9);
   @media (width > 770px) {--bentosize: 130px;}
   @media (width <= 770px) {--bentosize: 90px;}
@@ -68,7 +69,7 @@ html, body {
 
 /* TEXT -----------------------------------*/
 
-h1 {}
+h1 {margin: 20px;}
 
 h2 {}
 
@@ -76,9 +77,10 @@ h3 {}
 
 h4 {}
 
-p {}
+p {font-size: 0.9rem;}
 
-a {cursor: pointer; font-weight: 500;}
+a {cursor: pointer; font-weight: lighter;}
+.Button, .Download {font-size: 0.8rem;}
 /* TEXT -----------------------------------*/
 
 /* OUTSIDE -----------------------------------*/
@@ -137,18 +139,12 @@ footer {
   width: 100%;
 }
 
-article {
-  margin-top: 50px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
 /* OUTSIDE -----------------------------------*/
 
 /* BENTO -----------------------------------*/
 
 .Article {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -158,10 +154,6 @@ article {
 
 .Article .TextArticle {
   text-align: center;
-}
-
-.Bento, .Map {
-  transition: 0.2s;
 }
 
 .Bento:hover > .ImageBack {
@@ -177,14 +169,14 @@ article {
   display: flex;
   min-height: calc(var(--size) / 2);
   z-index: 300;
-  margin: 0 5px 5px;
+  margin: 0 20px 20px;
 }
 
 .Text {
-  z-index: 200;
+  z-index: 500;
   display: flex;
   flex-direction: column;
-  margin: 5px 5px 0;
+  margin: 20px 20px 0;
 }
 
 .Image {
@@ -201,7 +193,7 @@ article {
   z-index: 500;
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: calc(32px + var(--gap));
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--bentosize), 1fr));
   grid-auto-flow: dense;
@@ -214,9 +206,15 @@ article {
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 10px;
   gap: 10px;
 }
+
+.Bento, .MapComponent {
+  transition: 0.2s;
+  border-radius: 32px;
+  position: relative;
+}
+
 /* BENTO -----------------------------------*/
 
 /* BENTO SIZES -----------------------------------*/
@@ -267,8 +265,6 @@ article {
   min-height: calc(var(--size) / 2);
   cursor: pointer;
   border-radius: 100px;
-  font-weight: 600;
-  font-size: 1rem;
   position: relative;
 }
 
@@ -320,15 +316,6 @@ article {
   content: 'ES';
 }
 
-.MapComponent {
-  position: relative;
-  border-radius: 10px;
-}
-
-.MapComponent .Text {
-  margin: 10px;
-}
-
 .MapComponent:hover > .Text {
    display: none;
 }
@@ -336,6 +323,7 @@ article {
 .MapComponent .Map {
   z-index: 100;
   height: 100%;
+  width: 100%;
 }
 
 .MapComponent .Map div.mapboxgl-ctrl-bottom-right,
@@ -344,7 +332,6 @@ article {
 }
 
 .MapComponent .Text {
-  z-index: 500;
   position: absolute;
   top: 0;
 }
