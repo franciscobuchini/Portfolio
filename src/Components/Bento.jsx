@@ -1,7 +1,7 @@
 // BENTO.JSX
 import React from 'react'
 
-export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
+export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, Tc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
   let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bs} V${Bv} H${Bh}`
@@ -26,11 +26,10 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, IBimg, IBalt, IDi
       {(Th || Tp) && (
         <div className='Text' style={{
           height: Com ? 'auto' : '100%',
-          width: Com ? 'auto' : '100%',
-          
+          width: Com ? 'auto' : '100%',          
         }}>
-          <h4>{Th}</h4>
-          <p>{Tp}</p>
+          <h4 style={{color: `var(--${Tc})`}}>{Th}</h4>
+          <p style={{color: `var(--${Tc})`}}>{Tp}</p>
         </div>
       )}
 

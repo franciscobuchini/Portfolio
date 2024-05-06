@@ -9,6 +9,10 @@ import LanguageSwitch from './Components/LanguageSwitch'
 import ProgressBar from './Components/ProgressBar'
 import Button from './Components/Button'
 import Download from './Components/Download'
+import IBimg1 from './Assets/IBimg1.webp'
+import IFimg1 from './Assets/IFimg1.webp'
+import IBimg2 from './Assets/IBimg2.webp'
+import IDimg2 from './Assets/IDimg2.webp'
 
 function App() {
   // Objet with lang:
@@ -32,9 +36,12 @@ function App() {
       p_article2: 'Discover the variety of components available in our user interface: a complete guide to all the options at your disposal.',
       h4_bento3: 'In addition',
       p_bento3: 'to the components that you saw previously, you have access to the following:',
-      button1: 'Button example',
+      button1: 'Button:',
       bt1: 'Example',
       download1: 'Download:',
+      image1: 'Logo with background hover effect',
+      image2: 'Faded image',
+      image3: 'Regular image with hover effect',
     },
     spanish: {
       cb: 'Creado por:',
@@ -55,9 +62,12 @@ function App() {
       p_article2: 'Descubre la variedad de componentes disponibles en nuestra interfaz de usuario: una guía completa para conocer todas las opciones a tu disposición.',
       h4_bento3: 'Además',
       p_bento3: 'de los componentes que viste anteriormente, tienes acceso a los siguientes:',
-      button1: 'Ejemplo de botón',
+      button1: 'Botón:',
       bt1: 'Ejemplo',
       download1: 'Descargar:',
+      image1: 'Logo con efecto de fondo',
+      image2: 'Imagen desvanecida',
+      image3: 'Imagen regular con efecto',
     }
   }
 
@@ -85,13 +95,11 @@ function App() {
 
       <BentoGrid Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento3} Tp={lang[language].p_bento3}/>
-        <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
+        <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1}/>
         <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image1} IBimg='' IFimg=''/>
-        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image2} />
-        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image3} />
-        <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent'/>
-        <Map Bv='3' Bh='8' Bs='B0' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
+        <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
+        <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image2} IBimg={IBimg2} IDimg={IDimg2}/>
+        <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image3} IBimg={IBimg2}/>
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>
