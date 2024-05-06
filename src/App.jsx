@@ -7,8 +7,6 @@ import Map from './Components/Map'
 import ThemeSwitch from './Components/ThemeSwitch'
 import LanguageSwitch from './Components/LanguageSwitch'
 import ProgressBar from './Components/ProgressBar'
-import IBimg1 from './Assets/IBimg1.webp'
-import IFimg1 from './Assets/IFimg1.webp'
 import Button from './Components/Button'
 import Download from './Components/Download'
 
@@ -84,7 +82,7 @@ function App() {
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento3} Tp={lang[language].p_bento3}/>
         <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1} />
         <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].download1} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
+        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image1} IBimg='' IFimg=''/>
         <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image2} />
         <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image3} />
       </BentoGrid>

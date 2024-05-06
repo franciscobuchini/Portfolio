@@ -1,5 +1,33 @@
+/* FONTS -----------------------------------*/
+@font-face {
+  font-family: Garnett;
+  src: url(/src/Fonts/Garnett-Light.ttf);
+  font-weight: light;
+  font-style: light;
+}
+@font-face {
+  font-family: Garnett;
+  src: url(/src/Fonts/Garnett-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Garnett;
+  src: url(/src/Fonts/Garnett-Medium.ttf);
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: Garnett;
+  src: url(/src/Fonts/Garnett-Semibold.ttf);
+  font-weight: 700;
+  font-style: bold;
+}
+/* FONTS -----------------------------------*/
+
 /* NORMALIZE -----------------------------------*/
 * {
+  font-family: Garnett;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,7 +37,8 @@
   list-style-type: none;
   border: none;
   overflow: hidden;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.6px;
+  color: inherit;
 }
 
 *:focus {
@@ -35,17 +64,25 @@ html, body {
   @media (width > 770px) {--bentosize: 130px;}
   @media (width <= 770px) {--bentosize: 90px;}
 }
-
-a {
-  cursor: pointer;
-  color: inherit;
-}
 /* NORMALIZE -----------------------------------*/
 
+/* TEXT -----------------------------------*/
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+p {}
+
+a {cursor: pointer; font-weight: 500;}
+/* TEXT -----------------------------------*/
+
 /* OUTSIDE -----------------------------------*/
-.Me {
-  font-weight: 600;
-}
+
 
 header {
   position: relative;
@@ -101,7 +138,7 @@ footer {
 }
 
 article {
-  margin-top: -50px;
+  margin-top: 50px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -110,20 +147,6 @@ article {
 /* OUTSIDE -----------------------------------*/
 
 /* BENTO -----------------------------------*/
-.Separator {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.Separator > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 300px;
-}
 
 .Article {
   display: flex;
@@ -131,7 +154,6 @@ article {
   width: 100%;
   align-items: center;
   gap: 100px;
-  margin-top: -350px;
 }
 
 .Article .TextArticle {
@@ -221,7 +243,7 @@ article {
 
 /* BENTO STYLES -----------------------------------*/
 
-.B0 {/*nothing*/}
+/* .B0 {nothing} */
 .B1 {justify-content: space-between; align-items: center; text-align: center;}
 .B2 {align-items: end; text-align: right;}
 .B3 {justify-content: space-between;}
@@ -374,8 +396,6 @@ article {
 
   .Article .TextArticle {padding: 0 var(--gap);}
 
-  .Separator svg {width: 300%;}
-
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
 
   .H5 {grid-column: span 4;}
@@ -391,15 +411,11 @@ article {
 
   .Article .TextArticle {padding: 0 calc(var(--gap)*2);}
 
-  .Separator svg {width: 250%;}
-
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
 }
 
 @media (width > 770px) and (width <= 1164px) {
-
-  .Separator svg {width: 200%;}
 
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
@@ -408,8 +424,6 @@ article {
 @media (width > 1164px) {
 
   .Article .TextArticle {max-width: 800px;}
-
-  .Separator svg {width: 100%;}
 
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
