@@ -21,12 +21,14 @@
 }
 
 /* BENTO STYLES -----------------------------------*/
-.B1 {justify-content: flex-start;}
-.B2 {>.Component{justify-content: left;}}
-.B3 {>.Component{justify-content: right;}}
-.B4 {>.Text{text-align: right;} >.Component{justify-content: left;}}
-.B5 {>.Text{text-align: right;} >.Component{justify-content: right;}}
-.B6 {>.Text{text-align: center;} >.Component{justify-content: center;}}
-.B7 {justify-content: center; >.Text, .Component {justify-content: center; text-align: center;}}
+
+.B1 {justify-content: center; >.Text{text-align: center;} >.Component{align-self: center;}}
+.B2 {justify-content: flex-start;}
+.B3 {>.Component{align-self: flex-start;}}
+.B4 {>.Component{align-self: flex-end;}}
+.B5 {>.Text{text-align: right;} >.Component{align-self: flex-start;}}
+.B6 {>.Text{text-align: right;} >.Component{align-self: flex-end;}}
+.B7 {>.Text{text-align: center;} >.Component{align-self: center;}}
 .B8 {justify-content: center;}
+.B9 {>.Text, .Component {justify-content: center; text-align: center;}}
 /* BENTO STYLES -----------------------------------*/
