@@ -37,7 +37,7 @@
   list-style-type: none;
   border: none;
   overflow: hidden;
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
   line-height: 24px;
   color: inherit;
 }
@@ -76,7 +76,7 @@ h3 {}
 
 h4 {}
 
-p {font-size: 0.9rem;}
+p {font-size: 0.8rem;}
 
 a {cursor: pointer; font-weight: lighter;}
 .Button, .Download {font-size: 0.8rem;}
@@ -321,6 +321,9 @@ footer {
   z-index: 100;
   height: 100%;
   width: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
 }
 
 .MapComponent .Map div.mapboxgl-ctrl-bottom-right,

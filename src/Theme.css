@@ -2,7 +2,7 @@
   --primary: #118ab2;
   --secondary: #A13D63;
   --light: #F7F2F2;
-  --white: #FAFAFA;
+  --white: #FFFFFF;
   --black: #1E1E1E;
   --transparent15dark: rgba(0, 0, 0, 0.15);
   --transparent30dark: rgba(0, 0, 0, 0.30);
@@ -25,7 +25,7 @@ body {
 .Bento,
 .MapComponent {
   background-color: var(--white);
-  outline: 1px solid var(--transparent15dark);
+  outline: none;
 }
 
 .Bento:hover,
