@@ -90,6 +90,8 @@ function App() {
         <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image1} IBimg='' IFimg=''/>
         <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image2} />
         <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].image3} />
+        <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent'/>
+        <Map Bv='3' Bh='8' Bs='B0' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>
