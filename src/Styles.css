@@ -38,7 +38,7 @@
   border: none;
   overflow: hidden;
   letter-spacing: 0.6px;
-  line-height: 25px;
+  line-height: 24px;
   color: inherit;
 }
 
@@ -144,12 +144,12 @@ footer {
 /* BENTO -----------------------------------*/
 
 .Article {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 .Article .TextArticle {
@@ -403,6 +403,8 @@ footer {
 }
 
 @media (width > 770px) and (width <= 1164px) {
+
+  .Nav {top: -150px;} /*oculta el navbar*/
 
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
