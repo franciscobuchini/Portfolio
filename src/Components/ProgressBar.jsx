@@ -1,4 +1,4 @@
-const ProgressBar = ({ PBn, PBd, PBt, PBimg }) => {
+const ProgressBar = ({ PBn, PBd, PBt, PBimg, Tc }) => {
   // Calcular el porcentaje completado
   const percentage = (PBn / PBd) * 100;
 
@@ -8,7 +8,7 @@ const ProgressBar = ({ PBn, PBd, PBt, PBimg }) => {
         <img src={PBimg}/>
       </div>
       <div className='PB'>
-        <div className='PBt'> <h5>{PBt}</h5> </div>
+        <div className='PBt'> <h5 style={{color: `var(--${Tc})`}}>{PBt}</h5> </div>
         <div className='PB100'>
         <div className='PBX' style={{ width: `${percentage}%`}}></div>
       </div>

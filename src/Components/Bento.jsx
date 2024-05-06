@@ -36,7 +36,7 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, Tc, IBimg, IBalt,
       
       {Com && ( // Add the custom component
         <div className='Component'>
-          {React.createElement(Com, { Lurl, PBn, PBd, PBt, PBimg, Bt })}
+          {React.createElement(Com, { Lurl, PBn, PBd, PBt, PBimg, Bt, Tc })}
         </div>
       )}
     </section>

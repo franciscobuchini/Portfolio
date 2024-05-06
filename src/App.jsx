@@ -13,6 +13,8 @@ import IBimg1 from './Assets/IBimg1.webp'
 import IFimg1 from './Assets/IFimg1.webp'
 import IBimg2 from './Assets/IBimg2.webp'
 import IDimg2 from './Assets/IDimg2.webp'
+import ReactLogo from './Assets/React.webp'
+import IBimg3 from './Assets/IBimg3.webp'
 
 function App() {
   // Objet with lang:
@@ -22,7 +24,7 @@ function App() {
       h1_article1: 'BentoBox UI',
       p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.1.1 version for React JS.',
       h4_bento0: 'Next tasks:',
-      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Widht problem BentoGrid, Bento Styles content, Button animations.',
+      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Button animations, Solve margin problem',
       h4_bento1: 'First of all...',
       p_bento1: 'Choose your preferencies:',
       theme: 'Theme switcher',
@@ -42,13 +44,29 @@ function App() {
       image1: 'Logo with background hover effect',
       image2: 'Faded image',
       image3: 'Regular image with hover effect',
+      progressbar1: 'Progress bar',
+      progressbar1PBt: 'Website progress:',
+
+      h1_article3: 'Bento styles to use:',
+      p_article3: 'Take a look of all the options for bentos:',
+      h4_bentoB0: 'Bento Style: B0',
+      h4_bentoB1: 'Bento Style: B1',
+      h4_bentoB2: 'Bento Style: B2',
+      h4_bentoB3: 'Bento Style: B3',
+      h4_bentoB4: 'Bento Style: B4',
+      h4_bentoB5: 'Bento Style: B5',
+      h4_bentoB6: 'Bento Style: B6',
+      h4_bentoB7: 'Bento Style: B7',
+      h4_bentoB8: 'Bento Style: B8',
+      h4_bentoB9: 'Bento Style: B9',
+      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     spanish: {
       cb: 'Creado por:',
       h1_article1: 'BentoBox UI',
       p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.1.1 para React JS. ',
       h4_bento0: 'Próximas tareas:',
-      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Widht problem BentoGrid, Bento Styles content, Button animations.',
+      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Bento Styles content, Button animations.',
       h4_bento1: 'Antes que nada...',
       p_bento1: 'Elije tus preferencias:',
       theme: 'Selector de tema',
@@ -68,6 +86,22 @@ function App() {
       image1: 'Logo con efecto de fondo',
       image2: 'Imagen desvanecida',
       image3: 'Imagen regular con efecto',
+      progressbar1: 'Barra de progreso',
+      progressbar1PBt: 'Progreso del sitio web:',
+
+      h1_article3: 'Bento styles to use:',
+      p_article3: 'Take a look of all the options for bentos:',
+      h4_bentoB0: 'Bento Style: B0',
+      h4_bentoB1: 'Bento Style: B1',
+      h4_bentoB2: 'Bento Style: B2',
+      h4_bentoB3: 'Bento Style: B3',
+      h4_bentoB4: 'Bento Style: B4',
+      h4_bentoB5: 'Bento Style: B5',
+      h4_bentoB6: 'Bento Style: B6',
+      h4_bentoB7: 'Bento Style: B7',
+      h4_bentoB8: 'Bento Style: B8',
+      h4_bentoB9: 'Bento Style: B9',
+      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     }
   }
 
@@ -100,6 +134,20 @@ function App() {
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image2} IBimg={IBimg2} IDimg={IDimg2}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image3} IBimg={IBimg2}/>
+        <Bento Bv='1' Bh='8' Bs='B3' PBt={lang[language].progressbar1PBt} Th={lang[language].progressbar1} Com={ProgressBar} PBn='124' PBd='200' PBimg={ReactLogo} IBimg={IBimg3}/>
+      </BentoGrid>
+      
+      <BentoGrid Sh={lang[language].h1_article3} Sp={lang[language].p_article3}>
+        <Bento Bv='2' Bh='2' Bs='B0' Th={lang[language].h4_bentoB0} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B2' Th={lang[language].h4_bentoB2} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B3' Th={lang[language].h4_bentoB3} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].h4_bentoB4} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B5' Th={lang[language].h4_bentoB5} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B6' Th={lang[language].h4_bentoB6} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B7' Th={lang[language].h4_bentoB7} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B8' Th={lang[language].h4_bentoB8} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B9' Th={lang[language].h4_bentoB9} Tp={lang[language].lorem} Com={Download} />
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>
