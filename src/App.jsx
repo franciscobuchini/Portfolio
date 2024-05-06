@@ -139,15 +139,15 @@ function App() {
       
       <BentoGrid Sh={lang[language].h1_article3} Sp={lang[language].p_article3}>
         <Bento Bv='2' Bh='2' Bs='B0' Th={lang[language].h4_bentoB0} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} />
         <Bento Bv='2' Bh='2' Bs='B2' Th={lang[language].h4_bentoB2} Tp={lang[language].lorem} Com={Download} />
         <Bento Bv='2' Bh='2' Bs='B3' Th={lang[language].h4_bentoB3} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].h4_bentoB4} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].h4_bentoB4} Tp={lang[language].lorem} Com={Download} />
         <Bento Bv='2' Bh='2' Bs='B5' Th={lang[language].h4_bentoB5} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B6' Th={lang[language].h4_bentoB6} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B7' Th={lang[language].h4_bentoB7} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B8' Th={lang[language].h4_bentoB8} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B9' Th={lang[language].h4_bentoB9} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B6' Th={lang[language].h4_bentoB6} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B7' Th={lang[language].h4_bentoB7} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B8' Th={lang[language].h4_bentoB8} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='4' Bs='B9' Th={lang[language].h4_bentoB9} Tp={lang[language].lorem} Com={Download} />
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>

@@ -59,7 +59,6 @@ html, body {
   height: min-content;
   width: 100%;
   --size: 80px;
-  --size: 80px;
   --gap: 20px;
   --bentogridsize: calc(var(--bentosize) * 8 + var(--gap) * 9);
   @media (width > 770px) {--bentosize: 130px;}
@@ -119,13 +118,13 @@ header > div {
   left: 50%;
   transform: translateX(-50%);
   font-weight: 500;
-  padding: var(--gap) 30px;
+  padding: var(--gap);
   border-radius: 100px;
 }
 
 .Nav > ul {
   display: flex;
-  gap: 40px;
+  gap: var(--gap);
 }
 
 .Nav > ul > li:hover {
@@ -134,7 +133,7 @@ header > div {
 
 footer {
   text-align: center;
-  padding: 60px 0 var(--gap);
+  padding: var(--gap);
   height: fit-content;
   width: 100%;
 }
@@ -149,7 +148,7 @@ footer {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  gap: 50px;
+  gap: var(--gap);
 }
 
 .Article .TextArticle {
@@ -170,14 +169,12 @@ footer {
   display: flex;
   min-height: calc(var(--size) / 2);
   z-index: 300;
-  margin: 0 var(--gap) var(--gap);
+  padding: calc(var(--gap)/2) var(--gap) var(--gap) var(--gap);
 }
 
 .Text {
   z-index: 500;
-  display: flex;
-  flex-direction: column;
-  margin: var(--gap) var(--gap) 0;
+  padding: var(--gap) var(--gap) calc(var(--gap)/2) var(--gap);
 }
 
 .Image {
@@ -207,7 +204,6 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 10px;
 }
 
 .Bento, .MapComponent {
@@ -382,8 +378,6 @@ footer {
 
   .Nav {top: -150px;} /*oculta el navbar*/
 
-  .Article .TextArticle {padding: 0 var(--gap);}
-
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
 
   .H5 {grid-column: span 4;}
@@ -396,8 +390,6 @@ footer {
 @media (width > 570px) and (width <= 770px) {
 
   .Nav {top: -150px;} /*oculta el navbar*/
-
-  .Article .TextArticle {padding: 0 calc(var(--gap)*2);}
 
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
