@@ -22,7 +22,7 @@ function App() {
     english: {
       cb: 'Created by:',
       h1_article1: 'BentoBox UI',
-      p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.1.1 version for React JS.',
+      p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.2.3 version for React JS.',
       h4_bento0: 'Next tasks:',
       p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Button animations, Solve margin problem',
       h4_bento1: 'First of all...',
@@ -64,7 +64,7 @@ function App() {
     spanish: {
       cb: 'Creado por:',
       h1_article1: 'BentoBox UI',
-      p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.1.1 para React JS. ',
+      p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.2.3 para React JS. ',
       h4_bento0: 'Próximas tareas:',
       p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Bento Styles content, Button animations.',
       h4_bento1: 'Antes que nada...',
