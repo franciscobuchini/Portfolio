@@ -19,7 +19,8 @@ body {
 }
 
 .BentoGrid {
-  background-color: var(--transparent);
+  background-color: var(--transparent30light);
+  border: 1px solid var(--transparent15dark);
 }
 
 .Bento,
@@ -127,7 +128,8 @@ header svg path {
   }
 
   .BentoGrid {
-    background-color: var(--transparent15dark);
+    background-color: var(--transparent30dark);
+    border: 1px solid var(--transparent15light);
   }
 
   .Bento,
@@ -228,4 +230,3 @@ header svg path {
 }
 
 /* THEME DARK -------------------------------------------------------*/
-

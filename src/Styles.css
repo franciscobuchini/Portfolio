@@ -143,7 +143,7 @@ footer {
 /* BENTO -----------------------------------*/
 
 .Article {
-  margin-top: 100px;
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -212,7 +212,6 @@ footer {
 .BentoGrid {
   z-index: 500;
   width: 100%;
-  height: auto;
   border-radius: calc(32px + var(--gap));
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--bentosize), 1fr));
@@ -388,6 +387,8 @@ footer {
   .Nav {top: -150px;} /*oculta el navbar*/
 
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
+
+  .BentoGrid {width: calc(100% - var(--gap));}
 
 }
 

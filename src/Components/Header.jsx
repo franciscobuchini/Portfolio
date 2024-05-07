@@ -1,11 +1,12 @@
 export default function Header ({cb, links}) {
 
-  const handleLinkClick = (id) => {
+  const handleLinkClick = (id, event) => {
+    event.preventDefault();
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
 
   return (
     <header>
@@ -17,10 +18,10 @@ export default function Header ({cb, links}) {
         <path d='M100 325H312.5C360.825 325 400 364.175 400 412.5C400 460.825 360.825 500 312.5 500H100V325Z' fill='#1E1E1E'/>
       </svg>
       <nav className='Nav'>
-        <ul>
+      <ul>
           {links.map((link, index) => (
             <li key={index}>
-              <a href={link.href || `#${link.name}`}onClick={() => handleLinkClick(link.name)}>{link.name}</a>
+              <a href={`#${link.href}`} onClick={() => handleLinkClick(link.href)}>{link.href}</a>
             </li>
           ))}
         </ul>
