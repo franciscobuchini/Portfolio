@@ -21,9 +21,9 @@ function App() {
     english: {
       cb: 'Created by:',
       h1_article1: 'BentoBox UI',
-      p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.2.3 version for React JS.',
+      p_article1: 'The open-source "bento box" styled UI. Design and build beautiful and usable websites with our 1.3.2 version for React JS.',
       h4_bento0: 'Next tasks:',
-      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Button animations, Social media card',
+      p_bento0: 'Work with branches, Lazy Load, Transition switchers, Button animations.',
       h4_bento1: 'First of all...',
       p_bento1: 'Choose your preferencies:',
       theme: 'Theme switcher',
@@ -63,9 +63,9 @@ function App() {
     spanish: {
       cb: 'Creado por:',
       h1_article1: 'BentoBox UI',
-      p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.2.3 para React JS. ',
+      p_article1: 'La interfaz de usuario con estilo "bento box" de código abierto. Diseñe y cree sitios web atractivos y utilizables con nuestra versión 1.3.2 para React JS. ',
       h4_bento0: 'Próximas tareas:',
-      p_bento0: 'Review all CSS files, Work with branches, Lazy Load, Transition switchers, Button animations, Social media card.',
+      p_bento0: 'Work with branches, Lazy Load, Transition switchers, Button animations.',
       h4_bento1: 'Antes que nada...',
       p_bento1: 'Elije tus preferencias:',
       theme: 'Selector de tema',
@@ -111,34 +111,44 @@ function App() {
   // Map Theme switcher:
   const [theme, setTheme] = useState('light')
   const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? 'dark' : 'light')}
-  
+
+  //Header list:
+  const links = [
+    { name: 'Preferences'},
+    { name: 'News'},
+    { name: 'Components'},
+    { name: 'Content'},
+  ];
+
+
   return (
     <>
-      <Header cb={lang[language].cb}/>
+      <Header cb={lang[language].cb} links={links}/>
 
-      <BentoGrid Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
+      <BentoGrid id='Preferences' Sh={lang[language].h1_article1} Sp={lang[language].p_article1}>
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento0} Tp={lang[language].p_bento0} />
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento1} Tp={lang[language].p_bento1} />
         <Bento Bv='1' Bh='4' Bs='B4' Th={lang[language].language} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'} />} />
         <Bento Bv='1' Bh='4' Bs='B4' Th={lang[language].theme} Com={() => <ThemeSwitch onChange={handleThemeSwitch} />} />
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent'/>
-        <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento2} Tp={lang[language].p_bento2} />
+        <Bento id='News' Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento2} Tp={lang[language].p_bento2} />
         <Map Bv='3' Bh='8' Bs='B0' Th={lang[language].h4_map} Tp={lang[language].p_map} theme={theme} />
       </BentoGrid>
 
-      <BentoGrid Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>
+      <BentoGrid id='Components' Sh={lang[language].h1_article2} Sp={lang[language].p_article2}>
         <Bento Bv='1' Bh='8' Bs='B4' Bbg='transparent' Th={lang[language].h4_bento3} Tp={lang[language].p_bento3}/>
         <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].button1} Com={Button} Bt={lang[language].bt1}/>
         <Bento Bv='2' Bh='2' Bs='B4' Th={lang[language].download1} Com={Download} />
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image2} IBimg={IBimg2} IDimg={IDimg2}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image3} IBimg={IBimg2}/>
-        <Bento Bv='1' Bh='8' Bs='B3' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='124' PBd='200' Limg={ReactLogo} IBimg={IBimg3}/>
+        <Bento Bv='1' Bh='4' Bs='B0' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='124' PBd='200' Limg={ReactLogo} IBimg={IBimg3}/>
+        <Bento Bv='1' Bh='4' Bs='B0' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='50' PBd='200' Limg={ReactLogo} IBimg={IBimg3}/>
       </BentoGrid>
       
-      <BentoGrid Sh={lang[language].h1_article3} Sp={lang[language].p_article3}>
+      <BentoGrid id='Content' Sh={lang[language].h1_article3} Sp={lang[language].p_article3}>
         <Bento Bv='2' Bh='2' Bs='B0' Th={lang[language].h4_bentoB0} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
-        <Bento Bv='2' Bh='4' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} PBd='10' PBn='8'/>
+        <Bento Bv='2' Bh='4' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
         <Bento Bv='2' Bh='2' Bs='B2' Th={lang[language].h4_bentoB2} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
         <Bento Bv='2' Bh='2' Bs='B3' Th={lang[language].h4_bentoB3} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
         <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].h4_bentoB4} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />

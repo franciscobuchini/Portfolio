@@ -1,4 +1,12 @@
-export default function Header ({cb}) {
+export default function Header ({cb, links}) {
+
+  const handleLinkClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <header>
       <svg  viewBox='0 0 600 600' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -10,10 +18,11 @@ export default function Header ({cb}) {
       </svg>
       <nav className='Nav'>
         <ul>
-          <li><a>Preferences</a></li>
-          <li><a>News</a></li>
-          <li><a>Components</a></li>
-          <li><a>Content</a></li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a href={link.href || `#${link.name}`}onClick={() => handleLinkClick(link.name)}>{link.name}</a>
+            </li>
+          ))}
         </ul>
       </nav>
       <div>
