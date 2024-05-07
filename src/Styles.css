@@ -187,6 +187,28 @@ footer {
   transition: transform 2.5s ease;
 }
 
+.Text .Limg img {
+  width: 50px;
+}
+
+.PB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - var(--gap) * 2);
+  min-height: 10px;
+  margin: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.PB100,
+.PBX {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
 .BentoGrid {
   z-index: 500;
   width: 100%;
@@ -336,43 +358,6 @@ footer {
   top: 0;
 }
 
-.ProgressBar {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: var(--gap);
-}
-
-.ProgressBar .PBimg {
-  height: 50px;
-  min-width: 50px;
-}
-
-.ProgressBar .PBimg img {
-  width: 50px;
-}
-
-.ProgressBar .PB {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.ProgressBar .PB .PBt {
-  text-align: left;
-}
-
-.ProgressBar .PB100 {
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-}
-
-.ProgressBar .PBX {
-  height: 100%;
-  text-align: center;
-}
 /* COMPONENTS -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/

@@ -1,13 +1,16 @@
 // BENTO.JSX
 import React from 'react'
 
-export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, Tc, IBimg, IBalt, IDimg, IDalt, IFimg, IFalt, Com, PBn, PBd, PBt, PBimg, Bt }) {
+export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, Tc, IBimg, IDimg, IFimg, Limg, Com, PBn, PBd, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
   let classNameBento = `Bento ${Bbg === 'transparent' ? 'Transparent' : ''} ${Bs} V${Bv} H${Bh}`
 
   // Open link in new tab if Lurl exists and component is not a button
   let link = Com !== 'Button' && Lurl ? () => window.open(Lurl, '_blank') : undefined
+
+  // Calcular el porcentaje completado
+  const percentage = (PBn / PBd) * 100;
 
   return (
     <section
@@ -18,25 +21,33 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, Tc, IBimg, IBalt,
         cursor: link ? 'pointer' : 'auto',
       }}>
 
-      {IBimg && <img className='Image ImageBack' src={IBimg} alt={IBalt}/>}
-      {IDimg && <img className='Image ImageDispel' src={IDimg} alt={IDalt}/>}
-      {IFimg && <img className='Image ImageFront' src={IFimg} alt={IFalt}/>}
-
+      {IBimg && <img className='Image ImageBack' src={IBimg}/>}
+      {IDimg && <img className='Image ImageDispel' src={IDimg}/>}
+      {IFimg && <img className='Image ImageFront' src={IFimg}/>}
 
       {(Th || Tp) && (
         <div className='Text' style={{
           height: Com ? 'auto' : '100%',
           width: Com ? 'auto' : '100%',          
         }}>
+          <div className='Limg'>
+            <img src={Limg}/>
+          </div>
           <h4 style={{color: `var(--${Tc})`}}>{Th}</h4>
           <p style={{color: `var(--${Tc})`}}>{Tp}</p>
         </div>
       )}
 
+      {PBd && ( // Only render the progress bar if PBd exists
+        <div className='PB'>
+          <div className='PB100'> </div>
+          <div className='PBX' style={{ width: `${percentage}%`}}></div>
+        </div>
+      )}
       
       {Com && ( // Add the custom component
         <div className='Component'>
-          {React.createElement(Com, { Lurl, PBn, PBd, PBt, PBimg, Bt, Tc })}
+          {React.createElement(Com, { Lurl, Bt, Tc })}
         </div>
       )}
     </section>

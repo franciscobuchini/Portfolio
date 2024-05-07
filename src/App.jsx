@@ -6,7 +6,6 @@ import Bento from './Components/Bento'
 import Map from './Components/Map'
 import ThemeSwitch from './Components/ThemeSwitch'
 import LanguageSwitch from './Components/LanguageSwitch'
-import ProgressBar from './Components/ProgressBar'
 import Button from './Components/Button'
 import Download from './Components/Download'
 import IBimg1 from './Assets/IBimg1.webp'
@@ -134,20 +133,20 @@ function App() {
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image2} IBimg={IBimg2} IDimg={IDimg2}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image3} IBimg={IBimg2}/>
-        <Bento Bv='1' Bh='8' Bs='B3' PBt={lang[language].progressbar1PBt} Th={lang[language].progressbar1} Com={ProgressBar} PBn='124' PBd='200' PBimg={ReactLogo} IBimg={IBimg3}/>
+        <Bento Bv='1' Bh='8' Bs='B3' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='124' PBd='200' Limg={ReactLogo} IBimg={IBimg3}/>
       </BentoGrid>
       
       <BentoGrid Sh={lang[language].h1_article3} Sp={lang[language].p_article3}>
-        <Bento Bv='2' Bh='2' Bs='B0' Th={lang[language].h4_bentoB0} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B2' Th={lang[language].h4_bentoB2} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B3' Th={lang[language].h4_bentoB3} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].h4_bentoB4} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='2' Bs='B5' Th={lang[language].h4_bentoB5} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B6' Th={lang[language].h4_bentoB6} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B7' Th={lang[language].h4_bentoB7} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B8' Th={lang[language].h4_bentoB8} Tp={lang[language].lorem} Com={Download} />
-        <Bento Bv='2' Bh='4' Bs='B9' Th={lang[language].h4_bentoB9} Tp={lang[language].lorem} Com={Download} />
+        <Bento Bv='2' Bh='2' Bs='B0' Th={lang[language].h4_bentoB0} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='4' Bs='B1' Th={lang[language].h4_bentoB1} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} PBd='10' PBn='8'/>
+        <Bento Bv='2' Bh='2' Bs='B2' Th={lang[language].h4_bentoB2} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='2' Bs='B3' Th={lang[language].h4_bentoB3} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='4' Bs='B4' Th={lang[language].h4_bentoB4} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='2' Bs='B5' Th={lang[language].h4_bentoB5} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='4' Bs='B6' Th={lang[language].h4_bentoB6} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='4' Bs='B7' Th={lang[language].h4_bentoB7} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='4' Bs='B8' Th={lang[language].h4_bentoB8} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
+        <Bento Bv='2' Bh='4' Bs='B9' Th={lang[language].h4_bentoB9} Tp={lang[language].lorem} Com={Download} Limg={ReactLogo} />
       </BentoGrid>
 
       <Footer cb={lang[language].cb}/>
