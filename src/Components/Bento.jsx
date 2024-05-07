@@ -25,7 +25,7 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th, Tp, Tc, IBimg, IDimg,
       {IDimg && <img className='Image ImageDispel' src={IDimg}/>}
       {IFimg && <img className='Image ImageFront' src={IFimg}/>}
 
-      {(Th || Tp) && (
+      {(Th || Tp || Limg) && (
         <div className='Text' style={{
           height: Com ? 'auto' : '100%',
           width: Com ? 'auto' : '100%',          

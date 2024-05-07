@@ -44,7 +44,7 @@ function App() {
       image2: 'Faded image',
       image3: 'Regular image with hover effect',
       progressbar1: 'Progress bar',
-      progressbar1PBt: 'Website progress:',
+      progressbar1PBt: 'Example progress bar:',
 
       h1_article3: 'Bento styles to use:',
       p_article3: 'Take a look of all the options for bentos:',
@@ -86,7 +86,7 @@ function App() {
       image2: 'Imagen desvanecida',
       image3: 'Imagen regular con efecto',
       progressbar1: 'Barra de progreso',
-      progressbar1PBt: 'Progreso del sitio web:',
+      progressbar1PBt: 'Barra de progreso de ejemplo:',
 
       h1_article3: 'Bento styles to use:',
       p_article3: 'Take a look of all the options for bentos:',
@@ -144,8 +144,10 @@ function App() {
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image1} IBimg={IBimg1} IFimg={IFimg1}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image2} IBimg={IBimg2} IDimg={IDimg2}/>
         <Bento Bv='2' Bh='4' Bs='B4' Tc='light' Th={lang[language].image3} IBimg={IBimg2}/>
-        <Bento Bv='1' Bh='4' Bs='B0' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='124' PBd='200' Limg={ReactLogo} />
-        <Bento Bv='1' Bh='4' Bs='B0' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='50' PBd='200' Limg={ReactLogo} />
+        <Bento Bv='1' Bh='2' Bs='B0' Th={lang[language].progressbar1} Tp={lang[language].progressbar1PBt} PBn='124' PBd='200' Limg={ReactLogo} />
+        <Bento Bv='1' Bh='2' Bs='B0' PBn='50' PBd='200' Limg={ReactLogo} />
+        <Bento Bv='1' Bh='2' Bs='B0' Tp={lang[language].progressbar1PBt} PBn='124' PBd='200' Limg={ReactLogo} />
+        <Bento Bv='1' Bh='2' Bs='B0' Th={lang[language].progressbar1} PBn='50' PBd='200' Limg={ReactLogo} />
       </BentoGrid>
       
       <BentoGrid id='Content' Sh={lang[language].h1_article3} Sp={lang[language].p_article3}>
