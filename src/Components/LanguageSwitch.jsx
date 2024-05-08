@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function LanguageSwitch({ onChange, checked }) {
   const handleLanguageSwitch = (event) => {
@@ -6,8 +6,8 @@ export default function LanguageSwitch({ onChange, checked }) {
   };
 
   return (
-    <label className='Switch LanguageSwitch'>
-      <input type='checkbox' checked={checked} onChange={handleLanguageSwitch} />
+    <label className="Switch LanguageSwitch">
+      <input type="checkbox" checked={checked} onChange={handleLanguageSwitch} />
     </label>
   );
 }

@@ -1,16 +1,16 @@
 :root {
-  --primary: #218A9F;
-  --secondary: #CC2C49;
+  --primary: #0099E5;
+  --secondary: #FF4C4C;
   --light: #F7F2F2;
   --white: #FFFFFF;
   --black: #090C10;
-  --dark: #0E0F2D;
+  --dark: #090C10;
   --transparent15dark: rgba(0, 0, 0, 0.15);
   --transparent30dark: rgba(0, 0, 0, 0.30);
+  --transparent03light: rgba(255, 255, 255, 0.03);
   --transparent15light: rgba(255, 255, 255, 0.15);
   --transparent30light: rgba(255, 255, 255, 0.30);
   --transparent: #00000000;
-
 }
 
 /* MAIN THEME -------------------------------------------------------*/
@@ -19,20 +19,17 @@ body {
   color: var(--light);
 }
 
-header svg {
-  #letterPath { fill: var(--primary);}
-  #middlePath { fill: var(--transparent);}
-}
+header svg path { fill: var(--primary); }
 
 .BentoGrid {
-  background-color: var(--transparent30dark);
-  border: 1px solid var(--transparent15light);
+  background-color: var(--transparent);
+  border: 1px solid var(--transparent);
 }
 
 .Bento,
 .MapComponent {
-  background-color: var(--white);
-  outline: none;
+  background-color: var(--transparent03light);
+  outline: 2px solid var(--transparent15light);
 }
 
 .Bento:hover,
@@ -70,17 +67,9 @@ header nav {
   color: var(--light);
 }
 
-header svg rect {
-  stroke: var(--primary);
-}
-
-header svg path {
-  fill: var(--transparent30dark);
-}
-
 .Article .TextArticle h1,
 .Article .TextArticle p {
-  color: var(--black);
+  color: var(--light);
 }
 
 .Button,
@@ -128,18 +117,14 @@ header svg path {
 /* MAIN THEME -------------------------------------------------------*/
 
 /* SECONDARY THEME -------------------------------------------------------*/
-[data-theme='dark'] {
+[data-theme="dark"] {
   body {
     background-color: var(--black);
     color: var(--white);
   }
 
-  header svg {
-    #letterPath { fill: var(--primary); }
-    #middlePath { fill: var(--transparent15dark); }
-  }
+  header svg path { fill: var(--primary); }
   
-
   .BentoGrid {
     background-color: var(--transparent30dark);
     border: 1px solid var(--transparent15light);
