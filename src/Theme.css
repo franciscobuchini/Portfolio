@@ -117,7 +117,7 @@ header nav {
 /* MAIN THEME -------------------------------------------------------*/
 
 /* SECONDARY THEME -------------------------------------------------------*/
-[data-theme="dark"] {
+[data-theme="secondary"] {
   body {
     background-color: var(--black);
     color: var(--white);

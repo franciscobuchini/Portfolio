@@ -30,9 +30,11 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th4, Tp, Tc, IBimg, IDimg
           height: Com ? "auto" : "100%",
           width: Com ? "auto" : "100%",          
         }}>
-          <div className="Limg">
+        {Limg && (
+          <div className='Limg'>
             <img src={Limg}/>
           </div>
+        )}
           <h4 style={{color: `var(--${Tc})`}}>{Th4}</h4>
           <p dangerouslySetInnerHTML={{ __html: Tp }} style={{color: `var(--${Tc})`}} />
         </div>
