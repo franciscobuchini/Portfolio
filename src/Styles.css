@@ -84,7 +84,6 @@ a {cursor: pointer; font-weight: lighter;}
 
 /* OUTSIDE -----------------------------------*/
 
-
 header {
   position: relative;
   width: 100%;
@@ -96,17 +95,9 @@ header {
 }
 
 header > svg {
-  height: 62px;
-  width: 62px;
+  height: 60px;
+  width: 60px;
   cursor: pointer;
-}
-
-header > svg rect {
-  stroke-width: 10px;
-}
-
-header > svg:hover rect {
-  stroke-width: 40px;
 }
 
 header > div {

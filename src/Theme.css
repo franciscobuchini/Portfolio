@@ -1,9 +1,10 @@
 :root {
-  --primary: #118ab2;
-  --secondary: #A13D63;
+  --primary: #218A9F;
+  --secondary: #CC2C49;
   --light: #F7F2F2;
   --white: #FFFFFF;
-  --black: #1E1E1E;
+  --black: #090C10;
+  --dark: #0E0F2D;
   --transparent15dark: rgba(0, 0, 0, 0.15);
   --transparent30dark: rgba(0, 0, 0, 0.30);
   --transparent15light: rgba(255, 255, 255, 0.15);
@@ -12,15 +13,20 @@
 
 }
 
-/* THEME LIGHT -------------------------------------------------------*/
+/* MAIN THEME -------------------------------------------------------*/
 body {
-  background-color: var(--light);
-  color: var(--black);
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+header svg {
+  #letterPath { fill: var(--primary);}
+  #middlePath { fill: var(--transparent);}
 }
 
 .BentoGrid {
-  background-color: var(--transparent30light);
-  border: 1px solid var(--transparent15dark);
+  background-color: var(--transparent30dark);
+  border: 1px solid var(--transparent15light);
 }
 
 .Bento,
@@ -39,7 +45,7 @@ body {
 .Bento .Text p,
 .Map .Text h4,
 .Map .Text p {
-  color: var(--black);
+  color: var(--light);
 }
 
 .Transparent {
@@ -51,7 +57,7 @@ body {
 }
 
 .CreatedBy {
-  color: var(--transparent30dark);
+  color: var(--transparent30light);
 }
 
 .Me {
@@ -59,8 +65,9 @@ body {
 }
 
 header nav {
-  background-color: var(--transparent30light);
-  color: var(--black);
+  background-color: var(--transparent30dark);
+  border: 1px solid var(--transparent15light);
+  color: var(--light);
 }
 
 header svg rect {
@@ -118,14 +125,20 @@ header svg path {
 .PBX {
   background-color: var(--primary);
 }
-/* THEME LIGHT -------------------------------------------------------*/
+/* MAIN THEME -------------------------------------------------------*/
 
-/* THEME DARK -------------------------------------------------------*/
+/* SECONDARY THEME -------------------------------------------------------*/
 [data-theme='dark'] {
   body {
     background-color: var(--black);
     color: var(--white);
   }
+
+  header svg {
+    #letterPath { fill: var(--primary); }
+    #middlePath { fill: var(--transparent15dark); }
+  }
+  
 
   .BentoGrid {
     background-color: var(--transparent30dark);
@@ -229,4 +242,4 @@ header svg path {
   }
 }
 
-/* THEME DARK -------------------------------------------------------*/
+/* SECONDARY THEME -------------------------------------------------------*/
