@@ -30,7 +30,7 @@ header svg path { fill: var(--primary); }
 .Bento,
 .MapComponent {
   background-color: var(--dark);
-  outline: 2px solid var(--stroke);
+  outline: 2px solid var(--transparent30light);
 }
 
 .Bento:hover,

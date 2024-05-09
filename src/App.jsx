@@ -50,13 +50,20 @@ function App() {
         <Bento Bv="2" Bh="2" IBimg={IBimg1} Tp="Indonesia, April 2024."/>
         <Map Bv="2" Bh="2" Th4="Where I am:" Tp={"Nevada, United States. <p>until July 7th.</p>"}/>
       </BentoGrid>
+
+      <BentoGrid id="Software" TAh1="Software experience:">
+        <Bento Bv="1" Bh="3"/>
+      </BentoGrid>
+
       <BentoGrid id="Profiles" TAh1="Profiles:">
-        <Bento Bv="1" Bh="4" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"/>
-        <Bento Bv="1" Bh="2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"/>
-        <Bento Bv="1" Bh="2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"/>
-        <Bento Bv="1" Bh="2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"/>
-        <Bento Bv="1" Bh="2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"/>
-        <Bento Bv="1" Bh="4" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"/>
+        <Bento Bv="1" Bh="3" Bs="B2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github" Bbgi="linear-gradient(to right bottom, #51277130, #51277100)" Outc="2px #51277190"/>
+        <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin" Bbgi="linear-gradient(to right bottom, #5a7fd330, #5a7fd300)" Outc="2px #5a7fd390"/>
+        <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook" Bbgi="linear-gradient(to right bottom, #08439230, #08439200)" Outc="2px #08439290"/>
+        <Bento Bv="1" Bh="1" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="1" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance" Bbgi="linear-gradient(to right bottom, #01478530, #01478500)" Outc="2px #01478590"/>
+        <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram" Bbgi="linear-gradient(to right bottom, #C33A6B30, #C33A6B00)" Outc="2px #C33A6B90"/>
+        <Bento Bv="1" Bh="3" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Tpc="var(--transparent30light)" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail" Bbgi="linear-gradient(to right bottom, #6e2c0a30, #6e2c0a00)" Outc="2px #6e2c0a90"/>
       </BentoGrid>
 
       <Footer cb="Created with:"/>

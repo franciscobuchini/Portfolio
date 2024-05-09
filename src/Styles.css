@@ -80,8 +80,8 @@ h2 {}
 h3 {}
 
 h4 {
-  font-size: 1.5rem;
-  font-family: Coustard;
+  font-size: 1.2rem;
+  font-family: Garnett;
 }
 
 p {font-size: 0.9rem;}
@@ -170,12 +170,12 @@ footer {
   display: flex;
   min-height: calc(var(--size) / 2);
   z-index: 300;
-  padding: calc(var(--gap)/2) var(--gap) var(--gap) var(--gap);
+  padding: calc(var(--gap)/4) var(--gap) var(--gap) var(--gap);
 }
 
 .Text {
   z-index: 500;
-  padding: var(--gap) var(--gap) calc(var(--gap)/2) var(--gap);
+  padding: var(--gap) var(--gap) calc(var(--gap)/4) var(--gap);
 }
 
 .Image {

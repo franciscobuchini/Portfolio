@@ -1,10 +1,10 @@
 // BENTO.JSX
 import React from "react"
 
-export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th4, Tp, Tc, IBimg, IDimg, IFimg, Limg, Com, PBn, PBd, Bt }) {
+export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4c, Tpc, IBimg, IDimg, IFimg, Limg, Com, PBn, PBd, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
-  let classNameBento = `Bento ${Bbg === "transparent" ? "Transparent" : ""} ${Bs} V${Bv} H${Bh}`
+  let classNameBento = `Bento ${Bbgc === "transparent" ? "Transparent" : ""} ${Bs} V${Bv} H${Bh}`
 
   // Open link in new tab only if Lurl exists and component is a button
   let link = Com === "Button" && Lurl ? () => window.open(Lurl, "_blank") : undefined;
@@ -17,7 +17,9 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th4, Tp, Tc, IBimg, IDimg
       className={classNameBento}
       onClick={link}
       style={{
-        ...(Bbg && { backgroundColor: `var(--${Bbg})` }),
+        ...(Outc && { outline: `solid ${Outc}` }),
+        ...(Bbgc && { backgroundColor: `var(--${Bbgc})` }),
+        ...(Bbgi && { backgroundImage: `${Bbgi}` }),
         cursor: link ? "pointer" : "auto",
       }}>
 
@@ -35,8 +37,8 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th4, Tp, Tc, IBimg, IDimg
             <img src={Limg}/>
           </div>
         )}
-          <h4 style={{color: `${Tc}`}}>{Th4}</h4>
-          <p dangerouslySetInnerHTML={{ __html: Tp }} />
+          <h4 style={{color: `${Th4c}`}}>{Th4}</h4>
+          <p style={{color: `${Tpc}`}} dangerouslySetInnerHTML={{ __html: Tp }} />
         </div>
       )}
 
@@ -49,7 +51,7 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th4, Tp, Tc, IBimg, IDimg
       
       {Com && ( // Add the custom component
         <div className="Component">
-          {React.createElement(Com, { Lurl, Bt, Tc })}
+          {React.createElement(Com, { Lurl, Bt })}
         </div>
       )}
     </section>
@@ -59,7 +61,7 @@ export default function Bento({ Bv, Bh, Bs, Bbg, Lurl, Th4, Tp, Tc, IBimg, IDimg
 /* 
 Bsize: Bento - Size [look at Dimensions.css]
 Bstyle: Bento - Style [B1, B2, B3, B4, B5, B6, B7, B8]
-Bbg: Bento - Background Color
+Bbgc: Bento - Background Color
 
 Th4: Text - <H2>
 Tp: Text - <P>
