@@ -3,7 +3,7 @@ export default function Footer ({cb}) {
     <footer>
       <div>
       <p className="CreatedBy">{cb}</p>
-        <a className="Me" href="https://franciscobuchini.vercel.app/" target="_blank">Bento Box UI</a>
+        <a className="Me" href="https://bentoboxui.vercel.app/" target="_blank">Bento Box UI</a>
       </div>
     </footer>
   )

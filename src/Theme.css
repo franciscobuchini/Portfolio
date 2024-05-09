@@ -4,18 +4,19 @@
   --light: #F7F2F2;
   --white: #FFFFFF;
   --black: #090C10;
-  --dark: #090C10;
+  --dark: #0D1117;
   --transparent15dark: rgba(0, 0, 0, 0.15);
   --transparent30dark: rgba(0, 0, 0, 0.30);
   --transparent03light: rgba(255, 255, 255, 0.03);
   --transparent15light: rgba(255, 255, 255, 0.15);
   --transparent30light: rgba(255, 255, 255, 0.30);
   --transparent: #00000000;
+  --stroke: #30363D;
 }
 
 /* MAIN THEME -------------------------------------------------------*/
 body {
-  background-color: var(--dark);
+  background-color: var(--black);
   color: var(--light);
 }
 
@@ -28,8 +29,8 @@ header svg path { fill: var(--primary); }
 
 .Bento,
 .MapComponent {
-  background-color: var(--transparent03light);
-  outline: 2px solid var(--transparent15light);
+  background-color: var(--dark);
+  outline: 2px solid var(--stroke);
 }
 
 .Bento:hover,
@@ -74,13 +75,13 @@ header nav {
 
 .Button,
 .Switch input {
-  background-color: var(--transparent15dark);
+  background-color: var(--transparent15light);
   color: var(--white);
 }
 
 .Button:hover,
 .Switch input:hover {
-  background-color: var(--transparent15dark);
+  background-color: var(--transparent);
   color: var(--primary);
 }
 

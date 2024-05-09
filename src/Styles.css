@@ -189,8 +189,10 @@ footer {
 }
 
 .Text .Limg img {
-  height: 60px;
-  margin-bottom: 10px;
+  height: auto;
+  max-height: 50px;
+
+  max-width: 100%;
 }
 
 .PB {
