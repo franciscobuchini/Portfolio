@@ -16,21 +16,21 @@
 
 /* MAIN THEME -------------------------------------------------------*/
 body {
-  background-color: var(--black);
+  background-color: var(--dark);
   color: var(--light);
 }
 
 header svg path { fill: var(--primary); }
 
 .BentoGrid {
-  background-color: var(--transparent);
-  border: 1px solid var(--transparent);
+  background-color: var(--black);
+  border: 0px solid var(--transparent);
 }
 
 .Bento,
 .MapComponent {
   background-color: var(--dark);
-  outline: 2px solid var(--transparent30light);
+  outline: 0px solid var(--transparent30light);
 }
 
 .Bento:hover,
