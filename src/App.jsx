@@ -62,8 +62,8 @@ function App() {
 
       <BentoGrid id="Intro" TAh1="Welcome :)">
         <Bento Bv="2" Bh="4" Bs="B10" Limg={Limg1} Tp={"I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with React JS having fun creating components."}/>
-        <Bento Bv="2" Bh="2" IBimg={IBimg1} Tp="Indonesia, April"/>
-        <Map Bv="2" Bh="2" Tp="Nevada, US (until July)"/>
+        <Bento Bv="4" Bh="4" Bs="B6" IBimg={IBimg1} Tp="Indonesia, April 2024"/>
+        <Map Bv="2" Bh="4" Tp="Nevada, US (until July)"/>
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1="Tools & Software:" TAp="Progression according to roadmap.sh">
