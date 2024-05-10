@@ -176,6 +176,7 @@ footer {
 .Text {
   z-index: 500;
   padding: var(--gap) var(--gap) calc(var(--gap)/4) var(--gap);
+  width: 100%;
 }
 
 .Image {
@@ -191,7 +192,6 @@ footer {
 .Text .Limg img {
   height: auto;
   max-height: 50px;
-
   max-width: 100%;
 }
 

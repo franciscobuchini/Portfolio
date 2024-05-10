@@ -27,10 +27,8 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
       {IDimg && <img className="Image ImageDispel" src={IDimg}/>}
       {IFimg && <img className="Image ImageFront" src={IFimg}/>}
 
-      {(Th4 || Tp || Limg) && (
         <div className="Text" style={{
-          height: Com ? "auto" : "100%",
-          width: Com ? "auto" : "100%",          
+          height: Com || PBd ? "auto" : "100%",        
         }}>
         {Limg && (
           <div className='Limg'>
@@ -40,7 +38,6 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
           <h4 style={{color: `${Th4c}`}}>{Th4}</h4>
           <p style={{color: `${Tpc}`}} dangerouslySetInnerHTML={{ __html: Tp }} />
         </div>
-      )}
 
       {PBd && ( // Only render the progress bar if PBd exists
         <div className="PB">
