@@ -23,6 +23,10 @@ import Limg15 from "./Assets/Limg15.webp"
 import Limg16 from "./Assets/Limg16.webp"
 import Limg17 from "./Assets/Limg17.webp"
 import Limg18 from "./Assets/Limg18.webp"
+import Limg19 from "./Assets/Limg19.webp"
+import Limg20 from "./Assets/Limg20.webp"
+import Limg21 from "./Assets/Limg21.webp"
+import Limg22 from "./Assets/Limg22.webp"
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
 import Button from "./Components/Button"
@@ -57,13 +61,13 @@ function App() {
       <Header links={links}/>
 
       <BentoGrid id="Intro" TAh1="Welcome :)">
-        <Bento Bv="2" Bh="4" Limg={Limg1} Tp={"I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with React JS having fun creating components."}/>
+        <Bento Bv="2" Bh="4" Bs="B10" Limg={Limg1} Tp={"I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with React JS having fun creating components."}/>
         <Bento Bv="2" Bh="2" IBimg={IBimg1} Tp="Indonesia, April 2024."/>
         <Map Bv="2" Bh="2" Th4="Where I am:" Tp={"Nevada, United States. <p>until July 7th.</p>"}/>
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1="Tools & Software:" TAp="According to roadmap.sh">
-        <Bento Bv="1" Bh="8" Bs="B4" Th4="Programming tools:" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="B11" Th4="Programming tools:" Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Limg={Limg8} Th4="React" Tp="Intermediate" PBd="11" PBn="7"/>
         <Bento Bv="1" Bh="2" Limg={Limg9} Th4="Javascript" Tp="Intermediate" PBd="19" PBn="14"/>
         <Bento Bv="1" Bh="2" Limg={Limg10} Th4="SASS" Tp="Intermediate" PBd="12" PBn="6"/>
@@ -73,17 +77,17 @@ function App() {
         <Bento Bv="1" Bh="2" Limg={Limg14} Th4="Tailwind" Tp="Basics" PBd="12" PBn="5"/>
         <Bento Bv="1" Bh="2" Limg={Limg15} Th4="Redux" Tp="Beginner" PBd="12" PBn="2"/>
 
-        <Bento Bv="1" Bh="8" Bs="B4" Th4="UX/UI and Design System tools:" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="B11" Th4="UX/UI and Design System tools:" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Limg={Limg19} Th4="Figma" Tp="Advanced" PBd="12" PBn="10"/>
         <Bento Bv="1" Bh="2" Limg={Limg16} Th4="Adobe XD" Tp="Advanced" PBd="12" PBn="11"/>
-        <Bento Bv="1" Bh="2" Limg={Limg16} Th4="Figma" Tp="Advanced" PBd="12" PBn="10"/>
         <Bento Bv="1" Bh="2" Limg={Limg17} Th4="Photoshop" Tp="Basics" PBd="12" PBn="5"/>
         <Bento Bv="1" Bh="2" Limg={Limg18} Th4="Illustrator" Tp="Basics" PBd="12" PBn="5"/>
 
-        <Bento Bv="1" Bh="8" Bs="B4" Th4="Hosting & version control systems:" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="B11" Th4="Hosting & Version Control Systems:" Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Limg={Limg2} Th4="Github"/>
-        <Bento Bv="1" Bh="2" Limg="" Th4="Git"/>
-        <Bento Bv="1" Bh="2" Limg="" Th4="Vercel"/>
-        <Bento Bv="1" Bh="2" Limg="" Th4="Netlify"/>
+        <Bento Bv="1" Bh="2" Limg={Limg20} Th4="Git"/>
+        <Bento Bv="1" Bh="2" Limg={Limg21} Th4="Vercel"/>
+        <Bento Bv="1" Bh="2" Limg={Limg22} Th4="Netlify"/>
       </BentoGrid>
 
       <BentoGrid id="Profiles" TAh1="Profiles:">

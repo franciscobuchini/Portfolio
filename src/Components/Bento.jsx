@@ -27,9 +27,7 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
       {IDimg && <img className="Image ImageDispel" src={IDimg}/>}
       {IFimg && <img className="Image ImageFront" src={IFimg}/>}
 
-        <div className="Text" style={{
-          height: Com || PBd ? "auto" : "100%",        
-        }}>
+        <div className="Text">
         {Limg && (
           <div className='Limg'>
             <img src={Limg}/>
