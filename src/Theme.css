@@ -4,7 +4,8 @@
   --light: #F7F2F2;
   --white: #FFFFFF;
   --black: #090C10;
-  --dark: #0D1117;
+  --dark: #13171f;
+  --transparent15primary: #0099E526;
   --transparent15dark: rgba(0, 0, 0, 0.15);
   --transparent30dark: rgba(0, 0, 0, 0.30);
   --transparent03light: rgba(255, 255, 255, 0.03);
@@ -35,6 +36,7 @@ header svg path { fill: var(--primary); }
 
 .Bento:hover,
 .MapComponent:hover {
+  background-color: var(--transparent15primary);
   outline: 4px solid var(--primary);
 }
 
@@ -63,8 +65,8 @@ header svg path { fill: var(--primary); }
 }
 
 header nav {
-  background-color: var(--transparent30dark);
-  border: 1px solid var(--transparent15light);
+  background-color: var(--black);
+  border: 0px solid var(--transparent);
   color: var(--light);
 }
 
