@@ -36,7 +36,6 @@
   text-wrap: pretty;
   list-style-type: none;
   border: none;
-  overflow: hidden;
   letter-spacing: 1px;
   line-height: 30px;
   color: inherit;
@@ -85,7 +84,7 @@ h4 {
   font-family: Garnett;
 }
 
-p {font-size: 0.9rem;}
+p {font-size: 0.9rem; word-wrap: break-word;}
 
 a {cursor: pointer; font-weight: lighter;}
 .Button, .Download {font-size: 0.8rem;}
@@ -186,6 +185,9 @@ footer {
   height: 100%;
   z-index: 100;
   transition: transform 2.5s ease;
+}
+
+.MapComponent .Map, .Image {
   margin: var(--negativegap);
 }
 
@@ -346,7 +348,6 @@ footer {
 }
 
 .MapComponent .Map {
-  margin: var(--negativegap);
   z-index: 100;
   height: 100%;
   width: 100%;
@@ -375,6 +376,10 @@ footer {
 
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
 
+  span {font-size: 1.4rem;}
+  h4 {font-size: 0.9rem;}
+  p {font-size: 0.5rem;}
+
   .H5 {grid-column: span 4;}
   .H6 {grid-column: span 4;}
   .H7 {grid-column: span 4;}
@@ -395,8 +400,6 @@ footer {
   .Nav {top: -150px;} /*oculta el navbar*/
 
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
-
-  .BentoGrid {width: calc(100% - var(--gap));}
 
 }
 
