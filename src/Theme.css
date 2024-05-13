@@ -70,6 +70,10 @@ header > div > .Pulse {
   color: var(--light);
 }
 
+.Bento .Text p {
+  color: var(--transparent30light);
+}
+
 .Transparent {
   outline: none;
 }

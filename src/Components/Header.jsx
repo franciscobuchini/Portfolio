@@ -25,7 +25,7 @@ export default function Header ({cb, links}) {
       </nav>
       <div>
         <div className="Pulse"></div>
-        <p>Searching for jobs</p>
+        <p>Looking for job.</p>
       </div>
     </header>
   )
