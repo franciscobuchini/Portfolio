@@ -167,6 +167,23 @@ footer {
   gap: calc(var(--gap) / 2);
 }
 
+.BentoGrid {
+  z-index: 500;
+  width: 100%;
+  border-radius: var(--bentogridradius);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--bentosize), 1fr));
+  grid-gap: var(--gap);
+  padding: var(--gap);
+  max-width: var(--bentogridsize);
+}
+
+.Bento {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) / 2);
+}
+
 .Bento:hover > .ImageBack {
   transform: scale(1.05);
 }
@@ -183,7 +200,7 @@ footer {
   z-index: 300;
 }
 
-.Image {
+.Bento > .Image {
   position: absolute;
   object-fit: cover;
   object-position: center;
@@ -191,10 +208,6 @@ footer {
   height: 100%;
   z-index: 100;
   transition: transform 2.5s ease;
-}
-
-.MapComponent > .Map, .Image {
-  margin: var(--negativegap);
 }
 
 .Bento > .Statement {
@@ -231,22 +244,7 @@ footer {
   border-radius: 5px;
 }
 
-.BentoGrid {
-  z-index: 500;
-  width: 100%;
-  border-radius: var(--bentogridradius);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--bentosize), 1fr));
-  grid-gap: var(--gap);
-  padding: var(--gap);
-  max-width: var(--bentogridsize);
-}
-
-.Bento {
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--gap) / 2);
-}
+/* BENTO -----------------------------------*/
 
 .Bento, .MapComponent {
   transition: 0.2s;
@@ -255,7 +253,36 @@ footer {
   padding: var(--gap);
 }
 
-/* BENTO -----------------------------------*/
+/* MAP -----------------------------------*/
+
+.MapComponent > .Map, .Image {
+  margin: var(--negativegap);
+}
+
+.MapComponent:hover > .Text {
+  display: none;
+}
+
+.MapComponent .Map {
+ z-index: 100;
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ object-fit: cover;
+ object-position: center;
+}
+
+.MapComponent .Map div.mapboxgl-ctrl-bottom-right,
+.MapComponent .Map div.mapboxgl-ctrl-bottom-left {
+ display: none;
+}
+
+.MapComponent > .Text {
+ position: absolute;
+ top: var(--gap);
+ z-index: 500;
+}
+/* MAP -----------------------------------*/
 
 /* BENTO SIZES -----------------------------------*/
 
@@ -358,29 +385,6 @@ footer {
 
 .LanguageSwitch input:checked::before {
   content: "ES";
-}
-
-.MapComponent:hover > .Text {
-   display: none;
-}
-
-.MapComponent .Map {
-  z-index: 100;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  object-position: center;
-}
-
-.MapComponent .Map div.mapboxgl-ctrl-bottom-right,
-.MapComponent .Map div.mapboxgl-ctrl-bottom-left {
-  display: none;
-}
-
-.MapComponent .Text {
-  position: absolute;
-  top: var(--gap);
 }
 
 /* COMPONENTS -----------------------------------*/

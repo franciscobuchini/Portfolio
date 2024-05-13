@@ -36,6 +36,7 @@ import Limg28 from "./Assets/Limg28.webp"
 import Limg29 from "./Assets/Limg29.webp"
 import Limg30 from "./Assets/Limg30.webp"
 import Limg31 from "./Assets/Limg31.webp"
+import Limg32 from "./Assets/Limg32.webp"
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
 import Button from "./Components/Button"
@@ -127,7 +128,7 @@ function App() {
 
       <BentoGrid id="Education" TAh1="Education:">
         <Bento Bv="1" Bh="4" Bs="B13" Limg={Limg9} Th4="JavaScript - Domestika" Tp="Introduction to JavaScript programming" Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript/course" />
-        <Bento Bv="1" Bh="4" Bs="B13" Limg="" Th4="HTML & CSS - Domestika" Tp="Introduction to Responsive Web Development with HTML and CSS" Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css/course" />
+        <Bento Bv="1" Bh="4" Bs="B13" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp="Introduction to Responsive Web Development with HTML and CSS" Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css/course" />
         <Bento Bv="1" Bh="4" Bs="B13" Limg={Limg19} Th4="Figma - Domestika" Tp="Introduction to Design Systems with Figma" Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma/course" />
         <Bento Bv="1" Bh="4" Bs="B13" Limg={Limg16} Th4="Adobe XD - Domestika" Tp="Getting started with Adobe XD for mobile apps" Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles/course" />
         <Bento Bv="1" Bh="4" Bs="B13" Limg={Limg24} Th4="Unity - Domestika" Tp="Advanced RPG video game design with Unity" Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity/course" />
