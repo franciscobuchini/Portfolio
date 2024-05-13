@@ -27,15 +27,17 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
       {IDimg && <img className="Image ImageDispel" src={IDimg}/>}
       {IFimg && <img className="Image ImageFront" src={IFimg}/>}
 
-        <div className="Text">
+      <div className="Statement">
         {Limg && (
           <div className='Limg'>
             <img src={Limg}/>
           </div>
         )}
+        <div className="Text">
           <h4 style={{color: `${Th4c}`}}>{Th4}</h4>
           <p style={{color: `${Tpc}`}} dangerouslySetInnerHTML={{ __html: Tp }} />
         </div>
+      </div>
 
       {PBd && ( // Only render the progress bar if PBd exists
         <div className="PB">

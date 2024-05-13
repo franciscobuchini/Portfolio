@@ -58,7 +58,7 @@ html, body {
   align-items: center;
   height: min-content;
   width: 100%;
-  --size: 80px;
+  --size: 40px;
   --gap: 20px;
   --negativegap: -20px;
   --bentogridsize: calc(var(--bentosize) * 8 + var(--gap) * 9);
@@ -84,7 +84,10 @@ h4 {
 p {font-size: 0.9rem; word-wrap: break-word;}
 
 a {cursor: pointer; font-weight: lighter;}
-.Button, .Download {font-size: 0.8rem;}
+.Button, .Download > span {
+  font-family: Garnett;
+  font-size: 0.8rem;
+}
 /* TEXT -----------------------------------*/
 
 /* OUTSIDE -----------------------------------*/
@@ -100,8 +103,8 @@ header {
 }
 
 header > svg {
-  height: 60px;
-  width: 60px;
+  height: var(--size);
+  width: var(--size);
   cursor: pointer;
 }
 
@@ -125,7 +128,7 @@ header > div > .Pulse {
   left: 50%;
   transform: translateX(-50%);
   font-weight: 500;
-  padding: var(--gap);
+  padding: calc(var(--gap) / 2) var(--gap);
   border-radius: var(--bentogridradius);
 }
 
@@ -158,7 +161,7 @@ footer {
   gap: var(--gap);
 }
 
-.Article .TextArticle {
+.Article > .TextArticle {
   text-align: center;
   margin: var(--gap);
   gap: calc(var(--gap) / 2);
@@ -174,15 +177,10 @@ footer {
   opacity: 0;
 }
 
-.Component {
+.Bento > .Component {
   display: flex;
-  min-height: calc(var(--size) / 2);
+  min-height: var(--size);
   z-index: 300;
-}
-
-.Text {
-  z-index: 500;
-  width: 100%;
 }
 
 .Image {
@@ -195,17 +193,29 @@ footer {
   transition: transform 2.5s ease;
 }
 
-.MapComponent .Map, .Image {
+.MapComponent > .Map, .Image {
   margin: var(--negativegap);
 }
 
-.Text .Limg img {
-  height: auto;
-  max-height: 50px;
-  max-width: 100%;
+.Bento > .Statement {
+  display: flex;
+  flex-direction: column;
+  z-index: 500;
+  gap: var(--gap);
 }
 
-.PB {
+.Bento > .Statement > .Limg {
+  display: flex;
+  min-width: var(--size);
+  justify-content: center;
+}
+
+.Bento > .Statement > .Limg > img {
+  width: auto;
+  height: var(--size);
+}
+
+.Bento > .PB {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -227,7 +237,6 @@ footer {
   border-radius: var(--bentogridradius);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--bentosize), 1fr));
-  grid-auto-flow: dense;
   grid-gap: var(--gap);
   padding: var(--gap);
   max-width: var(--bentogridsize);
@@ -273,18 +282,19 @@ footer {
 /* BENTO STYLES -----------------------------------*/
 
 /* .B0 {nothing} LEFT */
-.B1 {justify-content: space-between; text-align: center; .Component {justify-content: center;}} /* CENTER */
+.B1 {justify-content: space-between; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
 .B2 {text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
 .B3 {justify-content: space-between;} /* LEFT */
-.B4 {justify-content: center; text-align: center; .Component {justify-content: center;}} /* CENTER */
+.B4 {justify-content: center; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
 .B5 {justify-content: space-between; align-items: right; text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
 .B6 {justify-content: flex-end;} /* LEFT */
 .B7 {justify-content: flex-end; align-items: right; text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
 .B8 {justify-content: space-between; > .Component {justify-content: flex-end;}} /* LEFT */
 .B9 {justify-content: space-between; text-align: right;} /* RIGHT */
 .B10 {justify-content: center;} /* LEFT */
-.B11 {justify-content: end; text-align: center; .Component {justify-content: center;}} /* CENTER */
+.B11 {justify-content: end; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
 .B12 {justify-content: center; text-align: right;} /* RIGHT */
+.B13 {justify-content: center; > .Statement { flex-direction: row; gap: var(--gap); align-items: center;}}
 
 /* BENTO STYLES -----------------------------------*/
 
@@ -295,8 +305,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--size);
-  min-height: calc(var(--size) / 2);
+  width: calc(var(--size) * 2);
+  min-height: var(--size);
   cursor: pointer;
   border-radius: 100px;
   position: relative;
@@ -312,7 +322,7 @@ footer {
 }
 
 .Switch {
-  height: calc(var(--size) / 2);
+  height: var(--size);
 }
 
 .Switch > input::before {
@@ -321,8 +331,8 @@ footer {
   align-items: center;
   content: "";
   position: absolute;
-  width: calc(var(--size) / 2);
-  height: calc(var(--size) / 2);
+  width: var(--size);
+  height: var(--size);
   left: 0;
   top: 50%;
   transform: translateY(-50%) scale(0.7);

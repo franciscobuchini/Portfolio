@@ -62,15 +62,17 @@ header > div > .Pulse {
   outline: 4px solid var(--primary);
 }
 
-.Bento .Text h4,
-.Bento .Text h5,
-.Bento .Text p,
-.Map .Text h4,
-.Map .Text p {
+.Bento > .Statement > .Text > h4,
+.Map > .Text > h4 {
   color: var(--light);
 }
 
-.Bento .Text p {
+.Bento > .Statement > .Text > h5 {
+  color: var(--light);
+}
+
+.Bento > .Statement > .Text > p,
+.Map > .Text > p {
   color: var(--transparent30light);
 }
 
