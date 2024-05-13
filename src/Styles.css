@@ -71,17 +71,11 @@ html, body {
 
 /* TEXT -----------------------------------*/
 
-h1, span {
-  font-size: 2rem;
-  font-family: Coustard;
-}
+h1, span {font-family: Coustard;}
 
-h4 {
-  font-size: 1.2rem;
-  font-family: Garnett;
-}
+h4 {font-family: Garnett;}
 
-p {font-size: 0.9rem; word-wrap: break-word;}
+p { word-wrap: break-word;}
 
 a {cursor: pointer; font-weight: lighter;}
 .Button, .Download > span {
@@ -214,13 +208,11 @@ footer {
   display: flex;
   flex-direction: column;
   z-index: 500;
-  gap: var(--gap);
 }
 
 .Bento > .Statement > .Limg {
   display: flex;
   min-width: var(--size);
-  justify-content: center;
 }
 
 .Bento > .Statement > .Limg > img {
@@ -250,14 +242,13 @@ footer {
   transition: 0.2s;
   border-radius: var(--bentoradius);
   position: relative;
-  padding: var(--gap);
 }
-
-/* MAP -----------------------------------*/
 
 .MapComponent > .Map, .Image {
   margin: var(--negativegap);
 }
+
+/* MAP -----------------------------------*/
 
 .MapComponent:hover > .Text {
   display: none;
@@ -307,21 +298,22 @@ footer {
 /* BENTO SIZES -----------------------------------*/
 
 /* BENTO STYLES -----------------------------------*/
+.BL1 {}
+.BL2 {justify-content: center;}
+.BL3 {justify-content: end;}
+.BL4 {justify-content: space-between;}
+.BL5 {justify-content: space-between; .Component {justify-content: flex-end;}}
 
-/* .B0 {nothing} LEFT */
-.B1 {justify-content: space-between; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
-.B2 {text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
-.B3 {justify-content: space-between;} /* LEFT */
-.B4 {justify-content: center; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
-.B5 {justify-content: space-between; align-items: right; text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
-.B6 {justify-content: flex-end;} /* LEFT */
-.B7 {justify-content: flex-end; align-items: right; text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
-.B8 {justify-content: space-between; > .Component {justify-content: flex-end;}} /* LEFT */
-.B9 {justify-content: space-between; text-align: right;} /* RIGHT */
-.B10 {justify-content: center;} /* LEFT */
-.B11 {justify-content: end; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
-.B12 {justify-content: center; text-align: right;} /* RIGHT */
-.B13 {justify-content: center; > .Statement { flex-direction: row; gap: var(--gap); align-items: center;}}
+.BR1 {text-align: right; > .Component, .Limg {justify-content: right;}}
+.BR2 {justify-content: center; text-align: right; > .Component, .Limg {justify-content: right;}}
+.BR3 {justify-content: end; text-align: right; > .Component, .Limg {justify-content: right;}}
+.BR4 {justify-content: space-between; text-align: right; > .Component, .Limg {justify-content: right;}}
+/* .BR5 {terminar} */
+
+/* .BC1 {terminar} */
+/* .BC2 {terminar} */
+/* .BC3 {terminar} */
+/* .BE {terminar} */
 
 /* BENTO STYLES -----------------------------------*/
 
@@ -390,24 +382,19 @@ footer {
 /* COMPONENTS -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/
-
 @media (width > 0) and (width <= 570px) {
 
   .Nav {top: -150px;} /*oculta el navbar*/
-
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
-
   .H5 {grid-column: span 4;}
   .H6 {grid-column: span 4;}
   .H7 {grid-column: span 4;}
   .H8 {grid-column: span 4;}
-
 }
 
 @media (width > 570px) and (width <= 770px) {
 
   .Nav {top: -150px;} /*oculta el navbar*/
-
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
 }
@@ -415,17 +402,23 @@ footer {
 @media (width > 770px) and (width <= 1164px) {
 
   .Nav {top: -150px;} /*oculta el navbar*/
-
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
-
+  .Bento > .Statement {gap: calc(var(--gap) / 2);}
+  .Bento, .MapComponent {padding: var(--gap);}
+  h1, span {font-size: 1.6rem;}
+  h4 {font-size: 1rem;}
+  p {font-size: 0.7rem;}
 }
 
 @media (width > 1164px) {
 
-  .Article .TextArticle {max-width: 800px;}
-
+  .Article > .TextArticle {max-width: 800px;}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
+  .Bento > .Statement {gap: var(--gap);}
+  .Bento, .MapComponent {padding: var(--gap);}
+  h1, span {font-size: 2rem;}
+  h4 {font-size: 1.2rem;}
+  p {font-size: 0.9rem;}
 
 }
-
 /* RESPONSIVE -----------------------------------*/

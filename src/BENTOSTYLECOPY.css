@@ -1,0 +1,18 @@
+/* BENTO STYLES -----------------------------------*/
+
+/* .B0 {nothing} LEFT */
+.B1 {justify-content: space-between; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
+.B2 {text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
+.B3 {justify-content: space-between;} /* LEFT */
+.B4 {justify-content: center; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
+.B5 {justify-content: space-between; align-items: right; text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
+.B6 {justify-content: flex-end;} /* LEFT */
+.B7 {justify-content: flex-end; align-items: right; text-align: right; .Component {justify-content: flex-end;}} /* RIGHT */
+.B8 {justify-content: space-between; > .Component {justify-content: flex-end;}} /* LEFT */
+.B9 {justify-content: space-between; text-align: right;} /* RIGHT */
+.B10 {justify-content: center;} /* LEFT */
+.B11 {justify-content: end; text-align: center; .Component {justify-content: center;} > .Statement > .Limg {justify-content: center;}} /* CENTER */
+.B12 {justify-content: center; text-align: right;} /* RIGHT */
+.B13 {justify-content: center; > .Statement { flex-direction: row; gap: var(--gap); align-items: center;}}
+
+/* BENTO STYLES -----------------------------------*/
