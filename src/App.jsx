@@ -62,8 +62,8 @@ function App() {
 
       <BentoGrid id="Intro" TAh1="Welcome :)">
         <Bento Bv="2" Bh="4" Bs="B10" Limg={Limg1} Tp={"I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with React JS having fun creating components."}/>
-        <Bento Bv="4" Bh="4" Bs="B6" IBimg={IBimg1} Tp="Indonesia, April 2024"/>
-        <Map Bv="2" Bh="4" Tp="Nevada, US (until July)"/>
+        <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4="Indonesia, April 2024"/>
+        <Map Bv="2" Bh="4" Th4="Nevada, US (until July 2024)"/>
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1="Tools & Software:" TAp="Progression according to roadmap.sh">
@@ -91,12 +91,12 @@ function App() {
       </BentoGrid>
 
       <BentoGrid id="Profiles" TAh1="Profiles & Contact:">
-        <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
+        <Bento Bv="1" Bh="4" Bs="B4" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
         <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
         <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
         <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
         <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Tpc="var(--transparent30light)" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
-        <Bento Bv="1" Bh="2" Bs="B4" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Tpc="var(--transparent30light)" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
+        <Bento Bv="1" Bh="4" Bs="B4" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Tpc="var(--transparent30light)" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
       </BentoGrid>
 
       <Footer cb="Created with:"/>

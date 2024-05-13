@@ -1,6 +1,7 @@
 :root {
   --primary: #0099E5;
   --secondary: #FF4C4C;
+  --tertiary: #34BF49;
   --light: #F7F2F2;
   --white: #FFFFFF;
   --black: #090C10;
@@ -15,13 +16,34 @@
   --stroke: #30363D;
 }
 
+@keyframes pulse {
+  0% {box-shadow: 0 0 0 0 var(--tertiary);}
+  100% {box-shadow: 0 0 0 5px var(--transparent03light);}
+} 
+
 /* MAIN THEME -------------------------------------------------------*/
 body {
   background-color: var(--dark);
   color: var(--light);
 }
 
-header svg path { fill: var(--primary); }
+header > nav {
+  background-color: var(--black);
+  border: 0px solid var(--transparent);
+  color: var(--light);
+}
+
+header > svg > path {
+  fill: var(--primary);
+}
+
+header > div > p {
+  color: var(--tertiary);
+}
+
+header > div > .Pulse {
+  background-color: var(--tertiary);
+}
 
 .BentoGrid {
   background-color: var(--black);
@@ -62,12 +84,6 @@ header svg path { fill: var(--primary); }
 
 .Me {
   color: var(--primary);
-}
-
-header nav {
-  background-color: var(--black);
-  border: 0px solid var(--transparent);
-  color: var(--light);
 }
 
 .Article .TextArticle h1,
