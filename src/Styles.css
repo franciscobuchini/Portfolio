@@ -212,7 +212,6 @@ footer {
 
 .Bento > .Statement > .Limg {
   display: flex;
-  min-width: var(--size);
 }
 
 .Bento > .Statement > .Limg > img {
@@ -307,13 +306,14 @@ footer {
 .BR1 {text-align: right; > .Component, .Limg {justify-content: right;}}
 .BR2 {justify-content: center; text-align: right; > .Component, .Limg {justify-content: right;}}
 .BR3 {justify-content: end; text-align: right; > .Component, .Limg {justify-content: right;}}
-.BR4 {justify-content: space-between; text-align: right; > .Component, .Limg {justify-content: right;}}
-/* .BR5 {terminar} */
+.BR4 {justify-content: space-between; text-align: right; > .Component, .Statement .Limg {justify-content: right;}}
+.BR5 {justify-content: space-between; text-align: right; > .Statement .Limg {justify-content: right;}}
 
-/* .BC1 {terminar} */
-/* .BC2 {terminar} */
-/* .BC3 {terminar} */
-/* .BE {terminar} */
+.BC1 {justify-content: top; text-align: center; .Component, .Statement .Limg {justify-content: center;}}
+.BC2 {justify-content: center; text-align: center; .Component, .Statement .Limg {justify-content: center;}}
+.BC3 {justify-content: end; text-align: center; .Component, .Statement .Limg {justify-content: center;}}
+
+.BE1 {justify-content: center; > .Statement { flex-direction: row; gap: var(--gap); align-items: center;}}
 
 /* BENTO STYLES -----------------------------------*/
 
@@ -406,7 +406,7 @@ footer {
   .Bento > .Statement {gap: calc(var(--gap) / 2);}
   .Bento, .MapComponent {padding: var(--gap);}
   h1, span {font-size: 1.6rem;}
-  h4 {font-size: 1rem;}
+  h4 {font-size: 0.9rem;}
   p {font-size: 0.7rem;}
 }
 
