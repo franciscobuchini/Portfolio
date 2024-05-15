@@ -6,8 +6,14 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
   // If background is transparent this means: no interaction if hover the Bento.
   let classNameBento = `Bento ${Bbgc === "transparent" ? "Transparent" : ""} ${Bs} V${Bv} H${Bh}`
 
-  // Open link in new tab only if Lurl exists and component is a button
-  let link = Com === "Button" && Lurl ? () => window.open(Lurl, "_blank") : undefined;
+  // Manejar el click en el botón o en el componente Bento
+  const handleClick = () => {
+    if (Lurl && Com === "Button") {
+      window.open(Lurl, "_blank")
+    } else if (Lurl && !Com) {
+      window.open(Lurl, "_blank")
+    }
+  }
 
   // Calcular el porcentaje completado
   const percentage = (PBn / PBd) * 100;
@@ -15,12 +21,12 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
   return (
     <section
       className={classNameBento}
-      onClick={link}
+      onClick={handleClick}
       style={{
         ...(Outc && { outline: `solid ${Outc}` }),
         ...(Bbgc && { backgroundColor: `var(--${Bbgc})` }),
         ...(Bbgi && { backgroundImage: `${Bbgi}` }),
-        cursor: link ? "pointer" : "auto",
+        cursor: Lurl && !Com ? "pointer" : "auto"
       }}>
 
       {IBimg && <img className="Image ImageBack" src={IBimg}/>}

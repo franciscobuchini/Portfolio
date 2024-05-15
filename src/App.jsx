@@ -37,6 +37,7 @@ import Limg29 from "./Assets/Limg29.webp"
 import Limg30 from "./Assets/Limg30.webp"
 import Limg31 from "./Assets/Limg31.webp"
 import Limg32 from "./Assets/Limg32.webp"
+import Limg33 from "./Assets/Limg33.webp"
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
 import Button from "./Components/Button"
@@ -74,16 +75,25 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects:",
       Projects_01_Th4: "Programming:",
-      Projects_BBUI_Tp: "Bento Box UI.",
-      Projects_GGC_Tp: "Geo Game Challenge.",
-      Projects_EM_Tp: "El Matador.",
-      Projects_TH_Tp: "The Hudson.",
-      Projects_CAL_Tp: "Calculator.",
-      Projects_CC_Tp: "Café Café.",
-      Projects_TDL_Tp: "To-do List.",
-      Projects_HB_Tp: "Headbar.",
-      Projects_W_Tp: "Welcome to Wellington.",
+      Projects_BBUI_Tp: "Created with: ReactJS.",
+      Projects_GGC_Tp: "Created with: JavaScript.",
+      Projects_EM_Tp: "Created with: HTML & CSS.",
+      Projects_TH_Tp: "Created with: HTML & CSS.",
+      Projects_CAL_Tp: "Created with: JavaScript.",
+      Projects_CC_Tp: "Created with: ReactJS.",
+      Projects_TDL_Tp: "Created with: JavaScript.",
+      Projects_HB_Tp: "Created with: HTML & CSS.",
+      Projects_W_Tp: "Created with: HTML & CSS.",
+
       Projects_02_Th4: "Design:",
+      Projects_HUN_Tp: "UX/UI Design for a RPG.",
+      Projects_PDS_Tp: "Design System for a mobile app for pets.",
+      Projects_BREO_Tp: "UX/UI for my own app that worked until 2021.",
+      Projects_LP_Tp: "UX/UI Design for a TBS Game.",
+      Projects_TDE_Tp: "European Clubs.",
+      Projects_TDA1_Tp: "Argentine Soccer.",
+      Projects_TDA2_Tp: "Argentine Teams 2021.",
+      Projects_TDC_Tp: "Colón de Santa Fe.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Tools & Software:",
       Software_TAp: "Progression according to roadmap.sh",
@@ -99,15 +109,15 @@ function App() {
       Contact_TAh1: "Profiles & Contact:",
       //-------------------------------------------------------------------------
       Education_TAh1: "Education:",
-      Education_TAp: "More than 100 hours of courses.",
+      Education_TAp: "More than 180 hours of study with courses.",
       Education_UNL_Th4: "Software Engineer",
       Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 not finished)",
       Education_JS1_Dal_Tp: "JavaScript course from zero - Junior Level. [10:00:41]",
       Education_JS2_Dal_Tp: "JavaScript course from zero - Mid Level. [7:56:53]",
       Education_JS3_Dal_Tp: "JavaScript course from zero - Master Level. [9:23:19]",
-      Education_JS_Dom_Tp: "Introduction to JavaScript programming.",
+      Education_JS_Dom_Tp: "Introduction to JavaScript programming. [3:02:00]",
       Education_HTMLCSS_Dal_Tp: "HTML & CSS course from scratch. [24:01:03]",
-      Education_HTMLCSS_Dom_Tp: "Introduction to Responsive Web Development with HTML and CSS.",
+      Education_HTMLCSS_Dom_Tp: "Responsive Web Development with HTML/CSS. [2:18:00]",
       Education_CSS_Dal_Tp: "CSS course from zero. [9:46:55]",
       Education_HTML_Dal_Tp: "HTML5 course from scratch. [2:24:46]",
       Education_SQL_Dal_Tp: "SQL course from zero. [7:21:27]",
@@ -115,16 +125,17 @@ function App() {
       Education_HOS_Dal_Tp: "Hosting course from zero. [2:15:34]",
       Education_VSC_Dal_Tp: "Visual Studio Code course from zero. [2:20:02]",
       Education_CSS_Dal_Tp: "CSS course from zero. [9:46:55]",
-      Education_XD_Dom_Tp: "Getting started with Adobe XD for mobile apps.",
-      Education_FIG_Dom_Tp: "Introduction to Design Systems with Figma.",
-      Education_UNI1_Dom_Tp: "Advanced RPG video game design with Unity.",
-      Education_UNI2_Dom_Tp: "Introduction to Unity for 2D video games.",
-      Education_PS1_Dom_Tp: "2D animation with Photoshop: drawing, camera and action!",
-      Education_PS2_Dom_Tp: "Introduction to Adobe Photoshop.",
-      Education_IL1_Dom_Tp: "Introduction to Adobe Illustrator.",
-      Education_IL2_Dom_Tp: "Vector illustration for beginners.",
-      Education_WP_Dom_Tp: "Creating a professional website with WordPress.",
-      Education_AE_Dom_Tp: "Affter Effects",
+      Education_XD_Dom_Tp: "Getting started with Adobe XD for mobile apps. [7:21:00]",
+      Education_FIG_Dom_Tp: "Introduction to Design Systems with Figma. [4:38:00]",
+      Education_UNI1_Dom_Tp: "Advanced RPG video game design with Unity. [7:36:00]",
+      Education_UNI2_Dom_Tp: "Introduction to Unity for 2D video games. [10:18:00]",
+      Education_PS1_Dom_Tp: "2D animation with Photoshop: drawing, camera and action! [4:39:00]",
+      Education_PS2_Dom_Tp: "Introduction to Adobe Photoshop. [6:54:00]",
+      Education_IL1_Dom_Tp: "Introduction to Adobe Illustrator. [10:09:00]",
+      Education_IL2_Dom_Tp: "Vector illustration for beginners. [8:03:00]",
+      Education_IL3_Dom_Tp: "Advanced Adobe Illustrator for illustration. [11:22:00]",
+      Education_WP_Dom_Tp: "Creating a professional website with WordPress. [5:33:00]",
+      Education_AE_Dom_Tp: "Introduction to Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
     },
     spanish: {
@@ -148,7 +159,25 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos:",
       Projects_01_Th4: "Programación:",
+      Projects_BBUI_Tp: "Creado con: ReactJS.",
+      Projects_GGC_Tp: "Creado con: JavaScript.",
+      Projects_EM_Tp: "Creado con: HTML & CSS.",
+      Projects_TH_Tp: "Creado con: HTML & CSS.",
+      Projects_CAL_Tp: "Creado con: JavaScript.",
+      Projects_CC_Tp: "Creado con: ReactJS.",
+      Projects_TDL_Tp: "Creado con: JavaScript.",
+      Projects_HB_Tp: "Creado con: HTML & CSS.",
+      Projects_W_Tp: "Creado con: HTML & CSS.",
+
       Projects_02_Th4: "Diseño:",
+      Projects_HUN_Tp: "Diseño UX/UI para un RPG.",
+      Projects_PDS_Tp: "Design System para una app de mascotas.",
+      Projects_BREO_Tp: "UX/UI para mi propia app que funcionó hasta 2021.",
+      Projects_LP_Tp: "Diseño UX/UI para un juego TBS.",
+      Projects_TDE_Tp: "Clubes Europeos.",
+      Projects_TDA1_Tp: "Fútbol Argentino",
+      Projects_TDA2_Tp: "Equipos Argentinos 2021.",
+      Projects_TDC_Tp: "Colón de Santa Fe.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Herramientas y Programas:",
       Software_TAp: "Progreso según roadmap.sh",
@@ -158,21 +187,21 @@ function App() {
       Software_04_Th4: "Desarrollo de videojuegos:",
       Software_Advanced: "Avanzado",
       Software_Intermediate: "Intermedio",
-      Software_Basics: "Basicos",
+      Software_Basics: "Básicos",
       Software_Introducing: "Principiante",
       //-------------------------------------------------------------------------
-      Contact_TAh1: "Perfiles y Contacto:",
+      Contact_TAh1: "Perfil y Contacto:",
       //-------------------------------------------------------------------------
       Education_TAh1: "Educación:",
-      Education_TAp: "Mas de 100 horas de cursos.",
+      Education_TAp: "Mas de 180 horas de cursado.",
       Education_UNL_Th4: "Ingeniería Informática",
       Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 sin finalizar)",
       Education_JS1_Dal_Tp: "Curso de JavaScript desde cero - Junior Level. [10:00:41]",
       Education_JS2_Dal_Tp: "Curso de JavaScript desde cero - Mid Level. [7:56:53]",
       Education_JS3_Dal_Tp: "Curso de JavaScript desde cero - Master Level. [9:23:19]",
-      Education_JS_Dom_Tp: "Introducción a programación en JavaScript.",
+      Education_JS_Dom_Tp: "Introducción a programación en JavaScript. [3:02:00]",
       Education_HTMLCSS_Dal_Tp: "Curso de HTML & CSS desde cero. [24:01:03]",
-      Education_HTMLCSS_Dom_Tp: "Introducción al desarrollo Web Responsive con HTML y CSS.",
+      Education_HTMLCSS_Dom_Tp: "Desarrollo Web Responsive con HTML/CSS. [2:18:00]",
       Education_CSS_Dal_Tp: "Curso de CSS desde cero. [9:46:55]",
       Education_HTML_Dal_Tp: "Curso de HTML5 desde cero. [2:24:46]",
       Education_SQL_Dal_Tp: "Curso de SQL desde cero. [7:21:27]",
@@ -180,16 +209,17 @@ function App() {
       Education_HOS_Dal_Tp: "Curso de Hosting desde cero. [2:15:34]",
       Education_VSC_Dal_Tp: "Curso de Visual Studio Code desde cero. [2:20:02]",
       Education_CSS_Dal_Tp: "Curso de CSS desde cero. [9:46:55]",
-      Education_XD_Dom_Tp: "Comenzando con Adobe XD para aplicaciones móviles.",
-      Education_FIG_Dom_Tp: "Introducción a System Design con Figma.",
-      Education_UNI1_Dom_Tp: "Diseño avanzado de videojuegos RPG con Unity.",
-      Education_UNI2_Dom_Tp: "Introducción a Unity para videojuegos 2D.",
-      Education_PS1_Dom_Tp: "Animaciones 2D con Photoshop: dibujo, cámara y acción!",
-      Education_PS2_Dom_Tp: "Introducción a Adobe Photoshop.",
-      Education_IL1_Dom_Tp: "Introducción a Adobe Illustrator.",
-      Education_IL2_Dom_Tp: "Ilustración de vectores para principiantes.",
-      Education_WP_Dom_Tp: "Creando un sitio web profesional con WordPress.",
-      Education_AE_Dom_Tp: "Affter Effects",
+      Education_XD_Dom_Tp: "Comenzando con Adobe XD para aplicaciones móviles. [7:21:00]",
+      Education_FIG_Dom_Tp: "Introducción a System Design con Figma. [4:38:00]",
+      Education_UNI1_Dom_Tp: "Diseño avanzado de videojuegos RPG con Unity. [7:36:00]",
+      Education_UNI2_Dom_Tp: "Introducción a Unity para videojuegos 2D. [10:18:00]",
+      Education_PS1_Dom_Tp: "Animaciones 2D con Photoshop: dibujo, cámara y acción! [4:39:00]",
+      Education_PS2_Dom_Tp: "Introducción a Adobe Photoshop. [6:54:00]",
+      Education_IL1_Dom_Tp: "Introducción a Adobe Illustrator. [10:09:00]",
+      Education_IL2_Dom_Tp: "Ilustración vectorial para principiantes. [8:03:00]",
+      Education_IL3_Dom_Tp: "Adobe Illustrator avanzado para ilustración. [11:22:00]",
+      Education_WP_Dom_Tp: "Creando un sitio web profesional con WordPress. [5:33:00]",
+      Education_AE_Dom_Tp: "Introducción a Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
     }
   }
@@ -228,15 +258,14 @@ function App() {
 
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="2" Bh="2" Th4="Hunterlands" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="2" Th4="Primero System Design" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="4" Th4="Breo App" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="4" Th4="Light Project" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="4" Th4="Secondo System Design" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="2" Th4="Hunterlands" Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="2" Bh="2" Th4="Primero" Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="2" Bh="4" Th4="Breo App" Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
+      <Bento Bv="2" Bh="4" Th4="Light Project" Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>
@@ -258,6 +287,8 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg26} Th4="AfterEffects" Tp={lang[language].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={lang[language].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={lang[language].Software_Intermediate}/>
 
         <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_03_Th4} Bbgc="transparent"/>
@@ -283,28 +314,30 @@ function App() {
       </BentoGrid>
 
       <BentoGrid id="Education" TAh1={lang[language].Education_TAh1} TAp={lang[language].Education_TAp}>
-        <Bento Bv="1" Bh="4" Bs="BE1" Th4={lang[language].Education_UNL_Th4} Tp={lang[language].Education_UNL_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Th4={lang[language].Education_UNL_Th4} Tp={lang[language].Education_UNL_Tp} />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS2_Dal_Tp} Lurl="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS1_Dal_Tp} Lurl="https://www.youtube.com/watch?v=z95mZVUcJ-E&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=7&t=10071s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={lang[language].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={lang[language].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp={lang[language].Education_HOS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg="" Th4="Git & Github - Soy Dalto" Tp={lang[language].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg33} Th4="Git & Github - Soy Dalto" Tp={lang[language].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={lang[language].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp={lang[language].Education_HTMLCSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={lang[language].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={lang[language].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp={lang[language].Education_CSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg12} Th4="HTML - Soy Dalto" Tp={lang[language].Education_HTML_Dal_Tp} Lurl="https://www.youtube.com/watch?v=kN1XP-Bef7w&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=2&t=7887s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp={lang[language].Education_VSC_Dal_Tp} Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={lang[language].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={lang[language].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={lang[language].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={lang[language].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" />
       </BentoGrid>
 
       <Footer cb={lang[language].Created}/>

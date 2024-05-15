@@ -1,6 +1,6 @@
 :root {
   --primary: #0099E5;
-  --secondary: #FF4C4C;
+  --secondary: #CB7043;
   --tertiary: #34BF49;
   --light: #F7F2F2;
   --white: #FFFFFF;
@@ -76,8 +76,8 @@ header > div > .Pulse {
   color: var(--transparent30light);
 }
 
-.PBimg img {
-  opacity: 1;
+.Limg img {
+  opacity: 0.8;
 }
 
 .PBd {
@@ -152,19 +152,19 @@ header > div > .Pulse {
   header > nav {
     background-color: var(--transparent);
     outline: 0px solid var(--transparent);
-    color: var(--primary);
+    color: var(--secondary);
   }
   
   header > svg > path {
-    fill: var(--primary);
+    fill: var(--secondary);
   }
   
   header > div > p {
-    color: var(--primary);
+    color: var(--tertiary);
   }
   
   header > div > .Pulse {
-    background-color: var(--primary);
+    background-color: var(--tertiary);
   }
   
   .BentoGrid {
@@ -181,7 +181,7 @@ header > div > .Pulse {
   .Bento:hover,
   .MapComponent:hover {
     background-color: var(--light);
-    outline: 4px solid var(--stroke);
+    outline: 4px solid var(--secondary);
   }
  
   .Bento > .Statement > .Text > h4,
@@ -198,8 +198,9 @@ header > div > .Pulse {
     color: var(--stroke);
   }
   
-  .PBimg img {
-    opacity: 1;
+  .Limg img {
+    opacity: 0.8;
+    filter: invert(80%)
   }
   
   .PBd {
@@ -227,7 +228,7 @@ header > div > .Pulse {
   }
   
   .Me {
-    color: var(--primary);
+    color: var(--secondary);
   }
   
   .Article .TextArticle h1,
@@ -238,7 +239,7 @@ header > div > .Pulse {
   .Button,
   .Switch input {
     background-color: var(--transparent15dark);
-    color: var(--white);
+    color: var(--secondary);
   }
 
   .Button:hover,
