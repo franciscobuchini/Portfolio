@@ -45,79 +45,235 @@ import Download from "./Components/Download"
 function App() {
 
   // Language switcher:
-  // const [language, setLanguage] = useState("english")
-  // const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
+  const [language, setLanguage] = useState("english")
+  const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
 
-  // // Map Theme switcher:
-  // const [theme, setTheme] = useState("light")
-  // const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "dark" : "light")}
+  // Map Theme switcher:
+  const [theme, setTheme] = useState("main")
+  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "secondary" : "main")}
+
+  const lang = {
+    english: {
+      //-------------------------------------------------------------------------
+      Created: "Created with:",
+      Job: "Looking for job.",
+      Nav_Intro: "Intro",
+      Nav_Projects: "Projects",
+      Nav_Software: "Software",
+      Nav_Contact: "Contact",
+      Nav_Education: "Education",
+      Button: "Visit",
+      //-------------------------------------------------------------------------
+      Intro_TAh1: "Welcome :)",
+      Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
+      Intro_02_Th4: "✈ Indonesia, April 2024",
+      Intro_03_Tp: "Switch Language",
+      Intro_04_Tp: "Switch Theme",
+      Intro_05_Th4: "⚑ Nevada, USA (until July 2024)",
+      Intro_06_Tp: "Download Resume:",
+      //-------------------------------------------------------------------------
+      Projects_TAh1: "Projects:",
+      Projects_01_Th4: "Programming:",
+      Projects_BBUI_Tp: "Bento Box UI.",
+      Projects_GGC_Tp: "Geo Game Challenge.",
+      Projects_EM_Tp: "El Matador.",
+      Projects_TH_Tp: "The Hudson.",
+      Projects_CAL_Tp: "Calculator.",
+      Projects_CC_Tp: "Café Café.",
+      Projects_TDL_Tp: "To-do List.",
+      Projects_HB_Tp: "Headbar.",
+      Projects_W_Tp: "Welcome to Wellington.",
+      Projects_02_Th4: "Design:",
+      //-------------------------------------------------------------------------
+      Software_TAh1: "Tools & Software:",
+      Software_TAp: "Progression according to roadmap.sh",
+      Software_01_Th4: "Website development:",
+      Software_02_Th4: "UX/UI & Design tools:",
+      Software_03_Th4: "Version Control Systems & Hosting:",
+      Software_04_Th4: "Videogames development:",
+      Software_Advanced: "Advanced",
+      Software_Intermediate: "Intermediate",
+      Software_Basics: "Basics",
+      Software_Introducing: "Introducing",
+      //-------------------------------------------------------------------------
+      Contact_TAh1: "Profiles & Contact:",
+      //-------------------------------------------------------------------------
+      Education_TAh1: "Education:",
+      Education_TAp: "More than 100 hours of courses.",
+      Education_UNL_Th4: "Software Engineer",
+      Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 not finished)",
+      Education_JS1_Dal_Tp: "JavaScript course from zero - Junior Level. [10:00:41]",
+      Education_JS2_Dal_Tp: "JavaScript course from zero - Mid Level. [7:56:53]",
+      Education_JS3_Dal_Tp: "JavaScript course from zero - Master Level. [9:23:19]",
+      Education_JS_Dom_Tp: "Introduction to JavaScript programming.",
+      Education_HTMLCSS_Dal_Tp: "HTML & CSS course from scratch. [24:01:03]",
+      Education_HTMLCSS_Dom_Tp: "Introduction to Responsive Web Development with HTML and CSS.",
+      Education_CSS_Dal_Tp: "CSS course from zero. [9:46:55]",
+      Education_HTML_Dal_Tp: "HTML5 course from scratch. [2:24:46]",
+      Education_SQL_Dal_Tp: "SQL course from zero. [7:21:27]",
+      Education_GIT_Dal_Tp: "Git & Github course from zero. [4:11:47]",
+      Education_HOS_Dal_Tp: "Hosting course from zero. [2:15:34]",
+      Education_VSC_Dal_Tp: "Visual Studio Code course from zero. [2:20:02]",
+      Education_CSS_Dal_Tp: "CSS course from zero. [9:46:55]",
+      Education_XD_Dom_Tp: "Getting started with Adobe XD for mobile apps.",
+      Education_FIG_Dom_Tp: "Introduction to Design Systems with Figma.",
+      Education_UNI1_Dom_Tp: "Advanced RPG video game design with Unity.",
+      Education_UNI2_Dom_Tp: "Introduction to Unity for 2D video games.",
+      Education_PS1_Dom_Tp: "2D animation with Photoshop: drawing, camera and action!",
+      Education_PS2_Dom_Tp: "Introduction to Adobe Photoshop.",
+      Education_IL1_Dom_Tp: "Introduction to Adobe Illustrator.",
+      Education_IL2_Dom_Tp: "Vector illustration for beginners.",
+      Education_WP_Dom_Tp: "Creating a professional website with WordPress.",
+      Education_AE_Dom_Tp: "Affter Effects",
+      //-------------------------------------------------------------------------
+    },
+    spanish: {
+      //-------------------------------------------------------------------------
+      Created: "Creado con:",
+      Job: "Buscando trabajo.",
+      Nav_Intro: "Intro",
+      Nav_Projects: "Proyectos",
+      Nav_Software: "Programas",
+      Nav_Contact: "Contacto",
+      Nav_Education: "Educación",
+      Button: "Visitar",
+      //-------------------------------------------------------------------------
+      Intro_TAh1: "Bienvenidos :)",
+      Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
+      Intro_02_Th4: "✈ Indonesia, Abril 2024",
+      Intro_03_Tp: "Cambiar idioma",
+      Intro_04_Tp: "Cambiar tema",
+      Intro_05_Th4: "⚑ Nevada, USA (hasta julio 2024)",
+      Intro_06_Tp: "Descargar CV:",
+      //-------------------------------------------------------------------------
+      Projects_TAh1: "Proyectos:",
+      Projects_01_Th4: "Programación:",
+      Projects_02_Th4: "Diseño:",
+      //-------------------------------------------------------------------------
+      Software_TAh1: "Herramientas y Programas:",
+      Software_TAp: "Progreso según roadmap.sh",
+      Software_01_Th4: "Desarrollo web:",
+      Software_02_Th4: "UX/UI y Diseño:",
+      Software_03_Th4: "Sistemas de control de versión y alojamiento web:",
+      Software_04_Th4: "Desarrollo de videojuegos:",
+      Software_Advanced: "Avanzado",
+      Software_Intermediate: "Intermedio",
+      Software_Basics: "Basicos",
+      Software_Introducing: "Principiante",
+      //-------------------------------------------------------------------------
+      Contact_TAh1: "Perfiles y Contacto:",
+      //-------------------------------------------------------------------------
+      Education_TAh1: "Educación:",
+      Education_TAp: "Mas de 100 horas de cursos.",
+      Education_UNL_Th4: "Ingeniería Informática",
+      Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 sin finalizar)",
+      Education_JS1_Dal_Tp: "Curso de JavaScript desde cero - Junior Level. [10:00:41]",
+      Education_JS2_Dal_Tp: "Curso de JavaScript desde cero - Mid Level. [7:56:53]",
+      Education_JS3_Dal_Tp: "Curso de JavaScript desde cero - Master Level. [9:23:19]",
+      Education_JS_Dom_Tp: "Introducción a programación en JavaScript.",
+      Education_HTMLCSS_Dal_Tp: "Curso de HTML & CSS desde cero. [24:01:03]",
+      Education_HTMLCSS_Dom_Tp: "Introducción al desarrollo Web Responsive con HTML y CSS.",
+      Education_CSS_Dal_Tp: "Curso de CSS desde cero. [9:46:55]",
+      Education_HTML_Dal_Tp: "Curso de HTML5 desde cero. [2:24:46]",
+      Education_SQL_Dal_Tp: "Curso de SQL desde cero. [7:21:27]",
+      Education_GIT_Dal_Tp: "Curso de Git & Github desde cero. [4:11:47]",
+      Education_HOS_Dal_Tp: "Curso de Hosting desde cero. [2:15:34]",
+      Education_VSC_Dal_Tp: "Curso de Visual Studio Code desde cero. [2:20:02]",
+      Education_CSS_Dal_Tp: "Curso de CSS desde cero. [9:46:55]",
+      Education_XD_Dom_Tp: "Comenzando con Adobe XD para aplicaciones móviles.",
+      Education_FIG_Dom_Tp: "Introducción a System Design con Figma.",
+      Education_UNI1_Dom_Tp: "Diseño avanzado de videojuegos RPG con Unity.",
+      Education_UNI2_Dom_Tp: "Introducción a Unity para videojuegos 2D.",
+      Education_PS1_Dom_Tp: "Animaciones 2D con Photoshop: dibujo, cámara y acción!",
+      Education_PS2_Dom_Tp: "Introducción a Adobe Photoshop.",
+      Education_IL1_Dom_Tp: "Introducción a Adobe Illustrator.",
+      Education_IL2_Dom_Tp: "Ilustración de vectores para principiantes.",
+      Education_WP_Dom_Tp: "Creando un sitio web profesional con WordPress.",
+      Education_AE_Dom_Tp: "Affter Effects",
+      //-------------------------------------------------------------------------
+    }
+  }
 
   //Header list:
   const links = [
-    { href: 'Software' },
-    { href: 'Contact' },
-    { href: 'Education' },
+    { name: lang[language].Nav_Projects, href: "Projects"},
+    { name: lang[language].Nav_Software, href: "Software" },
+    { name: lang[language].Nav_Contact, href: "Contact" },
+    { name: lang[language].Nav_Education, href: "Education" },
   ]
-
-  // const lang = {
-  //   english: {
-  //     cb: "Created by:",
-  //   },
-  //   spanish: {
-  //     cb: "Creado por:",
-  //   }
-  // }
 
   return (
     <>
       <Header links={links}/>
 
-      <BentoGrid id="Intro" TAh1="Welcome :)">
-        <Bento Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={"I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with React JS having fun creating components."} Tpc="var(--light)"/>
-        <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4="✈ Indonesia, April 2024"/>
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp="Switch Language" Com={LanguageSwitch}/>
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp="Switch Theme" Com={ThemeSwitch}/>
-        <Map Bv="2" Bh="4" Th4="⚑ Nevada, US (until July 2024)"/>
-        <Bento Bv="1" Bh="4" Bs="BC2" Tp="Download Resume" Com={Download}/>
-
+      <BentoGrid id="Intro" TAh1={lang[language].Intro_TAh1}>
+        <Bento Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
+        <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4={lang[language].Intro_02_Th4}/>
+        <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
+        <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
+        <Map Bv="2" Bh="4" Th4={lang[language].Intro_05_Th4} theme={theme}/>
+        <Bento Bv="1" Bh="4" Bs="BC2" Tp={lang[language].Intro_06_Tp} Com={Download}/>
       </BentoGrid>
 
-      <BentoGrid id="Software" TAh1="Tools & Software:" TAp="Progression according to roadmap.sh">
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4="Website development:" Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React" Tp="Intermediate" PBd="11" PBn="7"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp="Intermediate" PBd="19" PBn="14"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp="Advanced" PBd="14" PBn="13"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp="Advanced" PBd="14" PBn="12"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp="Introducing" PBd="12" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp="Intermediate" PBd="11" PBn="7"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp="Intermediate" PBd="12" PBn="6"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp="Basics" PBd="12" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp="Basics" PBd="12" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp="Introducing" PBd="12" PBn="1"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp="Introducing" PBd="12" PBn="2"/>
+      <BentoGrid id="Projects" TAh1={lang[language].Projects_TAh1}>
+      <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_01_Th4} Bbgc="transparent"/>
+      <Bento Bv="4" Bh="4" Th4="Bento Box UI" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="2" Bh="4" Th4="Geo Game Challenge" Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="4" Bh="2" Th4="Café Café" Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://cafe-cafe.vercel.app"/>
+      <Bento Bv="4" Bh="2" Th4="El Matador" Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://el-matador-website.netlify.app/"/>
+      <Bento Bv="4" Bh="2" Th4="To-do List" Tp={lang[language].Projects_TDL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://atlantico-todolist.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Th4="The Hudson" Tp={lang[language].Projects_TH_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://the-hudson.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Th4="Wellington" Tp={lang[language].Projects_W_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--mynavbar1.netlify.app/"/>
+      <Bento Bv="2" Bh="4" Th4="Calculator" Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--atlanticocalculator.netlify.app/"/>
 
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4="UX/UI & Design tools:" Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp="Advanced" PBd="12" PBn="10"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp="Advanced" PBd="12" PBn="11"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp="Basics" PBd="12" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp="Basics" PBd="12" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp="Intermediate"/>
+      <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
+      <Bento Bv="2" Bh="2" Th4="Hunterlands" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="2" Th4="Primero System Design" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="4" Th4="Breo App" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="4" Th4="Light Project" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="4" Th4="Secondo System Design" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt="Behance" Lurl="" />
+      </BentoGrid>
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4="Version Control Systems & Hosting:" Bbgc="transparent"/>
+      <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_01_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React" Tp={lang[language].Software_Intermediate} PBd="10" PBn="7"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={lang[language].Software_Intermediate} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={lang[language].Software_Advanced} PBd="10" PBn="9"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={lang[language].Software_Advanced} PBd="10" PBn="9"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={lang[language].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={lang[language].Software_Intermediate} PBd="10" PBn="6"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={lang[language].Software_Introducing} PBd="10" PBn="1"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={lang[language].Software_Introducing} PBd="10" PBn="2"/>
+
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_02_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={lang[language].Software_Intermediate}/>
+
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_03_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg2} Th4="Github"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg20} Th4="Git"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg21} Th4="Vercel"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg30} Th4="Hostinger"/>
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4="Videogames development:" Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp="Basics" PBd="12" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp="Basics" PBd="12" PBn="3"/>
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_04_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={lang[language].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={lang[language].Software_Basics} PBd="10" PBn="3"/>
 
       </BentoGrid>
 
-      <BentoGrid id="Contact" TAh1="Profiles & Contact:">
+      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
@@ -126,32 +282,32 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
       </BentoGrid>
 
-      <BentoGrid id="Education" TAh1="Education:">
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp="Introduction to JavaScript programming" Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp="Introduction to Responsive Web Development with HTML and CSS" Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp="Introduction to Design Systems with Figma" Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp="Getting started with Adobe XD for mobile apps" Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp="Advanced RPG video game design with Unity" Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp="Introduction to Unity for 2D video games" Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp="2D animation with Photoshop: drawing, camera and action!" Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp="Introduction to Adobe Photoshop" Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp="Creating a professional website with WordPress" Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp="Introduction to Adobe Illustrator" Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp="Vector illustration for beginners" Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp="Visual Studio Code course from zero [2:20:02]" Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp="Hosting course from zero [2:15:34]" Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg="" Th4="Git & Github - Soy Dalto" Tp="Git & Github course from zero [4:11:47]" Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp="SQL course from zero [7:21:27]" Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp="JavaScript course from zero Junior Level [10:00:41]" Lurl="https://www.youtube.com/watch?v=z95mZVUcJ-E&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=7&t=10071s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp="JavaScript course from zero Mid Level [7:56:53]" Lurl="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp="JavaScript course from zero Master Level [9:23:19]" Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp="CSS course from zero [9:46:55]" Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg12} Th4="HTML - Soy Dalto" Tp="HTML5 course from scratch [2:24:46]" Lurl="https://www.youtube.com/watch?v=kN1XP-Bef7w&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=2&t=7887s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp="HTML & CSS course from scratch [24:01:03]" Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
-
+      <BentoGrid id="Education" TAh1={lang[language].Education_TAh1} TAp={lang[language].Education_TAp}>
+        <Bento Bv="1" Bh="4" Bs="BE1" Th4={lang[language].Education_UNL_Th4} Tp={lang[language].Education_UNL_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS2_Dal_Tp} Lurl="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS1_Dal_Tp} Lurl="https://www.youtube.com/watch?v=z95mZVUcJ-E&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=7&t=10071s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={lang[language].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp={lang[language].Education_HOS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg="" Th4="Git & Github - Soy Dalto" Tp={lang[language].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={lang[language].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp={lang[language].Education_HTMLCSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={lang[language].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp={lang[language].Education_CSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg12} Th4="HTML - Soy Dalto" Tp={lang[language].Education_HTML_Dal_Tp} Lurl="https://www.youtube.com/watch?v=kN1XP-Bef7w&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=2&t=7887s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp={lang[language].Education_VSC_Dal_Tp} Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={lang[language].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={lang[language].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress/course" />
       </BentoGrid>
 
-      <Footer cb="Created with:"/>
+      <Footer cb={lang[language].Created}/>
     </>
   )
 }

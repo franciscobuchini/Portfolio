@@ -41,8 +41,8 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
 
       {PBd && ( // Only render the progress bar if PBd exists
         <div className="PB">
-          <div className="PB100"> </div>
-          <div className="PBX" style={{ width: `${percentage}%`}}></div>
+          <div className="PBd"> </div>
+          <div className="PBn" style={{ width: `${percentage}%`}}></div>
         </div>
       )}
       

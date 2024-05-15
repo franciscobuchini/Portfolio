@@ -18,7 +18,7 @@ export default function Header ({cb, links}) {
       <ul>
           {links.map((link, index) => (
             <li key={index}>
-              <a href={`#${link.href}`} onClick={() => handleLinkClick(link.href)}>{link.href}</a>
+              <a href={`#${link.href}`} onClick={() => handleLinkClick(link.href)}>{link.name}</a>
             </li>
           ))}
         </ul>

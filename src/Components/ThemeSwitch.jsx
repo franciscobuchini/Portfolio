@@ -6,7 +6,7 @@ export default function ThemeSwitch({ onChange }) {
 
   useEffect(() => {
     // Update the switch state to match the current theme
-    if (document.documentElement.getAttribute("data-theme") === "dark") {
+    if (document.documentElement.getAttribute("data-theme") === "secondary") {
       setIsChecked(true);
     } else {
       setIsChecked(false);
@@ -20,10 +20,10 @@ export default function ThemeSwitch({ onChange }) {
 
     if (!isChecked) {
       // Change to dark theme
-      document.documentElement.setAttribute("data-theme", "dark");
+      document.documentElement.setAttribute("data-theme", "secondary");
     } else {
       // Change to light theme
-      document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute("data-theme", "main");
     }
   };
 

@@ -7,12 +7,6 @@
 }
 @font-face {
   font-family: Garnett;
-  src: url(/src/Fonts/Garnett-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: Garnett;
   src: url(/src/Fonts/Garnett-Medium.ttf);
   font-weight: 500;
   font-style: medium;
@@ -37,7 +31,6 @@
   list-style-type: none;
   border: none;
   letter-spacing: 1px;
-  line-height: 30px;
   color: inherit;
   overflow: hidden;
 }
@@ -210,6 +203,12 @@ footer {
   z-index: 500;
 }
 
+.Bento > .Statement > .Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .Bento > .Statement > .Limg {
   display: flex;
 }
@@ -223,17 +222,17 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 10px;
 }
 
-.PB100,
-.PBX {
+.PBd,
+.PBn {
   height: 100%;
   position: absolute;
   left: 0;
-  width: 100%;
   border-radius: 5px;
 }
+
+.PBd {width: 100%;}
 
 /* BENTO -----------------------------------*/
 
@@ -241,6 +240,7 @@ footer {
   transition: 0.2s;
   border-radius: var(--bentoradius);
   position: relative;
+  padding: var(--gap);
 }
 
 .MapComponent > .Map, .Image {
@@ -382,43 +382,45 @@ footer {
 /* COMPONENTS -----------------------------------*/
 
 /* RESPONSIVE -----------------------------------*/
-@media (width > 0) and (width <= 570px) {
-
+@media (width > 0) and (width <= 530px) {
   .Nav {top: -150px;} /*oculta el navbar*/
+  .Bento > .Statement {gap: calc(var(--gap) / 2);}
+  h1, span {font-size: 1.6rem;}
+  h4 {font-size: 0.7rem;}
+  p {font-size: 0.53rem; line-height: 20px;}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
-  .H5 {grid-column: span 4;}
-  .H6 {grid-column: span 4;}
-  .H7 {grid-column: span 4;}
-  .H8 {grid-column: span 4;}
+  .H5, .H6, .H7, .H8 {grid-column: span 4;}
+  .Bento > .PB {min-height: 5px;}
 }
 
-@media (width > 570px) and (width <= 770px) {
-
+@media (width > 530px) and (width <= 833px) {
   .Nav {top: -150px;} /*oculta el navbar*/
-  .BentoGrid {grid-template-columns: repeat(8, 1fr);}
-
+  .Bento > .Statement {gap: calc(var(--gap) / 2);}
+  h1, span {font-size: 1.6rem;}
+  h4 {font-size: 0.9rem;}
+  p {font-size: 0.7rem; line-height: 25px;}
+  .BentoGrid {grid-template-columns: repeat(4, 1fr);}
+  .H5, .H6, .H7, .H8 {grid-column: span 4;}
+  .Bento > .PB {min-height: 7px;}
 }
 
-@media (width > 770px) and (width <= 1164px) {
-
+@media (width > 833px) and (width <= 1164px) {
   .Nav {top: -150px;} /*oculta el navbar*/
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
   .Bento > .Statement {gap: calc(var(--gap) / 2);}
-  .Bento, .MapComponent {padding: var(--gap);}
   h1, span {font-size: 1.6rem;}
   h4 {font-size: 0.9rem;}
-  p {font-size: 0.7rem;}
+  p {font-size: 0.7rem; line-height: 25px;}
+  .Bento > .PB {min-height: 8px;}
 }
 
 @media (width > 1164px) {
-
   .Article > .TextArticle {max-width: 800px;}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
   .Bento > .Statement {gap: var(--gap);}
-  .Bento, .MapComponent {padding: var(--gap);}
   h1, span {font-size: 2rem;}
   h4 {font-size: 1.2rem;}
-  p {font-size: 0.9rem;}
-
+  p {font-size: 0.9rem; line-height: 30px;}
+  .Bento > .PB {min-height: 10px;}
 }
 /* RESPONSIVE -----------------------------------*/
