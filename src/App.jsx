@@ -124,7 +124,6 @@ function App() {
       Education_GIT_Dal_Tp: "Git & Github course from zero. [4:11:47]",
       Education_HOS_Dal_Tp: "Hosting course from zero. [2:15:34]",
       Education_VSC_Dal_Tp: "Visual Studio Code course from zero. [2:20:02]",
-      Education_CSS_Dal_Tp: "CSS course from zero. [9:46:55]",
       Education_XD_Dom_Tp: "Getting started with Adobe XD for mobile apps. [7:21:00]",
       Education_FIG_Dom_Tp: "Introduction to Design Systems with Figma. [4:38:00]",
       Education_UNI1_Dom_Tp: "Advanced RPG video game design with Unity. [7:36:00]",
@@ -208,7 +207,6 @@ function App() {
       Education_GIT_Dal_Tp: "Curso de Git & Github desde cero. [4:11:47]",
       Education_HOS_Dal_Tp: "Curso de Hosting desde cero. [2:15:34]",
       Education_VSC_Dal_Tp: "Curso de Visual Studio Code desde cero. [2:20:02]",
-      Education_CSS_Dal_Tp: "Curso de CSS desde cero. [9:46:55]",
       Education_XD_Dom_Tp: "Comenzando con Adobe XD para aplicaciones móviles. [7:21:00]",
       Education_FIG_Dom_Tp: "Introducción a System Design con Figma. [4:38:00]",
       Education_UNI1_Dom_Tp: "Diseño avanzado de videojuegos RPG con Unity. [7:36:00]",
@@ -338,14 +336,6 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" />
-        <Bento Bv="1" Bh="2"/>
-        <Bento Bv="2" Bh="2"/>
-        <Bento Bv="3" Bh="2"/>
-        <Bento Bv="4" Bh="2"/>
-        <Bento Bv="5" Bh="2"/>
-        <Bento Bv="6" Bh="2"/>
-        <Bento Bv="7" Bh="2"/>
-        <Bento Bv="8" Bh="2"/>
       </BentoGrid>
 
       <Footer cb={lang[language].Created}/>

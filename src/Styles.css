@@ -54,28 +54,33 @@ html, body {
   align-items: center;
   height: min-content;
   width: 100%;
-  --size: 40px;
-  --gap: 20px;
-  --negativegap: -20px;
+
   --bentogridsize: calc(var(--bentosizehorizontal) * 8 + var(--gap) * 9);
   --bentoradius: 32px;
   --bentogridradius: calc(var(--bentoradius) + var(--gap));
-  
+
   @media (width <= 833px) {
     --bentosizevertical: 96px; 
     --bentosizehorizontal: 96px; 
-    --gap: 16px; 
-    --negativegap: -16px;
+    --size: 30px;
   }
 
   @media (width > 833px) {
     --bentosizevertical: 110px; 
     --bentosizehorizontal: 110px;
+    --size: 40px;
+  }
+
+  @media  (width <= 1020px) {
+    --gap: 16px; 
+    --negativegap: -16px;
   }
 
   @media (width > 1020px) {
     --bentosizevertical: 130px; 
     --bentosizehorizontal: 130px;
+    --gap: 20px;
+    --negativegap: -20px;
   }
 }
 
@@ -92,7 +97,6 @@ p { word-wrap: break-word;}
 a {cursor: pointer; font-weight: lighter;}
 .Button, .Download > span {
   font-family: Garnett;
-  font-size: 0.8rem;
 }
 
 /* TEXT -----------------------------------*/
@@ -169,7 +173,7 @@ footer {
 .Article > .TextArticle {
   text-align: center;
   margin: var(--gap);
-  gap: calc(var(--gap) / 2);
+  gap: var(--gap);
 }
 
 .BentoGrid {
@@ -230,7 +234,7 @@ footer {
 
 .Bento > .Statement > .Limg {
   display: flex;
-  min-width: 40px;
+  min-width: var(--size);
   flex-shrink: 0;
   justify-content: center;
 }
@@ -414,13 +418,12 @@ footer {
   .Article {margin: 20px 0 0 0;}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
   .H5, .H6, .H7, .H8 {grid-column: span 4;}
-  .Bento > .Statement > .Limg {min-width: 30px;}
-  .Bento > .Statement > .Limg > img {height: 30px;}
   .Bento > .PB {min-height: 5px;}
 
   h1, span {font-size: 1.6rem;}
   h4 {font-size: 0.81rem;}
   p {font-size: 0.79rem; line-height: 20px;}
+  .Button, .Download > span {font-size: 0.65rem;}
 }
 
 @media (width > 530px) and (width <= 833px) {
@@ -431,12 +434,12 @@ footer {
   .Bento > .PB {min-height: 7px;}
 
   h1, span {font-size: 1.8rem;}
-  h4 {font-size: 0.9rem;}
-  p {font-size: 0.7rem; line-height: 25px;}
+  h4 {font-size: 1rem;}
+  p {font-size: 0.8rem; line-height: 30px;}
+  .Button, .Download > span {font-size: 0.65rem;}
 }
 
 @media (width > 833px) and (width <= 1164px) {
-  .Nav {top: -150px;} /*oculta el navbar*/
   .Article {margin: 40px 0 0 0;}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
   .Bento > .PB {min-height: 8px;}
@@ -444,10 +447,12 @@ footer {
   h1, span {font-size: 2rem;}
   h4 {font-size: 0.9rem;}
   p {font-size: 0.7rem; line-height: 25px;}
+  .Button, .Download > span {font-size: 0.8rem;}
 }
 
 @media (width < 1020px) {
-  /*ESTO PUEDE TRAER MUCHOS PROBLEMAS, A PRESTAR ATENCIÓN*/
+
+  /*ESTO PUEDE TRAER MUCHOS PROBLEMAS, PRESTAR ATENCIÓN*/
   .V1 {min-height: calc(var(--bentosizevertical)); grid-row: span 1;}
   .V2 {min-height: calc(var(--bentosizevertical) * 2 ); grid-row: span 2;}
   .V3 {min-height: calc(var(--bentosizevertical) * 3 ); grid-row: span 3;}
@@ -470,6 +475,7 @@ footer {
   h1, span {font-size: 2rem;}
   h4 {font-size: 1.2rem;}
   p {font-size: 0.9rem; line-height: 30px;}
+  .Button, .Download > span {font-size: 0.8rem;}
 }
 
 /* RESPONSIVE -----------------------------------*/
