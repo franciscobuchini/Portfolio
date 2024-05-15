@@ -111,6 +111,7 @@ header {
   place-items: center;
   justify-content: space-between;
   z-index: 1000;
+  position:fixed;
 }
 
 header > svg {
@@ -124,7 +125,10 @@ header > div {
   display: flex;
   align-items: center;
   gap: calc(var(--gap)/2);
-  padding-left: calc(var(--gap)/2);
+  padding: 0 calc(var(--gap));
+  border-radius: var(--bentoradius);
+  height: var(--size);
+  z-index: 600;
 }
 
 header > div > .Pulse {
@@ -134,21 +138,29 @@ header > div > .Pulse {
   animation: pulse 1500ms infinite;
 }
 
-.Nav {
+header > .Nav {
+  display: flex;
+  align-items: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 500;
-  padding: calc(var(--gap) / 2) var(--gap);
+  padding: 0 var(--gap);
   border-radius: var(--bentogridradius);
+  height: var(--size);
 }
 
-.Nav > ul {
+header > .Nav > ul {
   display: flex;
   gap: var(--gap);
 }
 
-.Nav > ul > li:hover {
+header > .Nav > ul > li {
+  padding: 0 10px;
+  border-radius: var(--bentoradius);
+}
+
+header > .Nav > ul > li:hover {
   transform: scale(1.03);
 }
 
@@ -172,7 +184,6 @@ footer {
 
 .Article > .TextArticle {
   text-align: center;
-  margin: var(--gap);
   gap: var(--gap);
 }
 
@@ -243,6 +254,10 @@ footer {
   max-width: 100%;
   width: auto;
   height: var(--size);
+}
+
+#Presentation > .Statement > .Limg > img {
+  height: auto;
 }
 
 .Bento > .PB {
@@ -416,6 +431,7 @@ footer {
 @media (width > 0) and (width <= 530px) {
   .Nav {top: -150px;} /*oculta el navbar*/
   .Article {margin: 20px 0 0 0;}
+  .Article > .TextArticle {margin: 50px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
   .H5, .H6, .H7, .H8 {grid-column: span 4;}
   .Bento > .PB {min-height: 5px;}
@@ -424,34 +440,39 @@ footer {
   h4 {font-size: 0.81rem;}
   p {font-size: 0.79rem; line-height: 20px;}
   .Button, .Download > span {font-size: 0.65rem;}
+  #Presentation > .Statement > .Text > p {line-height: 25px;}
 }
 
 @media (width > 530px) and (width <= 833px) {
+  header {padding: calc(var(--gap) * 2 );}
   .Nav {top: -150px;} /*oculta el navbar*/
+
   .Article {margin: 30px 0 0 0;}
+  .Article > .TextArticle {margin: 60px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
   .H5, .H6, .H7, .H8 {grid-column: span 4;}
   .Bento > .PB {min-height: 7px;}
 
   h1, span {font-size: 1.8rem;}
   h4 {font-size: 1rem;}
-  p {font-size: 0.8rem; line-height: 30px;}
+  p, a {font-size: 0.8rem; line-height: 30px;}
   .Button, .Download > span {font-size: 0.65rem;}
 }
 
 @media (width > 833px) and (width <= 1164px) {
   .Article {margin: 40px 0 0 0;}
+  .Article > .TextArticle {margin: 70px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
   .Bento > .PB {min-height: 8px;}
 
   h1, span {font-size: 2rem;}
   h4 {font-size: 0.9rem;}
-  p {font-size: 0.7rem; line-height: 25px;}
+  p, a {font-size: 0.7rem; line-height: 25px;}
   .Button, .Download > span {font-size: 0.8rem;}
 }
 
 @media (width < 1020px) {
-
+  header > .Nav > ul {gap: calc(var(--gap) / 2);}
   /*ESTO PUEDE TRAER MUCHOS PROBLEMAS, PRESTAR ATENCIÓN*/
   .V1 {min-height: calc(var(--bentosizevertical)); grid-row: span 1;}
   .V2 {min-height: calc(var(--bentosizevertical) * 2 ); grid-row: span 2;}
@@ -463,19 +484,20 @@ footer {
   .V8 {min-height: calc(var(--bentosizevertical) * 8 ); grid-row: span 8;}
 }
 
-@media (width > 1164px) {
+@media (width > 1020px) {
+  h1, span {font-size: 2rem;}
+  h4 {font-size: 1.2rem;}
+  p, a {font-size: 0.9rem; line-height: 30px;}
+  .Button, .Download > span {font-size: 0.8rem;}
+}
 
+@media (width > 1164px) {
   .Article {margin: 40px 0 0 0;}
-  .Article > .TextArticle {max-width: 800px;}
+  .Article > .TextArticle {max-width: 800px; margin: 90px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
 
   .Bento > .Statement {gap: var(--gap);}
   .Bento > .PB {min-height: 10px;}
-
-  h1, span {font-size: 2rem;}
-  h4 {font-size: 1.2rem;}
-  p {font-size: 0.9rem; line-height: 30px;}
-  .Button, .Download > span {font-size: 0.8rem;}
 }
 
 /* RESPONSIVE -----------------------------------*/

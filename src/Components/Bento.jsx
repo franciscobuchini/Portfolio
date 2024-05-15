@@ -58,6 +58,7 @@ export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp,
           {React.createElement(Com, { Lurl, Bt })}
         </div>
       )}
+      
     </section>
   )
 }

@@ -27,15 +27,29 @@ body {
   color: var(--light);
 }
 
+header {
+  background-color: var(--transparent);
+  backdrop-filter: blur(0px);
+}
+
 header > nav {
   background-color: var(--black);
   border: 0px solid var(--transparent);
   color: var(--light);
 }
 
+header > nav > ul > li:hover {
+  background-color: var(--transparent);
+}
+
 header > svg > path {
   fill: var(--primary);
 }
+
+header > div {
+  background-color: var(--black);
+}
+
 
 header > div > p {
   color: var(--tertiary);
@@ -121,12 +135,16 @@ header > div > .Pulse {
 
 .Button:hover,
 .Switch input:hover {
-  background-color: var(--transparent);
+  background-color: var(--transparent30dark);
   color: var(--primary);
 }
 
 .Switch input:checked {
-  background-color: var(--transparent15dark);
+  background-color: var(--transparent15light);
+}
+
+.Switch input:checked:hover {
+  background-color: var(--transparent30dark);
 }
 
 .Switch input::before {
@@ -144,6 +162,11 @@ header > div > .Pulse {
   color: var(--black);
 }
 
+.Switch input:checked:hover::before {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
 /* MAIN THEME -------------------------------------------------------*/
 
 /* SECONDARY THEME -------------------------------------------------------*/
@@ -152,19 +175,33 @@ header > div > .Pulse {
     background-color: var(--white);
     color: var(--dark);
   }
+
+  header {
+    background-color: var(--transparent);
+    backdrop-filter: blur(0);
+  }
   
   header > nav {
-    background-color: var(--transparent);
+    background-color: var(--white);
     outline: 0px solid var(--transparent);
     color: var(--secondary);
+  }
+
+  header > nav > ul > li:hover {
+    background-color: var(--transparent);
   }
   
   header > svg > path {
     fill: var(--secondary);
   }
-  
+
+  header > div {
+    background-color: var(--white);
+  }
+
   header > div > p {
     color: var(--tertiary);
+
   }
   
   header > div > .Pulse {
@@ -174,6 +211,10 @@ header > div > .Pulse {
   .BentoGrid {
     background-color: var(--transparent15dark);
     border: 0px solid var(--transparent);
+  }
+
+  #Presentation > .Statement > .Text > p {
+    color: var(--dark);
   }
   
   .Bento,

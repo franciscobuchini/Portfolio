@@ -61,6 +61,7 @@ function App() {
       Nav_Intro: "Intro",
       Nav_Projects: "Projects",
       Nav_Software: "Software",
+      Nav_About: "About",
       Nav_Contact: "Contact",
       Nav_Education: "Education",
       Button: "Visit",
@@ -136,6 +137,8 @@ function App() {
       Education_WP_Dom_Tp: "Creating a professional website with WordPress. [5:33:00]",
       Education_AE_Dom_Tp: "Introduction to Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
+      About_TAh1: "About me:",
+      //-------------------------------------------------------------------------
     },
     spanish: {
       //-------------------------------------------------------------------------
@@ -144,6 +147,7 @@ function App() {
       Nav_Intro: "Intro",
       Nav_Projects: "Proyectos",
       Nav_Software: "Programas",
+      Nav_About: "Acerca",
       Nav_Contact: "Contacto",
       Nav_Education: "Educación",
       Button: "Visitar",
@@ -219,15 +223,19 @@ function App() {
       Education_WP_Dom_Tp: "Creando un sitio web profesional con WordPress. [5:33:00]",
       Education_AE_Dom_Tp: "Introducción a Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
+      About_TAh1: "Acerca de mi:",
+      //-------------------------------------------------------------------------
     }
   }
 
   //Header list:
   const links = [
+    { name: lang[language].Nav_Intro, href: "Intro"},
     { name: lang[language].Nav_Projects, href: "Projects"},
     { name: lang[language].Nav_Software, href: "Software" },
-    { name: lang[language].Nav_Contact, href: "Contact" },
     { name: lang[language].Nav_Education, href: "Education" },
+    { name: lang[language].Nav_About, href: "About" },
+    { name: lang[language].Nav_Contact, href: "Contact" },
   ]
 
   return (
@@ -245,25 +253,25 @@ function App() {
 
       <BentoGrid id="Projects" TAh1={lang[language].Projects_TAh1}>
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_01_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Th4="Bento Box UI" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://bentoboxui.vercel.app" />
-      <Bento Bv="2" Bh="4" Th4="Geo Game Challenge" Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://geogamechallenge.netlify.app/"/>
-      <Bento Bv="4" Bh="2" Th4="Café Café" Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://cafe-cafe.vercel.app"/>
-      <Bento Bv="4" Bh="2" Th4="El Matador" Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://el-matador-website.netlify.app/"/>
-      <Bento Bv="4" Bh="2" Th4="To-do List" Tp={lang[language].Projects_TDL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://atlantico-todolist.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Th4="The Hudson" Tp={lang[language].Projects_TH_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://the-hudson.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Th4="Wellington" Tp={lang[language].Projects_W_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--mynavbar1.netlify.app/"/>
-      <Bento Bv="2" Bh="4" Th4="Calculator" Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--atlanticocalculator.netlify.app/"/>
+      <Bento Bv="4" Bh="4" Bs="BL5" Th4="Bento Box UI" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Geo Game Challenge" Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="4" Bh="2" Bs="BL5" Th4="Café Café" Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://cafe-cafe.vercel.app"/>
+      <Bento Bv="4" Bh="2" Bs="BL5" Th4="El Matador" Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://el-matador-website.netlify.app/"/>
+      <Bento Bv="4" Bh="2" Bs="BL5" Th4="To-do List" Tp={lang[language].Projects_TDL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://atlantico-todolist.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="The Hudson" Tp={lang[language].Projects_TH_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://the-hudson.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="Wellington" Tp={lang[language].Projects_W_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--mynavbar1.netlify.app/"/>
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Calculator" Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--atlanticocalculator.netlify.app/"/>
 
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="2" Bh="2" Th4="Hunterlands" Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
-      <Bento Bv="2" Bh="2" Th4="Primero" Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
-      <Bento Bv="2" Bh="4" Th4="Breo App" Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
-      <Bento Bv="2" Bh="4" Th4="Light Project" Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
-      <Bento Bv="2" Bh="2" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="Hunterlands" Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="Primero" Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Light Project" Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>
@@ -302,15 +310,6 @@ function App() {
 
       </BentoGrid>
 
-      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
-      </BentoGrid>
-
       <BentoGrid id="Education" TAh1={lang[language].Education_TAh1} TAp={lang[language].Education_TAp}>
         <Bento Bv="1" Bh="4" Bs="BE1" Th4={lang[language].Education_UNL_Th4} Tp={lang[language].Education_UNL_Tp} />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
@@ -336,6 +335,19 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" />
+      </BentoGrid>
+
+      <BentoGrid id="About" TAh1={lang[language].About_TAh1}>
+        <Bento Bv="2" Bh="8" Bs="BC2"/>
+      </BentoGrid>
+
+      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
       </BentoGrid>
 
       <Footer cb={lang[language].Created}/>
