@@ -50,6 +50,10 @@ header > div > .Pulse {
   border: 0px solid var(--transparent);
 }
 
+#Presentation > .Statement > .Text > p {
+  color: var(--white);
+}
+
 .Bento,
 .MapComponent {
   background-color: var(--dark);

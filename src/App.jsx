@@ -237,7 +237,7 @@ function App() {
       <Header links={links}/>
 
       <BentoGrid id="Intro" TAh1={lang[language].Intro_TAh1}>
-        <Bento Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
+        <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
         <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4={lang[language].Intro_02_Th4}/>
         <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
         <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
@@ -338,6 +338,14 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" />
+        <Bento Bv="1" Bh="2"/>
+        <Bento Bv="2" Bh="2"/>
+        <Bento Bv="3" Bh="2"/>
+        <Bento Bv="4" Bh="2"/>
+        <Bento Bv="5" Bh="2"/>
+        <Bento Bv="6" Bh="2"/>
+        <Bento Bv="7" Bh="2"/>
+        <Bento Bv="8" Bh="2"/>
       </BentoGrid>
 
       <Footer cb={lang[language].Created}/>

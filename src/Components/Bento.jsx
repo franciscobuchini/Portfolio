@@ -1,7 +1,7 @@
 // BENTO.JSX
 import React from "react"
 
-export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4c, Tpc, IBimg, IDimg, IFimg, Limg, Com, PBn, PBd, Bt }) {
+export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4c, Tpc, IBimg, IDimg, IFimg, Limg, Com, PBn, PBd, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
   let classNameBento = `Bento ${Bbgc === "transparent" ? "Transparent" : ""} ${Bs} V${Bv} H${Bh}`
@@ -20,6 +20,7 @@ export default function Bento({ Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4
 
   return (
     <section
+      id={id}
       className={classNameBento}
       onClick={handleClick}
       style={{
