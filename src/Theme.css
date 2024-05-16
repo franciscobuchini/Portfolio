@@ -94,7 +94,7 @@ header > div > .Pulse {
 .Bento > .Statement > .Text > p,
 .Map > .Text > p {
   color: var(--light);
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .Limg img {
