@@ -154,7 +154,7 @@ function App() {
       //-------------------------------------------------------------------------
       Intro_TAh1: "Bienvenidos :)",
       Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
-      Intro_02_Th4: "✈ Indonesia, Abril 2024",
+      Intro_02_Th4: "🛧 Indonesia, Abril 2024",
       Intro_03_Tp: "Cambiar idioma",
       Intro_04_Tp: "Cambiar tema",
       Intro_05_Th4: "⚑ Nevada, USA (hasta julio 2024)",

@@ -6,7 +6,7 @@ export default function Map({ Bs, Bv, Bh, Th4, Tp, Th4c, Tpc, theme }) {
   const mapContainer = useRef(null);
   mapboxgl.accessToken = "pk.eyJ1IjoiZnJhbmNpc2NvYnVjaGluaSIsImEiOiJjbHZsNng5djUxdXVvMmtvb2NoZzcza3VnIn0.jTm58Ue65TyJ9ToHbiwMHg";
   const main = "mapbox://styles/franciscobuchini/clvya43ak01tt01rj2rn6fos4";
-  const secondary = "mapbox://styles/franciscobuchini/clvldwnu1017x01q1buz0fg6v";
+  const secondary = "mapbox://styles/franciscobuchini/clw9oydkm008h01q1a7w98vwy";
   
   const style = theme === "secondary" ? secondary : main;
 
