@@ -27,7 +27,7 @@ export default function Map({ Bs, Bv, Bh, Th4, Tp, Th4c, Tpc, theme }) {
     <section className={classNameMap}>
       <div ref={mapContainer} className="Map"/>
       <div className="Text">
-        <h4 style={{color: `var(--${Th4c})`}}>{Th4}</h4>
+        <h4 style={{color: `${Th4c}`}}>{Th4}</h4>
         <p dangerouslySetInnerHTML={{ __html: Tp }} style={{color: `var(--${Tpc})`}} />
       </div>
     </section>

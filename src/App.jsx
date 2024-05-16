@@ -244,7 +244,7 @@ function App() {
 
       <BentoGrid id="Intro" TAh1={lang[language].Intro_TAh1}>
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
-        <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4={lang[language].Intro_02_Th4}/>
+        <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4c="var(--white)" Th4={lang[language].Intro_02_Th4}/>
         <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
         <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Map Bv="2" Bh="4" Th4={lang[language].Intro_05_Th4} theme={theme}/>

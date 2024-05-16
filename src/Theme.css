@@ -24,7 +24,6 @@
 /* MAIN THEME -------------------------------------------------------*/
 body {
   background-color: var(--dark);
-  color: var(--light);
 }
 
 header {
@@ -59,6 +58,11 @@ header > div > .Pulse {
   background-color: var(--tertiary);
 }
 
+.Article > .TextArticle {
+  color: var(--light);
+  opacity: 1;
+}
+
 .BentoGrid {
   background-color: var(--black);
   border: 0px solid var(--transparent);
@@ -66,6 +70,7 @@ header > div > .Pulse {
 
 #Presentation > .Statement > .Text > p {
   color: var(--white);
+  opacity: 1;
 }
 
 .Bento,
@@ -81,17 +86,15 @@ header > div > .Pulse {
 }
 
 .Bento > .Statement > .Text > h4,
-.Map > .Text > h4 {
+.MapComponent > .Text > h4 {
   color: var(--light);
-}
-
-.Bento > .Statement > .Text > h5 {
-  color: var(--light);
+  opacity: 1;
 }
 
 .Bento > .Statement > .Text > p,
 .Map > .Text > p {
-  color: var(--transparent30light);
+  color: var(--light);
+  opacity: 0.5;
 }
 
 .Limg img {
@@ -120,11 +123,6 @@ header > div > .Pulse {
 
 .Me {
   color: var(--primary);
-}
-
-.Article .TextArticle h1,
-.Article .TextArticle p {
-  color: var(--light);
 }
 
 .Button,
@@ -173,7 +171,6 @@ header > div > .Pulse {
 [data-theme="secondary"] {
   body {
     background-color: var(--white);
-    color: var(--dark);
   }
 
   header {
@@ -207,14 +204,20 @@ header > div > .Pulse {
   header > div > .Pulse {
     background-color: var(--tertiary);
   }
+
+  .Article > .TextArticle {
+    color: var(--dark);
+    opacity: 0.8;
+  }
   
-  .BentoGrid {
+  .Article > .BentoGrid {
     background-color: var(--transparent15dark);
     border: 0px solid var(--transparent);
   }
 
   #Presentation > .Statement > .Text > p {
     color: var(--dark);
+    opacity: 0.8;
   }
   
   .Bento,
@@ -230,17 +233,15 @@ header > div > .Pulse {
   }
  
   .Bento > .Statement > .Text > h4,
-  .Map > .Text > h4 {
-    color: var(--stroke);
-  }
-  
-  .Bento > .Statement > .Text > h5 {
-    color: var(--stroke);
+  .MapComponent > .Text > h4 {
+    color: var(--dark);
+    opacity: 0.8;
   }
   
   .Bento > .Statement > .Text > p,
-  .Map > .Text > p {
-    color: var(--stroke);
+  .MapComponent > .Text > p {
+    color: var(--dark);
+    opacity: 0.8;
   }
   
   .Limg img {
@@ -276,11 +277,6 @@ header > div > .Pulse {
     color: var(--secondary);
   }
   
-  .Article .TextArticle h1,
-  .Article .TextArticle p {
-    color: var(--dark);
-  }
-
   .Button,
   .Switch input {
     background-color: var(--transparent15dark);

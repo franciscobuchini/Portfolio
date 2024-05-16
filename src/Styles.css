@@ -90,14 +90,11 @@ html, body {
 
 h1, span {font-family: Coustard;}
 
-h4 {font-family: Garnett;}
-
 p { word-wrap: break-word;}
 
 a {cursor: pointer; font-weight: lighter;}
-.Button, .Download > span {
-  font-family: Garnett;
-}
+
+.Button, .Download > span {font-family: Garnett;}
 
 /* TEXT -----------------------------------*/
 
@@ -118,6 +115,7 @@ header > svg {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
+  display: none;
 }
 
 header > div {
@@ -141,10 +139,6 @@ header > div > .Pulse {
 header > .Nav {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 500;
   padding: 0 var(--gap);
   border-radius: var(--bentogridradius);
   height: var(--size);
@@ -429,7 +423,7 @@ footer {
 /* RESPONSIVE -----------------------------------*/
 
 @media (width > 0) and (width <= 530px) {
-  .Nav {top: -150px;} /*oculta el navbar*/
+  .Nav {position: absolute; top: -150px;} /*oculta el navbar*/
   .Article {margin: 20px 0 0 0;}
   .Article > .TextArticle {margin: 50px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
@@ -445,7 +439,7 @@ footer {
 
 @media (width > 530px) and (width <= 833px) {
   header {padding: calc(var(--gap) * 2 );}
-  .Nav {top: -150px;} /*oculta el navbar*/
+  .Nav {position: absolute; top: -150px;} /*oculta el navbar*/
 
   .Article {margin: 30px 0 0 0;}
   .Article > .TextArticle {margin: 60px var(--gap) var(--gap);}
@@ -485,6 +479,7 @@ footer {
 }
 
 @media (width > 1020px) {
+  header {padding: var(--gap);}
   h1, span {font-size: 2rem;}
   h4 {font-size: 1.2rem;}
   p, a {font-size: 0.9rem; line-height: 30px;}
@@ -492,6 +487,7 @@ footer {
 }
 
 @media (width > 1164px) {
+  header > .Nav { position: absolute; left: 50%; transform: translateX(-50%);}
   .Article {margin: 40px 0 0 0;}
   .Article > .TextArticle {max-width: 800px; margin: 90px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}
