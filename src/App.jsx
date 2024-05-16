@@ -38,6 +38,22 @@ import Limg30 from "./Assets/Limg30.webp"
 import Limg31 from "./Assets/Limg31.webp"
 import Limg32 from "./Assets/Limg32.webp"
 import Limg33 from "./Assets/Limg33.webp"
+import Screen_BBUI from "./Assets/Screen_BBUI.webp"
+import Screen_GGC from "./Assets/Screen_GGC.webp"
+import Screen_CC from "./Assets/Screen_CC.webp"
+import Screen_EM from "./Assets/Screen_EM.webp"
+import Screen_TH from "./Assets/Screen_TH.webp"
+import Screen_W from "./Assets/Screen_W.webp"
+import Screen_CAL from "./Assets/Screen_CAL.webp"
+import Screen_TDL from "./Assets/Screen_TDL.webp"
+import Screen_TDC from "./Assets/Screen_TDC.webp"
+import Screen_TDA from "./Assets/Screen_TDA.webp"
+import Screen_TDE from "./Assets/Screen_TDE.webp"
+import Screen_TDSA from "./Assets/Screen_TDSA.webp"
+import Screen_LP from "./Assets/Screen_LP.webp"
+import Screen_PDS from "./Assets/Screen_PDS.webp"
+import Screen_BREO from "./Assets/Screen_BREO.webp"
+import Screen_HUN from "./Assets/Screen_HUN.webp"
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
 import Button from "./Components/Button"
@@ -95,6 +111,7 @@ function App() {
       Projects_TDA1_Tp: "Argentine Soccer.",
       Projects_TDA2_Tp: "Argentine Teams 2021.",
       Projects_TDC_Tp: "Colón de Santa Fe.",
+      Projects_TDSA_Tp: "Argentina National Team.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Tools & Software ⚙️",
       Software_TAp: "Progression according to roadmap.sh",
@@ -181,6 +198,7 @@ function App() {
       Projects_TDA1_Tp: "Fútbol Argentino",
       Projects_TDA2_Tp: "Equipos Argentinos 2021.",
       Projects_TDC_Tp: "Colón de Santa Fe.",
+      Projects_TDSA_Tp: "Selección Argentina.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Herramientas y Programas ⚙️",
       Software_TAp: "Progreso según roadmap.sh",
@@ -253,25 +271,26 @@ function App() {
 
       <BentoGrid id="Projects" TAh1={lang[language].Projects_TAh1}>
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_01_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Bs="BL5" Th4="Bento Box UI" Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://bentoboxui.vercel.app" />
-      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Geo Game Challenge" Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://geogamechallenge.netlify.app/"/>
-      <Bento Bv="4" Bh="2" Bs="BL5" Th4="Café Café" Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://cafe-cafe.vercel.app"/>
-      <Bento Bv="4" Bh="2" Bs="BL5" Th4="El Matador" Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://el-matador-website.netlify.app/"/>
-      <Bento Bv="4" Bh="2" Bs="BL5" Th4="To-do List" Tp={lang[language].Projects_TDL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://atlantico-todolist.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="The Hudson" Tp={lang[language].Projects_TH_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://the-hudson.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="Wellington" Tp={lang[language].Projects_W_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--mynavbar1.netlify.app/"/>
-      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Calculator" Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--atlanticocalculator.netlify.app/"/>
+      <Bento Bv="4" Bh="4" Bs="BL4" Th4="Bento Box UI" IBimg={Screen_BBUI} Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Button}  Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game Challenge" IBimg={Screen_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="4" Bh="2" Bs="BR1" Th4="Café Café" IBimg={Screen_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://cafe-cafe.vercel.app"/>
+      <Bento Bv="4" Bh="2" Bs="BR4" Th4="El Matador" IBimg={Screen_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://el-matador-website.netlify.app/"/>
+      <Bento Bv="4" Bh="2" Bs="BL1" Th4="To-do List" IBimg={Screen_TDL} Tp={lang[language].Projects_TDL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://atlantico-todolist.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="The Hudson" IBimg={Screen_TH} Tp={lang[language].Projects_TH_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://the-hudson.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Wellington" IBimg={Screen_W} Tp={lang[language].Projects_W_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--mynavbar1.netlify.app/"/>
+      <Bento Bv="2" Bh="4" Bs="BL3" Th4="Calculator" IBimg={Screen_CAL} Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--atlanticocalculator.netlify.app/"/>
 
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="Hunterlands" Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="Primero" Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
-      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
-      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Light Project" Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
-      <Bento Bv="2" Bh="2" Bs="BL5" Th4="T-Shirt Designs" Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" Bbgc="#26272590" IBimg={Screen_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Primero" Bbgc="#1D9A6C570" IBimg={Screen_PDS} Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" Bbgc="#DC570040" IBimg={Screen_BREO} Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Light Project" Bbgc="#0E3F3F95" IBimg={Screen_LP} Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#7D4D3470" IBimg={Screen_TDE} Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#956F5C50" IBimg={Screen_TDA} Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#131E30" IBimg={Screen_TDA} Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#492B1978" IBimg={Screen_TDC} Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" Bbgc="#4D768950" IBimg={Screen_TDSA} Tp={lang[language].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>

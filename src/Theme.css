@@ -3,6 +3,7 @@
   --secondary: #CB7043;
   --tertiary: #34BF49;
   --light: #F7F2F2;
+  --lightSecondary: #EACEC2;
   --white: #FFFFFF;
   --black: #090C10;
   --dark: #13171f;
@@ -127,14 +128,15 @@ header > div > .Pulse {
 
 .Button,
 .Switch input {
-  background-color: var(--transparent15light);
-  color: var(--white);
+  background-color: var(--transparent30light);
+  color: var(--dark);
+  border: 1px solid var(--dark);
 }
 
 .Button:hover,
 .Switch input:hover {
   background-color: var(--transparent30dark);
-  color: var(--primary);
+  color: var(--white);
 }
 
 .Switch input:checked {
@@ -146,8 +148,8 @@ header > div > .Pulse {
 }
 
 .Switch input::before {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .Switch input:hover::before {
@@ -156,8 +158,8 @@ header > div > .Pulse {
 }
 
 .Switch input:checked::before {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .Switch input:checked:hover::before {
@@ -228,7 +230,7 @@ header > div > .Pulse {
   
   .Bento:hover,
   .MapComponent:hover {
-    background-color: var(--light);
+    background-color: var(--lightSecondary);
     outline: 4px solid var(--secondary);
   }
  
@@ -280,6 +282,7 @@ header > div > .Pulse {
   .Button,
   .Switch input {
     background-color: var(--transparent15dark);
+    border: 1px solid var(--secondary);
     color: var(--secondary);
   }
 
@@ -298,18 +301,18 @@ header > div > .Pulse {
   }
 
   .Switch input::before {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--secondary);
+    color: var(--white);
   }
 
   .Switch input:hover::before {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--secondary);
+    color: var(--white);
   }
 
   .Switch input:checked::before {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--secondary);
+    color: var(--white);
   }
 
 }

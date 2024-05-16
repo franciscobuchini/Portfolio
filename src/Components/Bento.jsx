@@ -25,7 +25,7 @@ export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp,
       onClick={handleClick}
       style={{
         ...(Outc && { outline: `solid ${Outc}` }),
-        ...(Bbgc && { backgroundColor: `var(--${Bbgc})` }),
+        ...(Bbgc && { backgroundColor: `${Bbgc}` }),
         ...(Bbgi && { backgroundImage: `${Bbgi}` }),
         cursor: Lurl && !Com ? "pointer" : "auto"
       }}>
