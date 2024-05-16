@@ -66,15 +66,15 @@ function App() {
       Nav_Education: "Education",
       Button: "Visit",
       //-------------------------------------------------------------------------
-      Intro_TAh1: "Welcome :)",
+      Intro_TAh1: "Welcome 👋",
       Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
-      Intro_02_Th4: "✈ Indonesia, April 2024",
+      Intro_02_Th4: "🛩️ Indonesia, April 2024",
       Intro_03_Tp: "Switch Language",
       Intro_04_Tp: "Switch Theme",
-      Intro_05_Th4: "⚑ Nevada, USA (until July 2024)",
+      Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
       //-------------------------------------------------------------------------
-      Projects_TAh1: "Projects:",
+      Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
       Projects_BBUI_Tp: "Created with: ReactJS.",
       Projects_GGC_Tp: "Created with: JavaScript.",
@@ -96,7 +96,7 @@ function App() {
       Projects_TDA2_Tp: "Argentine Teams 2021.",
       Projects_TDC_Tp: "Colón de Santa Fe.",
       //-------------------------------------------------------------------------
-      Software_TAh1: "Tools & Software:",
+      Software_TAh1: "Tools & Software ⚙️",
       Software_TAp: "Progression according to roadmap.sh",
       Software_01_Th4: "Website development:",
       Software_02_Th4: "UX/UI & Design tools:",
@@ -107,9 +107,9 @@ function App() {
       Software_Basics: "Basics",
       Software_Introducing: "Introducing",
       //-------------------------------------------------------------------------
-      Contact_TAh1: "Profiles & Contact:",
+      Contact_TAh1: "Profiles & Contact 🤙",
       //-------------------------------------------------------------------------
-      Education_TAh1: "Education:",
+      Education_TAh1: "Education 📚",
       Education_TAp: "More than 180 hours of study with courses.",
       Education_UNL_Th4: "Software Engineer",
       Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 not finished)",
@@ -137,7 +137,7 @@ function App() {
       Education_WP_Dom_Tp: "Creating a professional website with WordPress. [5:33:00]",
       Education_AE_Dom_Tp: "Introduction to Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
-      About_TAh1: "About me:",
+      About_TAh1: "About me 🤿",
       //-------------------------------------------------------------------------
     },
     spanish: {
@@ -152,15 +152,15 @@ function App() {
       Nav_Education: "Educación",
       Button: "Visitar",
       //-------------------------------------------------------------------------
-      Intro_TAh1: "Bienvenidos :)",
+      Intro_TAh1: "Bienvenidos 👋",
       Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
-      Intro_02_Th4: "🛧 Indonesia, Abril 2024",
+      Intro_02_Th4: "🛩️ Indonesia, Abril 2024",
       Intro_03_Tp: "Cambiar idioma",
       Intro_04_Tp: "Cambiar tema",
-      Intro_05_Th4: "⚑ Nevada, USA (hasta julio 2024)",
+      Intro_05_Th4: "🏠 Nevada, USA (hasta julio 2024)",
       Intro_06_Tp: "Descargar CV:",
       //-------------------------------------------------------------------------
-      Projects_TAh1: "Proyectos:",
+      Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
       Projects_BBUI_Tp: "Creado con: ReactJS.",
       Projects_GGC_Tp: "Creado con: JavaScript.",
@@ -182,7 +182,7 @@ function App() {
       Projects_TDA2_Tp: "Equipos Argentinos 2021.",
       Projects_TDC_Tp: "Colón de Santa Fe.",
       //-------------------------------------------------------------------------
-      Software_TAh1: "Herramientas y Programas:",
+      Software_TAh1: "Herramientas y Programas ⚙️",
       Software_TAp: "Progreso según roadmap.sh",
       Software_01_Th4: "Desarrollo web:",
       Software_02_Th4: "UX/UI y Diseño:",
@@ -193,9 +193,9 @@ function App() {
       Software_Basics: "Básicos",
       Software_Introducing: "Principiante",
       //-------------------------------------------------------------------------
-      Contact_TAh1: "Perfil y Contacto:",
+      Contact_TAh1: "Perfil y Contacto 🤙",
       //-------------------------------------------------------------------------
-      Education_TAh1: "Educación:",
+      Education_TAh1: "Educación 📚",
       Education_TAp: "Mas de 180 horas de cursado.",
       Education_UNL_Th4: "Ingeniería Informática",
       Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 sin finalizar)",
