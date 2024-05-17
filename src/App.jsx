@@ -341,7 +341,19 @@ function App() {
         <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_04_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={lang[language].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={lang[language].Software_Basics} PBd="10" PBn="3"/>
+      </BentoGrid>
 
+      <BentoGrid id="About" TAh1={lang[language].About_TAh1}>
+        <Bento Bv="2" Bh="8" Bs="BC2"/>
+      </BentoGrid>
+
+      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
       </BentoGrid>
 
       <BentoGrid id="Education" TAh1={lang[language].Education_TAh1} TAp={lang[language].Education_TAp}>
@@ -352,7 +364,7 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={lang[language].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp={lang[language].Education_HOS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg33} Th4="Git & Github - Soy Dalto" Tp={lang[language].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={lang[language].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" />
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={lang[language].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" /> */}
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp={lang[language].Education_HTMLCSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={lang[language].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp={lang[language].Education_CSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
@@ -367,21 +379,8 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" />
-      </BentoGrid>
-
-      <BentoGrid id="About" TAh1={lang[language].About_TAh1}>
-        <Bento Bv="2" Bh="8" Bs="BC2"/>
-      </BentoGrid>
-
-      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" /> */}
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" /> */}
       </BentoGrid>
 
       <Footer cb={lang[language].Created}/>

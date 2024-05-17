@@ -132,9 +132,10 @@ header > div > .Pulse {
 
 .Button,
 .Switch input {
-  background-color: var(--transparent30light);
+  background-color: var(--light);
   color: var(--dark);
   border: 1px solid var(--dark);
+  opacity: 0.8;
 }
 
 .Button:hover,
@@ -289,9 +290,10 @@ header > div > .Pulse {
   
   .Button,
   .Switch input {
-    background-color: var(--transparent15dark);
-    border: 1px solid var(--secondary);
-    color: var(--secondary);
+    background-color: var(--dark);
+    border: 2px solid var(--white);
+    color: var(--white);
+    opacity: 0.5;
   }
 
   .Button:hover,
@@ -301,7 +303,7 @@ header > div > .Pulse {
   }
 
   .Switch input:checked {
-    background-color: var(--transparent15dark);
+    background-color: var(--dark);
   }
 
   .Switch input:checked:hover {
