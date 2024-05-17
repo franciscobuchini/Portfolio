@@ -198,7 +198,7 @@ footer {
   gap: calc(var(--gap) / 2);
 }
 
-.Bento:hover > .ImageBack {
+.Bento:hover > .ImageFront {
   transform: scale(1.05);
 }
 
@@ -335,15 +335,15 @@ footer {
 
 /* BENTO STYLES -----------------------------------*/
 
-.BL1 {}
-.BL2 {justify-content: center;}
-.BL3 {justify-content: end;}
-.BL4 {justify-content: space-between;}
-.BL5 {justify-content: space-between; .Component {justify-content: flex-end;}}
+.BL1 > .Statement > .Limg {justify-content: left;}
+.BL2 {justify-content: center; .Statement > .Limg {justify-content: left;}}
+.BL3 {justify-content: end; .Statement > .Limg {justify-content: left;}}
+.BL4 {justify-content: space-between; .Statement > .Limg {justify-content: left;}}
+.BL5 {justify-content: space-between; .Component {justify-content: flex-end;} .Statement > .Limg {justify-content: left;}}
 
-.BR1 {text-align: right; > .Component, .Limg {justify-content: right;}}
-.BR2 {justify-content: center; text-align: right; > .Component, .Limg {justify-content: right;}}
-.BR3 {justify-content: end; text-align: right; > .Component, .Limg {justify-content: right;}}
+.BR1 {text-align: right; > .Component, .Statement > .Limg {justify-content: right;}}
+.BR2 {justify-content: center; text-align: right; > .Component, .Statement > .Limg {justify-content: right;}}
+.BR3 {justify-content: end; text-align: right; > .Component, .Statement > .Limg {justify-content: right;}}
 .BR4 {justify-content: space-between; text-align: right; > .Component, .Statement .Limg {justify-content: right;}}
 .BR5 {justify-content: space-between; text-align: right; > .Statement .Limg {justify-content: right;}}
 

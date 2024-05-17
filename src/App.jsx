@@ -4,7 +4,7 @@ import Footer from "./Components/Footer"
 import React, { useState } from "react"
 import Bento from "./Components/Bento"
 import Map from "./Components/Map"
-import IBimg1 from "./Assets/IBimg1.webp"
+import IFimg1 from "./Assets/IFimg1.webp"
 import Limg1 from "./Assets/Limg1.webp"
 import Limg2 from "./Assets/Limg2.webp"
 import Limg3 from "./Assets/Limg3.webp"
@@ -38,22 +38,40 @@ import Limg30 from "./Assets/Limg30.webp"
 import Limg31 from "./Assets/Limg31.webp"
 import Limg32 from "./Assets/Limg32.webp"
 import Limg33 from "./Assets/Limg33.webp"
-import Screen_BBUI from "./Assets/Screen_BBUI.webp"
-import Screen_GGC from "./Assets/Screen_GGC.webp"
-import Screen_CC from "./Assets/Screen_CC.webp"
-import Screen_EM from "./Assets/Screen_EM.webp"
-import Screen_TH from "./Assets/Screen_TH.webp"
-import Screen_W from "./Assets/Screen_W.webp"
-import Screen_CAL from "./Assets/Screen_CAL.webp"
-import Screen_TDL from "./Assets/Screen_TDL.webp"
-import Screen_TDC from "./Assets/Screen_TDC.webp"
-import Screen_TDA from "./Assets/Screen_TDA.webp"
-import Screen_TDE from "./Assets/Screen_TDE.webp"
-import Screen_TDSA from "./Assets/Screen_TDSA.webp"
-import Screen_LP from "./Assets/Screen_LP.webp"
-import Screen_PDS from "./Assets/Screen_PDS.webp"
-import Screen_BREO from "./Assets/Screen_BREO.webp"
-import Screen_HUN from "./Assets/Screen_HUN.webp"
+
+import Limg_EM from "./Assets/Limg_EM.webp"
+import Limg_CC from "./Assets/Limg_CC.webp"
+import Limg_GGC from "./Assets/Limg_GGC.webp"
+import Limg_BBUI from "./Assets/Limg_BBUI.webp"
+
+import IFimg_TDE from "./Assets/IFimg_TDE.webp"
+import IFimg_TDA1 from "./Assets/IFimg_TDA1.webp"
+import IFimg_TDA2 from "./Assets/IFimg_TDA2.webp"
+import IFimg_TDSA from "./Assets/IFimg_TDSA.webp"
+import IFimg_TDC from "./Assets/IFimg_TDC.webp"
+import IFimg_LP from "./Assets/IFimg_LP.webp"
+import IFimg_BREO from "./Assets/IFimg_BREO.webp"
+import IFimg_PDS from "./Assets/IFimg_PDS.webp"
+import IFimg_HUN from "./Assets/IFimg_HUN.webp"
+import IFimg_DEEB from "./Assets/IFimg_DEEB.webp"
+import IFimg_EM from "./Assets/IFimg_EM.webp"
+import IFimg_CC from "./Assets/IFimg_CC.webp"
+import IFimg_GGC from "./Assets/IFimg_GGC.webp"
+import IFimg_CAL from "./Assets/IFimg_CAL.webp"
+import IFimg_BBUI from "./Assets/IFimg_BBUI.webp"
+
+import IBimg_LP from "./Assets/IBimg_LP.webp"
+import IBimg_TDL from "./Assets/IBimg_TDL.webp"
+import IBimg_TDR from "./Assets/IBimg_TDR.webp"
+import IBimg_BREO from "./Assets/IBimg_BREO.webp"
+import IBimg_PDS from "./Assets/IBimg_PDS.webp"
+import IBimg_HUN from "./Assets/IBimg_HUN.webp"
+import IBimg_BBUI from "./Assets/IBimg_BBUI.webp"
+import IBimg_DEEB from "./Assets/IBimg_DEEB.webp"
+import IBimg_CC from "./Assets/IBimg_CC.webp"
+import IBimg_EM from "./Assets/IBimg_EM.webp"
+import IBimg_GGC from "./Assets/IBimg_GGC.webp"
+
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
 import Button from "./Components/Button"
@@ -81,6 +99,9 @@ function App() {
       Nav_Contact: "Contact",
       Nav_Education: "Education",
       Button: "Visit",
+      Visit: "Visit",
+      Play: "Play",
+      Try: "Try",
       //-------------------------------------------------------------------------
       Intro_TAh1: "Welcome 👋",
       Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
@@ -94,24 +115,21 @@ function App() {
       Projects_01_Th4: "Programming:",
       Projects_BBUI_Tp: "Created with: ReactJS.",
       Projects_GGC_Tp: "Created with: JavaScript.",
-      Projects_EM_Tp: "Created with: HTML & CSS.",
-      Projects_TH_Tp: "Created with: HTML & CSS.",
-      Projects_CAL_Tp: "Created with: JavaScript.",
-      Projects_CC_Tp: "Created with: ReactJS.",
-      Projects_TDL_Tp: "Created with: JavaScript.",
-      Projects_HB_Tp: "Created with: HTML & CSS.",
-      Projects_W_Tp: "Created with: HTML & CSS.",
+      Projects_EM_Tp: "Restaurant placed <br> in Wellington, NZ.",
+      Projects_CAL_Tp: "Created with: <br> JavaScript.",
+      Projects_CC_Tp: "Created with: <br> Bento Box UI.",
 
       Projects_02_Th4: "Design:",
       Projects_HUN_Tp: "UX/UI Design for a RPG.",
       Projects_PDS_Tp: "Design System for a mobile app for pets.",
-      Projects_BREO_Tp: "UX/UI for my own app that worked until 2021.",
+      Projects_BREO_Tp: "UX/UI for my own app that worked during the covid-19.",
       Projects_LP_Tp: "UX/UI Design for a TBS Game.",
       Projects_TDE_Tp: "European Clubs.",
-      Projects_TDA1_Tp: "Argentine Soccer.",
-      Projects_TDA2_Tp: "Argentine Teams 2021.",
+      Projects_TDA1_Tp: "Argentine Teams.",
+      Projects_TDA2_Tp: "Argentine Teams.",
       Projects_TDC_Tp: "Colón de Santa Fe.",
       Projects_TDSA_Tp: "Argentina National Team.",
+      Projects_DEEB_Tp: "Music App UX/UI.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Tools & Software ⚙️",
       Software_TAp: "Progression according to roadmap.sh",
@@ -168,6 +186,9 @@ function App() {
       Nav_Contact: "Contacto",
       Nav_Education: "Educación",
       Button: "Visitar",
+      Visit: "Visitar",
+      Play: "Jugar",
+      Try: "Probar",
       //-------------------------------------------------------------------------
       Intro_TAh1: "Bienvenidos 👋",
       Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
@@ -181,24 +202,21 @@ function App() {
       Projects_01_Th4: "Programación:",
       Projects_BBUI_Tp: "Creado con: ReactJS.",
       Projects_GGC_Tp: "Creado con: JavaScript.",
-      Projects_EM_Tp: "Creado con: HTML & CSS.",
-      Projects_TH_Tp: "Creado con: HTML & CSS.",
-      Projects_CAL_Tp: "Creado con: JavaScript.",
-      Projects_CC_Tp: "Creado con: ReactJS.",
-      Projects_TDL_Tp: "Creado con: JavaScript.",
-      Projects_HB_Tp: "Creado con: HTML & CSS.",
-      Projects_W_Tp: "Creado con: HTML & CSS.",
+      Projects_EM_Tp: "Restaurant ubicado <br> en Wellington, NZ.",
+      Projects_CAL_Tp: "Creado con: <br> JavaScript.",
+      Projects_CC_Tp: "Creado con: <br> Bento Box UI.",
 
       Projects_02_Th4: "Diseño:",
       Projects_HUN_Tp: "Diseño UX/UI para un RPG.",
       Projects_PDS_Tp: "Design System para una app de mascotas.",
-      Projects_BREO_Tp: "UX/UI para mi propia app que funcionó hasta 2021.",
+      Projects_BREO_Tp: "UX/UI para mi app que funcionó durante el covid-19.",
       Projects_LP_Tp: "Diseño UX/UI para un juego TBS.",
       Projects_TDE_Tp: "Clubes Europeos.",
-      Projects_TDA1_Tp: "Fútbol Argentino",
-      Projects_TDA2_Tp: "Equipos Argentinos 2021.",
+      Projects_TDA1_Tp: "Fútbol Argentino.",
+      Projects_TDA2_Tp: "Fútbol Argentino.",
       Projects_TDC_Tp: "Colón de Santa Fe.",
       Projects_TDSA_Tp: "Selección Argentina.",
+      Projects_DEEB_Tp: "Music App UX/UI.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Herramientas y Programas ⚙️",
       Software_TAp: "Progreso según roadmap.sh",
@@ -262,7 +280,7 @@ function App() {
 
       <BentoGrid id="Intro" TAh1={lang[language].Intro_TAh1}>
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
-        <Bento Bv="4" Bh="4" IBimg={IBimg1} Th4c="var(--white)" Th4={lang[language].Intro_02_Th4}/>
+        <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={lang[language].Intro_02_Th4}/>
         <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
         <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Map Bv="2" Bh="4" Th4={lang[language].Intro_05_Th4} theme={theme}/>
@@ -271,26 +289,23 @@ function App() {
 
       <BentoGrid id="Projects" TAh1={lang[language].Projects_TAh1}>
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_01_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Bs="BL4" Th4="Bento Box UI" IBimg={Screen_BBUI} Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Button}  Lurl="https://bentoboxui.vercel.app" />
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game Challenge" IBimg={Screen_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://geogamechallenge.netlify.app/"/>
-      <Bento Bv="4" Bh="2" Bs="BR1" Th4="Café Café" IBimg={Screen_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://cafe-cafe.vercel.app"/>
-      <Bento Bv="4" Bh="2" Bs="BR4" Th4="El Matador" IBimg={Screen_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://el-matador-website.netlify.app/"/>
-      <Bento Bv="4" Bh="2" Bs="BL1" Th4="To-do List" IBimg={Screen_TDL} Tp={lang[language].Projects_TDL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://atlantico-todolist.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="The Hudson" IBimg={Screen_TH} Tp={lang[language].Projects_TH_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://the-hudson.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Wellington" IBimg={Screen_W} Tp={lang[language].Projects_W_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--mynavbar1.netlify.app/"/>
-      <Bento Bv="2" Bh="4" Bs="BL3" Th4="Calculator" IBimg={Screen_CAL} Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Button} Lurl="https://main--atlanticocalculator.netlify.app/"/>
-
+      <Bento Bv="4" Bh="4" Bs="BL4" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Visit}  Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game Challenge" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Play} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://cafe-cafe.vercel.app"/>
+      <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://el-matador-website.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Calculator" IFimg={IFimg_CAL} Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Try} Lurl="https://main--atlanticocalculator.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" Bbgc="#26272590" IBimg={Screen_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
-      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Primero" Bbgc="#1D9A6C570" IBimg={Screen_PDS} Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
-      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" Bbgc="#DC570040" IBimg={Screen_BREO} Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Light Project" Bbgc="#0E3F3F95" IBimg={Screen_LP} Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#7D4D3470" IBimg={Screen_TDE} Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#956F5C50" IBimg={Screen_TDA} Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#131E30" IBimg={Screen_TDA} Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" Bbgc="#492B1978" IBimg={Screen_TDC} Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" Bbgc="#4D768950" IBimg={Screen_TDSA} Tp={lang[language].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
+      <Bento Bv="2" Bh="4" Bs="BR2" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDE} IBimg={IBimg_TDR} Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={lang[language].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
+      <Bento Bv="2" Bh="2" Bs="BR5" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={lang[language].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>

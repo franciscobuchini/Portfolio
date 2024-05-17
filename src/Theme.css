@@ -74,6 +74,10 @@ header > div > .Pulse {
   opacity: 1;
 }
 
+.Bento > .ImageBack {
+  opacity: 0.3;
+}
+
 .Bento,
 .MapComponent {
   background-color: var(--dark);
@@ -220,6 +224,10 @@ header > div > .Pulse {
   #Presentation > .Statement > .Text > p {
     color: var(--dark);
     opacity: 0.8;
+  }
+
+  .Bento > .ImageBack {
+    opacity: 0.5;
   }
   
   .Bento,
