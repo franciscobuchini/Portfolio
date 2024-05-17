@@ -71,6 +71,7 @@ import IBimg_DEEB from "./Assets/IBimg_DEEB.webp"
 import IBimg_CC from "./Assets/IBimg_CC.webp"
 import IBimg_EM from "./Assets/IBimg_EM.webp"
 import IBimg_GGC from "./Assets/IBimg_GGC.webp"
+import IBimg_CAL from "./Assets/IBimg_CAL.webp"
 
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
@@ -84,8 +85,8 @@ function App() {
   const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
 
   // Map Theme switcher:
-  const [theme, setTheme] = useState("main")
-  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "secondary" : "main")}
+  const [theme, setTheme] = useState("dark")
+  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "light" : "dark")}
 
   const lang = {
     english: {
@@ -279,10 +280,10 @@ function App() {
       <Header links={links}/>
 
       <BentoGrid id="Intro" TAh1={lang[language].Intro_TAh1}>
+      <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
+        <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
         <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={lang[language].Intro_02_Th4}/>
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Map Bv="2" Bh="4" Th4={lang[language].Intro_05_Th4} theme={theme}/>
         <Bento Bv="1" Bh="4" Bs="BC2" Tp={lang[language].Intro_06_Tp} Com={Download}/>
       </BentoGrid>
@@ -293,7 +294,7 @@ function App() {
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game Challenge" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Play} Lurl="https://geogamechallenge.netlify.app/"/>
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://cafe-cafe.vercel.app"/>
       <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://el-matador-website.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Calculator" IFimg={IFimg_CAL} Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Try} Lurl="https://main--atlanticocalculator.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Calculator" IFimg={IFimg_CAL} IBimg={IBimg_CAL} Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Try} Lurl="https://dark--atlanticocalculator.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
