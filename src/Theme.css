@@ -14,7 +14,7 @@
   --transparent15light: rgba(255, 255, 255, 0.15);
   --transparent30light: rgba(255, 255, 255, 0.30);
   --transparent: #00000000;
-  --stroke: #30363D;
+  --stroke: #5A5959;
 }
 
 @keyframes pulse {
@@ -60,8 +60,7 @@ header > div > .Pulse {
 }
 
 .Article > .TextArticle {
-  color: var(--dark);
-  opacity: 0.8;
+  color: var(--stroke);
 }
 
 .Article > .BentoGrid {
@@ -70,8 +69,7 @@ header > div > .Pulse {
 }
 
 #Presentation > .Statement > .Text > p {
-  color: var(--dark);
-  opacity: 0.8;
+  color: var(--stroke);
 }
 
 .Bento > .ImageBack {
@@ -93,14 +91,12 @@ header > div > .Pulse {
 
 .Bento > .Statement > .Text > h4,
 .MapComponent > .Text > h4 {
-  color: var(--dark);
-  opacity: 0.8;
+  color: var(--stroke);
 }
 
 .Bento > .Statement > .Text > p,
 .MapComponent > .Text > p {
-  color: var(--dark);
-  opacity: 0.8;
+  color: var(--stroke);
 }
 
 .Limg > img {

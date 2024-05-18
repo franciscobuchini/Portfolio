@@ -4,7 +4,13 @@ import Footer from "./Components/Footer"
 import React, { useState } from "react"
 import Bento from "./Components/Bento"
 import Map from "./Components/Map"
+
 import IFimg1 from "./Assets/IFimg1.webp"
+import IFimg2 from "./Assets/IFimg2.webp"
+import IFimg3 from "./Assets/IFimg3.webp"
+import IFimg4 from "./Assets/IFimg4.webp"
+import IFimg5 from "./Assets/IFimg5.webp"
+
 import Limg1 from "./Assets/Limg1.webp"
 import Limg2 from "./Assets/Limg2.webp"
 import Limg3 from "./Assets/Limg3.webp"
@@ -83,14 +89,14 @@ import Download from "./Components/Download"
 function App() {
 
   // Language switcher:
-  const [language, setLanguage] = useState("english")
-  const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
+  const [Lang, setLang] = useState("english")
+  const handleLangSwitch = (isChecked) => { setLang(isChecked ? "spanish" : "english")}
 
   // Map Theme switcher:
   const [theme, setTheme] = useState("light")
   const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "dark" : "light")}
 
-  const lang = {
+  const L = {
     english: {
       //-------------------------------------------------------------------------
       Created: "Created with:",
@@ -109,7 +115,7 @@ function App() {
       Intro_TAh1: "Welcome 👋",
       Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
       Intro_02_Th4: "🛩️ Indonesia, April 2024",
-      Intro_03_Tp: "Switch Language",
+      Intro_03_Tp: "Switch Lang",
       Intro_04_Tp: "Switch Theme",
       Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
@@ -174,7 +180,13 @@ function App() {
       Education_WP_Dom_Tp: "Creating a professional website with WordPress. [5:33:00]",
       Education_AE_Dom_Tp: "Introduction to Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
-      About_TAh1: "About me 🤿",
+      About_TAh1: "About me 🛸",
+      About_B1_Th4: "Designer turned Developer 👨‍💻",
+      About_B1_Tp: "I am a passionate frontend designer and programmer with a diverse background. I began my journey in the world of graphic design, later exploring the fascinating field of UX/UI. For two years, I immersed myself in web programming, fusing my solid foundation in design with technical skills to create memorable and functional digital experiences.",
+      About_B2_Th4: "Underwater Hockey 🤿",
+      About_B2_Tp: "It is my main sporting focus. Representing Argentina three times and competing in the best tournaments in the world, including Euro-clubs, nationals and world tournaments, has enriched my career. I have played in five internationally recognized clubs on par with the best in the world. Each competition has been an opportunity to push my limits and demonstrate my passion for this sport and has also been a source of pride and constant motivation.",
+      About_B3_Th4: "Globetrotter 🌎",
+      About_B3_Tp: "Exploring the world is my passion. I have had the opportunity to visit 30 countries, immersing myself in cultural diversity and enjoying the excitement of discovering new places. Each trip fuels my curiosity to learn more about different cultures and traditions. My goal is to continue expanding my horizons and eventually visit every country in the world, turning each destination into an unforgettable experience on my personal journey of discovery.",
       About_Sp_Th4: "Spanish",
       About_Sp_Tp: "Native",
       About_En_Th4: "English",
@@ -268,7 +280,13 @@ function App() {
       Education_WP_Dom_Tp: "Creando un sitio web profesional con WordPress. [5:33:00]",
       Education_AE_Dom_Tp: "Introducción a Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
-      About_TAh1: "Acerca de mi 🤿",
+      About_TAh1: "Acerca de mi 🛸",
+      About_B1_Th4: "Diseñador convertido en Desarrollador 👨‍💻",
+      About_B1_Tp: "Soy un apasionado diseñador y programador frontend con una trayectoria diversa. Comencé mi viaje en el mundo del diseño gráfico, explorando luego el fascinante campo del UX/UI. Desde hace dos años, me sumergí en la programación web, fusionando mi sólida base en diseño con habilidades técnicas para crear experiencias digitales memorables y funcionales.",
+      About_B2_Th4: "Hockey Subacuático 🤿",
+      About_B2_Tp: "Este es mi principal enfoque deportivo. Representar a Argentina tres veces y competir en los mejores torneos del mundo, incluyendo euro-clubes, torneos nacionales y mundiales, ha enriquecido mi carrera. He jugado en cinco clubes reconocidos internacionalmente a la par de los mejores del mundo. Cada competición ha sido una oportunidad para superar mis límites y demostrar mi pasión por este deporte y también ha sido una fuente de orgullo y motivación constante.",
+      About_B3_Th4: "Trotamundos 🌎",
+      About_B3_Tp: "Explorar el mundo es mi pasión. He tenido la oportunidad de visitar 30 países, sumergiéndome en la diversidad cultural y disfrutando de la emoción de descubrir nuevos lugares. Cada viaje alimenta mi curiosidad por conocer más sobre diferentes culturas y tradiciones. Mi objetivo es seguir ampliando mis horizontes y eventualmente visitar todos los países del mundo, convirtiendo cada destino en una experiencia inolvidable en mi viaje personal de descubrimiento.",
       About_Sp_Th4: "Español",
       About_Sp_Tp: "Nativo",
       About_En_Th4: "Inglés",
@@ -283,118 +301,124 @@ function App() {
 
   //Header list:
   const links = [
-    { name: lang[language].Nav_Intro, href: "Intro"},
-    { name: lang[language].Nav_Projects, href: "Projects"},
-    { name: lang[language].Nav_Software, href: "Software" },
-    { name: lang[language].Nav_Education, href: "Education" },
-    { name: lang[language].Nav_About, href: "About" },
-    { name: lang[language].Nav_Contact, href: "Contact" },
+    { name: L[Lang].Nav_Intro, href: "Intro"},
+    { name: L[Lang].Nav_Projects, href: "Projects"},
+    { name: L[Lang].Nav_Software, href: "Software" },
+    { name: L[Lang].Nav_Education, href: "Education" },
+    { name: L[Lang].Nav_About, href: "About" },
+    { name: L[Lang].Nav_Contact, href: "Contact" },
   ]
 
   return (
     <>
       <Header links={links}/>
 
-      <BentoGrid id="Intro" TAh1={lang[language].Intro_TAh1}>
-      <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLanguageSwitch} checked={language === 'spanish'}/>} />
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp={lang[language].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
-        <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={lang[language].Intro_01_Tp} />
-        <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={lang[language].Intro_02_Th4}/>
-        <Map Bv="2" Bh="4" Th4={lang[language].Intro_05_Th4} theme={theme}/>
-        <Bento Bv="1" Bh="4" Bs="BC2" Tp={lang[language].Intro_06_Tp} Com={Download}/>
+      <BentoGrid id="Intro" TAh1={L[Lang].Intro_TAh1}>
+      <Bento Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
+        <Bento Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
+        <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
+        <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={L[Lang].Intro_02_Th4}/>
+        <Map Bv="2" Bh="4" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
+        <Bento Bv="1" Bh="4" Bs="BC2" Tp={L[Lang].Intro_06_Tp} Com={Download}/>
       </BentoGrid>
 
-      <BentoGrid id="Projects" TAh1={lang[language].Projects_TAh1}>
-      <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_01_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Visit}  Lurl="https://bentoboxui.vercel.app" />
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Play} Lurl="https://geogamechallenge.netlify.app/"/>
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://cafe-cafe.vercel.app"/>
-      <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://el-matador-website.netlify.app/"/>
+      <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
+      <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
+      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
+      <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
 
-      <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
-      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={lang[language].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
-      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={lang[language].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
-      <Bento Bv="2" Bh="4" Bs="BR2" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} Tp={lang[language].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDE} IBimg={IBimg_TDR} Tp={lang[language].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={lang[language].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={lang[language].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
+      <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Projects_02_Th4} Bbgc="transparent"/>
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={L[Lang].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={L[Lang].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
+      <Bento Bv="2" Bh="4" Bs="BR2" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} Tp={L[Lang].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDE} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
       </BentoGrid>
 
-      <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_01_Th4} Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React" Tp={lang[language].Software_Intermediate} PBd="10" PBn="7"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={lang[language].Software_Intermediate} PBd="10" PBn="8"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={lang[language].Software_Advanced} PBd="10" PBn="9"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={lang[language].Software_Advanced} PBd="10" PBn="9"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={lang[language].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={lang[language].Software_Intermediate} PBd="10" PBn="6"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={lang[language].Software_Introducing} PBd="10" PBn="1"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={lang[language].Software_Introducing} PBd="10" PBn="2"/>
+      <BentoGrid id="Software" TAh1={L[Lang].Software_TAh1} TAp={L[Lang].Software_TAp}>
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_01_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="7"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Introducing} PBd="10" PBn="1"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_02_Th4} Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={lang[language].Software_Advanced} PBd="10" PBn="8"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp={lang[language].Software_Basics} PBd="10" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg26} Th4="AfterEffects" Tp={lang[language].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={lang[language].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={lang[language].Software_Intermediate}/>
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg26} Th4="AfterEffects" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={L[Lang].Software_Intermediate}/>
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_03_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_03_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg2} Th4="Github"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg20} Th4="Git"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg21} Th4="Vercel"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg30} Th4="Hostinger"/>
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Software_04_Th4} Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={lang[language].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={lang[language].Software_Basics} PBd="10" PBn="3"/>
+        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={L[Lang].Software_Basics} PBd="10" PBn="3"/>
       </BentoGrid>
 
-      <BentoGrid id="Education" TAh1={lang[language].Education_TAh1} TAp={lang[language].Education_TAp}>
-        <Bento Bv="1" Bh="4" Bs="BE1" Th4={lang[language].Education_UNL_Th4} Tp={lang[language].Education_UNL_Tp} />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS2_Dal_Tp} Lurl="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS1_Dal_Tp} Lurl="https://www.youtube.com/watch?v=z95mZVUcJ-E&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=7&t=10071s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={lang[language].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp={lang[language].Education_HOS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg33} Th4="Git & Github - Soy Dalto" Tp={lang[language].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={lang[language].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" /> */}
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp={lang[language].Education_HTMLCSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={lang[language].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp={lang[language].Education_CSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg12} Th4="HTML - Soy Dalto" Tp={lang[language].Education_HTML_Dal_Tp} Lurl="https://www.youtube.com/watch?v=kN1XP-Bef7w&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=2&t=7887s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp={lang[language].Education_VSC_Dal_Tp} Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={lang[language].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={lang[language].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={lang[language].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={lang[language].Education_PS2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" /> */}
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" /> */}
+      <BentoGrid id="Education" TAh1={L[Lang].Education_TAh1} TAp={L[Lang].Education_TAp}>
+        <Bento Bv="1" Bh="4" Bs="BE1" Th4={L[Lang].Education_UNL_Th4} Tp={L[Lang].Education_UNL_Tp} />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={L[Lang].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={L[Lang].Education_JS2_Dal_Tp} Lurl="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={L[Lang].Education_JS1_Dal_Tp} Lurl="https://www.youtube.com/watch?v=z95mZVUcJ-E&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=7&t=10071s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={L[Lang].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp={L[Lang].Education_HOS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg33} Th4="Git & Github - Soy Dalto" Tp={L[Lang].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={L[Lang].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" /> */}
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp={L[Lang].Education_HTMLCSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={L[Lang].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp={L[Lang].Education_CSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg12} Th4="HTML - Soy Dalto" Tp={L[Lang].Education_HTML_Dal_Tp} Lurl="https://www.youtube.com/watch?v=kN1XP-Bef7w&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=2&t=7887s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp={L[Lang].Education_VSC_Dal_Tp} Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={L[Lang].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={L[Lang].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={L[Lang].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={L[Lang].Education_PS2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={L[Lang].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" /> */}
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={L[Lang].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" /> */}
       </BentoGrid>
 
-      <BentoGrid id="About" TAh1={lang[language].About_TAh1}>
-        <Bento Bv="2" Bh="8" Bs="BC2"/>
-        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ARG} Th4={lang[language].About_Sp_Th4} Tp={lang[language].About_Sp_Tp} PBd="10" PBn="10"/>
-        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_USA} Th4={lang[language].About_En_Th4} Tp={lang[language].About_En_Tp} PBd="10" PBn="7"/>
-        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={lang[language].About_Pt_Th4} Tp={lang[language].About_Pt_Tp} PBd="10" PBn="5"/>
-        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={lang[language].About_It_Th4} Tp={lang[language].About_It_Tp} PBd="10" PBn="3"/>
+      <BentoGrid id="About" TAh1={L[Lang].About_TAh1}>
+        <Bento Bv="2" Bh="8" Bs="BL2" Th4={L[Lang].About_B1_Th4} Tp={L[Lang].About_B1_Tp}/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ARG} Th4={L[Lang].About_Sp_Th4} Tp={L[Lang].About_Sp_Tp} PBd="10" PBn="10"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_USA} Th4={L[Lang].About_En_Th4} Tp={L[Lang].About_En_Tp} PBd="10" PBn="7"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={L[Lang].About_Pt_Th4} Tp={L[Lang].About_Pt_Tp} PBd="10" PBn="5"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="3"/>
+        <Bento Bv="2" Bh="4" Bs="BL2" Th4={L[Lang].About_B2_Th4} Tp={L[Lang].About_B2_Tp}/>
+        <Bento Bv="2" Bh="2" Bs="BC1" Th4c="var(--white)" Th4="Gold Coast, AU. 2023" IFimg={IFimg2}/>
+        <Bento Bv="2" Bh="2" Bs="BC3" Th4c="var(--white)" Th4="Tasmania, AU. 2017" IFimg={IFimg3}/>
+        <Bento Bv="2" Bh="2" Bs="BC3" Th4c="var(--white)" Th4="Siem Reap, KH. 2024" IFimg={IFimg4}/>
+        <Bento Bv="2" Bh="2" Bs="BC1" Th4c="var(--white)" Th4="London, GB. 2022" IFimg={IFimg5}/>
+        <Bento Bv="2" Bh="4" Bs="BL2" Th4={L[Lang].About_B3_Th4} Tp={L[Lang].About_B3_Tp}/>
       </BentoGrid>
 
-      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
+      <BentoGrid id="Contact" TAh1={L[Lang].Contact_TAh1}>
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
@@ -403,7 +427,7 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
       </BentoGrid>
 
-      <Footer cb={lang[language].Created}/>
+      <Footer cb={L[Lang].Created}/>
     </>
   )
 }
