@@ -114,7 +114,7 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
-      Projects_BBUI_Tp: "Created with: ReactJS.",
+      Projects_BBUI_Tp: "I'm using this interface created by my for all my projects.",
       Projects_GGC_Tp: "Created with: JavaScript.",
       Projects_EM_Tp: "Restaurant placed <br> in Wellington, NZ.",
       Projects_CAL_Tp: "Created with: <br> JavaScript.",
@@ -201,7 +201,7 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
-      Projects_BBUI_Tp: "Creado con: ReactJS.",
+      Projects_BBUI_Tp: "Estoy usando esta interfaz creada por mi para todos mis proyectos.",
       Projects_GGC_Tp: "Creado con: JavaScript.",
       Projects_EM_Tp: "Restaurant ubicado <br> en Wellington, NZ.",
       Projects_CAL_Tp: "Creado con: <br> JavaScript.",

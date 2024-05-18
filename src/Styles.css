@@ -56,19 +56,20 @@ html, body {
   width: 100%;
 
   --bentogridsize: calc(var(--bentosizehorizontal) * 8 + var(--gap) * 9);
-  --bentoradius: 32px;
   --bentogridradius: calc(var(--bentoradius) + var(--gap));
 
   @media (width <= 833px) {
     --bentosizevertical: 96px; 
     --bentosizehorizontal: 96px; 
     --size: 30px;
+    --bentoradius: 16px;
   }
 
   @media (width > 833px) {
     --bentosizevertical: 110px; 
     --bentosizehorizontal: 110px;
     --size: 40px;
+    --bentoradius: 32px;
   }
 
   @media  (width <= 1020px) {
