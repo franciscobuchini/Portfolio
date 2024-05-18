@@ -65,8 +65,8 @@ header > div > .Pulse {
 }
 
 .Article > .BentoGrid {
-  background-color: var(--transparent15dark);
-  border: 0px solid var(--transparent);
+  background-color: var(--white);
+  border: 1px solid var(--secondary);
 }
 
 #Presentation > .Statement > .Text > p {
@@ -76,6 +76,7 @@ header > div > .Pulse {
 
 .Bento > .ImageBack {
   opacity: 0.5;
+  @media (width <= 833px) {opacity: 0.3;}
 }
 
 .Bento,
@@ -139,15 +140,13 @@ header > div > .Pulse {
 .Button,
 .Switch input {
   background-color: var(--dark);
-  border: 2px solid var(--white);
   color: var(--white);
   opacity: 0.5;
 }
 
 .Button:hover,
 .Switch input:hover {
-  background-color: var(--transparent30dark);
-  color: var(--white);
+  
 }
 
 .Switch input:checked {
@@ -220,7 +219,7 @@ header > div > .Pulse {
   
   .BentoGrid {
     background-color: var(--black);
-    border: 0px solid var(--transparent);
+    border: 1px solid var(--primary);
   }
   
   #Presentation > .Statement > .Text > p {

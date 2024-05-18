@@ -57,7 +57,6 @@ import IFimg_DEEB from "./Assets/IFimg_DEEB.webp"
 import IFimg_EM from "./Assets/IFimg_EM.webp"
 import IFimg_CC from "./Assets/IFimg_CC.webp"
 import IFimg_GGC from "./Assets/IFimg_GGC.webp"
-import IFimg_CAL from "./Assets/IFimg_CAL.webp"
 import IFimg_BBUI from "./Assets/IFimg_BBUI.webp"
 
 import IBimg_LP from "./Assets/IBimg_LP.webp"
@@ -71,7 +70,6 @@ import IBimg_DEEB from "./Assets/IBimg_DEEB.webp"
 import IBimg_CC from "./Assets/IBimg_CC.webp"
 import IBimg_EM from "./Assets/IBimg_EM.webp"
 import IBimg_GGC from "./Assets/IBimg_GGC.webp"
-import IBimg_CAL from "./Assets/IBimg_CAL.webp"
 
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
@@ -114,8 +112,8 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
-      Projects_BBUI_Tp: "I'm using this interface created by my for all my projects.",
-      Projects_GGC_Tp: "Created with: JavaScript.",
+      Projects_BBUI_Tp: "I created this interface for use in my projects to organize information and elements into modular blocks. This intuitive and visually appealing design improves navigation and accessibility, allowing users to easily find information. My goal is to optimize web usability and aesthetics.",
+      Projects_GGC_Tp: "Guess countries <br> in this game.",
       Projects_EM_Tp: "Restaurant in <br> Wellington, NZ.",
       Projects_CC_Tp: "Created with: <br> Bento Box UI.",
 
@@ -200,8 +198,8 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
-      Projects_BBUI_Tp: "Estoy usando esta interfaz creada por mi para todos mis proyectos.",
-      Projects_GGC_Tp: "Creado con: JavaScript.",
+      Projects_BBUI_Tp: "Creé esta interfaz para usar en mis proyectos para organizar información y elementos en bloques modulares. Este diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, permitiendo a los usuarios encontrar información fácilmente. Mi objetivo es optimizar la usabilidad y la estética web.",
+      Projects_GGC_Tp: "Adivina países <br> en este juego.",
       Projects_EM_Tp: "Restaurante en <br> Wellington, NZ.",
       Projects_CC_Tp: "Creado con: <br> Bento Box UI.",
 
@@ -288,11 +286,10 @@ function App() {
 
       <BentoGrid id="Projects" TAh1={lang[language].Projects_TAh1}>
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_01_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Bs="BL4" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Visit}  Lurl="https://bentoboxui.vercel.app" />
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game Challenge" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Play} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={lang[language].Projects_BBUI_Tp} Com={Button} Bt={lang[language].Visit}  Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Play} Lurl="https://geogamechallenge.netlify.app/"/>
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://cafe-cafe.vercel.app"/>
       <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://el-matador-website.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Calculator" IFimg={IFimg_CAL} IBimg={IBimg_CAL} Com={Button} Bt={lang[language].Try} Lurl="https://dark--atlanticocalculator.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
@@ -304,7 +301,7 @@ function App() {
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
-      <Bento Bv="2" Bh="2" Bs="BR5" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={lang[language].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
+      <Bento Bv="2" Bh="2" Bs="BR2" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={lang[language].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>
