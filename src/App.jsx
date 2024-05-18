@@ -43,6 +43,10 @@ import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
 import Limg_GGC from "./Assets/Limg_GGC.webp"
 import Limg_BBUI from "./Assets/Limg_BBUI.webp"
+import Limg_ARG from "./Assets/Limg_ARG.webp"
+import Limg_USA from "./Assets/Limg_USA.webp"
+import Limg_BRA from "./Assets/Limg_BRA.webp"
+import Limg_ITA from "./Assets/Limg_ITA.webp"
 
 import IFimg_TDE from "./Assets/IFimg_TDE.webp"
 import IFimg_TDA1 from "./Assets/IFimg_TDA1.webp"
@@ -171,6 +175,14 @@ function App() {
       Education_AE_Dom_Tp: "Introduction to Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
       About_TAh1: "About me 🤿",
+      About_Sp_Th4: "Spanish",
+      About_Sp_Tp: "Native",
+      About_En_Th4: "English",
+      About_En_Tp: "Intermediate",
+      About_Pt_Th4: "Portuguese",
+      About_Pt_Tp: "Basic",
+      About_It_Th4: "Italian",
+      About_It_Tp: "Learning",
       //-------------------------------------------------------------------------
     },
     spanish: {
@@ -256,7 +268,15 @@ function App() {
       Education_WP_Dom_Tp: "Creando un sitio web profesional con WordPress. [5:33:00]",
       Education_AE_Dom_Tp: "Introducción a Affter Effects. [14:02:00]",
       //-------------------------------------------------------------------------
-      About_TAh1: "Acerca de mi:",
+      About_TAh1: "Acerca de mi 🤿",
+      About_Sp_Th4: "Español",
+      About_Sp_Tp: "Nativo",
+      About_En_Th4: "Inglés",
+      About_En_Tp: "Intermedio",
+      About_Pt_Th4: "Portugues",
+      About_Pt_Tp: "Básico",
+      About_It_Th4: "Italiano",
+      About_It_Tp: "Aprendiendo",
       //-------------------------------------------------------------------------
     }
   }
@@ -301,7 +321,7 @@ function App() {
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={lang[language].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
-      <Bento Bv="2" Bh="2" Bs="BR2" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={lang[language].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={lang[language].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={lang[language].Software_TAh1} TAp={lang[language].Software_TAp}>
@@ -339,19 +359,6 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={lang[language].Software_Basics} PBd="10" PBn="3"/>
       </BentoGrid>
 
-      <BentoGrid id="About" TAh1={lang[language].About_TAh1}>
-        <Bento Bv="2" Bh="8" Bs="BC2"/>
-      </BentoGrid>
-
-      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
-      </BentoGrid>
-
       <BentoGrid id="Education" TAh1={lang[language].Education_TAh1} TAp={lang[language].Education_TAp}>
         <Bento Bv="1" Bh="4" Bs="BE1" Th4={lang[language].Education_UNL_Th4} Tp={lang[language].Education_UNL_Tp} />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={lang[language].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
@@ -377,6 +384,23 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={lang[language].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
         {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={lang[language].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" /> */}
         {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={lang[language].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" /> */}
+      </BentoGrid>
+
+      <BentoGrid id="About" TAh1={lang[language].About_TAh1}>
+        <Bento Bv="2" Bh="8" Bs="BC2"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ARG} Th4={lang[language].About_Sp_Th4} Tp={lang[language].About_Sp_Tp} PBd="10" PBn="10"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_USA} Th4={lang[language].About_En_Th4} Tp={lang[language].About_En_Tp} PBd="10" PBn="7"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={lang[language].About_Pt_Th4} Tp={lang[language].About_Pt_Tp} PBd="10" PBn="5"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={lang[language].About_It_Th4} Tp={lang[language].About_It_Tp} PBd="10" PBn="3"/>
+      </BentoGrid>
+
+      <BentoGrid id="Contact" TAh1={lang[language].Contact_TAh1}>
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
       </BentoGrid>
 
       <Footer cb={lang[language].Created}/>
