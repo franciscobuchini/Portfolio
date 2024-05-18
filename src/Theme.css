@@ -23,8 +23,6 @@
 } 
 
 /* LIGHT THEME -------------------------------------------------------*/
-
-
 body {
   background-color: var(--white);
 }
@@ -88,8 +86,9 @@ header > div > .Pulse {
 
 .Bento:hover,
 .MapComponent:hover {
-  background-color: var(--lightSecondary);
+  background-color: var(--light);
   outline: 4px solid var(--secondary);
+  @media (width <= 833px) {outline: 2px solid var(--secondary);}
 }
 
 .Bento > .Statement > .Text > h4,
@@ -243,6 +242,7 @@ header > div > .Pulse {
   .MapComponent:hover {
     background-color: var(--transparent15primary);
     outline: 4px solid var(--primary);
+    @media (width <= 833px) {outline: 2px solid var(--primary);}
   }
   
   .Bento > .Statement > .Text > h4,
@@ -258,7 +258,8 @@ header > div > .Pulse {
   }
   
   .Limg img {
-    opacity: 0.8;
+    opacity: 0.5;
+    filter: invert(0%)
   }
   
   .PBd {

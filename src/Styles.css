@@ -58,13 +58,6 @@ html, body {
   --bentogridsize: calc(var(--bentosizehorizontal) * 8 + var(--gap) * 9);
   --bentogridradius: calc(var(--bentoradius) + var(--gap));
 
-  @media (width <= 833px) {
-    --bentosizevertical: 96px; 
-    --bentosizehorizontal: 96px; 
-    --size: 30px;
-    --bentoradius: 16px;
-  }
-
   @media (width > 833px) {
     --bentosizevertical: 110px; 
     --bentosizehorizontal: 110px;
@@ -82,6 +75,15 @@ html, body {
     --bentosizehorizontal: 130px;
     --gap: 20px;
     --negativegap: -20px;
+  }
+
+  @media (width <= 833px) {
+    --bentosizevertical: 96px; 
+    --bentosizehorizontal: 96px; 
+    --size: 30px;
+    --bentoradius: 16px;
+    --gap: 10px;
+    --negativegap: -10px;
   }
 }
 

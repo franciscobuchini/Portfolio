@@ -85,8 +85,8 @@ function App() {
   const handleLanguageSwitch = (isChecked) => { setLanguage(isChecked ? "spanish" : "english")}
 
   // Map Theme switcher:
-  const [theme, setTheme] = useState("dark")
-  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "light" : "dark")}
+  const [theme, setTheme] = useState("light")
+  const handleThemeSwitch = (isChecked) => {setTheme(isChecked ? "dark" : "light")}
 
   const lang = {
     english: {
@@ -116,8 +116,7 @@ function App() {
       Projects_01_Th4: "Programming:",
       Projects_BBUI_Tp: "I'm using this interface created by my for all my projects.",
       Projects_GGC_Tp: "Created with: JavaScript.",
-      Projects_EM_Tp: "Restaurant placed <br> in Wellington, NZ.",
-      Projects_CAL_Tp: "Created with: <br> JavaScript.",
+      Projects_EM_Tp: "Restaurant in <br> Wellington, NZ.",
       Projects_CC_Tp: "Created with: <br> Bento Box UI.",
 
       Projects_02_Th4: "Design:",
@@ -203,8 +202,7 @@ function App() {
       Projects_01_Th4: "Programación:",
       Projects_BBUI_Tp: "Estoy usando esta interfaz creada por mi para todos mis proyectos.",
       Projects_GGC_Tp: "Creado con: JavaScript.",
-      Projects_EM_Tp: "Restaurant ubicado <br> en Wellington, NZ.",
-      Projects_CAL_Tp: "Creado con: <br> JavaScript.",
+      Projects_EM_Tp: "Restaurante en <br> Wellington, NZ.",
       Projects_CC_Tp: "Creado con: <br> Bento Box UI.",
 
       Projects_02_Th4: "Diseño:",
@@ -294,7 +292,7 @@ function App() {
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game Challenge" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={lang[language].Projects_GGC_Tp} Com={Button} Bt={lang[language].Play} Lurl="https://geogamechallenge.netlify.app/"/>
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={lang[language].Projects_CC_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://cafe-cafe.vercel.app"/>
       <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={lang[language].Projects_EM_Tp} Com={Button} Bt={lang[language].Visit} Lurl="https://el-matador-website.netlify.app/"/>
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Calculator" IFimg={IFimg_CAL} IBimg={IBimg_CAL} Tp={lang[language].Projects_CAL_Tp} Com={Button} Bt={lang[language].Try} Lurl="https://dark--atlanticocalculator.netlify.app/"/>
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Calculator" IFimg={IFimg_CAL} IBimg={IBimg_CAL} Com={Button} Bt={lang[language].Try} Lurl="https://dark--atlanticocalculator.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BE1" Th4={lang[language].Projects_02_Th4} Bbgc="transparent"/>
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={lang[language].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
