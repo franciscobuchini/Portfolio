@@ -82,13 +82,13 @@ header > div > .Pulse {
 .Bento,
 .MapComponent {
   background-color: var(--light);
-  outline: 0px solid var(--transparent);
+  outline: 1px solid var(--transparent15dark);
 }
 
 .Bento:hover,
 .MapComponent:hover {
   background-color: var(--light);
-  outline: 1px solid var(--secondary);
+  outline: 2px solid var(--secondary);
 }
 
 .Bento > .Statement > .Text > h4,
