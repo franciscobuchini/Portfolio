@@ -140,7 +140,7 @@ header > .Header_Pulse > .Pulse {
 header > .Header_Components > .Component > .Switch > input,
 header > .Header_Components > .Switch > input:checked {
   background-color: var(--lightTertiary);
-  border: 1px solid var(--white);
+  border: 1px solid var(--transparent15dark);
 }
 
 header > .Header_Components > .Component > .Switch > input:hover,

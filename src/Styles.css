@@ -399,7 +399,8 @@ footer {
   left: 50%;
 }
 
-.ThemeSwitch input::before {
+.ThemeSwitch > input::before {
+  top: 48%;
   content: "🌚";
   font-size: 2.4rem;
 }
@@ -423,10 +424,10 @@ footer {
 /* RESPONSIVE -----------------------------------*/
 
 @media (width > 0) and (width <= 530px) {
-  header {width: auto; border-radius: 100px; margin-top: 10px;}
+  header {width: auto; border-radius: 100px; margin-top: 10px; bottom: var(--gap); left: calc(var(--gap)*2);}
   header > .Header_Components {display: none;}
   header > .Header_Nav {display: none;}
-  .Article {margin: 20px 0 0 0;}
+  .Article {margin: 0;}
   .Article > .TextArticle {margin: 50px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
   .H5, .H6, .H7, .H8 {grid-column: span 4;}
