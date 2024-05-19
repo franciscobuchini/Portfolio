@@ -66,8 +66,8 @@ html, body {
   }
 
   @media  (width <= 1020px) {
-    --gap: 16px; 
-    --negativegap: -16px;
+    --gap: 20px;
+    --negativegap: -20px;
   }
 
   @media (width > 1020px) {
@@ -80,10 +80,8 @@ html, body {
   @media (width <= 833px) {
     --bentosizevertical: 96px; 
     --bentosizehorizontal: 96px; 
-    --size: 30px;
+    --size: 40px;
     --bentoradius: 16px;
-    --gap: 10px;
-    --negativegap: -10px;
   }
 }
 
@@ -104,60 +102,51 @@ a {cursor: pointer; font-weight: lighter;}
 /* OUTSIDE -----------------------------------*/
 
 header {
-  position: relative;
-  width: 100%;
+  margin: -1px;
+  padding: calc(var(--gap) / 3) var(--gap);
+  width: calc(100% - var(--gap) * 1.5);
   display: flex;
-  padding: var(--gap);
-  place-items: center;
   justify-content: space-between;
   z-index: 1000;
-  position:fixed;
+  position: fixed;
+  border-radius: 0 0 32px 32px;
 }
 
-header > svg {
-  height: var(--size);
-  width: var(--size);
-  cursor: pointer;
-  display: none;
+header > .Header_Components {
+  display: flex;
+  column-gap: var(--gap);
 }
 
-header > div {
+header > .Header_Pulse {
   text-align: right;
   display: flex;
   align-items: center;
   gap: calc(var(--gap)/2);
-  padding: 0 calc(var(--gap));
   border-radius: var(--bentoradius);
   height: var(--size);
   z-index: 600;
 }
 
-header > div > .Pulse {
+header > .Header_Pulse > .Pulse {
   width: 10px;
   height: 10px;
   border-radius: 10px;
   animation: pulse 1500ms infinite;
 }
 
-header > .Nav {
+header > .Header_Nav {
   display: flex;
   align-items: center;
-  padding: 0 var(--gap);
   border-radius: var(--bentogridradius);
   height: var(--size);
 }
 
-header > .Nav > ul {
+header > .Header_Nav > ul {
   display: flex;
   gap: var(--gap);
 }
 
-header > .Nav > ul > li {
-  padding: 0 10px;
-  border-radius: var(--bentoradius);
-}
-
-header > .Nav > ul > li:hover {
+header > .Header_Nav > ul > li:hover {
   transform: scale(1.03);
 }
 
@@ -425,7 +414,6 @@ footer {
 /* RESPONSIVE -----------------------------------*/
 
 @media (width > 0) and (width <= 530px) {
-  .Nav {position: absolute; top: -150px;} /*oculta el navbar*/
   .Article {margin: 20px 0 0 0;}
   .Article > .TextArticle {margin: 50px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
@@ -440,9 +428,7 @@ footer {
 }
 
 @media (width > 530px) and (width <= 833px) {
-  header {padding: calc(var(--gap) * 2 );}
-  .Nav {position: absolute; top: -150px;} /*oculta el navbar*/
-
+  header > .Header_Nav {display: none;}
   .Article {margin: 30px 0 0 0;}
   .Article > .TextArticle {margin: 60px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
@@ -468,7 +454,6 @@ footer {
 }
 
 @media (width < 1020px) {
-  header > .Nav > ul {gap: calc(var(--gap) / 2);}
   /*ESTO PUEDE TRAER MUCHOS PROBLEMAS, PRESTAR ATENCIÓN*/
   .V1 {min-height: calc(var(--bentosizevertical)); grid-row: span 1;}
   .V2 {min-height: calc(var(--bentosizevertical) * 2 ); grid-row: span 2;}
@@ -481,7 +466,6 @@ footer {
 }
 
 @media (width > 1020px) {
-  header {padding: var(--gap);}
   h1, span {font-size: 2rem;}
   h4 {font-size: 1.2rem;}
   p, a {font-size: 0.9rem; line-height: 30px;}
@@ -489,7 +473,6 @@ footer {
 }
 
 @media (width > 1164px) {
-  header > .Nav { position: absolute; left: 50%; transform: translateX(-50%);}
   .Article {margin: 40px 0 0 0;}
   .Article > .TextArticle {max-width: 800px; margin: 90px var(--gap) var(--gap);}
   .BentoGrid {grid-template-columns: repeat(8, 1fr);}

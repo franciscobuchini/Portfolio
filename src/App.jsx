@@ -115,7 +115,7 @@ function App() {
       Intro_TAh1: "Welcome 👋",
       Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
       Intro_02_Th4: "🛩️ Indonesia, April 2024",
-      Intro_03_Tp: "Switch Lang",
+      Intro_03_Tp: "Switch Language",
       Intro_04_Tp: "Switch Theme",
       Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
@@ -311,14 +311,12 @@ function App() {
 
   return (
     <>
-      <Header links={links}/>
+      <Header links={links} Com1={() => <ThemeSwitch onChange={handleThemeSwitch}/>} Com2={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
 
       <BentoGrid id="Intro" TAh1={L[Lang].Intro_TAh1}>
-      <Bento Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={L[Lang].Intro_02_Th4}/>
-        <Map Bv="2" Bh="4" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
+        <Map Bv="3" Bh="4" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
         <Bento Bv="1" Bh="4" Bs="BC2" Tp={L[Lang].Intro_06_Tp} Com={Download}/>
       </BentoGrid>
 
@@ -413,7 +411,7 @@ function App() {
         <Bento Bv="1" Bh="8" Bs="BC3" Bbgc="transparent" Th4={L[Lang].About_B2_Th4}/>
         <Bento Bv="2" Bh="4" Bs="BL2"  Tp={L[Lang].About_B2_Tp}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Gold Coast AU 2023" IFimg={IFimg2}/>
-        <Bento Bv="2" Bh="2" Bs="BL3" Th4c="var(--white)" Th4="Tasmania AU 2017" IFimg={IFimg3}/>
+        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Tasmania AU 2017" IFimg={IFimg3}/>
         <Bento Bv="1" Bh="8" Bs="BC3" Bbgc="transparent" Th4={L[Lang].About_B3_Th4}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London GB 2022" IFimg={IFimg5}/>
         <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap KH 2024" IFimg={IFimg4}/>
