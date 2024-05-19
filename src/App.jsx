@@ -186,7 +186,7 @@ function App() {
       About_B2_Th4: "Underwater Hockey 🤿",
       About_B2_Tp: "It is my main sporting focus. Representing Argentina three times and competing in the best tournaments in the world, including Euro-clubs, nationals and world tournaments, has enriched my career. I have played in five internationally recognized clubs on par with the best in the world. Each competition has been an opportunity to push my limits and demonstrate my passion for this sport and has also been a source of pride and constant motivation.",
       About_B3_Th4: "Globetrotter 🌎",
-      About_B3_Tp: "Exploring the world is my passion. I have had the opportunity to visit 30 countries, immersing myself in cultural diversity and enjoying the excitement of discovering new places. Each trip fuels my curiosity to learn more about different cultures and traditions. My goal is to continue expanding my horizons and eventually visit every country in the world, turning each destination into an unforgettable experience on my personal journey of discovery.",
+      About_B3_Tp: "I have had the opportunity to visit 30 countries, immersing myself in cultural diversity and enjoying the excitement of discovering new places. Each trip fuels my curiosity to learn more about different cultures and traditions. My goal is to continue expanding my horizons and eventually visit every country in the world, turning each destination into an unforgettable experience on my personal journey of discovery.",
       About_Sp_Th4: "Spanish",
       About_Sp_Tp: "Native",
       About_En_Th4: "English",
@@ -286,7 +286,7 @@ function App() {
       About_B2_Th4: "Hockey Subacuático 🤿",
       About_B2_Tp: "Este es mi principal enfoque deportivo. Representar a Argentina tres veces y competir en los mejores torneos del mundo, incluyendo euro-clubes, torneos nacionales y mundiales, ha enriquecido mi carrera. He jugado en cinco clubes reconocidos internacionalmente a la par de los mejores del mundo. Cada competición ha sido una oportunidad para superar mis límites y demostrar mi pasión por este deporte y también ha sido una fuente de orgullo y motivación constante.",
       About_B3_Th4: "Trotamundos 🌎",
-      About_B3_Tp: "Explorar el mundo es mi pasión. He tenido la oportunidad de visitar 30 países, sumergiéndome en la diversidad cultural y disfrutando de la emoción de descubrir nuevos lugares. Cada viaje alimenta mi curiosidad por conocer más sobre diferentes culturas y tradiciones. Mi objetivo es seguir ampliando mis horizontes y eventualmente visitar todos los países del mundo, convirtiendo cada destino en una experiencia inolvidable en mi viaje personal de descubrimiento.",
+      About_B3_Tp: "He tenido la oportunidad de visitar 30 países, sumergiéndome en la diversidad cultural y disfrutando de la emoción de descubrir nuevos lugares. Cada viaje alimenta mi curiosidad por conocer más sobre diferentes culturas y tradiciones. Mi objetivo es seguir ampliando mis horizontes y eventualmente visitar todos los países del mundo, convirtiendo cada destino en una experiencia inolvidable en mi viaje personal de descubrimiento.",
       About_Sp_Th4: "Español",
       About_Sp_Tp: "Nativo",
       About_En_Th4: "Inglés",
@@ -411,10 +411,10 @@ function App() {
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={L[Lang].About_Pt_Th4} Tp={L[Lang].About_Pt_Tp} PBd="10" PBn="5"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="3"/>
         <Bento Bv="2" Bh="4" Bs="BL2" Th4={L[Lang].About_B2_Th4} Tp={L[Lang].About_B2_Tp}/>
-        <Bento Bv="2" Bh="2" Bs="BC1" Th4c="var(--white)" Th4="Gold Coast, AU. 2023" IFimg={IFimg2}/>
-        <Bento Bv="2" Bh="2" Bs="BC3" Th4c="var(--white)" Th4="Tasmania, AU. 2017" IFimg={IFimg3}/>
-        <Bento Bv="2" Bh="2" Bs="BC3" Th4c="var(--white)" Th4="Siem Reap, KH. 2024" IFimg={IFimg4}/>
-        <Bento Bv="2" Bh="2" Bs="BC1" Th4c="var(--white)" Th4="London, GB. 2022" IFimg={IFimg5}/>
+        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Gold Coast AU 2023" IFimg={IFimg2}/>
+        <Bento Bv="2" Bh="2" Bs="BL3" Th4c="var(--white)" Th4="Tasmania AU 2017" IFimg={IFimg3}/>
+        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London GB 2022" IFimg={IFimg5}/>
+        <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap KH 2024" IFimg={IFimg4}/>
         <Bento Bv="2" Bh="4" Bs="BL2" Th4={L[Lang].About_B3_Th4} Tp={L[Lang].About_B3_Tp}/>
       </BentoGrid>
 
