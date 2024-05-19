@@ -30,15 +30,15 @@ export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp,
         cursor: Lurl && !Com ? "pointer" : "auto"
       }}>
 
-      {IBimg && <img className="Image ImageBack" src={IBimg}/>}
-      {IDimg && <img className="Image ImageDispel" src={IDimg}/>}
-      {IFimg && <img className="Image ImageFront" src={IFimg}/>}
+      {IBimg && <img className="Image ImageBack" src={IBimg} title={IBimg} alt={IBimg} loading="lazy"/>}
+      {IDimg && <img className="Image ImageDispel" src={IDimg} title={IBimg} alt={IBimg} loading="lazy"/>}
+      {IFimg && <img className="Image ImageFront" src={IFimg} title={IBimg} alt={IBimg} loading="lazy"/>}
 
       <div className="Statement">
         {Limg && (
-          <div className='Limg'>
-            <img src={Limg}/>
-          </div>
+          <picture className='Limg'>
+            <img src={Limg} title={Limg} alt={Limg} loading="lazy"/>
+          </picture>
         )}
         <div className="Text">
           <h4 style={{color: `${Th4c}`}}>{Th4}</h4>

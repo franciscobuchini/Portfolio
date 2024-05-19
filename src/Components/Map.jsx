@@ -21,7 +21,7 @@ export default function Map({ Bs, Bv, Bh, Th4, Tp, Th4c, Tpc, theme }) {
 
     map.scrollZoom.disable();
     const marker1 = new mapboxgl.Marker({ color: markerColor })
-        .setLngLat([-119.950676, 39.244233])
+        .setLngLat([-119.950676, 39.252533])
         .addTo(map);
 
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Header ({ links, Com1, Com2}) {
+export default function Header ({ links, Com1, Com2, Pulse}) {
 
   const handleLinkClick = (id, event) => {
     event.preventDefault();
@@ -38,7 +38,7 @@ export default function Header ({ links, Com1, Com2}) {
 
       <div className="Header_Pulse">
         <div className="Pulse"></div>
-        <p>Looking for job.</p>
+        <p>{Pulse}</p>
       </div>
     </header>
   )

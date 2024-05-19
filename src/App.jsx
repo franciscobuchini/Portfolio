@@ -119,6 +119,8 @@ function App() {
       Intro_04_Tp: "Switch Theme",
       Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
+      Intro_07_Th4: "Professional objectives 🔭",
+      Intro_07_Tp: "a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
@@ -219,6 +221,8 @@ function App() {
       Intro_04_Tp: "Cambiar tema",
       Intro_05_Th4: "🏠 Nevada, USA (hasta julio 2024)",
       Intro_06_Tp: "Descargar CV:",
+      Intro_07_Th4: "Objetivos profesionales 🔭",
+      Intro_07_Tp: "desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
@@ -311,23 +315,26 @@ function App() {
 
   return (
     <>
-      <Header links={links} Com1={() => <ThemeSwitch onChange={handleThemeSwitch}/>} Com2={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
+      <Header links={links} Pulse={L[Lang].Job} Com1={() => <ThemeSwitch onChange={handleThemeSwitch}/>} Com2={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
 
       <BentoGrid id="Intro" TAh1={L[Lang].Intro_TAh1}>
+        <Bento id="Responsive_Component" Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
+        <Bento id="Responsive_Component" Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={L[Lang].Intro_02_Th4}/>
-        <Map Bv="3" Bh="4" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
-        <Bento Bv="1" Bh="4" Bs="BC2" Tp={L[Lang].Intro_06_Tp} Com={Download}/>
+        <Map Bv="2" Bh="4" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
+        <Bento Bv="1" Bh="6" Bs="BL1" Th4={L[Lang].Intro_07_Th4} Tp={L[Lang].Intro_07_Tp}/>
+        <Bento Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_06_Tp} Com={Download}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
-      <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
+      <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
       <Bento Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
       <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
       <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
 
-      <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Projects_02_Th4} Bbgc="transparent"/>
+      <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_02_Th4} Bbgc="transparent"/>
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
       <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={L[Lang].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
       <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={L[Lang].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
@@ -341,7 +348,7 @@ function App() {
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={L[Lang].Software_TAh1} TAp={L[Lang].Software_TAp}>
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_01_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_01_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="7"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
@@ -354,7 +361,7 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
@@ -363,14 +370,14 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={L[Lang].Software_Intermediate}/>
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_03_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_03_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg2} Th4="Github"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg20} Th4="Git"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg21} Th4="Vercel"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg30} Th4="Hostinger"/>
 
-        <Bento Bv="1" Bh="8" Bs="BE1" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={L[Lang].Software_Basics} PBd="10" PBn="3"/>
       </BentoGrid>
