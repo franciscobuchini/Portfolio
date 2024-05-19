@@ -120,7 +120,7 @@ function App() {
       Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
       Intro_07_Th4: "Professional objectives 🔭",
-      Intro_07_Tp: "a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
+      Intro_07_Tp: "Create exceptional digital experiences that are both visually appealing and highly functional. I seek to combine my passion for design with my technical skills to build intuitive and responsive user interfaces that improve interaction and satisfaction.",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
@@ -222,7 +222,7 @@ function App() {
       Intro_05_Th4: "🏠 Nevada, USA (hasta julio 2024)",
       Intro_06_Tp: "Descargar CV:",
       Intro_07_Th4: "Objetivos profesionales 🔭",
-      Intro_07_Tp: "desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
+      Intro_07_Tp: "Crear experiencias digitales excepcionales que sean tanto visualmente atractivas como altamente funcionales. Busco combinar mi pasión por el diseño con mis habilidades técnicas para construir interfaces de usuario intuitivas y responsivas que mejoren la interacción y satisfacción.",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",

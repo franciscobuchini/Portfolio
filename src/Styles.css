@@ -130,6 +130,7 @@ header > .Header_Pulse {
   border-radius: var(--bentoradius);
   height: var(--size);
   z-index: 600;
+  padding-left: 5px;
 }
 
 header > .Header_Pulse > .Pulse {
