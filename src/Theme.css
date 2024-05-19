@@ -251,7 +251,7 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   }
 
   .Button, .Switch > input, .Switch > input:checked {
-    background-color: var(--light);
+    background-color: var(--transparent15light);
     color: var(--dark);
   }
   
@@ -273,7 +273,7 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   header > .Header_Components > .Component > .Switch > input,
   header > .Header_Components > .Switch > input:checked {
     background-color: var(--dark);
-    border: 2px solid var(--primary);
+    border: 2px solid var(--stroke);
   }
 
   header > .Header_Components > .Component > .Switch > input:hover,
@@ -285,12 +285,23 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   header > .Header_Components > .Component > .Switch > input::before,
   header > .Header_Components > .Component > .Switch > input:checked::before {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--stroke);
   }
 
   header > .Header_Components > .Component > .Switch > input:hover::before,
   header > .Header_Components > .Component > .Switch > input:checked:hover::before {}
 
+}
+
+
+header > .Header_Components > .Component > .ThemeSwitch > input::before,
+.Bento > .Component > .ThemeSwitch > input::before {
+  background-color: transparent;
+}
+
+header > .Header_Components > .Component > .ThemeSwitch > input:checked::before,
+.Bento > .Component > .ThemeSwitch > input:checked::before {
+  background-color: transparent;
 }
 
 /* SECONDARY THEME -------------------------------------------------------*/
