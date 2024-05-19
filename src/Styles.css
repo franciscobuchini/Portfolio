@@ -434,6 +434,7 @@ footer {
   .Bento > .PB {min-height: 5px;}
   .Bento > .Statement {row-gap: 10px;}
 
+  .ThemeSwitch > input::before {font-size: 2rem;}
   h1, span {font-size: 1.6rem;}
   h4 {font-size: 0.81rem;}
   p {font-size: 0.76rem; line-height: 25px;}
