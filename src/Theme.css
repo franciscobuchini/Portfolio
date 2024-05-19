@@ -3,7 +3,7 @@
   --secondary: #CB7043;
   --tertiary: #34BF49;
   --light: #F7F2F2;
-  --lightSecondary: #EACEC2;
+  --lightTertiary: #eff7f0;
   --white: #FFFFFF;
   --black: #090C10;
   --dark: #13171f;
@@ -24,7 +24,7 @@
 
 /* LIGHT THEME -------------------------------------------------------*/
 body {
-  background-color: var(--white);
+  background-color: var(--lightTertiary);
 }
 
 header {
@@ -79,14 +79,14 @@ header > div > .Pulse {
 
 .Bento,
 .MapComponent {
-  background-color: var(--light);
+  background-color: var(--lightTertiary);
   outline: 1px solid var(--transparent15dark);
 }
 
 .Bento:hover,
 .MapComponent:hover {
-  background-color: var(--light);
-  outline: 2px solid var(--secondary);
+  background-color: var(--lightTertiary);
+  outline: 1px solid var(--secondary);
 }
 
 .Bento > .Statement > .Text > h4,
@@ -214,7 +214,7 @@ header > div > .Pulse {
   .Bento,
   .MapComponent {
     background-color: var(--dark);
-    outline: 0px solid var(--transparent30light);
+    outline: 1px solid var(--transparent30light);
   }
   
   .Bento:hover,

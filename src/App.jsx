@@ -405,17 +405,19 @@ function App() {
       </BentoGrid>
 
       <BentoGrid id="About" TAh1={L[Lang].About_TAh1}>
-        <Bento Bv="2" Bh="8" Bs="BL2" Th4={L[Lang].About_B1_Th4} Tp={L[Lang].About_B1_Tp}/>
+        <Bento Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B1_Th4} Tp={L[Lang].About_B1_Tp}/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ARG} Th4={L[Lang].About_Sp_Th4} Tp={L[Lang].About_Sp_Tp} PBd="10" PBn="10"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_USA} Th4={L[Lang].About_En_Th4} Tp={L[Lang].About_En_Tp} PBd="10" PBn="7"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={L[Lang].About_Pt_Th4} Tp={L[Lang].About_Pt_Tp} PBd="10" PBn="5"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="3"/>
-        <Bento Bv="2" Bh="4" Bs="BL2" Th4={L[Lang].About_B2_Th4} Tp={L[Lang].About_B2_Tp}/>
+        <Bento Bv="1" Bh="8" Bs="BC3" Bbgc="transparent" Th4={L[Lang].About_B2_Th4}/>
+        <Bento Bv="2" Bh="4" Bs="BL2"  Tp={L[Lang].About_B2_Tp}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Gold Coast AU 2023" IFimg={IFimg2}/>
         <Bento Bv="2" Bh="2" Bs="BL3" Th4c="var(--white)" Th4="Tasmania AU 2017" IFimg={IFimg3}/>
+        <Bento Bv="1" Bh="8" Bs="BC3" Bbgc="transparent" Th4={L[Lang].About_B3_Th4}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London GB 2022" IFimg={IFimg5}/>
         <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap KH 2024" IFimg={IFimg4}/>
-        <Bento Bv="2" Bh="4" Bs="BL2" Th4={L[Lang].About_B3_Th4} Tp={L[Lang].About_B3_Tp}/>
+        <Bento Bv="2" Bh="4" Bs="BL2" Tp={L[Lang].About_B3_Tp}/>
       </BentoGrid>
 
       <BentoGrid id="Contact" TAh1={L[Lang].Contact_TAh1}>
