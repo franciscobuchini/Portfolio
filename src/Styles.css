@@ -422,6 +422,9 @@ footer {
 /* RESPONSIVE -----------------------------------*/
 
 @media (width > 0) and (width <= 530px) {
+  #Paragraph > .Statement > .Text > p {line-height: 28px;}
+  .Bento > .Statement > .Text > p {line-height: 22px;}
+  #Presentation > .Statement > .Text > p {line-height: 30px;}
   header {width: auto; border-radius: 100px; margin-top: 10px; bottom: var(--gap); left: calc(var(--gap)*2);}
   header > .Header_Components {display: none;}
   header > .Header_Nav {display: none;}
@@ -430,17 +433,17 @@ footer {
   .BentoGrid {grid-template-columns: repeat(4, 1fr);}
   .H5, .H6, .H7, .H8 {grid-column: span 4;}
   .Bento > .PB {min-height: 5px;}
-  .Bento > .Statement {row-gap: 10px;}
 
   .ThemeSwitch > input::before {font-size: 2rem;}
   h1, span {font-size: 1.6rem;}
   h4 {font-size: 0.81rem;}
-  p {font-size: 0.76rem; line-height: 26px;}
+  p {font-size: 0.76rem;}
   .Button, .Download > span {font-size: 0.65rem;}
-  #Presentation > .Statement > .Text > p {line-height: 25px;}
+
 }
 
 @media (width > 530px) and (width <= 833px) {
+  #Paragraph {line-height: 33px;}
   #Responsive_Component {display: none;}
   header > .Header_Nav {display: none;}
   .Article {margin: 30px 0 0 0;}
@@ -456,6 +459,7 @@ footer {
 }
 
 @media (width > 833px) and (width <= 1164px) {
+  #Paragraph {line-height: 33px;}
   #Responsive_Component {display: none;}
   .Article {margin: 40px 0 0 0;}
   .Article > .TextArticle {margin: 70px var(--gap) var(--gap);}
@@ -488,6 +492,7 @@ footer {
 }
 
 @media (width > 1164px) {
+  #Paragraph {line-height: 33px;}
   #Responsive_Component {display: none;}
   .Article {margin: 40px 0 0 0;}
   .Article > .TextArticle {max-width: 800px; margin: 90px var(--gap) var(--gap);}
