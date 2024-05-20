@@ -434,7 +434,7 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg34} Tp={L[Lang].Intro_06_Tp} Com={Download} Lurl={CVchampionships} />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg34} Tp={L[Lang].Intro_06_Tp} Com={Download} Lurl={CV} />
         <Bento Bv="1" Bh="4" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
 
       </BentoGrid>
