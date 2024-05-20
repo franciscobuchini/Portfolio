@@ -416,11 +416,11 @@ function App() {
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="3"/>
         <Bento Bv="1" Bh="8" Bs="BC2" Bbgc="transparent" Th4={L[Lang].About_B2_Th4}/>
         <Bento Bv="2" Bh="4" Bs="BL2"  Tp={L[Lang].About_B2_Tp}/>
-        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Gold Coast AU 2023" IFimg={IFimg2}/>
-        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Tasmania AU 2017" IFimg={IFimg3}/>
+        <Bento Bv="2" Bh="2" Bs="BL3" Th4c="var(--white)" Th4="Gold Coast, Australia. 2023" IFimg={IFimg2}/>
+        <Bento Bv="2" Bh="2" Bs="BR1" Th4c="var(--white)" Th4="Tasmania, Australia. 2017" IFimg={IFimg3}/>
         <Bento Bv="1" Bh="8" Bs="BC2" Bbgc="transparent" Th4={L[Lang].About_B3_Th4}/>
-        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London GB 2022" IFimg={IFimg5}/>
-        <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap KH 2024" IFimg={IFimg4}/>
+        <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London, England. 2022" IFimg={IFimg5}/>
+        <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap, Cambodia. 2024" IFimg={IFimg4}/>
         <Bento Bv="2" Bh="4" Bs="BL2" Tp={L[Lang].About_B3_Tp}/>
         <Bento Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B4_Th4} Tp={L[Lang].About_B4_Tp}/>
       </BentoGrid>

@@ -57,6 +57,7 @@ html, body {
 
   --bentogridsize: calc(var(--bentosizehorizontal) * 8 + var(--gap) * 9);
   --bentogridradius: calc(var(--bentoradius) + var(--gap));
+  --negativegap: calc(var(--gap)*-1);
 
   @media (width > 833px) {
     --bentosizevertical: 110px; 
@@ -64,14 +65,13 @@ html, body {
     --size: 40px;
     --bentoradius: 32px;
     --gap: 16px;
-    --negativegap: -16px;
+
   }
 
   @media (width > 1020px) {
     --bentosizevertical: 130px; 
     --bentosizehorizontal: 130px;
     --gap: 20px;
-    --negativegap: -20px;
   }
 
   @media (width <= 833px) {
@@ -80,13 +80,11 @@ html, body {
     --size: 40px;
     --bentoradius: 16px;
     --gap: 20px;
-    --negativegap: -20px;
   }
 
   @media (width <= 530px) {
     --size: 30px;
     --gap: 10px;
-    --negativegap: -10px;
   }
 }
 
@@ -437,7 +435,7 @@ footer {
   .ThemeSwitch > input::before {font-size: 2rem;}
   h1, span {font-size: 1.6rem;}
   h4 {font-size: 0.81rem;}
-  p {font-size: 0.76rem; line-height: 25px;}
+  p {font-size: 0.76rem; line-height: 26px;}
   .Button, .Download > span {font-size: 0.65rem;}
   #Presentation > .Statement > .Text > p {line-height: 25px;}
 }
@@ -485,7 +483,7 @@ footer {
 @media (width > 1020px) {
   h1, span {font-size: 2rem;}
   h4 {font-size: 1.2rem;}
-  p, a {font-size: 0.9rem; line-height: 30px;}
+  p, a {font-size: 0.9rem; line-height: 33px;}
   .Button, .Download > span {font-size: 0.8rem;}
 }
 
