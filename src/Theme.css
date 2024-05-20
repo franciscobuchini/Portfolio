@@ -57,6 +57,10 @@ header > .Header_Pulse > .Pulse {
   color: var(--stroke);
 }
 
+#Profile_Image {
+  background-color: var(--secondary);
+}
+
 .Bento > .ImageBack {
   opacity: 0.5;
   @media (width <= 833px) {opacity: 0.3;}
@@ -197,6 +201,11 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
     color: var(--white);
     opacity: 1;
   }
+
+  #Profile_Image {
+    background-color: var(--primary);
+  }
+  
   
   .Bento > .ImageBack {
     opacity: 0.3;

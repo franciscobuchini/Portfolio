@@ -14,7 +14,7 @@ export default function Map({ Bs, Bv, Bh, Th4, Tp, Th4c, Tpc, theme }) {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      center: [-119.950676, 39.244233],
+      center: [-119.950676, 39.252533],
       zoom: 11,
       style: style,
     });
