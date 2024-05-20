@@ -120,7 +120,7 @@ function App() {
       Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
       Intro_07_Th4: "Professional objectives 🔭",
-      Intro_07_Tp: "Create exceptional digital experiences that are both visually appealing and highly functional. I seek to combine my passion for design with my technical skills to build intuitive and responsive user interfaces that improve interaction and satisfaction. <br> I prefer to work remotely to maintain a work-life balance, but I am open to relocation offers if they represent interesting opportunities.",
+      Intro_07_Tp: "I seek to combine my passion for design with my technical skills to build intuitive and responsive user interfaces that improve interaction and satisfaction. I'm looking for work remotely to maintain a work-life balance, but I am open to relocation offers if they represent interesting opportunities.",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
@@ -222,7 +222,7 @@ function App() {
       Intro_05_Th4: "🏠 Nevada, USA (hasta julio 2024)",
       Intro_06_Tp: "Descargar CV:",
       Intro_07_Th4: "Objetivos profesionales 🔭",
-      Intro_07_Tp: "Crear experiencias digitales excepcionales que sean tanto visualmente atractivas como altamente funcionales. Busco combinar mi pasión por el diseño con mis habilidades técnicas para construir interfaces de usuario intuitivas y responsivas que mejoren la interacción y satisfacción. <br> Prefiero trabajar de forma remota para mantener un equilibrio entre vida profesional y personal, pero estoy abierto a ofertas de reubicación si representan oportunidades interesantes. ",
+      Intro_07_Tp: "Busco combinar mi pasión por el diseño con mis habilidades técnicas para construir interfaces de usuario intuitivas y responsivas que mejoren la interacción y satisfacción. Busco trabajar de forma remota para mantener un equilibrio entre vida profesional y personal, pero estoy abierto a ofertas de reubicación si representan oportunidades interesantes. ",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",

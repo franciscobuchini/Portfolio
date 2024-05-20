@@ -285,7 +285,7 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   header > .Header_Components > .Component > .Switch > input::before,
   header > .Header_Components > .Component > .Switch > input:checked::before {
     background-color: var(--black);
-    color: var(--stroke);
+    color: var(--light);
   }
 
   header > .Header_Components > .Component > .Switch > input:hover::before,
