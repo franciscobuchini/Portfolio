@@ -44,6 +44,7 @@ import Limg30 from "./Assets/Limg30.webp"
 import Limg31 from "./Assets/Limg31.webp"
 import Limg32 from "./Assets/Limg32.webp"
 import Limg33 from "./Assets/Limg33.webp"
+import Limg34 from "./Assets/Limg34.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -119,8 +120,6 @@ function App() {
       Intro_04_Tp: "Switch Theme",
       Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
       Intro_06_Tp: "Download Resume:",
-      Intro_07_Th4: "Professional objectives 🔭",
-      Intro_07_Tp: "I seek to combine my passion for design with my technical skills to build intuitive and responsive user interfaces that improve interaction and satisfaction. I'm looking for work remotely to maintain a work-life balance, but I am open to relocation offers if they represent interesting opportunities.",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
@@ -189,6 +188,8 @@ function App() {
       About_B2_Tp: "It is my main sporting focus. Representing Argentina three times and competing in the best tournaments in the world, including Euro-clubs, nationals and world tournaments, has enriched my career. I have played in five internationally recognized clubs on par with the best in the world. Each competition has been an opportunity to push my limits and demonstrate my passion for this sport and has also been a source of pride and constant motivation.",
       About_B3_Th4: "Globetrotter 🌎",
       About_B3_Tp: "I have had the opportunity to visit 30 countries, immersing myself in cultural diversity and enjoying the excitement of discovering new places. Each trip fuels my curiosity to learn more about different cultures and traditions. My goal is to continue expanding my horizons and eventually visit every country in the world, turning each destination into an unforgettable experience on my personal journey of discovery.",
+      About_B4_Th4: "Professional objectives 🔭",
+      About_B4_Tp: "I seek to combine my passion for design with my technical skills to build intuitive and responsive user interfaces that improve interaction and satisfaction. I'm looking for work remotely to maintain a work-life balance, but I am open to relocation offers if they represent interesting opportunities.",
       About_Sp_Th4: "Spanish",
       About_Sp_Tp: "Native",
       About_En_Th4: "English",
@@ -221,8 +222,6 @@ function App() {
       Intro_04_Tp: "Cambiar tema",
       Intro_05_Th4: "🏠 Nevada, USA (hasta julio 2024)",
       Intro_06_Tp: "Descargar CV:",
-      Intro_07_Th4: "Objetivos profesionales 🔭",
-      Intro_07_Tp: "Busco combinar mi pasión por el diseño con mis habilidades técnicas para construir interfaces de usuario intuitivas y responsivas que mejoren la interacción y satisfacción. Busco trabajar de forma remota para mantener un equilibrio entre vida profesional y personal, pero estoy abierto a ofertas de reubicación si representan oportunidades interesantes. ",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
@@ -291,6 +290,8 @@ function App() {
       About_B2_Tp: "Este es mi principal enfoque deportivo. Representar a Argentina tres veces y competir en los mejores torneos del mundo, incluyendo euro-clubes, torneos nacionales y mundiales, ha enriquecido mi carrera. He jugado en cinco clubes reconocidos internacionalmente a la par de los mejores del mundo. Cada competición ha sido una oportunidad para superar mis límites y demostrar mi pasión por este deporte y también ha sido una fuente de orgullo y motivación constante.",
       About_B3_Th4: "Trotamundos 🌎",
       About_B3_Tp: "He tenido la oportunidad de visitar 30 países, sumergiéndome en la diversidad cultural y disfrutando de la emoción de descubrir nuevos lugares. Cada viaje alimenta mi curiosidad por conocer más sobre diferentes culturas y tradiciones. Mi objetivo es seguir ampliando mis horizontes y eventualmente visitar todos los países del mundo, convirtiendo cada destino en una experiencia inolvidable en mi viaje personal de descubrimiento.",
+      About_B4_Th4: "Objetivos profesionales 🔭",
+      About_B4_Tp: "Busco combinar mi pasión por el diseño con mis habilidades técnicas para construir interfaces de usuario intuitivas y responsivas que mejoren la interacción y satisfacción. Busco trabajar de forma remota para mantener un equilibrio entre vida profesional y personal, pero estoy abierto a ofertas de reubicación si representan oportunidades interesantes. ",
       About_Sp_Th4: "Español",
       About_Sp_Tp: "Nativo",
       About_En_Th4: "Inglés",
@@ -323,8 +324,7 @@ function App() {
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento Bv="4" Bh="4" IFimg={IFimg1} Th4c="var(--white)" Th4={L[Lang].Intro_02_Th4}/>
         <Map Bv="2" Bh="4" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
-        <Bento Bv="1" Bh="6" Bs="BL1" Th4={L[Lang].Intro_07_Th4} Tp={L[Lang].Intro_07_Tp}/>
-        <Bento Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_06_Tp} Com={Download}/>
+        <Bento Bv="2" Bh="2" Bs="BL1" Th4={L[Lang].Intro_07_Th4} Tp={L[Lang].Intro_07_Tp}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
@@ -353,12 +353,12 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Introducing} PBd="10" PBn="1"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
@@ -366,7 +366,7 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg26} Th4="AfterEffects" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg26} Th4="AfterEffects" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={L[Lang].Software_Intermediate}/>
 
@@ -377,9 +377,9 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg30} Th4="Hostinger"/>
 
-        <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
+        {/* <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={L[Lang].Software_Basics} PBd="10" PBn="3"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={L[Lang].Software_Basics} PBd="10" PBn="3"/> */}
       </BentoGrid>
 
       <BentoGrid id="Education" TAh1={L[Lang].Education_TAh1} TAp={L[Lang].Education_TAp}>
@@ -398,11 +398,11 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp={L[Lang].Education_VSC_Dal_Tp} Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={L[Lang].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={L[Lang].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" />
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" /> */}
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={L[Lang].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={L[Lang].Education_PS2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" />
+        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" /> */}
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
         {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={L[Lang].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" /> */}
@@ -415,14 +415,15 @@ function App() {
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_USA} Th4={L[Lang].About_En_Th4} Tp={L[Lang].About_En_Tp} PBd="10" PBn="7"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={L[Lang].About_Pt_Th4} Tp={L[Lang].About_Pt_Tp} PBd="10" PBn="5"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="3"/>
-        <Bento Bv="1" Bh="8" Bs="BC3" Bbgc="transparent" Th4={L[Lang].About_B2_Th4}/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Bbgc="transparent" Th4={L[Lang].About_B2_Th4}/>
         <Bento Bv="2" Bh="4" Bs="BL2"  Tp={L[Lang].About_B2_Tp}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Gold Coast AU 2023" IFimg={IFimg2}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="Tasmania AU 2017" IFimg={IFimg3}/>
-        <Bento Bv="1" Bh="8" Bs="BC3" Bbgc="transparent" Th4={L[Lang].About_B3_Th4}/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Bbgc="transparent" Th4={L[Lang].About_B3_Th4}/>
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London GB 2022" IFimg={IFimg5}/>
         <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap KH 2024" IFimg={IFimg4}/>
         <Bento Bv="2" Bh="4" Bs="BL2" Tp={L[Lang].About_B3_Tp}/>
+        <Bento Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B4_Th4} Tp={L[Lang].About_B4_Tp}/>
       </BentoGrid>
 
       <BentoGrid id="Contact" TAh1={L[Lang].Contact_TAh1}>
@@ -431,7 +432,8 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
-        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
+        <Bento Bv="1" Bh="4" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg34} Tp={L[Lang].Intro_06_Tp} Com={Download} />
       </BentoGrid>
 
       <Footer cb={L[Lang].Created}/>
