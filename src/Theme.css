@@ -88,6 +88,10 @@ header > .Header_Pulse > .Pulse {
   color: var(--stroke);
 }
 
+.Bento > .Statement > .Text > p > a {
+  color: var(--secondary);
+}
+
 .Limg > img {
   opacity: 0.8;
   filter: invert(80%)
@@ -233,6 +237,10 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   .Map > .Text > p {
     color: var(--white);
     opacity: 0.8;
+  }
+  
+  .Bento > .Statement > .Text > p > a {
+    color: var(--primary);
   }
   
   .Limg > img {

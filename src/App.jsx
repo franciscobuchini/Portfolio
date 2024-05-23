@@ -126,13 +126,13 @@ function App() {
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
       Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
-      Projects_GGC_Tp: "Guess countries <br> in this game.",
-      Projects_EM_Tp: "Restaurant in <br> Wellington, NZ.",
-      Projects_CC_Tp: "Created with: <br> Bento Box UI.",
+      Projects_GGC_Tp: "This is my first project in web development. It is a game built from scratch with pure JavaScript. Users must guess the silhouette of countries, with a scoring system based on response time. Used HTML, CSS and JavaScript to develop an interactive and challenging experience for players.",
+      Projects_EM_Tp: "Updated the <a href='https://www.elmatador.co.nz/' target='_blank'>website</a> of a restaurant in Wellington, NZ, improving design, SEO and memory usage.",
+      Projects_CC_Tp: "Website for cafes with an attractive and functional presentation that organizes information and visual elements in blocks.",
 
       Projects_02_Th4: "Design:",
-      Projects_HUN_Tp: "UX/UI Design for a RPG.",
-      Projects_PDS_Tp: "Design System for a mobile app for pets.",
+      Projects_HUN_Tp: "Developed from cero a UX/UI prototype for an RPG in which I collaborated with a team of three people to create a visually clean gaming experience.",
+      Projects_PDS_Tp: "I created this interface for a lost pets app.",
       Projects_BREO_Tp: "UX/UI for my own app that worked during the covid-19.",
       Projects_LP_Tp: "UX/UI Design for a TBS Game.",
       Projects_TDE_Tp: "European Clubs.",
@@ -228,13 +228,13 @@ function App() {
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
-      Projects_GGC_Tp: "Adivina países <br> en este juego.",
-      Projects_EM_Tp: "Restaurante en <br> Wellington, NZ.",
-      Projects_CC_Tp: "Creado con: <br> Bento Box UI.",
+      Projects_GGC_Tp: "Este es mi primer proyecto en desarrollo web. Es un juego creado desde cero con JavaScript puro. Los usuarios deben adivinar la silueta de países, con un sistema de puntuación basado en el tiempo de respuesta. Utilicé HTML, CSS y JavaScript para desarrollar una experiencia interactiva y desafiante para los jugadores.",
+      Projects_EM_Tp: "Actualicé el <a href='https://www.elmatador.co.nz/' target='_blank'>sitio web</a> de un restaurante en Wellington, NZ, mejorando el diseño, SEO y uso de memoria.",
+      Projects_CC_Tp: "Sitio web para cafeterías con presentación atractiva y funcional que organiza información y elementos visuales en bloques.",
 
       Projects_02_Th4: "Diseño:",
-      Projects_HUN_Tp: "Diseño UX/UI para un RPG.",
-      Projects_PDS_Tp: "Design System para una app de mascotas.",
+      Projects_HUN_Tp: "Desarrollé desde cero un prototipo de UX/UI para un RPG en el cual colaboré con un equipo de tres personas para crear una experiencia de juego visualmente limpia.",
+      Projects_PDS_Tp: "Creé esta interfaz para una app de mascotas perdidas.",
       Projects_BREO_Tp: "UX/UI para mi app que funcionó durante el covid-19.",
       Projects_LP_Tp: "Diseño UX/UI para un juego TBS.",
       Projects_TDE_Tp: "Clubes Europeos.",
@@ -331,13 +331,14 @@ function App() {
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
       <Bento id="Paragraph" Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} TOimg="bottom" Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} TOimg="left" Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} TOimg="left" Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
-      <Bento Bv="2" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} TOimg="right" Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
+      <Bento Bv="4" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} TOimg="bottom" Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="3" Bh="4" Bs="BL1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} TOimg="bottom" Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
+      <Bento Bv="3" Bh="4" Bs="BR1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} TOimg="bottom" Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} TOimg="bottom" Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="4" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} TOimg="bottom" Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
       <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={L[Lang].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} TOimg="top left" Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
       <Bento Bv="2" Bh="4" Bs="BL5" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} TOimg="bottom left" Tp={L[Lang].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
       <Bento Bv="2" Bh="4" Bs="BR2" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} TOimg="left" Tp={L[Lang].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="T-Shirt Designs" IFimg={IFimg_TDE} IBimg={IBimg_TDR} TOimg="bottom left" Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
@@ -345,7 +346,7 @@ function App() {
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} TOimg="bottom right" Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} TOimg="bottom right" Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="T-Shirt Designs" IFimg={IFimg_TDC} IBimg={IBimg_TDL} TOimg="bottom right" Tp={L[Lang].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} TOimg="top left" Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
+
       </BentoGrid>
 
       <BentoGrid id="Software" TAh1={L[Lang].Software_TAh1} TAp={L[Lang].Software_TAp}>

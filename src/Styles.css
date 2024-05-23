@@ -96,7 +96,7 @@ h1, span {font-family: Coustard;}
 
 p { word-wrap: break-word;}
 
-a {cursor: pointer; font-weight: lighter;}
+a {cursor: pointer; font-weight: 400;}
 
 .Button, .Download > span {font-family: Garnett;}
 
@@ -232,6 +232,10 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   row-gap: 2px;
+}
+
+.Bento > .Statement > .Text > p > a {
+  font-weight: 500;
 }
 
 .Bento > .Statement > .Limg {
