@@ -103,7 +103,7 @@ header > .Header_Pulse > .Pulse {
 }
 
 .PBn {
-  background-color: var(--transparent15dark);
+  background-color: var(--secondary);
 }
 
 .Transparent, .Transparent:hover {
@@ -124,7 +124,8 @@ header > .Header_Pulse > .Pulse {
 
 .Button, .Switch > input, .Switch > input:checked {
   background-color: var(--transparent15dark);
-  color: var(--white);
+  color: var(--dark);
+  border: 1px solid var(--transparent15dark);
 }
 
 .Button:hover, .Switch > input:hover, .Switch > input:checked:hover {
@@ -260,8 +261,8 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   }
 
   .Button, .Switch > input, .Switch > input:checked {
-    background-color: var(--transparent15light);
-    color: var(--dark);
+    background-color: var(--primary);
+    color: var(--light);
   }
   
   .Button:hover, .Switch > input:hover, .Switch > input:checked:hover {

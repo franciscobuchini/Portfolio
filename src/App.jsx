@@ -125,7 +125,7 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
-      Projects_BBUI_Tp: "I created this interface for use in my projects to organize information and elements into modular blocks. This intuitive and visually appealing design improves navigation and accessibility, allowing users to easily find information. My goal is to optimize web usability and aesthetics.",
+      Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
       Projects_GGC_Tp: "Guess countries <br> in this game.",
       Projects_EM_Tp: "Restaurant in <br> Wellington, NZ.",
       Projects_CC_Tp: "Created with: <br> Bento Box UI.",
@@ -227,7 +227,7 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
-      Projects_BBUI_Tp: "Creé esta interfaz para usar en mis proyectos para organizar información y elementos en bloques modulares. Este diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, permitiendo a los usuarios encontrar información fácilmente. Mi objetivo es optimizar la usabilidad y la estética web.",
+      Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
       Projects_GGC_Tp: "Adivina países <br> en este juego.",
       Projects_EM_Tp: "Restaurante en <br> Wellington, NZ.",
       Projects_CC_Tp: "Creado con: <br> Bento Box UI.",
