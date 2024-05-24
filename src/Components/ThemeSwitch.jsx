@@ -1,25 +1,31 @@
 import React, { useState, useEffect } from "react";
 
 export default function ThemeSwitch({ onChange }) {
+  // Estado inicial como true para que comience habilitado y en modo oscuro
   const [isChecked, setIsChecked] = useState(() => {
-    return document.documentElement.getAttribute("data-theme") === "dark";
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    return currentTheme ? currentTheme === "dark" : true; // Predeterminado dark
   });
 
   useEffect(() => {
     const currentTheme = document.documentElement.getAttribute("data-theme");
+    if (!currentTheme) {
+      // Si no hay tema, establece el predeterminado a "dark"
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
     setIsChecked(currentTheme === "dark");
   }, []);
 
   const handleThemeSwitch = () => {
     const newCheckedState = !isChecked;
     setIsChecked(newCheckedState);
-    onChange(newCheckedState); // Toggle the theme state
+    onChange(newCheckedState);
 
     if (newCheckedState) {
-      // Change to dark theme
+      // Cambiar a tema oscuro
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      // Change to light theme
+      // Cambiar a tema claro
       document.documentElement.setAttribute("data-theme", "light");
     }
   };

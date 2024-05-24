@@ -198,12 +198,6 @@ footer {
   transform: scale(1.05);
 }
 
-.Bento:hover > .ImageDispel {
-  transition-delay: 0.4s;
-  transition: opacity 2s;
-  opacity: 0;
-}
-
 .Bento > .Component {
   display: flex;
   min-height: var(--size);
@@ -475,7 +469,7 @@ footer {
   p, a {font-size: 0.7rem; line-height: 25px;}
   .Button, .Download > span {font-size: 0.8rem;}
 }
-
+/* 
 @media (width < 1020px) {
 
   .V1 {min-height: calc(var(--bentosizevertical)); grid-row: span 1;}
@@ -486,7 +480,7 @@ footer {
   .V6 {min-height: calc(var(--bentosizevertical) * 6 ); grid-row: span 6;}
   .V7 {min-height: calc(var(--bentosizevertical) * 7 ); grid-row: span 7;}
   .V8 {min-height: calc(var(--bentosizevertical) * 8 ); grid-row: span 8;}
-}
+} */
 
 @media (width > 1020px) {
   h1, span {font-size: 2rem;}

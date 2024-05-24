@@ -1,7 +1,7 @@
 // BENTO.JSX
 import React from "react"
 
-export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp, Th4c, Tpc, IBimg, IDimg, IFimg, Limg, TOimg, Com, PBn, PBd, Bt }) {
+export default function Bento({ id, Bv, Bh, Bs, Bbgc, Lurl, Th4, Tp, Th4c, Tpc, IBimg, IFimg, Limg, Com, PBn, PBd, Bt }) {
 
   // If background is transparent this means: no interaction if hover the Bento.
   let classNameBento = `Bento ${Bbgc === "transparent" ? "Transparent" : ""} ${Bs} V${Bv} H${Bh}`
@@ -24,15 +24,12 @@ export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp,
       className={classNameBento}
       onClick={handleClick}
       style={{
-        ...(Outc && { outline: `solid ${Outc}` }),
         ...(Bbgc && { backgroundColor: `${Bbgc}` }),
-        ...(Bbgi && { backgroundImage: `${Bbgi}` }),
         cursor: Lurl && !Com ? "pointer" : "auto"
       }}>
 
       {IBimg && <img className="Image ImageBack" src={IBimg} title={IBimg} alt={IBimg} loading="lazy" />}
-      {IDimg && <img className="Image ImageDispel" src={IDimg} title={IBimg} alt={IBimg} loading="lazy"/>}
-      {IFimg && <img className="Image ImageFront" src={IFimg} title={IBimg} alt={IBimg} loading="lazy" style={{transformOrigin: `${TOimg}` }}/>}
+      {IFimg && <img className="Image ImageFront" src={IFimg} title={IBimg} alt={IBimg} loading="lazy" />}
 
       <div className="Statement">
         {Limg && (
@@ -62,29 +59,3 @@ export default function Bento({ id, Bv, Bh, Bs, Bbgc, Bbgi, Outc, Lurl, Th4, Tp,
     </section>
   )
 }
-
-/* 
-Bsize: Bento - Size [look at Dimensions.css]
-Bstyle: Bento - Style [B1, B2, B3, B4, B5, B6, B7, B8]
-Bbgc: Bento - Background Color
-
-Th4: Text - <H2>
-Tp: Text - <P>
-
-IBimg: Image Back - Image
-IBalt: Image Back - Alt
-IDimg: Image Dispel - Image
-IDalt: Image Dispel - Alt
-IFimg: Image Front - Image
-IFalt: Image Front - Alt
-
-Lurl: Bento or Component - Link
-
-PBn: ProgressBar - Numerator
-PBd: ProgressBar - Denominator
-PBt: ProgressBar - <h5>
-
-Bt: Button - Text
-
-Com: Component [{Button}, {ThemeSwitch}, {ProgressBar}]
-*/

@@ -127,23 +127,23 @@ header > .Header_Pulse > .Pulse {
 }
 
 .Button, .Switch > input, .Switch > input:checked {
-  background-color: var(--transparent15dark);
-  color: var(--dark);
-  border: 1px solid var(--transparent15dark);
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .Button:hover, .Switch > input:hover, .Switch > input:checked:hover {
-  background-color: var(--transparent30dark);
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .Switch > input::before, .Switch > input:checked::before {
-  background-color: var(--stroke);
+  background-color: var(--secondary);
   color: var(--white);
 }
 
 .Switch > input:hover::before, .Switch > input:checked:hover::before {
-  background-color: var(--stroke);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--secondary);
 }
 
 header > .Header_Components > .Component > .Switch > input,
@@ -177,7 +177,7 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   
   header {
     background-color: var(--black);
-    box-shadow: 0 0 10px var(--transparent15light);
+    border: 1px solid var(--primary) ;
   }
   
   header > .Header_Nav {
@@ -274,7 +274,7 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   }
   
   .Button:hover, .Switch > input:hover, .Switch > input:checked:hover {
-    background-color: var(--transparent30light);
+    background-color: var(--primary);
     color: var(--white);
   }
   
@@ -284,8 +284,8 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   }
   
   .Switch > input:hover::before, .Switch > input:checked:hover::before {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--primary);
   }
 
   header > .Header_Components > .Component > .Switch > input,
