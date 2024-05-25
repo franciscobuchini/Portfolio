@@ -153,7 +153,7 @@ function App() {
       Software_Basics: "Basics",
       Software_Introducing: "Introducing",
       //-------------------------------------------------------------------------
-      Contact_TAh1: "Profiles & Contact 🤙",
+      Contact_TAh1: "Profile & Contact 🤙",
       //-------------------------------------------------------------------------
       Education_TAh1: "Education 📚",
       Education_TAp: "More than 180 hours of study with courses.",
@@ -343,11 +343,11 @@ function App() {
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
       
       <Bento Bv="3" Bh="4" Bs="BR1" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} Tp={L[Lang].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concepts" IFimg={IFimg_TDE} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concepts" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concepts" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concepts" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concepts" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDE} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
 
       </BentoGrid>
 
@@ -427,8 +427,6 @@ function App() {
         <Bento Bv="2" Bh="2" Bs="BL1" Th4c="var(--white)" Th4="London, England. 2022" IFimg={IFimg5}/>
         <Bento Bv="2" Bh="2" Bs="BR3" Th4c="var(--white)" Th4="Siem Reap, Cambodia. 2024" IFimg={IFimg4}/>
         <Bento id="Paragraph" Bv="2" Bh="4" Bs="BL2" Tp={L[Lang].About_B3_Tp}/>
-        <Bento id="Paragraph" Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B4_Th4} Tp={L[Lang].About_B4_Tp}/>
-
       </BentoGrid>
 
       <BentoGrid id="Contact" TAh1={L[Lang].Contact_TAh1}>
@@ -438,7 +436,8 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg34} Tp={L[Lang].Intro_06_Tp} Com={Download} Lurl={CV} />
-        <Bento Bv="1" Bh="4" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"  />
+        <Bento Bv="1" Bh="4" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"/>
+        <Bento id="Paragraph" Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B4_Th4} Tp={L[Lang].About_B4_Tp}/>
 
       </BentoGrid>
 

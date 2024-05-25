@@ -38,6 +38,7 @@ header > .Header_Nav {
 
 header > .Header_Pulse {
   color: var(--tertiary);
+  @media (width <= 530px) {color: var(--dark);}
 }
 
 header > .Header_Pulse > .Pulse {
@@ -177,7 +178,8 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   
   header {
     background-color: var(--black);
-    border: 1px solid var(--primary) ;
+    border: 1px solid var(--primary);
+    @media (width <= 530px) {border: 1px solid var(--tertiary)}
   }
   
   header > .Header_Nav {
