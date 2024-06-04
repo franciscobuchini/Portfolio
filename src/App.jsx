@@ -45,6 +45,7 @@ import Limg31 from "./Assets/Limg31.webp"
 import Limg32 from "./Assets/Limg32.webp"
 import Limg33 from "./Assets/Limg33.webp"
 import Limg34 from "./Assets/Limg34.webp"
+import Limg35 from "./Assets/Limg35.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -376,6 +377,7 @@ function App() {
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_03_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg2} Th4="Github"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg35} Th4="Gitlab"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg20} Th4="Git"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg21} Th4="Vercel"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
@@ -431,12 +433,13 @@ function App() {
 
       <BentoGrid id="Contact" TAh1={L[Lang].Contact_TAh1}>
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg2} Th4="Github" Tp="/franciscobuchini" Com={Button} Lurl="https://github.com/franciscobuchini" Bt="Github"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg35} Th4="Gitlab" Tp="/franciscobuchini" Com={Button} Lurl="https://gitlab.com/franciscobuchini" Bt="Gitlab"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg3} Th4="Linkedin" Tp="/franciscobuchini" Com={Button} Lurl="https://www.linkedin.com/in/franciscobuchini/" Bt="Linkedin"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg7} Th4="Facebook" Tp="@franciscobuchini" Com={Button} Lurl="https://www.facebook.com/francisco.buchini.37/" Bt="Facebook"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg5} Th4="Behance" Tp="/franciscobuchini" Com={Button} Lurl="https://www.behance.net/franciscobuchini" Bt="Behance"  />
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg4} Th4="Instagram" Tp="@franciscobuchini" Com={Button} Lurl="https://www.instagram.com/franciscobuchini" Bt="Instagram"  />
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"/>
         <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg34} Tp={L[Lang].Intro_06_Tp} Com={Download} Lurl={CV} />
-        <Bento Bv="1" Bh="4" Bs="BC2" Limg={Limg6} Th4="eMail" Tp="franciscobuchini@gmail.com" Com={Button} Lurl="mailto:franciscobuchini@gmail.com" Bt="eMail"/>
         <Bento id="Paragraph" Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B4_Th4} Tp={L[Lang].About_B4_Tp}/>
 
       </BentoGrid>
