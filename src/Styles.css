@@ -362,6 +362,7 @@ footer {
   cursor: pointer;
   border-radius: 100px;
   position: relative;
+  line-height: var(--size);
 }
 
 .Button, 

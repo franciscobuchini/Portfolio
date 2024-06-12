@@ -46,6 +46,9 @@ import Limg32 from "./Assets/Limg32.webp"
 import Limg33 from "./Assets/Limg33.webp"
 import Limg34 from "./Assets/Limg34.webp"
 import Limg35 from "./Assets/Limg35.webp"
+import Limg36 from "./Assets/Limg36.webp"
+import Limg37 from "./Assets/Limg37.webp"
+import Limg38 from "./Assets/Limg38.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -55,6 +58,7 @@ import Limg_ARG from "./Assets/Limg_ARG.webp"
 import Limg_USA from "./Assets/Limg_USA.webp"
 import Limg_BRA from "./Assets/Limg_BRA.webp"
 import Limg_ITA from "./Assets/Limg_ITA.webp"
+import Limg_SHU from "./Assets/Limg_SHU.webp"
 
 import IFimg_TDE from "./Assets/IFimg_TDE.webp"
 import IFimg_TDA1 from "./Assets/IFimg_TDA1.webp"
@@ -70,6 +74,8 @@ import IFimg_EM from "./Assets/IFimg_EM.webp"
 import IFimg_CC from "./Assets/IFimg_CC.webp"
 import IFimg_GGC from "./Assets/IFimg_GGC.webp"
 import IFimg_BBUI from "./Assets/IFimg_BBUI.webp"
+import IFimg_SHU from "./Assets/IFimg_SHU.webp"
+import IFimg_BLO from "./Assets/IFimg_BLO.webp"
 
 import IBimg_LP from "./Assets/IBimg_LP.webp"
 import IBimg_TDL from "./Assets/IBimg_TDL.webp"
@@ -82,6 +88,9 @@ import IBimg_DEEB from "./Assets/IBimg_DEEB.webp"
 import IBimg_CC from "./Assets/IBimg_CC.webp"
 import IBimg_EM from "./Assets/IBimg_EM.webp"
 import IBimg_GGC from "./Assets/IBimg_GGC.webp"
+import IBimg_TDE from "./Assets/IBimg_TDE.webp"
+import IBimg_BLO from "./Assets/IBimg_BLO.webp"
+import IBimg_SHU from "./Assets/IBimg_SHU.webp"
 
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
@@ -126,12 +135,14 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
       Projects_01_Th4: "Programming:",
+      Projects_SHU_Tp: "An innovative application designed to help coaches around the world in the efficient management of their teams, with more than 700 registered users globally. Recently, we have updated the Pico framework from 1.5.13 to 2.0.6, improving performance and security, and we have advised on aesthetic changes for a better user experience. Although the project is in progress, Shula App already offers key functions such as team management, effective communication and performance analysis, facilitating the organization and success of sports teams.",
       Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
       Projects_GGC_Tp: "This is my first project in web development. It is a game built from scratch with pure JavaScript. Users must guess the silhouette of countries, with a scoring system based on response time. Used HTML, CSS and JavaScript to develop an interactive and challenging experience for players.",
       Projects_EM_Tp: "Updated the <a href='https://www.elmatador.co.nz/' target='_blank'>website</a> of a restaurant in Wellington, New Zealand, improving design, SEO and memory usage.",
       Projects_CC_Tp: "Website for cafes with an attractive and functional presentation that organizes information and visual elements in blocks.",
 
       Projects_02_Th4: "Design:",
+      Projects_BLO_Tp: "A popular mobile game with 7,000 monthly users is undergoing a complete UX/UI redesign of its app and website, available on AppStore and PlayStore. This progressive redesign will give a new face to the app, improving usability, aesthetics and adding new functionalities that will enhance user engagement and retention. With these improvements, an exponential evolution in the user base and a significant increase in revenue is expected.",
       Projects_HUN_Tp: "Developed from cero a UX/UI prototype for an RPG in which I collaborated with a team of three people to create a visually clean gaming experience.",
       Projects_PDS_Tp: "I created this interface for a lost pets app.",
       Projects_BREO_Tp: "I founded a delivery app in Argentina, during the COVID-19 pandemic, which managed to bring together more than 400 participating businesses. We stand out by eliminating commissions from traditional app monopolies, helping to mitigate the difficult economic situation. I was in charge of creating the UX/UI from scratch and collaborated with programmers to complete the app, later adding design updates based on the Instagram UI for greater user comfort and familiarity. After a year of work, I sold the app for three times the total investment.",
@@ -144,7 +155,7 @@ function App() {
       Projects_DEEB_Tp: "UI sketch for a music app with a modern interface.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Tools & Software ⚙️",
-      Software_TAp: "Progression according to roadmap.sh",
+      Software_TAp: "Progression according to <a href='https://roadmap.sh/' target='_blank'>roadmap.sh</a>",
       Software_01_Th4: "Website development:",
       Software_02_Th4: "UX/UI & Design tools:",
       Software_03_Th4: "Version Control Systems & Hosting:",
@@ -228,12 +239,14 @@ function App() {
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
+      Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente. Recientemente, hemos actualizado el framework de Pico 1.5.13 a 2.0.6, mejorando rendimiento y seguridad, y hemos aconsejado en cambios estéticos para una mejor experiencia de usuario. Aunque el proyecto está en proceso, Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento, facilitando la organización y éxito de los equipos deportivos.",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
       Projects_GGC_Tp: "Este es mi primer proyecto en desarrollo web. Es un juego creado desde cero con JavaScript puro. Los usuarios deben adivinar la silueta de países, con un sistema de puntuación basado en el tiempo de respuesta. Utilicé HTML, CSS y JavaScript para desarrollar una experiencia interactiva y desafiante para los jugadores.",
       Projects_EM_Tp: "Actualicé el <a href='https://www.elmatador.co.nz/' target='_blank'>sitio web</a> de un restaurante en Wellington, Nueva Zelanda, mejorando el diseño, SEO y uso de memoria.",
       Projects_CC_Tp: "Sitio web para cafeterías con presentación atractiva y funcional que organiza información y elementos visuales en bloques.",
 
       Projects_02_Th4: "Diseño:",
+      Projects_BLO_Tp: "Un popular juego móvil con 7000 usuarios mensuales, está en proceso de un rediseño completo de UX/UI en su aplicación y sitio web, disponible en AppStore y PlayStore. Este rediseño progresivo dará una nueva cara a la app, mejorando la usabilidad, la estética y añadiendo nuevas funcionalidades que potenciarán el engagement y la retención de usuarios. Con estas mejoras, se espera una evolución exponencial en la base de usuarios y un incremento significativo en los ingresos.",
       Projects_HUN_Tp: "Desarrollé desde cero un prototipo de UX/UI para un RPG en el cual colaboré con un equipo de tres personas para crear una experiencia de juego visualmente limpia.",
       Projects_PDS_Tp: "Creé esta interfaz para una app de mascotas perdidas.",
       Projects_BREO_Tp: "Fundé una app de delivery en Argentina, durante la pandemia de COVID-19, que logró reunir a más de 400 comercios adheridos. Nos destacamos eliminando las comisiones de los monopolios de apps tradicionales, ayudando a mitigar la difícil situación económica. Me encargué de crear la UX/UI desde cero y colaboré con programadores para completar la app, añadiendo luego actualizaciones de diseño basadas en la UI de Instagram para mayor comodidad y familiaridad del usuario. Tras un año de trabajo, vendí la app por tres veces la inversión total.",
@@ -246,7 +259,7 @@ function App() {
       Projects_DEEB_Tp: "Boceto de UI para una app de música con una interfaz moderna.",
       //-------------------------------------------------------------------------
       Software_TAh1: "Herramientas y Programas ⚙️",
-      Software_TAp: "Progreso según roadmap.sh",
+      Software_TAp: "Progreso según <a href='https://roadmap.sh/' target='_blank'>roadmap.sh</a>",
       Software_01_Th4: "Desarrollo web:",
       Software_02_Th4: "UX/UI y Diseño:",
       Software_03_Th4: "Sistemas de control de versión y alojamiento web:",
@@ -331,20 +344,20 @@ function App() {
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="5" Bh="4" Bs="BL1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
+      <Bento Bv="4" Bh="4" Bs="BR1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
       <Bento Bv="3" Bh="4" Bs="BL1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
-      <Bento Bv="3" Bh="4" Bs="BR1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
+      <Bento Bv="3" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="5" Bh="4" Bs="BL1" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={L[Lang].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
-      <Bento Bv="4" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
-      
-      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={L[Lang].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
-      
+      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Blokky App" IBimg={IBimg_BLO} IFimg={IFimg_BLO} Tp={L[Lang].Projects_BLO_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://blokky.app/" />
+      <Bento Bv="5" Bh="4" Bs="BR1" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={L[Lang].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
       <Bento Bv="3" Bh="4" Bs="BR1" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} Tp={L[Lang].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDE} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={L[Lang].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
+      <Bento Bv="4" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
+      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDE} IBimg={IBimg_TDE} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
       <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
@@ -354,15 +367,16 @@ function App() {
 
       <BentoGrid id="Software" TAh1={L[Lang].Software_TAh1} TAp={L[Lang].Software_TAp}>
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_01_Th4} Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="7"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React.js" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="7"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg37} Th4="Pico" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Introducing} PBd="10" PBn="1"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
 
@@ -382,10 +396,15 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg21} Th4="Vercel"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg30} Th4="Hostinger"/>
+        
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
 
-        {/* <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={L[Lang].Software_Basics} PBd="10" PBn="3"/> */}
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg31} Th4="C#" Tp={L[Lang].Software_Basics} PBd="10" PBn="3"/>
+
       </BentoGrid>
 
       <BentoGrid id="Education" TAh1={L[Lang].Education_TAh1} TAp={L[Lang].Education_TAp}>

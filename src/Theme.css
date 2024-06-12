@@ -49,6 +49,10 @@ header > .Header_Pulse > .Pulse {
   color: var(--stroke);
 }
 
+.Article > .TextArticle > p > a {
+  color: var(--secondary);
+}
+
 .Article > .BentoGrid {
   background-color: var(--white);
   border: 1px solid var(--secondary);
@@ -63,7 +67,7 @@ header > .Header_Pulse > .Pulse {
 }
 
 .Bento > .ImageBack {
-  opacity: 0.5;
+  opacity: 0.3;
   @media (width <= 833px) {opacity: 0.3;}
 }
 
@@ -197,6 +201,10 @@ header > .Header_Components > .Component > .Switch > input:checked:hover::before
   .Article > .TextArticle {
     color: var(--light);
     opacity: 1;
+  }
+
+  .Article > .TextArticle > p > a {
+    color: var(--primary);
   }
   
   .BentoGrid {
