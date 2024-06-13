@@ -3,13 +3,13 @@ import Header from "./Components/Header"
 import Footer from "./Components/Footer"
 import React, { useState } from "react"
 import Bento from "./Components/Bento"
-import Map from "./Components/Map"
 
 import IFimg1 from "./Assets/IFimg1.webp"
 import IFimg2 from "./Assets/IFimg2.webp"
 import IFimg3 from "./Assets/IFimg3.webp"
 import IFimg4 from "./Assets/IFimg4.webp"
 import IFimg5 from "./Assets/IFimg5.webp"
+import IFimgMap from "./Assets/IFimgMap.webp"
 
 import Limg1 from "./Assets/Limg1.webp"
 import Limg2 from "./Assets/Limg2.webp"
@@ -339,7 +339,8 @@ function App() {
         <Bento id="Responsive_Component" Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1} Th4c="var(--white)"/>
-        <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/>
+        {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
+        <Bento Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} Th4c="var(--white)" IFimg={IFimgMap}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
