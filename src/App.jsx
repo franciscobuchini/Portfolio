@@ -134,6 +134,7 @@ function App() {
       Intro_06_Tp: "Download Resume:",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
+      Projects_TAp: "My highlights in coding and design:",
       Projects_01_Th4: "Programming:",
       Projects_SHU_Tp: "An innovative application designed to help coaches worldwide efficiently manage their teams, with over 100 clubs registered globally, hired me to improve its performance and functionality. Recently, I updated the framework from Pico 1.5.13 to 2.0.6, enhancing performance and security, and advised on aesthetic changes for a better user experience. Shula App already offers key features such as team management, effective communication, and performance analysis, facilitating the organization and success of sports teams.",
       Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
@@ -238,6 +239,7 @@ function App() {
       Intro_06_Tp: "Descargar CV:",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
+      Projects_TAp: "Mis aspectos más destacados en código y diseño:",
       Projects_01_Th4: "Programación:",
       Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento y funcionalidad. Recientemente, he actualizado el framework de Pico 1.5.13 a 2.0.6, mejorando el rendimiento y la seguridad, y he asesorado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento.",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
@@ -343,7 +345,7 @@ function App() {
         <Bento Bv="2" Bh="2" Th4="🏠 Incline Village, USA" Th4c="var(--white)" IFimg={IFimgMap}/>
       </BentoGrid>
 
-      <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
+      <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
       <Bento Bv="5" Bh="4" Bs="BL1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
