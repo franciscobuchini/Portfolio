@@ -130,7 +130,7 @@ function App() {
       Intro_02_Th4: "🛩️ Indonesia, April 2024",
       Intro_03_Tp: "Switch Language",
       Intro_04_Tp: "Switch Theme",
-      Intro_05_Th4: "🏠 Nevada, USA (until July 2024)",
+      // Intro_05_Th4: "🏠 Incline Village, USA",
       Intro_06_Tp: "Download Resume:",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Projects 💻",
@@ -142,7 +142,7 @@ function App() {
       Projects_CC_Tp: "Website for cafes with an attractive and functional presentation that organizes information and visual elements in blocks.",
 
       Projects_02_Th4: "Design:",
-      Projects_BLO_Tp: "A popular mobile game with 7,000 monthly users, available on the AppStore and PlayStore, is undergoing a complete UX/UI redesign of its app and website. The company hired me to carry out this progressive redesign, which will give a new face to the app, improving usability, aesthetics, and adding new functionalities that will enhance user engagement and retention. With these improvements, an exponential growth in the user base and a significant increase in revenue are expected.",
+      Projects_BLO_Tp: "A popular mobile game with more than 7,000 monthly users, available on the AppStore and PlayStore, is undergoing a complete UX/UI redesign of its app and website. The company hired me to carry out this progressive redesign, which will give a new face to the app, improving usability, aesthetics, and adding new functionalities that will enhance user engagement and retention. With these improvements, an exponential growth in the user base and a significant increase in revenue are expected.",
       Projects_HUN_Tp: "Developed from cero a UX/UI prototype for an RPG in which I collaborated with a team of three people to create a visually clean gaming experience.",
       Projects_PDS_Tp: "I created this interface for a lost pets app.",
       Projects_BREO_Tp: "I founded a delivery app in Argentina, during the COVID-19 pandemic, which managed to bring together more than 400 participating businesses. We stand out by eliminating commissions from traditional app monopolies, helping to mitigate the difficult economic situation. I was in charge of creating the UX/UI from scratch and collaborated with programmers to complete the app, later adding design updates based on the Instagram UI for greater user comfort and familiarity. After a year of work, I sold the app for three times the total investment.",
@@ -234,19 +234,19 @@ function App() {
       Intro_02_Th4: "🛩️ Indonesia, Abril 2024",
       Intro_03_Tp: "Cambiar idioma",
       Intro_04_Tp: "Cambiar tema",
-      Intro_05_Th4: "🏠 Nevada, USA (hasta julio 2024)",
+      // Intro_05_Th4: "🏠 Incline Village, USA",
       Intro_06_Tp: "Descargar CV:",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Proyectos 💻",
       Projects_01_Th4: "Programación:",
-      Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento y funcionalidad. Recientemente, he actualizado el framework de Pico 1.5.13 a 2.0.6, mejorando el rendimiento y la seguridad, y he asesorado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento, facilitando la organización y el éxito de los equipos deportivos.",
+      Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento y funcionalidad. Recientemente, he actualizado el framework de Pico 1.5.13 a 2.0.6, mejorando el rendimiento y la seguridad, y he asesorado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento.",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
       Projects_GGC_Tp: "Este es mi primer proyecto en desarrollo web. Es un juego creado desde cero con JavaScript puro. Los usuarios deben adivinar la silueta de países, con un sistema de puntuación basado en el tiempo de respuesta. Utilicé HTML, CSS y JavaScript para desarrollar una experiencia interactiva y desafiante para los jugadores.",
       Projects_EM_Tp: "Actualicé el <a href='https://www.elmatador.co.nz/' target='_blank'>sitio web</a> de un restaurante en Wellington, Nueva Zelanda, mejorando el diseño, SEO y uso de memoria.",
       Projects_CC_Tp: "Sitio web para cafeterías con presentación atractiva y funcional que organiza información y elementos visuales en bloques.",
 
       Projects_02_Th4: "Diseño:",
-      Projects_BLO_Tp: "Un popular juego móvil con 7000 usuarios mensuales, disponible en AppStore y PlayStore, está en proceso de un rediseño completo de UX/UI en su aplicación y sitio web. La empresa me contrató para llevar a cabo este rediseño progresivo, que dará una nueva cara a la app, mejorando la usabilidad, la estética y añadiendo nuevas funcionalidades que potenciarán el engagement y la retención de usuarios. Con estas mejoras, se espera una evolución exponencial en la base de usuarios y un incremento significativo en los ingresos.",
+      Projects_BLO_Tp: "Un popular juego móvil con mas de 7000 usuarios mensuales, disponible en AppStore y PlayStore, está en proceso de un rediseño completo de UX/UI en su aplicación y sitio web. La empresa me contrató para este rediseño, que mejorará la usabilidad, la estética y añadirá nuevas funcionalidades para potenciar el engagement y la retención de usuarios. Se espera una evolución exponencial en la base de usuarios y un incremento significativo en los ingresos.",
       Projects_HUN_Tp: "Desarrollé desde cero un prototipo de UX/UI para un RPG en el cual colaboré con un equipo de tres personas para crear una experiencia de juego visualmente limpia.",
       Projects_PDS_Tp: "Creé esta interfaz para una app de mascotas perdidas.",
       Projects_BREO_Tp: "Fundé una app de delivery en Argentina, durante la pandemia de COVID-19, que logró reunir a más de 400 comercios adheridos. Nos destacamos eliminando las comisiones de los monopolios de apps tradicionales, ayudando a mitigar la difícil situación económica. Me encargué de crear la UX/UI desde cero y colaboré con programadores para completar la app, añadiendo luego actualizaciones de diseño basadas en la UI de Instagram para mayor comodidad y familiaridad del usuario. Tras un año de trabajo, vendí la app por tres veces la inversión total.",
@@ -340,7 +340,7 @@ function App() {
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1} Th4c="var(--white)"/>
         {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
-        <Bento Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} Th4c="var(--white)" IFimg={IFimgMap}/>
+        <Bento Bv="2" Bh="2" Th4="🏠 Incline Village, USA" Th4c="var(--white)" IFimg={IFimgMap}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1}>
@@ -352,17 +352,17 @@ function App() {
       <Bento Bv="3" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
 
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_02_Th4} Bbgc="transparent"/>
-      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Blokky App" IBimg={IBimg_BLO} IFimg={IFimg_BLO} Tp={L[Lang].Projects_BLO_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://blokky.app/" />
+      <Bento Bv="5" Bh="4" Bs="BL1" Th4="Blokky App" IBimg={IBimg_BLO} IFimg={IFimg_BLO} Tp={L[Lang].Projects_BLO_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://blokky.app/" />
       <Bento Bv="5" Bh="4" Bs="BR1" Th4="Breo App" IBimg={IBimg_BREO} IFimg={IFimg_BREO} Tp={L[Lang].Projects_BREO_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558477/Breo-Project" />
       <Bento Bv="3" Bh="4" Bs="BR1" Th4="Light Project" IBimg={IBimg_LP} IFimg={IFimg_LP} Tp={L[Lang].Projects_LP_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/129629049/Light-Project" />
+      <Bento Bv="5" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
+      <Bento Bv="3" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDE} IBimg={IBimg_TDE} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
+      <Bento Bv="3" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
+      <Bento Bv="3" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
+      <Bento Bv="3" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
+      <Bento Bv="3" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
       <Bento Bv="2" Bh="2" Bs="BR4" Th4="Pr1mero" IBimg={IBimg_PDS} IFimg={IFimg_PDS} Tp={L[Lang].Projects_PDS_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341397/Design-System-Primero" />
-      <Bento Bv="4" Bh="2" Bs="BR1" Th4="Hunterlands" IBimg={IBimg_HUN} IFimg={IFimg_HUN} Tp={L[Lang].Projects_HUN_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119558215/Game-project-Hunterlands" />
       <Bento Bv="2" Bh="2" Bs="BR1" Th4="Deeb App" IFimg={IFimg_DEEB} IBimg={IBimg_DEEB} Tp={L[Lang].Projects_DEEB_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/164341235/Deeb-App" />
-      <Bento Bv="2" Bh="4" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDE} IBimg={IBimg_TDE} Tp={L[Lang].Projects_TDE_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338033/ADIDAS-TSHIRT-DESIGNS-(EUROPEAN-CLUBS)" />
-      <Bento Bv="2" Bh="2" Bs="BR1" Th4="Kit Design Concept" IFimg={IFimg_TDSA} IBimg={IBimg_TDR} Tp={L[Lang].Projects_TDSA_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119338289/ADIDAS-TSHIRT-DESIGNS-(national-soccer-teams)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA1} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA1_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/119087517/ADIDAS-TSHIRT-DESIGNS-(argentine-soccer)" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDA2} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDA2_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/120843373/ADIDAS-2021-T-SHIRT-DESIGN-PROJECT-ARGENTINA-TEAMS" />
-      <Bento Bv="2" Bh="2" Bs="BL1" Th4="Kit Design Concept" IFimg={IFimg_TDC} IBimg={IBimg_TDL} Tp={L[Lang].Projects_TDC_Tp} Com={Button} Bt="Behance" Lurl="https://www.behance.net/gallery/121012871/T-SHIRT-DESIGN-KELME-COLON-DE-SANTA-FE-2021" />
 
       </BentoGrid>
 
