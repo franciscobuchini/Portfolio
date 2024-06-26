@@ -379,7 +379,7 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg37} Th4="Pico" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
 
