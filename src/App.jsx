@@ -126,7 +126,7 @@ function App() {
       Try: "Try",
       //-------------------------------------------------------------------------
       Intro_TAh1: "Welcome 👋",
-      Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS having fun creating components.",
+      Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS and VueJS having fun creating components.",
       Intro_02_Th4: "🛩️ Indonesia, April 2024",
       Intro_03_Tp: "Switch Language",
       Intro_04_Tp: "Switch Theme",
@@ -231,7 +231,7 @@ function App() {
       Try: "Probar",
       //-------------------------------------------------------------------------
       Intro_TAh1: "Bienvenidos 👋",
-      Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS divirtiéndome creando componentes.",
+      Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS y VueJS divirtiéndome creando componentes.",
       Intro_02_Th4: "🛩️ Indonesia, Abril 2024",
       Intro_03_Tp: "Cambiar idioma",
       Intro_04_Tp: "Cambiar tema",
