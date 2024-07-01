@@ -49,6 +49,7 @@ import Limg35 from "./Assets/Limg35.webp"
 import Limg36 from "./Assets/Limg36.webp"
 import Limg37 from "./Assets/Limg37.webp"
 import Limg38 from "./Assets/Limg38.webp"
+import Limg39 from "./Assets/Limg39.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -342,7 +343,7 @@ function App() {
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1} Th4c="var(--white)"/>
         {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
-        <Bento Bv="2" Bh="2" Th4="🏠 Incline Village, USA" Th4c="var(--white)" IFimg={IFimgMap}/>
+        <Bento Bv="2" Bh="2" Th4="🏠 Copenhagen, DK" Th4c="var(--white)" IFimg={IFimgMap}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
@@ -371,15 +372,16 @@ function App() {
       <BentoGrid id="Software" TAh1={L[Lang].Software_TAh1} TAp={L[Lang].Software_TAp}>
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_01_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React.js" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="7"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg39} Th4="TypeScript" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg37} Th4="Pico" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg37} Th4="Pico" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/> */}
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
 
