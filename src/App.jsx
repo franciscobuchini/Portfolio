@@ -341,9 +341,9 @@ function App() {
         <Bento id="Responsive_Component" Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_03_Tp} Com={() => <LanguageSwitch onChange={handleLangSwitch} checked={Lang === 'spanish'}/>} />
         <Bento id="Responsive_Component" Bv="1" Bh="2" Bs="BC2" Tp={L[Lang].Intro_04_Tp} Com={() => <ThemeSwitch onChange={handleThemeSwitch}/>} />
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
-        <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1} Th4c="var(--white)"/>
+        <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1}/>
         {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
-        <Bento Bv="2" Bh="2" Th4="🏠 Copenhagen, DK" Th4c="var(--white)" IFimg={IFimgMap}/>
+        <Bento Bv="2" Bh="2" Th4="🏠 Copenhagen, DK" IFimg={IFimgMap}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
