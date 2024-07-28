@@ -170,7 +170,7 @@ function App() {
       //-------------------------------------------------------------------------
       Contact_TAh1: "Profile & Contact 🤙",
       //-------------------------------------------------------------------------
-      Education_TAh1: "Education 📚",
+      Education_TAh1: "Courses 📚",
       Education_TAp: "More than 180 hours of study with courses.",
       Education_UNL_Th4: "Software Engineer",
       Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 not finished)",
@@ -212,9 +212,9 @@ function App() {
       About_En_Th4: "English",
       About_En_Tp: "Intermediate",
       About_Pt_Th4: "Portuguese",
-      About_Pt_Tp: "Basic",
+      About_Pt_Tp: "Basics",
       About_It_Th4: "Italian",
-      About_It_Tp: "Learning",
+      About_It_Tp: "Basics",
       //-------------------------------------------------------------------------
     },
     spanish: {
@@ -275,7 +275,7 @@ function App() {
       //-------------------------------------------------------------------------
       Contact_TAh1: "Perfil y Contacto 🤙",
       //-------------------------------------------------------------------------
-      Education_TAh1: "Educación 📚",
+      Education_TAh1: "Cursos 📚",
       Education_TAp: "Mas de 180 horas de cursado.",
       Education_UNL_Th4: "Ingeniería Informática",
       Education_UNL_Tp: "Universidad Nacional del Litoral (2016 - 2018 sin finalizar)",
@@ -317,9 +317,9 @@ function App() {
       About_En_Th4: "Inglés",
       About_En_Tp: "Intermedio",
       About_Pt_Th4: "Portugues",
-      About_Pt_Tp: "Básico",
+      About_Pt_Tp: "Básicos",
       About_It_Th4: "Italiano",
-      About_It_Tp: "Aprendiendo",
+      About_It_Tp: "Básicos",
       //-------------------------------------------------------------------------
     }
   }
@@ -387,7 +387,7 @@ function App() {
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} /> */}
 
-        <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend:" Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Basics} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
 
