@@ -50,6 +50,7 @@ import Limg36 from "./Assets/Limg36.webp"
 import Limg37 from "./Assets/Limg37.webp"
 import Limg38 from "./Assets/Limg38.webp"
 import Limg39 from "./Assets/Limg39.webp"
+import Limg40 from "./Assets/Limg40.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -134,7 +135,7 @@ function App() {
       // Intro_05_Th4: "🏠 Incline Village, USA",
       Intro_06_Tp: "Download Resume:",
       //-------------------------------------------------------------------------
-      Projects_TAh1: "Projects 💻",
+      Projects_TAh1: "Experience & Projects 💻",
       Projects_TAp: "My highlights in coding and design:",
       Projects_01_Th4: "Programming:",
       Projects_SHU_Tp: "An innovative application designed to help coaches worldwide efficiently manage their teams, with over 100 clubs registered globally, hired me to improve its performance and functionality. Recently, I updated the framework from Pico 1.5.13 to 2.0.6, enhancing performance and security, and advised on aesthetic changes for a better user experience. Shula App already offers key features such as team management, effective communication, and performance analysis, facilitating the organization and success of sports teams.",
@@ -239,7 +240,7 @@ function App() {
       // Intro_05_Th4: "🏠 Incline Village, USA",
       Intro_06_Tp: "Descargar CV:",
       //-------------------------------------------------------------------------
-      Projects_TAh1: "Proyectos 💻",
+      Projects_TAh1: "Experiencia y Proyectos 💻",
       Projects_TAp: "Mis aspectos más destacados en código y diseño:",
       Projects_01_Th4: "Programación:",
       Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento y funcionalidad. Recientemente, he actualizado el framework de Pico 1.5.13 a 2.0.6, mejorando el rendimiento y la seguridad, y he asesorado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento.",
@@ -377,13 +378,18 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg39} Th4="TypeScript" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg40} Th4="Three.js" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} />
+        {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} /> */}
+
+        <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Basics} PBd="10" PBn="6"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
@@ -401,10 +407,6 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg21} Th4="Vercel"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg22} Th4="Netlify"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg30} Th4="Hostinger"/>
-        
-        <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend" Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_04_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg24} Th4="Unity" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>

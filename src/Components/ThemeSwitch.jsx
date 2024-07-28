@@ -1,10 +1,11 @@
+// ThemeSwitch.jsx
 import React, { useState, useEffect } from "react";
 
 export default function ThemeSwitch({ onChange }) {
-  // Estado inicial como true para que comience habilitado y en modo oscuro
+  // Estado inicial como false para que comience habilitado y en modo oscuro
   const [isChecked, setIsChecked] = useState(() => {
     const currentTheme = document.documentElement.getAttribute("data-theme");
-    return currentTheme ? currentTheme === "dark" : true; // Predeterminado dark
+    return currentTheme ? currentTheme === "light" : false; // Predeterminado dark
   });
 
   useEffect(() => {
@@ -12,21 +13,21 @@ export default function ThemeSwitch({ onChange }) {
     if (!currentTheme) {
       // Si no hay tema, establece el predeterminado a "dark"
       document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      setIsChecked(currentTheme === "light");
     }
-    setIsChecked(currentTheme === "dark");
   }, []);
 
   const handleThemeSwitch = () => {
     const newCheckedState = !isChecked;
     setIsChecked(newCheckedState);
-    onChange(newCheckedState);
-
-    if (newCheckedState) {
-      // Cambiar a tema oscuro
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      // Cambiar a tema claro
-      document.documentElement.setAttribute("data-theme", "light");
+    
+    // Cambiar tema según el nuevo estado del checkbox
+    const newTheme = newCheckedState ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    
+    if (onChange) {
+      onChange(newTheme); // Notifica el cambio de tema
     }
   };
 
@@ -37,6 +38,7 @@ export default function ThemeSwitch({ onChange }) {
         checked={isChecked}
         onChange={handleThemeSwitch}
       />
+      <span className="slider"></span> {/* Agregando un slider visual para el switch */}
     </label>
   );
 }

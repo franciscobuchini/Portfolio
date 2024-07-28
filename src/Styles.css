@@ -48,6 +48,10 @@ html, body {
   overflow-y: auto;
 }
 
+img {
+  pointer-events: none;
+}
+
 #root {
   display: flex;
   flex-direction: column;
