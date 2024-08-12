@@ -121,7 +121,7 @@ function App() {
       Nav_Software: "Software",
       Nav_About: "About",
       Nav_Contact: "Contact",
-      Nav_Education: "Education",
+      // Nav_Education: "Education",
       Button: "Visit",
       Visit: "Visit",
       Play: "Play",
@@ -138,7 +138,7 @@ function App() {
       Projects_TAh1: "Experience & Projects 💻",
       Projects_TAp: "My highlights in coding and design:",
       Projects_01_Th4: "Programming:",
-      Projects_SHU_Tp: "An innovative application designed to help coaches worldwide efficiently manage their teams, with over 100 clubs registered globally, hired me to improve its performance and functionality. Recently, I updated the framework from Pico 1.5.13 to 2.0.6, enhancing performance and security, and advised on aesthetic changes for a better user experience. Shula App already offers key features such as team management, effective communication, and performance analysis, facilitating the organization and success of sports teams.",
+      Projects_SHU_Tp: "An innovative app designed to help coaches around the world in the efficient management of their teams, with more than 100 registered clubs globally, hired me to improve their performance, functionality and security. I have also advised and worked on aesthetic changes for a better user experience. Shula App already offers key functions such as team management, effective communication and performance analysis of each registered athlete.",
       Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
       Projects_GGC_Tp: "This is my first project in web development. It is a game built from scratch with pure JavaScript. Users must guess the silhouette of countries, with a scoring system based on response time. Used HTML, CSS and JavaScript to develop an interactive and challenging experience for players.",
       Projects_EM_Tp: "Updated the <a href='https://www.elmatador.co.nz/' target='_blank'>website</a> of a restaurant in Wellington, New Zealand, improving design, SEO and memory usage.",
@@ -226,7 +226,7 @@ function App() {
       Nav_Software: "Programas",
       Nav_About: "Acerca",
       Nav_Contact: "Contacto",
-      Nav_Education: "Educación",
+      // Nav_Education: "Educación",
       Button: "Visitar",
       Visit: "Visitar",
       Play: "Jugar",
@@ -243,7 +243,7 @@ function App() {
       Projects_TAh1: "Experiencia y Proyectos 💻",
       Projects_TAp: "Mis aspectos más destacados en código y diseño:",
       Projects_01_Th4: "Programación:",
-      Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento y funcionalidad. Recientemente, he actualizado el framework de Pico 1.5.13 a 2.0.6, mejorando el rendimiento y la seguridad, y he asesorado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento.",
+      Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento, funcionalidad y la seguridad, Tambien he asesorado y trabajado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento de cáda deportista registrado.",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
       Projects_GGC_Tp: "Este es mi primer proyecto en desarrollo web. Es un juego creado desde cero con JavaScript puro. Los usuarios deben adivinar la silueta de países, con un sistema de puntuación basado en el tiempo de respuesta. Utilicé HTML, CSS y JavaScript para desarrollar una experiencia interactiva y desafiante para los jugadores.",
       Projects_EM_Tp: "Actualicé el <a href='https://www.elmatador.co.nz/' target='_blank'>sitio web</a> de un restaurante en Wellington, Nueva Zelanda, mejorando el diseño, SEO y uso de memoria.",
@@ -329,7 +329,7 @@ function App() {
     { name: L[Lang].Nav_Intro, href: "Intro"},
     { name: L[Lang].Nav_Projects, href: "Projects"},
     { name: L[Lang].Nav_Software, href: "Software" },
-    { name: L[Lang].Nav_Education, href: "Education" },
+    // { name: L[Lang].Nav_Education, href: "Education" },
     { name: L[Lang].Nav_About, href: "About" },
     { name: L[Lang].Nav_Contact, href: "Contact" },
   ]
@@ -414,7 +414,7 @@ function App() {
 
       </BentoGrid>
 
-      <BentoGrid id="Education" TAh1={L[Lang].Education_TAh1} TAp={L[Lang].Education_TAp}>
+      {/* <BentoGrid id="Education" TAh1={L[Lang].Education_TAh1} TAp={L[Lang].Education_TAp}>
         <Bento Bv="1" Bh="4" Bs="BE1" Th4={L[Lang].Education_UNL_Th4} Tp={L[Lang].Education_UNL_Tp} />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={L[Lang].Education_JS3_Dal_Tp} Lurl="https://www.youtube.com/watch?v=EbMi1Qj4rVE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=22&t=18912s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Soy Dalto" Tp={L[Lang].Education_JS2_Dal_Tp} Lurl="https://www.youtube.com/watch?v=xOinGb2MZSk&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=14&pp=iAQB" />
@@ -422,7 +422,7 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg9} Th4="JavaScript - Domestika" Tp={L[Lang].Education_JS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg30} Th4="Hosting - Soy Dalto" Tp={L[Lang].Education_HOS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=hikoV1Q9EzY&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=48&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg33} Th4="Git & Github - Soy Dalto" Tp={L[Lang].Education_GIT_Dal_Tp} Lurl="https://www.youtube.com/watch?v=9ZJ-K-zk_Go&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=44&t=14226s&pp=iAQB" />
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={L[Lang].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" /> */}
+        /* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg29} Th4="SQL - Soy Dalto" Tp={L[Lang].Education_SQL_Dal_Tp} Lurl="https://www.youtube.com/watch?v=DFg1V-rO6Pg&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=38&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Soy Dalto" Tp={L[Lang].Education_HTMLCSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=1&t=5s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg32} Th4="HTML & CSS - Domestika" Tp={L[Lang].Education_HTMLCSS_Dom_Tp} Lurl="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg11} Th4="CSS - Soy Dalto" Tp={L[Lang].Education_CSS_Dal_Tp} Lurl="https://www.youtube.com/watch?v=OWKXEJN67FE&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=4&t=24664s&pp=iAQB" />
@@ -430,23 +430,23 @@ function App() {
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg28} Th4="VS Code - Soy Dalto" Tp={L[Lang].Education_VSC_Dal_Tp} Lurl="https://www.youtube.com/watch?v=TbzrOz8HbFM&list=PLE8uP447fYpiWxfqCnoHZx03zCsUAzDUW&index=49&t=5740s&pp=iAQB" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg19} Th4="Figma - Domestika" Tp={L[Lang].Education_FIG_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1157-introduccion-a-design-systems-con-figma" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg16} Th4="Adobe XD - Domestika" Tp={L[Lang].Education_XD_Dom_Tp} Lurl="https://www.domestika.org/es/courses/616-introduccion-a-adobe-xd-para-aplicaciones-moviles" />
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
-        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" /> */}
+        /* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/1761-diseno-avanzado-de-videojuegos-rpg-con-unity" />
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg24} Th4="Unity - Domestika" Tp={L[Lang].Education_UNI2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/716-introduccion-a-unity-para-videojuegos-2d" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={L[Lang].Education_PS1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/235-animacion-2d-con-photoshop-dibujo-camara-y-accion" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg17} Th4="Photoshop - Domestika" Tp={L[Lang].Education_PS2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/387-introduccion-a-adobe-photoshop/course" />
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" /> */}
+        <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL3_Dom_Tp} Lurl="https://www.domestika.org/es/courses/2232-adobe-illustrator-avanzado-para-ilustracion" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL2_Dom_Tp} Lurl="https://www.domestika.org/es/courses/312-ilustracion-vectorial-para-principiantes" />
         <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg18} Th4="Illustrator - Domestika" Tp={L[Lang].Education_IL1_Dom_Tp} Lurl="https://www.domestika.org/es/courses/499-introduccion-a-adobe-illustrator" />
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={L[Lang].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" /> */}
-        {/* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={L[Lang].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" /> */}
-      </BentoGrid>
+        /* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg25} Th4="WordPress - Domestika" Tp={L[Lang].Education_WP_Dom_Tp} Lurl="https://www.domestika.org/es/courses/112-creacion-de-una-web-profesional-con-wordpress" />
+        /* <Bento Bv="1" Bh="4" Bs="BE1" Limg={Limg26} Th4="After Effects - Domestika" Tp={L[Lang].Education_AE_Dom_Tp} Lurl="https://www.domestika.org/es/courses/304-introduccion-a-after-effects" />
+      </BentoGrid> */}
 
       <BentoGrid id="About" TAh1={L[Lang].About_TAh1}>
         <Bento id="Paragraph" Bv="2" Bh="8" Bs="BL2" Bbgc="transparent" Th4={L[Lang].About_B1_Th4} Tp={L[Lang].About_B1_Tp}/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ARG} Th4={L[Lang].About_Sp_Th4} Tp={L[Lang].About_Sp_Tp} PBd="10" PBn="10"/>
         <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_USA} Th4={L[Lang].About_En_Th4} Tp={L[Lang].About_En_Tp} PBd="10" PBn="7"/>
-        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={L[Lang].About_Pt_Th4} Tp={L[Lang].About_Pt_Tp} PBd="10" PBn="5"/>
-        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="3"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_BRA} Th4={L[Lang].About_Pt_Th4} Tp={L[Lang].About_Pt_Tp} PBd="10" PBn="4"/>
+        <Bento id="Flag" Bv="1" Bh="2" Bs="BE1" Limg={Limg_ITA} Th4={L[Lang].About_It_Th4} Tp={L[Lang].About_It_Tp} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="8" Bs="BC2" Bbgc="transparent" Th4={L[Lang].About_B2_Th4}/>
         <Bento id="Paragraph" Bv="2" Bh="4" Bs="BL2"  Tp={L[Lang].About_B2_Tp}/>
         <Bento Bv="2" Bh="2" Bs="BL3" Th4c="var(--white)" Th4="Gold Coast, Australia. 2023" IFimg={IFimg2}/>
