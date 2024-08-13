@@ -389,7 +389,7 @@ function App() {
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend:" Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Basics} PBd="10" PBn="6"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing}/>
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
