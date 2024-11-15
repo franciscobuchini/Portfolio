@@ -61,6 +61,7 @@ import Limg_USA from "./Assets/Limg_USA.webp"
 import Limg_BRA from "./Assets/Limg_BRA.webp"
 import Limg_ITA from "./Assets/Limg_ITA.webp"
 import Limg_SHU from "./Assets/Limg_SHU.webp"
+import Limg_RF from "./Assets/Limg_RF.webp"
 
 import IFimg_TDE from "./Assets/IFimg_TDE.webp"
 import IFimg_TDA1 from "./Assets/IFimg_TDA1.webp"
@@ -78,6 +79,7 @@ import IFimg_GGC from "./Assets/IFimg_GGC.webp"
 import IFimg_BBUI from "./Assets/IFimg_BBUI.webp"
 import IFimg_SHU from "./Assets/IFimg_SHU.webp"
 import IFimg_BLO from "./Assets/IFimg_BLO.webp"
+import IFimg_RF from "./Assets/IFimg_RF.webp"
 
 import IBimg_LP from "./Assets/IBimg_LP.webp"
 import IBimg_TDL from "./Assets/IBimg_TDL.webp"
@@ -93,6 +95,7 @@ import IBimg_GGC from "./Assets/IBimg_GGC.webp"
 import IBimg_TDE from "./Assets/IBimg_TDE.webp"
 import IBimg_BLO from "./Assets/IBimg_BLO.webp"
 import IBimg_SHU from "./Assets/IBimg_SHU.webp"
+import IBimg_RF from "./Assets/IBimg_RF.webp"
 
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
@@ -128,7 +131,7 @@ function App() {
       Try: "Try",
       //-------------------------------------------------------------------------
       Intro_TAh1: "Welcome 👋",
-      Intro_01_Tp: "I'm <span>Francisco</span>, a nomad frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS and VueJS having fun creating components.",
+      Intro_01_Tp: "I'm <span>Francisco</span>, a frontend developer from Argentina. Right now I'm applying my strong experience in UX/UI to develop and bring to life projects with ReactJS and VueJS having fun creating components.",
       Intro_02_Th4: "🛩️ Indonesia, April 2024",
       Intro_03_Tp: "Switch Language",
       Intro_04_Tp: "Switch Theme",
@@ -141,6 +144,7 @@ function App() {
       Projects_SHU_Tp: "An innovative app designed to help coaches around the world in the efficient management of their teams, with more than 100 registered clubs globally, hired me to improve their performance, functionality and security. I have also advised and worked on aesthetic changes for a better user experience. Shula App already offers key functions such as team management, effective communication and performance analysis of each registered athlete.",
       Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
       Projects_GGC_Tp: "This is my first project in web development. It is a game built from scratch with pure JavaScript. Users must guess the silhouette of countries, with a scoring system based on response time. Used HTML, CSS and JavaScript to develop an interactive and challenging experience for players.",
+      Projects_RF_Tp: "[in process] Interactive website built with React and Three.js for a fins brand, where the user can explore in detail a 3D model of the product and customize its features.",
       Projects_EM_Tp: "Updated the <a href='https://www.elmatador.co.nz/' target='_blank'>website</a> of a restaurant in Wellington, New Zealand, improving design, SEO and memory usage.",
       Projects_CC_Tp: "Website for cafes with an attractive and functional presentation that organizes information and visual elements in blocks.",
 
@@ -202,7 +206,7 @@ function App() {
       About_B1_Th4: "Designer turned Developer 👨‍💻",
       About_B1_Tp: "I am a passionate frontend designer and programmer with a diverse background. I began my journey in the world of graphic design, later exploring the fascinating field of UX/UI. For two years, I immersed myself in web programming, fusing my solid foundation in design with technical skills to create memorable and functional digital experiences.",
       About_B2_Th4: "Underwater Hockey 🤿",
-      About_B2_Tp: "Let me introduce you to my main sporting focus. Representing Argentina three times and competing in the world's top tournaments, including Euro-Clubs, National and World tournaments, has enriched my career. Playing for five internationally recognized clubs, alongside the best in the world, has taught me the importance of effective communication and teamwork in high-pressure situations. Each competition has been an opportunity to push my limits, demonstrating my passion for the sport, and has been a constant source of pride and motivation.",
+      About_B2_Tp: "Let me share my main sporting focus. Representing Argentina three times and competing in the world's top tournaments, including Euro-clubs, national, and world championships, has enriched my career. As the current coach of Denmark's national team and a player in five internationally renowned clubs alongside some of the best in the world, I have learned the importance of effective communication and teamwork in high-pressure situations. Every competition has been an opportunity to push my limits, showcase my passion for this sport, and serve as a constant source of pride and motivation.",
       About_B3_Th4: "Globetrotter 🌎",
       About_B3_Tp: "I have explored the cultural diversity of more than 30 countries, facing unique challenges in each destination. Just like in programming, every trip has taught me to adapt, solve problems, and see the world from different perspectives. This global experience fuels my creativity and approach to developing innovative and effective technological solutions.",
       About_B4_Th4: "Professional objectives 🔭",
@@ -233,7 +237,7 @@ function App() {
       Try: "Probar",
       //-------------------------------------------------------------------------
       Intro_TAh1: "Bienvenidos 👋",
-      Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend nómada de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS y VueJS divirtiéndome creando componentes.",
+      Intro_01_Tp: "Soy <span>Francisco</span>, desarrollador frontend de Argentina. Ahora mismo estoy aplicando mi sólida experiencia en UX/UI para desarrollar y traer a la vida proyectos con ReactJS y VueJS divirtiéndome creando componentes.",
       Intro_02_Th4: "🛩️ Indonesia, Abril 2024",
       Intro_03_Tp: "Cambiar idioma",
       Intro_04_Tp: "Cambiar tema",
@@ -246,6 +250,7 @@ function App() {
       Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento, funcionalidad y la seguridad, Tambien he asesorado y trabajado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento de cáda deportista registrado.",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
       Projects_GGC_Tp: "Este es mi primer proyecto en desarrollo web. Es un juego creado desde cero con JavaScript puro. Los usuarios deben adivinar la silueta de países, con un sistema de puntuación basado en el tiempo de respuesta. Utilicé HTML, CSS y JavaScript para desarrollar una experiencia interactiva y desafiante para los jugadores.",
+      Projects_RF_Tp: "[en desarrollo] Web interactiva construida con React y Three.js para una marca de aletas, donde el usuario puede explorar en detalle un modelo 3D del producto y personalizar sus características.",
       Projects_EM_Tp: "Actualicé el <a href='https://www.elmatador.co.nz/' target='_blank'>sitio web</a> de un restaurante en Wellington, Nueva Zelanda, mejorando el diseño, SEO y uso de memoria.",
       Projects_CC_Tp: "Sitio web para cafeterías con presentación atractiva y funcional que organiza información y elementos visuales en bloques.",
 
@@ -307,7 +312,7 @@ function App() {
       About_B1_Th4: "De diseñador a desarrollador 👨‍💻",
       About_B1_Tp: "Soy un apasionado diseñador y programador frontend con una trayectoria diversa. Comencé mi viaje en el mundo del diseño gráfico, explorando luego el fascinante campo del UX/UI. Desde hace dos años, me sumergí en la programación web, fusionando mi sólida base en diseño con habilidades técnicas para crear experiencias digitales memorables y funcionales.",
       About_B2_Th4: "Hockey Subacuático 🤿",
-      About_B2_Tp: "Te presento mi principal enfoque deportivo. Representar a Argentina tres veces y competir en los mejores torneos del mundo, incluyendo Euro-clubes, torneos nacionales y mundiales, ha enriquecido mi carrera. Jugar en cinco clubes reconocidos internacionalmente, junto a los mejores del mundo, me ha enseñado la importancia de la comunicación efectiva y del trabajo en equipo en situaciones de alta presión. Cada competición ha sido una oportunidad para superar mis límites, demostrando mi pasión por este deporte, y ha sido una fuente constante de orgullo y motivación.",
+      About_B2_Tp: "Este es mi principal enfoque deportivo. Representar a Argentina tres veces y competir en los mejores torneos del mundo, incluyendo Euro-clubes, torneos nacionales y mundiales, ha enriquecido mi carrera. Como actual coach de la selección nacional de Dinamarca y jugador en cinco clubes reconocidos internacionalmente, junto a los mejores del mundo, he aprendido la importancia de la comunicación efectiva y del trabajo en equipo en situaciones de alta presión. Cada competición ha sido una oportunidad para superar mis límites, demostrando mi pasión por este deporte, y ha sido una fuente constante de orgullo y motivación.",
       About_B3_Th4: "Trotamundos 🌎",
       About_B3_Tp: "He explorado la diversidad cultural de más de 30 países, enfrentando desafíos únicos en cada destino. Al igual que en la programación, cada viaje me ha enseñado a adaptarme, resolver problemas y ver el mundo desde distintas perspectivas. Esta experiencia global alimenta mi creatividad y enfoque para desarrollar soluciones tecnológicas innovadoras y efectivas.",
       About_B4_Th4: "Objetivos profesionales 🔭",
@@ -316,7 +321,7 @@ function App() {
       About_Sp_Tp: "Nativo",
       About_En_Th4: "Inglés",
       About_En_Tp: "Intermedio",
-      About_Pt_Th4: "Portugues",
+      About_Pt_Th4: "Portugués",
       About_Pt_Tp: "Básicos",
       About_It_Th4: "Italiano",
       About_It_Tp: "Básicos",
@@ -352,6 +357,7 @@ function App() {
       <Bento Bv="5" Bh="4" Bs="BL1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
+      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Rocketfin" Limg={Limg_RF} IBimg={IBimg_RF} IFimg={IFimg_RF} Tp={L[Lang].Projects_RF_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://rocketfin.vercel.app/"/>
       <Bento Bv="3" Bh="4" Bs="BL1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
       <Bento Bv="3" Bh="4" Bs="BL1" Th4="El Matador" Limg={Limg_EM} IBimg={IBimg_EM} IFimg={IFimg_EM} Tp={L[Lang].Projects_EM_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://el-matador-website.netlify.app/"/>
 
@@ -393,12 +399,12 @@ function App() {
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="AdobeXD" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg16} Th4="Adobe XD" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg17} Th4="Photoshop" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg18} Th4="Illustrator" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg26} Th4="AfterEffects" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={L[Lang].Software_Intermediate}/>
+        {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg23} Th4="Movavi" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/> */}
+        {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg27} Th4="Procreate" Tp={L[Lang].Software_Intermediate}/> */}
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_03_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg2} Th4="Github"/>
