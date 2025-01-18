@@ -349,7 +349,7 @@ function App() {
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1}/>
         {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
-        <Bento Bv="2" Bh="2" Th4="🏠 Copenhagen, DK" IFimg={IFimgMap}/>
+        <Bento Bv="2" Bh="2" Th4="🏠 Santa Fe, ARG" IFimg={IFimgMap}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
