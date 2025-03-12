@@ -349,11 +349,12 @@ function App() {
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1}/>
         {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
-        <Bento Bv="2" Bh="2" Th4="🏠 Santa Fe, ARG" IFimg={IFimgMap}/>
+        <Bento id="Profile_Image" Bv="2" Bh="2" Th4c="var(--white)" Th4="🏠 Mallorca" IFimg={IFimgMap}/>
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
+      {/* <Bento Bv="5" Bh="4" Bs="BL1" Th4="Underwhat!?" Limg={Limg_UW} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" /> */}
       <Bento Bv="5" Bh="4" Bs="BL1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
@@ -386,16 +387,16 @@ function App() {
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg15} Th4="Redux" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg40} Th4="Three.js" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg10} Th4="SASS" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg13} Th4="Bootstrap" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg14} Th4="Tailwind" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
 
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg25} Th4="Wordpress" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/> */}
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} /> */}
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend:" Bbgc="transparent"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Basics} PBd="10" PBn="6"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing}/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_02_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg19} Th4="Figma" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
