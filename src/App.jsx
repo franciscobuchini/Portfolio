@@ -62,6 +62,7 @@ import Limg_BRA from "./Assets/Limg_BRA.webp"
 import Limg_ITA from "./Assets/Limg_ITA.webp"
 import Limg_SHU from "./Assets/Limg_SHU.webp"
 import Limg_RF from "./Assets/Limg_RF.webp"
+import Limg_UW from "./Assets/Limg_UW.webp"
 
 import IFimg_TDE from "./Assets/IFimg_TDE.webp"
 import IFimg_TDA1 from "./Assets/IFimg_TDA1.webp"
@@ -80,6 +81,7 @@ import IFimg_BBUI from "./Assets/IFimg_BBUI.webp"
 import IFimg_SHU from "./Assets/IFimg_SHU.webp"
 import IFimg_BLO from "./Assets/IFimg_BLO.webp"
 import IFimg_RF from "./Assets/IFimg_RF.webp"
+import IFimg_UW from "./Assets/IFimg_UW.webp"
 
 import IBimg_LP from "./Assets/IBimg_LP.webp"
 import IBimg_TDL from "./Assets/IBimg_TDL.webp"
@@ -96,6 +98,7 @@ import IBimg_TDE from "./Assets/IBimg_TDE.webp"
 import IBimg_BLO from "./Assets/IBimg_BLO.webp"
 import IBimg_SHU from "./Assets/IBimg_SHU.webp"
 import IBimg_RF from "./Assets/IBimg_RF.webp"
+import IBimg_UW from "./Assets/IBimg_UW.webp"
 
 import ThemeSwitch from "./Components/ThemeSwitch"
 import LanguageSwitch from "./Components/LanguageSwitch"
@@ -141,10 +144,11 @@ function App() {
       Projects_TAh1: "Experience & Projects 💻",
       Projects_TAp: "My highlights in coding and design:",
       Projects_01_Th4: "Programming:",
+      Projects_UW_Tp: "Developed from scratch: an international online store specialized in apparel for underwater hockey players. The website supports shipping to multiple countries and is built as a full-stack web application, with a backend and database to manage products and orders. I used React and Tailwind CSS to create an elegant, minimalist, and responsive interface. The platform is available in multiple languages to accommodate a global audience and includes integration for automated, personalized email notifications.",
       Projects_SHU_Tp: "An innovative app designed to help coaches around the world in the efficient management of their teams, with more than 100 registered clubs globally, hired me to improve their performance, functionality and security. I have also advised and worked on aesthetic changes for a better user experience. Shula App already offers key functions such as team management, effective communication and performance analysis of each registered athlete.",
       Projects_BBUI_Tp: "I developed this interface from scratch to organize information and elements into modular blocks for my projects. Its intuitive and visually appealing design enhances navigation and accessibility, making it easy for users to find what they need. My goal is to optimize both web usability and aesthetics.",
       Projects_GGC_Tp: "This is my first project in web development. It is a game built from scratch with pure JavaScript. Users must guess the silhouette of countries, with a scoring system based on response time. Used HTML, CSS and JavaScript to develop an interactive and challenging experience for players.",
-      Projects_RF_Tp: "[in process] Interactive website built with React and Three.js for a fins brand, where the user can explore in detail a 3D model of the product and customize its features.",
+      Projects_RF_Tp: "Interactive website built with React and Three.js for a fins brand, where the user can explore in detail a 3D model of the product and customize its features.",
       Projects_EM_Tp: "Updated the <a href='https://www.elmatador.co.nz/' target='_blank'>website</a> of a restaurant in Wellington, New Zealand, improving design, SEO and memory usage.",
       Projects_CC_Tp: "Website for cafes with an attractive and functional presentation that organizes information and visual elements in blocks.",
 
@@ -247,10 +251,11 @@ function App() {
       Projects_TAh1: "Experiencia y Proyectos 💻",
       Projects_TAp: "Mis aspectos más destacados en código y diseño:",
       Projects_01_Th4: "Programación:",
+      Projects_UW_Tp: "Desarrollada desde cero, una tienda online internacional especializada en indumentaria para jugadores de hockey subacuático. El sitio permite realizar envíos a múltiples países y está desarrollado como una aplicación web full-stack, con backend y base de datos para gestionar productos y pedidos. Utilicé React y Tailwind CSS para construir una interfaz elegante, minimalista y responsive. La plataforma está disponible en múltiples idiomas para adaptarse a su audiencia global y cuenta con integración para el envío automático de correos personalizados.",
       Projects_SHU_Tp: "Una innovadora aplicación diseñada para ayudar a coaches de todo el mundo en la administración eficiente de sus equipos, con más de 100 clubes registrados globalmente, me contrató para mejorar su rendimiento, funcionalidad y la seguridad, Tambien he asesorado y trabajado en cambios estéticos para una mejor experiencia de usuario. Shula App ya ofrece funciones clave como la gestión de equipos, comunicación efectiva y análisis de rendimiento de cáda deportista registrado.",
       Projects_BBUI_Tp: "Desarrollé esta interfaz desde cero para organizar información y elementos en bloques modulares para mis proyectos. Su diseño intuitivo y visualmente atractivo mejora la navegación y la accesibilidad, facilitando a los usuarios encontrar lo que necesitan. Mi objetivo es optimizar tanto la usabilidad como la estética de la web.",
       Projects_GGC_Tp: "Este es mi primer proyecto en desarrollo web. Es un juego creado desde cero con JavaScript puro. Los usuarios deben adivinar la silueta de países, con un sistema de puntuación basado en el tiempo de respuesta. Utilicé HTML, CSS y JavaScript para desarrollar una experiencia interactiva y desafiante para los jugadores.",
-      Projects_RF_Tp: "[en desarrollo] Web interactiva construida con React y Three.js para una marca de aletas, donde el usuario puede explorar en detalle un modelo 3D del producto y personalizar sus características.",
+      Projects_RF_Tp: "Web interactiva construida con React y Three.js para una marca de aletas, donde el usuario puede explorar en detalle un modelo 3D del producto y personalizar sus características.",
       Projects_EM_Tp: "Actualicé el <a href='https://www.elmatador.co.nz/' target='_blank'>sitio web</a> de un restaurante en Wellington, Nueva Zelanda, mejorando el diseño, SEO y uso de memoria.",
       Projects_CC_Tp: "Sitio web para cafeterías con presentación atractiva y funcional que organiza información y elementos visuales en bloques.",
 
@@ -354,7 +359,7 @@ function App() {
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
-      {/* <Bento Bv="5" Bh="4" Bs="BL1" Th4="Underwhat!?" Limg={Limg_UW} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" /> */}
+      <Bento Bv="5" Bh="4" Bs="BL1" Th4="Underwhat!?" Limg={Limg_UW} IBimg={IBimg_UW} IFimg={IFimg_UW} Tp={L[Lang].Projects_UW_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://underwhat.vercel.app/" />
       <Bento Bv="5" Bh="4" Bs="BL1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
