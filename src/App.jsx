@@ -51,6 +51,8 @@ import Limg37 from "./Assets/Limg37.webp"
 import Limg38 from "./Assets/Limg38.webp"
 import Limg39 from "./Assets/Limg39.webp"
 import Limg40 from "./Assets/Limg40.webp"
+import Limg41 from "./Assets/Limg41.webp"
+import Limg42 from "./Assets/Limg42.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -400,6 +402,8 @@ function App() {
         {/* <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg28} Th4="VS Code" Tp={L[Lang].Software_Advanced} /> */}
 
         <Bento Bv="1" Bh="8" Bs="BC2" Th4="Backend:" Bbgc="transparent"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg41} Th4="Node.js" Tp={L[Lang].Software_Basics} PBd="10" PBn="5"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg42} Th4="Express" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg29} Th4="SQL" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg36} Th4="Docker" Tp={L[Lang].Software_Introducing} PBd="10" PBn="2"/>
 
