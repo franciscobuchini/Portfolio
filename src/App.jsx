@@ -53,6 +53,7 @@ import Limg39 from "./Assets/Limg39.webp"
 import Limg40 from "./Assets/Limg40.webp"
 import Limg41 from "./Assets/Limg41.webp"
 import Limg42 from "./Assets/Limg42.webp"
+import Limg43 from "./Assets/Limg43.webp"
 
 import Limg_EM from "./Assets/Limg_EM.webp"
 import Limg_CC from "./Assets/Limg_CC.webp"
@@ -140,7 +141,7 @@ function App() {
       Intro_02_Th4: "🛩️ Indonesia, April 2024",
       Intro_03_Tp: "Switch Language",
       Intro_04_Tp: "Switch Theme",
-      // Intro_05_Th4: "🏠 Incline Village, USA",
+      Intro_05_Th4: "Right now in: Mallorca, Spain",
       Intro_06_Tp: "Download Resume:",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Experience & Projects 💻",
@@ -247,7 +248,7 @@ function App() {
       Intro_02_Th4: "🛩️ Indonesia, Abril 2024",
       Intro_03_Tp: "Cambiar idioma",
       Intro_04_Tp: "Cambiar tema",
-      // Intro_05_Th4: "🏠 Incline Village, USA",
+      Intro_05_Th4: "Ahora mismo en: Mallorca, España",
       Intro_06_Tp: "Descargar CV:",
       //-------------------------------------------------------------------------
       Projects_TAh1: "Experiencia y Proyectos 💻",
@@ -356,14 +357,15 @@ function App() {
         <Bento id="Presentation" Bv="2" Bh="4" Bs="BL2" Limg={Limg1} Tp={L[Lang].Intro_01_Tp} />
         <Bento id="Profile_Image" Bv="2" Bh="2" IFimg={IFimg1}/>
         {/* <Map Bv="2" Bh="2" Th4={L[Lang].Intro_05_Th4} theme={theme}/> */}
-        <Bento id="Profile_Image" Bv="2" Bh="2" Th4c="var(--white)" Th4="🏠 Mallorca" IFimg={IFimgMap}/>
+        <Bento Bv="1" Bh="2" Bs="BC2" Limg={Limg34} Tp={L[Lang].Intro_06_Tp} Com={Download} Lurl={CV} />
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg43} Tp={L[Lang].Intro_05_Th4} />
       </BentoGrid>
 
       <BentoGrid id="Projects" TAh1={L[Lang].Projects_TAh1} TAp={L[Lang].Projects_TAp}>
       <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Projects_01_Th4} Bbgc="transparent"/>
       <Bento Bv="5" Bh="4" Bs="BL1" Th4="Underwhat!?" Limg={Limg_UW} IBimg={IBimg_UW} IFimg={IFimg_UW} Tp={L[Lang].Projects_UW_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://underwhat.vercel.app/" />
-      <Bento Bv="5" Bh="4" Bs="BL1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
-      <Bento Bv="4" Bh="4" Bs="BR1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
+      <Bento Bv="5" Bh="4" Bs="BR1" Th4="Shula App" Limg={Limg_SHU} IBimg={IBimg_SHU} IFimg={IFimg_SHU} Tp={L[Lang].Projects_SHU_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://www.shula.app/" />
+      <Bento Bv="4" Bh="4" Bs="BL1" Th4="Bento Box UI" Limg={Limg_BBUI} IBimg={IBimg_BBUI} IFimg={IFimg_BBUI} Tp={L[Lang].Projects_BBUI_Tp} Com={Button} Bt={L[Lang].Visit}  Lurl="https://bentoboxui.vercel.app" />
       <Bento Bv="4" Bh="4" Bs="BR1" Th4="Geo Game" Limg={Limg_GGC} IBimg={IBimg_GGC} IFimg={IFimg_GGC} Tp={L[Lang].Projects_GGC_Tp} Com={Button} Bt={L[Lang].Play} Lurl="https://geogamechallenge.netlify.app/"/>
       <Bento Bv="4" Bh="4" Bs="BL1" Th4="Rocketfin" Limg={Limg_RF} IBimg={IBimg_RF} IFimg={IFimg_RF} Tp={L[Lang].Projects_RF_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://rocketfin.vercel.app/"/>
       <Bento Bv="3" Bh="4" Bs="BL1" Th4="Café Café" Limg={Limg_CC} IBimg={IBimg_CC} IFimg={IFimg_CC} Tp={L[Lang].Projects_CC_Tp} Com={Button} Bt={L[Lang].Visit} Lurl="https://cafe-cafe.vercel.app"/>
