@@ -395,7 +395,7 @@ function App() {
         <Bento Bv="1" Bh="8" Bs="BC2" Th4={L[Lang].Software_01_Th4} Bbgc="transparent"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg8} Th4="React.js" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg38} Th4="Vue.js" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="6"/>
-        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Intermediate} PBd="10" PBn="8"/>
+        <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg9} Th4="JavaScript" Tp={L[Lang].Software_Advanced} PBd="10" PBn="8"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg39} Th4="TypeScript" Tp={L[Lang].Software_Basics} PBd="10" PBn="4"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg11} Th4="CSS" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
         <Bento Bv="1" Bh="2" Bs="BE1" Limg={Limg12} Th4="HTML" Tp={L[Lang].Software_Advanced} PBd="10" PBn="9"/>
